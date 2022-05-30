@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Document xmlns:p="property" Id="OccPuBBGfAIPzgCpHSejys" LanguageVersion="2021.4.8.947" Version="0.128">
-  <NugetDependency Id="RKFCmk1Lg5EP3I4IQegLTw" Location="VL.CoreLib" Version="2021.4.8" />
-  <NugetDependency Id="G26vGAVumT7MGGmpDLrQtO" Location="Phidget22.NET" Version="1.10.20220413" />
+<Document xmlns:p="property" Id="OccPuBBGfAIPzgCpHSejys" LanguageVersion="2021.4.9.982" Version="0.128">
+  <NugetDependency Id="RKFCmk1Lg5EP3I4IQegLTw" Location="VL.CoreLib" Version="2021.4.9" />
+  <NugetDependency Id="G26vGAVumT7MGGmpDLrQtO" Location="Phidget22.NET" Version="1.10.20220519" />
   <Patch Id="Th8hpfHvBF4Lk6VOwDCc9D">
     <Canvas Id="NtZT52Xp5qNOXK0fF2H7kv" DefaultCategory="VVVV.Phidget" CanvasType="FullCategory">
       <!--
@@ -37,7 +37,7 @@
       </p:NodeReference>
       <Patch Id="JX5ld2uyd7yNt6dOQGZyJ0">
         <Canvas Id="Jb927cJOLTePvmOgypwrRR" CanvasType="Group">
-          <Node Bounds="569,675,57,26" Id="OeRFR6yTGySLvG3R5uxVyb">
+          <Node Bounds="721,608,57,26" Id="OeRFR6yTGySLvG3R5uxVyb">
             <p:NodeReference LastCategoryFullName="Phidget22.Phidget" LastSymbolSource="Phidget22.NET.dll">
               <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
               <Choice Kind="OperationCallFlag" Name="Attached" />
@@ -46,8 +46,8 @@
             <Pin Id="Gu20onb21eQMUQngKKgObf" Name="Output" Kind="StateOutputPin" />
             <Pin Id="SkkDfvspy8fN9q0MkrZuXA" Name="Attached" Kind="OutputPin" />
           </Node>
-          <Pad Id="ICeMn9cd7SGPECr0bNvO5b" Comment="Attached" Bounds="632,730,40,19" ShowValueBox="true" isIOBox="true" />
-          <Node Bounds="605,766,107,26" Id="D62CsIefVpeOgAN2uvExvr">
+          <Pad Id="ICeMn9cd7SGPECr0bNvO5b" Comment="Attached" Bounds="771,752,40,19" ShowValueBox="true" isIOBox="true" />
+          <Node Bounds="717,798,107,26" Id="D62CsIefVpeOgAN2uvExvr">
             <p:NodeReference LastCategoryFullName="Phidget22.Phidget" LastSymbolSource="Phidget22.NET.dll">
               <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
               <Choice Kind="OperationCallFlag" Name="DeviceSerialNumber" />
@@ -56,8 +56,8 @@
             <Pin Id="RJjG1QbH1PbPXQXSoSgSZL" Name="Output" Kind="StateOutputPin" />
             <Pin Id="HEMulvEBXutOZgEjPNp9Fu" Name="Device Serial Number" Kind="OutputPin" />
           </Node>
-          <Pad Id="Ub3RscK7PRqMd5iNNDOLvG" Comment="Device Serial Number" Bounds="709,814,100,31" ShowValueBox="true" isIOBox="true" />
-          <Node Bounds="508,724,80,80" Id="AJtWp9GCAWKMNafQnp2jcY">
+          <Pad Id="Ub3RscK7PRqMd5iNNDOLvG" Comment="Device Serial Number" Bounds="821,846,100,31" ShowValueBox="true" isIOBox="true" />
+          <Node Bounds="513,729,77,122" Id="AJtWp9GCAWKMNafQnp2jcY">
             <p:NodeReference LastCategoryFullName="Primitive" LastSymbolSource="VL.CoreLib.dll">
               <Choice Kind="StatefulRegion" Name="Region (Stateful)" Fixed="true" />
               <Choice Kind="ApplicationStatefulRegion" Name="If" />
@@ -75,6 +75,15 @@
                 </p:NodeReference>
                 <Pin Id="J6Gtr291Vy0MS6hFn7GDYa" Name="Input" Kind="StateInputPin" />
                 <Pin Id="AzBUBDzsUylN9tmIcaRh5B" Name="Output" Kind="StateOutputPin" />
+              </Node>
+              <Node Bounds="525,805,53,26" Id="Uq9g3KkmWBbM0SbPZoIlID">
+                <p:NodeReference LastCategoryFullName="Phidget22.Phidget" LastSymbolSource="Phidget22.NET.dll">
+                  <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                  <Choice Kind="OperationCallFlag" Name="Dispose" />
+                  <CategoryReference Kind="AssemblyCategory" Name="Phidget" NeedsToBeDirectParent="true" />
+                </p:NodeReference>
+                <Pin Id="HcJEoxXx68QNlCJwxJd3rw" Name="Input" Kind="StateInputPin" />
+                <Pin Id="Iyq2bStd9MBMVBJaVnE0t6" Name="Output" Kind="StateOutputPin" />
               </Node>
             </Patch>
           </Node>
@@ -104,7 +113,7 @@
             <Pin Id="VDDm691r14HModOPU2Yc26" Name="Output" Kind="StateOutputPin" />
             <Pin Id="ETFDb8g5LI3NkrjiYDOHsX" Name="Apply" Kind="InputPin" />
           </Node>
-          <Pad Id="I32B1PkB47BPBzBU4QNgJR" Comment="Apply" Bounds="688,260,35,35" ShowValueBox="true" isIOBox="true" Value="False">
+          <Pad Id="I32B1PkB47BPBzBU4QNgJR" Comment="Apply" Bounds="767,469,35,35" ShowValueBox="true" isIOBox="true" Value="False">
             <p:TypeAnnotation>
               <Choice Kind="ImmutableTypeFlag" Name="Boolean" />
               <FullNameCategoryReference ID="Primitive" />
@@ -113,8 +122,7 @@
               <p:buttonmode p:Assembly="VL.UI.Forms" p:Type="VL.HDE.PatchEditor.Editors.ButtonModeEnum">Bang</p:buttonmode>
             </p:ValueBoxSettings>
           </Pad>
-          <ControlPoint Id="LTHY5VOTYIONWLKSRdEBXL" Bounds="573,656" />
-          <Node Bounds="970,246,58,26" Id="OBrf6d7k3KMPjSYO8xdCLK">
+          <Node Bounds="970,243,58,26" Id="OBrf6d7k3KMPjSYO8xdCLK">
             <p:NodeReference LastCategoryFullName="Phidget22.DigitalInput" LastSymbolSource="Phidget22.NET.dll">
               <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
               <CategoryReference Kind="AssemblyCategory" Name="DigitalInput" />
@@ -122,8 +130,8 @@
             </p:NodeReference>
             <Pin Id="NFTx60G02I5MQSUZOxJGev" Name="Output" Kind="StateOutputPin" />
           </Node>
-          <Pad Id="MdDnLaxsbyNPC2QhkPVQD4" Comment="" Bounds="972,337,48,15" ShowValueBox="true" isIOBox="true" />
-          <Node Bounds="1105,383,73,26" Id="KC3IC2YhbTOMdaURoM2BZq">
+          <Pad Id="MdDnLaxsbyNPC2QhkPVQD4" Comment="" Bounds="972,337,68,28" ShowValueBox="true" isIOBox="true" />
+          <Node Bounds="1104,376,73,26" Id="KC3IC2YhbTOMdaURoM2BZq">
             <p:NodeReference LastCategoryFullName="Phidget22.DigitalInput" LastSymbolSource="Phidget22.NET.dll">
               <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
               <CategoryReference Kind="AssemblyCategory" Name="Phidget22" />
@@ -133,7 +141,7 @@
             <Pin Id="VpdOqoixgj2PGyLKqTrYzH" Name="Input" Kind="StateInputPin" />
             <Pin Id="J7iLcduLSXJMRucxSF5to9" Name="Result" Kind="OutputPin" />
           </Node>
-          <Node Bounds="1100,573,65,19" Id="UzL9bkzGdt1NmttoFAobgu">
+          <Node Bounds="1103,617,65,19" Id="UzL9bkzGdt1NmttoFAobgu">
             <p:NodeReference LastCategoryFullName="Reactive" LastSymbolSource="VL.Reactive.vl">
               <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
               <Choice Kind="ProcessAppFlag" Name="HoldLatest" />
@@ -143,13 +151,13 @@
             <Pin Id="EtuLyw7Pt3GOJcr91F4X4q" Name="Value" Kind="OutputPin" />
             <Pin Id="FEiYKm6oJMeP4PC0H7d7E4" Name="On Data" Kind="OutputPin" />
           </Node>
-          <Node Bounds="968,426,67,26" Id="PQywYc9dyRBNojyvt9HOMR">
+          <Node Bounds="972,512,67,26" Id="PQywYc9dyRBNojyvt9HOMR">
             <p:NodeReference LastCategoryFullName="Phidget22.Phidget" LastSymbolSource="Phidget22.NET.dll">
               <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
               <Choice Kind="OperationCallFlag" Name="SetHubPort" />
             </p:NodeReference>
             <Pin Id="DyRVA6yteUFPYwJ2sWd2IY" Name="Input" Kind="StateInputPin" />
-            <Pin Id="O2K3CvGN7ZuPlOvaUOwMel" Name="Value" Kind="InputPin" DefaultValue="0" />
+            <Pin Id="O2K3CvGN7ZuPlOvaUOwMel" Name="Value" Kind="InputPin" DefaultValue="3" />
             <Pin Id="NBrvnxIRLhJNZk0B83RvPM" Name="Output" Kind="StateOutputPin" />
           </Node>
           <Node Bounds="968,372,104,26" Id="OykmJKxuGOuPxjeQUYHIAM">
@@ -161,7 +169,7 @@
             <Pin Id="TMqVrOxToG9LFQLDpmmV9q" Name="Value" Kind="InputPin" DefaultValue="True" />
             <Pin Id="DoLhlfHoUURMCTSA83ZFJg" Name="Output" Kind="StateOutputPin" />
           </Node>
-          <Node Bounds="1103,441,86,99" Id="JWrW1Buc47CNYutXfY4Qk4">
+          <Node Bounds="1105,441,241,164" Id="JWrW1Buc47CNYutXfY4Qk4">
             <p:NodeReference LastCategoryFullName="Reactive" LastSymbolSource="VL.Reactive.vl">
               <Choice Kind="ProcessAppFlag" Name="ForEach" />
               <CategoryReference Kind="Category" Name="Reactive" NeedsToBeDirectParent="true" />
@@ -177,8 +185,8 @@
                 <Pin Id="ItwXj7rcsHyMpp8oxwUnBf" Name="Output" Kind="OutputPin" />
               </Patch>
               <ControlPoint Id="ORVvbRG0SQ9QIRcku5Ypud" Bounds="1117,449" />
-              <ControlPoint Id="DnBMFj7OkGdL4Gk6hxSp2H" Bounds="1117,533" />
-              <Node Bounds="1115,479,62,26" Id="MbtEbH647wDObDZSOFUi1T">
+              <ControlPoint Id="DnBMFj7OkGdL4Gk6hxSp2H" Bounds="1119,582" />
+              <Node Bounds="1117,470,62,26" Id="MbtEbH647wDObDZSOFUi1T">
                 <p:NodeReference LastCategoryFullName="Reactive.EventPattern" LastSymbolSource="VL.Reactive.vl">
                   <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                   <Choice Kind="OperationCallFlag" Name="EventArgs" />
@@ -186,19 +194,21 @@
                 <Pin Id="FeSViQ7iZFJOsohjh9vliZ" Name="Input" Kind="StateInputPin" />
                 <Pin Id="UQJBzsrnawNPFWJMZ7OCis" Name="Event Args" Kind="OutputPin" />
               </Node>
+              <Node Bounds="1117,508,138,26" Id="Jhu0C807aSiMEN9tbwdTwI">
+                <p:NodeReference LastCategoryFullName="Phidget22.Events.DigitalInputStateChangeEventArgs" LastSymbolSource="Phidget22.NET.dll">
+                  <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                  <CategoryReference Kind="AssemblyCategory" Name="DigitalInputStateChangeEventArgs" />
+                  <Choice Kind="OperationCallFlag" Name="State" />
+                </p:NodeReference>
+                <Pin Id="AlO8pFcDoaPN03LgFHmFoO" Name="Input" Kind="StateInputPin" />
+                <Pin Id="AnYWI83Pk2qP6EF7n0M241" Name="Output" Kind="StateOutputPin" />
+                <Pin Id="KQREP9CwQVqPvwQ3E7Bfac" Name="State" Kind="OutputPin" />
+              </Node>
+              <Pad Id="MeDrSJtguHpNiYoHx2qm9E" Comment="State" Bounds="1254,558,35,35" ShowValueBox="true" isIOBox="true" />
             </Patch>
           </Node>
-          <Node Bounds="1098,618,138,26" Id="KX3x7B38wL1OibMlLaMW1e">
-            <p:NodeReference LastCategoryFullName="Phidget22.Events.DigitalInputStateChangeEventArgs" LastSymbolSource="Phidget22.NET.dll">
-              <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
-              <CategoryReference Kind="AssemblyCategory" Name="DigitalInputStateChangeEventArgs" />
-              <Choice Kind="OperationCallFlag" Name="State" />
-            </p:NodeReference>
-            <Pin Id="MvPYJrAojVBNh6VCKjMU7f" Name="Input" Kind="StateInputPin" />
-            <Pin Id="OFuHWDTzv7QLS1wcECdkcz" Name="Output" Kind="StateOutputPin" />
-            <Pin Id="CZvvvQKbiC9LvFdhbEDfd5" Name="State" Kind="OutputPin" />
-          </Node>
-          <Pad Id="FGXdSGavdm8NqKr8mtQ9eH" Comment="State" Bounds="1088,676,35,35" ShowValueBox="true" isIOBox="true" />
+          <Pad Id="JvLuI8ebH4ONlyRpRFpvNH" Comment="" Bounds="1214,686,35,35" ShowValueBox="true" isIOBox="true" />
+          <Pad Id="AdJ7MD7nshBLumsxlfxwMj" Comment="On Data" Bounds="1225,635,35,35" ShowValueBox="true" isIOBox="true" />
         </Canvas>
         <Patch Id="TtXuTElsLgsMwkvMXKiLKL" Name="Create" ParticipatingElements="OBrf6d7k3KMPjSYO8xdCLK" />
         <Patch Id="JPKAbzjbmpOOeYZ8Ft3yyU" Name="Update" />
@@ -212,20 +222,23 @@
         <Link Id="SHIDawgOSByLbr9CdyoMZN" Ids="PulnDpoZdpNLhT8j5ArkAC,BAREyIT0OlDPE1qMxORxYs" />
         <Link Id="BllJGsTP0iHN1TdcyjV7m4" Ids="Gu20onb21eQMUQngKKgObf,J6Gtr291Vy0MS6hFn7GDYa" />
         <Link Id="HQEw2byOGNzMHqtEL869kv" Ids="I32B1PkB47BPBzBU4QNgJR,ETFDb8g5LI3NkrjiYDOHsX" />
-        <Link Id="GZQmvjyabVTQIjMZYNbLDr" Ids="VDDm691r14HModOPU2Yc26,LTHY5VOTYIONWLKSRdEBXL,CCrbgZA5eJHLM2z7bVWa01" />
+        <Link Id="GZQmvjyabVTQIjMZYNbLDr" Ids="VDDm691r14HModOPU2Yc26,CCrbgZA5eJHLM2z7bVWa01" />
         <Link Id="CIQE8foxCI0QGpgdYkSMQx" Ids="NFTx60G02I5MQSUZOxJGev,MdDnLaxsbyNPC2QhkPVQD4" />
         <Link Id="C7k5rEcd2soOiw4oNHmzSk" Ids="MdDnLaxsbyNPC2QhkPVQD4,LpbPKt5Sb70LWk4geEMbnV" />
         <Link Id="JSRg3793eBgNpjov0dVbnF" Ids="DoLhlfHoUURMCTSA83ZFJg,DyRVA6yteUFPYwJ2sWd2IY" />
-        <Link Id="Kz8B9oAwpvAMd59q2sveIX" Ids="DoLhlfHoUURMCTSA83ZFJg,VhNmxOPl3AoQPoK3ZdjwVf" />
         <Link Id="HXtpeWgyRRzOUVcjE1Tb3X" Ids="MdDnLaxsbyNPC2QhkPVQD4,VpdOqoixgj2PGyLKqTrYzH" />
         <Link Id="Gfge1ijUW7ZOk0g5Xt0D0r" Ids="P4AN99J2jLNL6DFlV6dBGd,ORVvbRG0SQ9QIRcku5Ypud" IsHidden="true" />
         <Link Id="H88RQtrnr6zMdBIiL8L8fV" Ids="DnBMFj7OkGdL4Gk6hxSp2H,ItwXj7rcsHyMpp8oxwUnBf" IsHidden="true" />
         <Link Id="NBn0GgwCH4lNL4eWGb2Rni" Ids="ORVvbRG0SQ9QIRcku5Ypud,FeSViQ7iZFJOsohjh9vliZ" />
-        <Link Id="OcFuG0a2HNONkRdlzMxoc4" Ids="UQJBzsrnawNPFWJMZ7OCis,DnBMFj7OkGdL4Gk6hxSp2H" />
         <Link Id="KCteTixnGswM4mIyjrso34" Ids="J7iLcduLSXJMRucxSF5to9,LHuwVmZOUeRNlnQgGTJpvT" />
         <Link Id="I7F3sxT7Vd1P8ivuI7bU0w" Ids="M3LAKweUs1BPirkTjt6c8G,AqNb0Bjrz6wMxikVtIPqvP" />
-        <Link Id="H3Y1loUdoOqNgNTlR3vqrT" Ids="EtuLyw7Pt3GOJcr91F4X4q,MvPYJrAojVBNh6VCKjMU7f" />
-        <Link Id="MTTPBvXdpNUPHY0aJXt1AA" Ids="CZvvvQKbiC9LvFdhbEDfd5,FGXdSGavdm8NqKr8mtQ9eH" />
+        <Link Id="OeROMP182kmLvU92CEcIEP" Ids="UQJBzsrnawNPFWJMZ7OCis,AlO8pFcDoaPN03LgFHmFoO" />
+        <Link Id="PscOTQH1G8aMKSnBHLc8uO" Ids="KQREP9CwQVqPvwQ3E7Bfac,DnBMFj7OkGdL4Gk6hxSp2H" />
+        <Link Id="C4ZyDKRh3xGNZkkDVFwigH" Ids="EtuLyw7Pt3GOJcr91F4X4q,JvLuI8ebH4ONlyRpRFpvNH" />
+        <Link Id="JjPGJauWJlBNmpC5JDeFRd" Ids="FEiYKm6oJMeP4PC0H7d7E4,AdJ7MD7nshBLumsxlfxwMj" />
+        <Link Id="TplYgMRLcGmLHrTmcnXxJT" Ids="KQREP9CwQVqPvwQ3E7Bfac,MeDrSJtguHpNiYoHx2qm9E" />
+        <Link Id="KS2245iI8CbPUqFyNMu8sW" Ids="AzBUBDzsUylN9tmIcaRh5B,HcJEoxXx68QNlCJwxJd3rw" />
+        <Link Id="G3bZVBuZSmWPaYDy6uZCgy" Ids="MdDnLaxsbyNPC2QhkPVQD4,VhNmxOPl3AoQPoK3ZdjwVf" />
       </Patch>
     </Node>
   </Patch>

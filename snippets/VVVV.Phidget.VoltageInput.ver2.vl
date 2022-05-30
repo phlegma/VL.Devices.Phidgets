@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Document xmlns:p="property" Id="FYgN2YydtiePMYf8lJVF47" LanguageVersion="2019.2.0-0236-52759e123e" Version="0.128">
-  <NugetDependency Id="MoM3tCIIUZsODOLAzAwFbB" Location="VL.CoreLib" IsForward="true" Version="2019.2.0-0236-g52759e123e" />
+<Document xmlns:p="property" Id="FYgN2YydtiePMYf8lJVF47" LanguageVersion="2021.4.9.982" Version="0.128">
+  <NugetDependency Id="MoM3tCIIUZsODOLAzAwFbB" Location="VL.CoreLib" IsForward="true" Version="2021.4.9" />
   <Patch Id="SffwUgqMtmhPDHgpgOPncg">
     <Canvas Id="BzDpvDzyiZ4OpFKLMgLoju" DefaultCategory="Main" BordersChecked="false" CanvasType="FullCategory" />
     <!--
@@ -26,7 +26,7 @@
           </Node>
           <Pad Id="LL28EdzXJBLMVtN5ubEkA1" Comment="Attached" Bounds="494,582,40,19" ShowValueBox="true" isIOBox="true" />
           <Node Bounds="690,791,551,185" Id="GP5l1t0WzDOL6TB8Kfw6hc">
-            <p:NodeReference LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
+            <p:NodeReference LastCategoryFullName="Primitive" LastSymbolSource="VL.CoreLib.dll">
               <Choice Kind="ApplicationStatefulRegion" Name="If" />
               <FullNameCategoryReference ID="Primitive" />
             </p:NodeReference>
@@ -98,7 +98,7 @@
           <Pad Id="VnIx3wHy07RLG0EF9xFQ4o" Comment="Voltage" Bounds="705,1020,59,19" ShowValueBox="true" isIOBox="true" />
           <Pad Id="G2ubz7Rs2glOSflcyJZf4B" SlotId="TEN2eqQSOBhPQEbuTRGuBQ" Bounds="689,295" />
           <Node Bounds="433,353,187,143" Id="SJkjj3W5NhWPmLG3qdBMSL">
-            <p:NodeReference LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
+            <p:NodeReference LastCategoryFullName="Primitive" LastSymbolSource="VL.CoreLib.dll">
               <Choice Kind="ApplicationStatefulRegion" Name="If" />
               <FullNameCategoryReference ID="Primitive" />
             </p:NodeReference>
@@ -165,7 +165,7 @@
           </Pad>
           <Pad Id="JAX5apiEfDtPzW2deAge75" Bounds="448,509" />
           <Node Bounds="484,798,117,102" Id="Rdey6Jwx2rnPI6Zqa0UOr4">
-            <p:NodeReference LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
+            <p:NodeReference LastCategoryFullName="Primitive" LastSymbolSource="VL.CoreLib.dll">
               <Choice Kind="ApplicationStatefulRegion" Name="If" />
               <FullNameCategoryReference ID="Primitive" />
             </p:NodeReference>
@@ -243,7 +243,7 @@
             <Pin Id="IHYp3AsARxrPRD4gJWmXys" Name="Output" Kind="StateOutputPin" />
           </Node>
           <Node Bounds="302,817,74,100" Id="PtNt3Qa63qwM9BkvnGOm0d">
-            <p:NodeReference LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
+            <p:NodeReference LastCategoryFullName="Primitive" LastSymbolSource="VL.CoreLib.dll">
               <Choice Kind="ApplicationStatefulRegion" Name="If" />
               <FullNameCategoryReference ID="Primitive" />
             </p:NodeReference>
@@ -333,6 +333,6 @@
       </Patch>
     </Node>
   </Patch>
-  <NugetDependency Id="EHqTGOyKhsTL5hwpTPQfkd" Location="VL.Skia" IsForward="true" Version="2019.2.0-0236-g52759e123e" />
-  <NugetDependency Id="QH3e0cm62R7MqhTwcIcuJ6" Location="Phidget22.NET" IsForward="true" Version="1.5.20191113" />
+  <NugetDependency Id="EHqTGOyKhsTL5hwpTPQfkd" Location="VL.Skia" IsForward="true" Version="2021.4.9" />
+  <NugetDependency Id="QH3e0cm62R7MqhTwcIcuJ6" Location="Phidget22.NET" IsForward="true" Version="1.10.20220519" />
 </Document>
