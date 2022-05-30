@@ -79,7 +79,7 @@
               <p:buttonmode p:Assembly="VL.UI.Forms" p:Type="VL.HDE.PatchEditor.Editors.ButtonModeEnum">Bang</p:buttonmode>
             </p:ValueBoxSettings>
           </Pad>
-          <Pad Id="L8CoYlIaVL5LkRLSXXSoT0" Comment="Close" Bounds="-8,404,35,35" ShowValueBox="true" isIOBox="true" Value="False">
+          <Pad Id="L8CoYlIaVL5LkRLSXXSoT0" Comment="Close" Bounds="132,392,35,35" ShowValueBox="true" isIOBox="true" Value="False">
             <p:TypeAnnotation>
               <Choice Kind="ImmutableTypeFlag" Name="Boolean" />
               <FullNameCategoryReference ID="Primitive" />
