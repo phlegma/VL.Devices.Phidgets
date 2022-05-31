@@ -49,28 +49,30 @@
             <Pin Id="HAritatO2ZCN4xdgW1ZL4T" Name="Device Name" Kind="OutputPin" />
             <Pin Id="NGbEp1mls0kMgoIxZ9xhJo" Name="Device ID" Kind="OutputPin" />
             <Pin Id="SVZAlRgRwDuMxot3QKpLjC" Name="Device VINTID" Kind="OutputPin" />
+            <Pin Id="Vcs98YCryh6QCoaYIn1H6l" Name="Device Label" Kind="OutputPin" />
+            <Pin Id="KBzvuUWMLK2L4BjX15vbyq" Name="Device SKU" Kind="OutputPin" />
             <Pin Id="SOtT3E4DcLJL33CP8QRARl" Name="Parent" Kind="OutputPin" />
             <Pin Id="FBmF7XootlEL196llPluPJ" Name="Channel Name" Kind="OutputPin" />
             <Pin Id="I3VfZKJPEfZNLRtw8DqGOq" Name="Channel Class Name" Kind="OutputPin" />
             <Pin Id="N7xSbUpAB7pPyMqcrzz1wo" Name="Channel Subclass" Kind="OutputPin" />
             <Pin Id="Ss4HVutrmRYLt3WdPy9Z7g" Name="Channel Class" Kind="OutputPin" />
           </Node>
-          <Pad Id="BePkmTiQrssOfyEsmOGnJY" Comment="Channel" Bounds="-346,649,35,433" ShowValueBox="true" isIOBox="true" Value="0">
+          <Pad Id="BePkmTiQrssOfyEsmOGnJY" Comment="Channel" Bounds="-494,647,35,433" ShowValueBox="true" isIOBox="true" Value="0">
             <p:ValueBoxSettings>
               <p:maxvisibleentries p:Type="Int32">27</p:maxvisibleentries>
             </p:ValueBoxSettings>
           </Pad>
-          <Pad Id="TYueAoYIeGXPT9PsRsAxPE" Comment="Device Version" Bounds="-226,647,55,433" ShowValueBox="true" isIOBox="true" Value="0">
+          <Pad Id="TYueAoYIeGXPT9PsRsAxPE" Comment="Device Version" Bounds="-374,645,55,433" ShowValueBox="true" isIOBox="true" Value="0">
             <p:ValueBoxSettings>
               <p:maxvisibleentries p:Type="Int32">27</p:maxvisibleentries>
             </p:ValueBoxSettings>
           </Pad>
-          <Pad Id="QbzfqGBv5KaP5oqN9nfBTp" Comment="Device Serial Number" Bounds="-56,655,55,433" ShowValueBox="true" isIOBox="true" Value="0">
+          <Pad Id="QbzfqGBv5KaP5oqN9nfBTp" Comment="Device Serial Number" Bounds="-209,651,55,433" ShowValueBox="true" isIOBox="true" Value="0">
             <p:ValueBoxSettings>
               <p:maxvisibleentries p:Type="Int32">27</p:maxvisibleentries>
             </p:ValueBoxSettings>
           </Pad>
-          <Pad Id="RU9ZrzYUhtkQI9D0W51G6M" Comment="Open" Bounds="-69,324,35,35" ShowValueBox="true" isIOBox="true" Value="False">
+          <Pad Id="RU9ZrzYUhtkQI9D0W51G6M" Comment="Open" Bounds="-67,396,35,35" ShowValueBox="true" isIOBox="true" Value="False">
             <p:TypeAnnotation>
               <Choice Kind="ImmutableTypeFlag" Name="Boolean" />
               <FullNameCategoryReference ID="Primitive" />
@@ -79,7 +81,7 @@
               <p:buttonmode p:Assembly="VL.UI.Forms" p:Type="VL.HDE.PatchEditor.Editors.ButtonModeEnum">Bang</p:buttonmode>
             </p:ValueBoxSettings>
           </Pad>
-          <Pad Id="L8CoYlIaVL5LkRLSXXSoT0" Comment="Close" Bounds="132,392,35,35" ShowValueBox="true" isIOBox="true" Value="False">
+          <Pad Id="L8CoYlIaVL5LkRLSXXSoT0" Comment="Close" Bounds="169,409,58,47" ShowValueBox="true" isIOBox="true" Value="False">
             <p:TypeAnnotation>
               <Choice Kind="ImmutableTypeFlag" Name="Boolean" />
               <FullNameCategoryReference ID="Primitive" />
@@ -88,31 +90,52 @@
               <p:buttonmode p:Assembly="VL.UI.Forms" p:Type="VL.HDE.PatchEditor.Editors.ButtonModeEnum">Bang</p:buttonmode>
             </p:ValueBoxSettings>
           </Pad>
-          <Pad Id="EE8mceR4t5xLtTiiEmbFHH" Comment="Channel Name" Bounds="807,643,128,433" ShowValueBox="true" isIOBox="true">
+          <Pad Id="EE8mceR4t5xLtTiiEmbFHH" Comment="Channel Name" Bounds="-489,1175,128,433" ShowValueBox="true" isIOBox="true">
             <p:ValueBoxSettings>
-              <p:maxvisibleentries p:Type="Int32">27</p:maxvisibleentries>
+              <p:maxvisibleentries p:Type="Int32">33</p:maxvisibleentries>
             </p:ValueBoxSettings>
             <p:Value>
               <Item></Item>
             </p:Value>
           </Pad>
-          <Pad Id="M48b8P7S8vvQJb460AdJla" Comment="Channel Class Name" Bounds="1037,643,128,433" ShowValueBox="true" isIOBox="true">
+          <Pad Id="M48b8P7S8vvQJb460AdJla" Comment="Channel Class Name" Bounds="-283,1173,128,433" ShowValueBox="true" isIOBox="true">
             <p:ValueBoxSettings>
-              <p:maxvisibleentries p:Type="Int32">27</p:maxvisibleentries>
+              <p:maxvisibleentries p:Type="Int32">36</p:maxvisibleentries>
             </p:ValueBoxSettings>
             <p:Value>
               <Item></Item>
             </p:Value>
           </Pad>
-          <Pad Id="UQAAK8dobRnMDlTTiwcHwE" Comment="Device Name" Bounds="291,645,179,433" ShowValueBox="true" isIOBox="true">
+          <Pad Id="UQAAK8dobRnMDlTTiwcHwE" Comment="Device Name" Bounds="-34,650,179,433" ShowValueBox="true" isIOBox="true">
             <p:ValueBoxSettings>
-              <p:maxvisibleentries p:Type="Int32">27</p:maxvisibleentries>
+              <p:maxvisibleentries p:Type="Int32">30</p:maxvisibleentries>
             </p:ValueBoxSettings>
             <p:Value>
               <Item></Item>
             </p:Value>
           </Pad>
-          <Pad Id="B7CmTzM3R4PLB9q1cT3C92" Comment="Device ID" Bounds="53,654,154,433" ShowValueBox="true" isIOBox="true">
+          <Pad Id="B7CmTzM3R4PLB9q1cT3C92" Comment="Device ID" Bounds="241,649,154,433" ShowValueBox="true" isIOBox="true">
+            <p:ValueBoxSettings>
+              <p:maxvisibleentries p:Type="Int32">31</p:maxvisibleentries>
+            </p:ValueBoxSettings>
+            <p:Value>
+              <Item>None</Item>
+            </p:Value>
+          </Pad>
+          <Pad Id="VPA8invKp3SLPNZKYC6USj" Comment="Device VINTID" Bounds="485,652,38,433" ShowValueBox="true" isIOBox="true" Value="0">
+            <p:ValueBoxSettings>
+              <p:maxvisibleentries p:Type="Int32">30</p:maxvisibleentries>
+            </p:ValueBoxSettings>
+          </Pad>
+          <Pad Id="Bfg4ay5oiRONuBvJzefiXa" Comment="Channel Subclass" Bounds="8,1167,182,433" ShowValueBox="true" isIOBox="true">
+            <p:ValueBoxSettings>
+              <p:maxvisibleentries p:Type="Int32">29</p:maxvisibleentries>
+            </p:ValueBoxSettings>
+            <p:Value>
+              <Item>0</Item>
+            </p:Value>
+          </Pad>
+          <Pad Id="PAsgQP19hJPN7Icc9hxsH6" Comment="Channel Class" Bounds="290,1174,137,141" ShowValueBox="true" isIOBox="true">
             <p:ValueBoxSettings>
               <p:maxvisibleentries p:Type="Int32">28</p:maxvisibleentries>
             </p:ValueBoxSettings>
@@ -120,10 +143,21 @@
               <Item>None</Item>
             </p:Value>
           </Pad>
-          <Pad Id="VPA8invKp3SLPNZKYC6USj" Comment="Device VINTID" Bounds="551,650,38,424" ShowValueBox="true" isIOBox="true" Value="0">
+          <Pad Id="U560Vh6zaHBPWjtLtnvYEZ" Comment="Device Label" Bounds="625,649,128,443" ShowValueBox="true" isIOBox="true">
             <p:ValueBoxSettings>
               <p:maxvisibleentries p:Type="Int32">27</p:maxvisibleentries>
             </p:ValueBoxSettings>
+            <p:Value>
+              <Item></Item>
+            </p:Value>
+          </Pad>
+          <Pad Id="DOsKn9SXcR4MLYDOt3q9w7" Comment="Device SKU" Bounds="840,652,128,443" ShowValueBox="true" isIOBox="true">
+            <p:ValueBoxSettings>
+              <p:maxvisibleentries p:Type="Int32">31</p:maxvisibleentries>
+            </p:ValueBoxSettings>
+            <p:Value>
+              <Item></Item>
+            </p:Value>
           </Pad>
         </Canvas>
         <ProcessDefinition Id="M7DhTjVrkxFPTU6ibB97qp">
@@ -142,6 +176,10 @@
         <Link Id="H1Nt3yozu8nMN3gSIBAbXT" Ids="HAritatO2ZCN4xdgW1ZL4T,UQAAK8dobRnMDlTTiwcHwE" />
         <Link Id="BmxXj3OLj03NwKRVOABBSe" Ids="NGbEp1mls0kMgoIxZ9xhJo,B7CmTzM3R4PLB9q1cT3C92" />
         <Link Id="PjSeBzM0fwlQLIDVFUHefD" Ids="SVZAlRgRwDuMxot3QKpLjC,VPA8invKp3SLPNZKYC6USj" />
+        <Link Id="UZdUNC2KfkLO7wJ3kbFMDX" Ids="N7xSbUpAB7pPyMqcrzz1wo,Bfg4ay5oiRONuBvJzefiXa" />
+        <Link Id="LwyOhtDLZ7cMS7UB7NbntF" Ids="Ss4HVutrmRYLt3WdPy9Z7g,PAsgQP19hJPN7Icc9hxsH6" />
+        <Link Id="IePwnC1n5DKLSzqSf1B3fr" Ids="Vcs98YCryh6QCoaYIn1H6l,U560Vh6zaHBPWjtLtnvYEZ" />
+        <Link Id="UI2vELU7ObFMWsHZoXMyko" Ids="KBzvuUWMLK2L4BjX15vbyq,DOsKn9SXcR4MLYDOt3q9w7" />
       </Patch>
     </Node>
   </Patch>

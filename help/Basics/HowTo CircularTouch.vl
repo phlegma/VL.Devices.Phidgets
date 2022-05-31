@@ -1,0 +1,110 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Document xmlns:p="property" Id="BIFvPvyOynCLmf7vnpoVIR" LanguageVersion="2021.4.9.982" Version="0.128">
+  <NugetDependency Id="VMo4HaTEkVTLtfYj9q9ZYR" Location="VL.CoreLib" Version="2021.4.9" />
+  <Patch Id="EBJpcI9XfAwLRZdOzyKrhP">
+    <Canvas Id="DZ4WByYr0iQNUdSbUzWirB" DefaultCategory="Main" BordersChecked="false" CanvasType="FullCategory">
+      <!--
+
+    ************************ digi ************************
+
+-->
+      <Node Name="digi" Bounds="200,100" Id="DMuRCh5k615Lhxf4ZikVVQ">
+        <p:NodeReference>
+          <Choice Kind="ContainerDefinition" Name="Process" />
+          <FullNameCategoryReference ID="Primitive" />
+        </p:NodeReference>
+        <Patch Id="TwtFRYg1ovwOTIMkA68oMS">
+          <Canvas Id="LtzhdXBriAvMgivX70DkE3" BordersChecked="false" CanvasType="Group" />
+          <Patch Id="ECn2yfdvqn6PNs96HyKX5T" Name="Create" />
+          <Patch Id="DXwE434y2vFMnXV06vhdzw" Name="Update" />
+          <ProcessDefinition Id="G2MV8tMMUsVNtLBfBapDsw">
+            <Fragment Id="JuNXM1tBPu6N9E8MvPkdPI" Patch="ECn2yfdvqn6PNs96HyKX5T" Enabled="true" />
+            <Fragment Id="NE2xEB30dr7LaPCWyYBUcD" Patch="DXwE434y2vFMnXV06vhdzw" Enabled="true" />
+          </ProcessDefinition>
+        </Patch>
+      </Node>
+    </Canvas>
+    <!--
+
+    ************************ Application ************************
+
+-->
+    <Node Name="Application" Bounds="100,100" Id="Td5sXtGXvXyP4AxJ204yrD">
+      <p:NodeReference>
+        <Choice Kind="ContainerDefinition" Name="Process" />
+        <FullNameCategoryReference ID="Primitive" />
+      </p:NodeReference>
+      <Patch Id="RcdmicmnND1Pyv3TJj3de9">
+        <Canvas Id="Th1wAbWQAPlMOAdCYXCkfd" CanvasType="Group">
+          <Node Bounds="527,342,125,19" Id="QgRQ5cIAdS9OyoAGLclthh">
+            <p:NodeReference LastCategoryFullName="VL.Devices.Phidgets" LastSymbolSource="VL.Devices.Phidgets.vl">
+              <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+              <Choice Kind="ProcessAppFlag" Name="CircularTouch" />
+            </p:NodeReference>
+            <Pin Id="NrA6LuUahyzNf2wHzjt2CS" Name="Timeout" Kind="InputPin" />
+            <Pin Id="RDaZIMWj6pwMhk3MLKEAMC" Name="Channel" Kind="InputPin" />
+            <Pin Id="U3nvV9VCT8aMthVNKZpM4u" Name="HubPort" Kind="InputPin" />
+            <Pin Id="Cz0q1FBrLPdNzbOJvDhjsb" Name="SerialNumber" Kind="InputPin" />
+            <Pin Id="UIAnPWqASYRLo4Yc9Lwch7" Name="IsHubPortDevice" Kind="InputPin" />
+            <Pin Id="PcU6thBZKj6Mu0yjbjP6VN" Name="IsLocal" Kind="InputPin" />
+            <Pin Id="Ig71YW29u3KOUwf0Ujb0gH" Name="Open" Kind="InputPin" DefaultValue="False" />
+            <Pin Id="JkuYW6G2LhtO6wRUun4KaR" Name="Close" Kind="InputPin" />
+            <Pin Id="JLek0DsIWcGOFM5uo2EBVJ" Name="Result" Kind="OutputPin" />
+            <Pin Id="OkMoQ9ms9g2QSUTZJkhEnk" Name="Is Touched" Kind="OutputPin" />
+            <Pin Id="AC5fcFvozUUMZ2FSEA1FuF" Name="Device Serial Number" Kind="OutputPin" />
+            <Pin Id="HSYXG1b3VfZOpGqBsIB3oT" Name="Attached" Kind="OutputPin" />
+          </Node>
+          <Pad Id="SWgLQSPQEvrQYZ4ysAo4Ep" Comment="Close" Bounds="696,284,35,35" ShowValueBox="true" isIOBox="true" Value="False">
+            <p:TypeAnnotation>
+              <Choice Kind="ImmutableTypeFlag" Name="Boolean" />
+              <FullNameCategoryReference ID="Primitive" />
+            </p:TypeAnnotation>
+            <p:ValueBoxSettings>
+              <p:buttonmode p:Assembly="VL.UI.Forms" p:Type="VL.HDE.PatchEditor.Editors.ButtonModeEnum">Bang</p:buttonmode>
+            </p:ValueBoxSettings>
+          </Pad>
+          <Pad Id="VzhtgIwh8QBOblSpgYWwfD" Comment="Open" Bounds="632,228,35,35" ShowValueBox="true" isIOBox="true" Value="False">
+            <p:TypeAnnotation>
+              <Choice Kind="ImmutableTypeFlag" Name="Boolean" />
+              <FullNameCategoryReference ID="Primitive" />
+            </p:TypeAnnotation>
+            <p:ValueBoxSettings>
+              <p:buttonmode p:Assembly="VL.UI.Forms" p:Type="VL.HDE.PatchEditor.Editors.ButtonModeEnum">Bang</p:buttonmode>
+            </p:ValueBoxSettings>
+          </Pad>
+          <Node Bounds="398,437,65,19" Id="IuMvJWbAn5yQGSgJu0tSVw">
+            <p:NodeReference LastCategoryFullName="Reactive" LastSymbolSource="VL.Reactive.vl">
+              <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+              <Choice Kind="ProcessAppFlag" Name="HoldLatest" />
+            </p:NodeReference>
+            <Pin Id="Dfzei27uungL1blrwZGo0u" Name="Async Notifications" Kind="InputPin" />
+            <Pin Id="Hd6MH1Dt1fQNGb4MCbfaiB" Name="Reset" Kind="InputPin" />
+            <Pin Id="LOHGQKP43WhMPA7ZLnCR3M" Name="Value" Kind="OutputPin" />
+            <Pin Id="UrzI5xRMlcYMR8ubzbOeKg" Name="On Data" Kind="OutputPin" />
+          </Node>
+          <Pad Id="J36170xBgMWOiiOzvvgbov" Comment="" Bounds="399,515,35,35" ShowValueBox="true" isIOBox="true" />
+          <Pad Id="BVyvmDopIuoMpnVj3JoRer" Comment="Attached" Bounds="648,429,35,35" ShowValueBox="true" isIOBox="true" />
+          <Pad Id="JsE5iwsEyUDOY0uD10BNmF" Comment="Device Serial Number" Bounds="600,391,77,23" ShowValueBox="true" isIOBox="true" />
+          <Pad Id="GYu2OIytWG8O1MEFKRoVdr" Comment="On Data" Bounds="465,520,35,35" ShowValueBox="true" isIOBox="true" />
+          <Pad Id="GwHiEIlR18hPa35tAiiomI" Comment="Is Touched" Bounds="544,469,35,35" ShowValueBox="true" isIOBox="true" />
+        </Canvas>
+        <ProcessDefinition Id="M7DhTjVrkxFPTU6ibB97qp">
+          <Fragment Id="Ka160IZ6ipXPEuPO79oXgb" Patch="UMHvqj8Id8pO2ddYAbC8xP" Enabled="true" />
+          <Fragment Id="PCarn4INeauNtWzLUpnz9G" Patch="SUuys83bkbYO7pfz05VSQu" Enabled="true" />
+        </ProcessDefinition>
+        <Patch Id="UMHvqj8Id8pO2ddYAbC8xP" Name="Create" />
+        <Patch Id="SUuys83bkbYO7pfz05VSQu" Name="Update" />
+        <Link Id="Tdxi99EyBIJQDgsG1nXuQj" Ids="SWgLQSPQEvrQYZ4ysAo4Ep,JkuYW6G2LhtO6wRUun4KaR" />
+        <Link Id="CNU4g3g0XWfOEzckZyelwl" Ids="VzhtgIwh8QBOblSpgYWwfD,Ig71YW29u3KOUwf0Ujb0gH" />
+        <Link Id="VTexTHUYcYhNWLH3B26rGd" Ids="JLek0DsIWcGOFM5uo2EBVJ,Dfzei27uungL1blrwZGo0u" />
+        <Link Id="M3jF4BTPvOPO3baOs6cJX2" Ids="LOHGQKP43WhMPA7ZLnCR3M,J36170xBgMWOiiOzvvgbov" />
+        <Link Id="Ls2e0iZCqeXMNG5EYk5yc6" Ids="HSYXG1b3VfZOpGqBsIB3oT,BVyvmDopIuoMpnVj3JoRer" />
+        <Link Id="CwaGPnIzxHHQEnT6Aop8Hj" Ids="AC5fcFvozUUMZ2FSEA1FuF,JsE5iwsEyUDOY0uD10BNmF" />
+        <Link Id="RkieAcLyedoLWeN6k9j9AW" Ids="UrzI5xRMlcYMR8ubzbOeKg,GYu2OIytWG8O1MEFKRoVdr" />
+        <Link Id="Ql0nmhvAINrMHqR2MzEfZB" Ids="OkMoQ9ms9g2QSUTZJkhEnk,GwHiEIlR18hPa35tAiiomI" />
+      </Patch>
+    </Node>
+  </Patch>
+  <NugetDependency Id="AWADncGnm9GO1XnlR6Z1ft" Location="VL.Skia" Version="2021.4.9" />
+  <DocumentDependency Id="Azm6tyc3jsJNopk9FBIJmR" Location="../../VL.Devices.Phidgets.vl" />
+</Document>

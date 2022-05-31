@@ -1,0 +1,162 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Document xmlns:p="property" Id="TdtUy5e6VvkLk7SehOpxcd" LanguageVersion="2021.4.9.982" Version="0.128">
+  <NugetDependency Id="VMo4HaTEkVTLtfYj9q9ZYR" Location="VL.CoreLib" Version="2021.4.9" />
+  <Patch Id="EBJpcI9XfAwLRZdOzyKrhP">
+    <Canvas Id="DZ4WByYr0iQNUdSbUzWirB" DefaultCategory="Main" BordersChecked="false" CanvasType="FullCategory">
+      <!--
+
+    ************************ digi ************************
+
+-->
+      <Node Name="digi" Bounds="200,100" Id="DMuRCh5k615Lhxf4ZikVVQ">
+        <p:NodeReference>
+          <Choice Kind="ContainerDefinition" Name="Process" />
+          <FullNameCategoryReference ID="Primitive" />
+        </p:NodeReference>
+        <Patch Id="TwtFRYg1ovwOTIMkA68oMS">
+          <Canvas Id="LtzhdXBriAvMgivX70DkE3" BordersChecked="false" CanvasType="Group" />
+          <Patch Id="ECn2yfdvqn6PNs96HyKX5T" Name="Create" />
+          <Patch Id="DXwE434y2vFMnXV06vhdzw" Name="Update" />
+          <ProcessDefinition Id="G2MV8tMMUsVNtLBfBapDsw">
+            <Fragment Id="JuNXM1tBPu6N9E8MvPkdPI" Patch="ECn2yfdvqn6PNs96HyKX5T" Enabled="true" />
+            <Fragment Id="NE2xEB30dr7LaPCWyYBUcD" Patch="DXwE434y2vFMnXV06vhdzw" Enabled="true" />
+          </ProcessDefinition>
+        </Patch>
+      </Node>
+    </Canvas>
+    <!--
+
+    ************************ Application ************************
+
+-->
+    <Node Name="Application" Bounds="100,100" Id="Td5sXtGXvXyP4AxJ204yrD">
+      <p:NodeReference>
+        <Choice Kind="ContainerDefinition" Name="Process" />
+        <FullNameCategoryReference ID="Primitive" />
+      </p:NodeReference>
+      <Patch Id="RcdmicmnND1Pyv3TJj3de9">
+        <Canvas Id="Th1wAbWQAPlMOAdCYXCkfd" CanvasType="Group">
+          <Node Bounds="494,48,125,19" Id="B3SqcoE1XmeP2o4lxVeQGv">
+            <p:NodeReference LastCategoryFullName="VL.Devices.Phidgets" LastSymbolSource="VL.Devices.Phidgets.vl">
+              <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+              <Choice Kind="ProcessAppFlag" Name="DistanceSensor" />
+            </p:NodeReference>
+            <Pin Id="Pxj43NfIXZPP4e9banytKL" Name="Timeout" Kind="InputPin" />
+            <Pin Id="JfmsUHIGOXROg7cfyVPpr9" Name="Channel" Kind="InputPin" />
+            <Pin Id="D4iPaAEBQ5GQNbhloi2yY8" Name="HubPort" Kind="InputPin" />
+            <Pin Id="UHMh7yK8QNfPDeSVH4Jo2T" Name="IsLocal" Kind="InputPin" />
+            <Pin Id="Cil7I7P8BpnL0GwVtBJy6E" Name="Open" Kind="InputPin" DefaultValue="False" />
+            <Pin Id="PfnVXrAxfORLAmzH3gOagi" Name="Close" Kind="InputPin" />
+            <Pin Id="KLHN4TzXfZnOcr1o3QS7N1" Name="Result" Kind="OutputPin" />
+            <Pin Id="U2tA9YkW538NhQAhxlMVdm" Name="Device Serial Number" Kind="OutputPin" />
+            <Pin Id="VjxmccwPr8MPWNMv3DNSFD" Name="Attached" Kind="OutputPin" />
+          </Node>
+          <Node Bounds="314,49,125,19" Id="QgRQ5cIAdS9OyoAGLclthh">
+            <p:NodeReference LastCategoryFullName="VL.Devices.Phidgets" LastSymbolSource="VL.Devices.Phidgets.vl">
+              <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+              <Choice Kind="ProcessAppFlag" Name="DigitalInput" />
+            </p:NodeReference>
+            <Pin Id="RDaZIMWj6pwMhk3MLKEAMC" Name="Channel" Kind="InputPin" />
+            <Pin Id="U3nvV9VCT8aMthVNKZpM4u" Name="HubPort" Kind="InputPin" />
+            <Pin Id="Cz0q1FBrLPdNzbOJvDhjsb" Name="SerialNumber" Kind="InputPin" />
+            <Pin Id="KprdsNGisWUQJ2rfctMdsU" Name="IsHubPortDevice" Kind="InputPin" />
+            <Pin Id="Ig71YW29u3KOUwf0Ujb0gH" Name="Open" Kind="InputPin" DefaultValue="False" />
+            <Pin Id="PcU6thBZKj6Mu0yjbjP6VN" Name="IsLocal" Kind="InputPin" />
+            <Pin Id="JkuYW6G2LhtO6wRUun4KaR" Name="Close" Kind="InputPin" />
+            <Pin Id="JLek0DsIWcGOFM5uo2EBVJ" Name="Result" Kind="OutputPin" />
+            <Pin Id="AC5fcFvozUUMZ2FSEA1FuF" Name="Device Serial Number" Kind="OutputPin" />
+            <Pin Id="HSYXG1b3VfZOpGqBsIB3oT" Name="Attached" Kind="OutputPin" />
+          </Node>
+          <Node Bounds="313,87,145,19" Id="JvNmbdls2N6QMkaPjxgedo">
+            <p:NodeReference LastCategoryFullName="VL.Devices.Phidgets" LastSymbolSource="VL.Devices.Phidgets.vl">
+              <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+              <Choice Kind="ProcessAppFlag" Name="DigitalOutput" />
+            </p:NodeReference>
+            <Pin Id="JT39Q9KMIc7PUGBSQ5ouiM" Name="Value" Kind="InputPin" />
+            <Pin Id="HZDGg5FS8LUNjx8JXyp1Xc" Name="Channel" Kind="InputPin" />
+            <Pin Id="GWlgoUl7owIPYKE5B27mAa" Name="HubPort" Kind="InputPin" />
+            <Pin Id="LMWBowLX0AEMoUkYNQXTpD" Name="SerialNumber" Kind="InputPin" />
+            <Pin Id="LE4YBsMFlqsOWImGmxxom8" Name="IsLocal" Kind="InputPin" />
+            <Pin Id="V22SWg6Z752MeCN1zy9Jnw" Name="Open" Kind="InputPin" DefaultValue="False" />
+            <Pin Id="SbdC2C0PqfTPAqwdhVGzRU" Name="Close" Kind="InputPin" />
+            <Pin Id="FDMrthOLXPnMp0muMnTeM3" Name="Device Serial Number" Kind="OutputPin" />
+            <Pin Id="GwW0ppBaP8qQKYnaUiKdpN" Name="Attached" Kind="OutputPin" />
+          </Node>
+          <Node Bounds="38,49,245,19" Id="VYsJDSgBWctQNQiBSLAiwl">
+            <p:NodeReference LastCategoryFullName="VL.Devices.Phidgets" LastSymbolSource="VL.Devices.Phidgets.vl">
+              <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+              <Choice Kind="ProcessAppFlag" Name="Manager" />
+            </p:NodeReference>
+            <Pin Id="UQ8prFAb1oDPShCUBEYNVE" Name="Open" Kind="InputPin" />
+            <Pin Id="EEqMHwgmDPHPe9ruxPuTRX" Name="Close" Kind="InputPin" />
+            <Pin Id="NUCwuyZOcSXQCIiJ2uetDS" Name="Channel" Kind="OutputPin" />
+            <Pin Id="D8k9CmgtbIYPrpQvG6znzR" Name="Device Version" Kind="OutputPin" />
+            <Pin Id="FZvzJ7fV1ofOegdZ6MGOni" Name="Device Serial Number" Kind="OutputPin" />
+            <Pin Id="COwJT0rerdbNmAZIAxbAOV" Name="Device Name" Kind="OutputPin" />
+            <Pin Id="DdrD7pwUUOOOW5YCYhG3EH" Name="Device ID" Kind="OutputPin" />
+            <Pin Id="DLE5t5yNIYENQJd66VPNpp" Name="Device VINTID" Kind="OutputPin" />
+            <Pin Id="HYnWvqr4oA5LMliFPe7HdN" Name="Device Label" Kind="OutputPin" />
+            <Pin Id="HuZwOq6YpOcQW2cw7FWtEo" Name="Device SKU" Kind="OutputPin" />
+            <Pin Id="NvmbArZFcy7QVJdQq9I6nS" Name="Parent" Kind="OutputPin" />
+            <Pin Id="BdNd85nYm8eO8oDABTnBDz" Name="Channel Name" Kind="OutputPin" />
+            <Pin Id="UCUAnd7FZFHPYe9RbuQyWE" Name="Channel Class Name" Kind="OutputPin" />
+            <Pin Id="Vmhh3PzgIO3Mui0d7oPp0W" Name="Channel Subclass" Kind="OutputPin" />
+            <Pin Id="KKsoClNcKqqPnUSTZ8Dgco" Name="Channel Class" Kind="OutputPin" />
+          </Node>
+          <Node Bounds="494,85,145,19" Id="UbMFb1BAfEdQIEgfmx7I7o">
+            <p:NodeReference LastCategoryFullName="VL.Devices.Phidgets" LastSymbolSource="VL.Devices.Phidgets.vl">
+              <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+              <Choice Kind="ProcessAppFlag" Name="LightSensor" />
+            </p:NodeReference>
+            <Pin Id="MN6GNihjecQLtS4KAaOpIX" Name="Timeout" Kind="InputPin" />
+            <Pin Id="Q0IdrB1lejJNr0SijExgGN" Name="Channel" Kind="InputPin" />
+            <Pin Id="E234tu47M1hMilvy5jQ11Q" Name="HubPort" Kind="InputPin" />
+            <Pin Id="MzaGqDQXkqeMPVmcTOWty3" Name="SerialNumber" Kind="InputPin" />
+            <Pin Id="Lz299upa2jyPGRtp68hXmq" Name="IsHubPortDevice" Kind="InputPin" />
+            <Pin Id="Aseax5gfFY4MwgNjvVGNM1" Name="IsLocal" Kind="InputPin" />
+            <Pin Id="CFcIs7bJJRBMCvhTpIlXcd" Name="Open" Kind="InputPin" />
+            <Pin Id="BkrhgV9PUDLOWURHenC6gR" Name="Close" Kind="InputPin" />
+            <Pin Id="IpxTYqCd1UdO3tIdKYapf0" Name="Result" Kind="OutputPin" />
+            <Pin Id="GC6AYdgYUmeMit8OFeiTk7" Name="Attached" Kind="OutputPin" />
+          </Node>
+          <Pad Id="GA0HaCTWR82QWuRg8oQ3lF" Comment="Open" Bounds="40,-46,35,35" ShowValueBox="true" isIOBox="true" Value="False">
+            <p:TypeAnnotation>
+              <Choice Kind="ImmutableTypeFlag" Name="Boolean" />
+              <FullNameCategoryReference ID="Primitive" />
+            </p:TypeAnnotation>
+            <p:ValueBoxSettings>
+              <p:buttonmode p:Assembly="VL.UI.Forms" p:Type="VL.HDE.PatchEditor.Editors.ButtonModeEnum">Bang</p:buttonmode>
+            </p:ValueBoxSettings>
+          </Pad>
+          <Node Bounds="494,125,145,19" Id="RVOxs41Lb3LO3VkSf1jCg3">
+            <p:NodeReference LastCategoryFullName="VL.Devices.Phidgets" LastSymbolSource="VL.Devices.Phidgets.vl">
+              <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+              <Choice Kind="ProcessAppFlag" Name="CircularTouch" />
+            </p:NodeReference>
+            <Pin Id="TFP6D4cTe1RL8QgqzZmJ1C" Name="Timeout" Kind="InputPin" />
+            <Pin Id="EdahvQ9yrRFLkJ7FWJApgY" Name="Channel" Kind="InputPin" />
+            <Pin Id="N9AXaq61KitMuClYEPzWla" Name="HubPort" Kind="InputPin" />
+            <Pin Id="Dbn2sFrNhZHLe6buWOHvUa" Name="SerialNumber" Kind="InputPin" />
+            <Pin Id="J4SbLcrIlCMNx5CUJx7SDP" Name="IsHubPortDevice" Kind="InputPin" />
+            <Pin Id="U6fFzDbfNSkNIiv8oU4ixj" Name="IsLocal" Kind="InputPin" />
+            <Pin Id="RfNoiUh09UJNJ5YQr2Cnf2" Name="Open" Kind="InputPin" />
+            <Pin Id="PgOM6QVLhNqLfZZ418ZtNI" Name="Close" Kind="InputPin" />
+            <Pin Id="ANPeX4d7lUpLL1swlRbcO9" Name="Result" Kind="OutputPin" />
+            <Pin Id="M1AxRONwqeSOCXTjtJIu7V" Name="Is Touched" Kind="OutputPin" />
+            <Pin Id="RUl53omqlFqODwgc3TKAxa" Name="Device Serial Number" Kind="OutputPin" />
+            <Pin Id="NPBjY14cfqjNluXH2iJoq3" Name="Attached" Kind="OutputPin" />
+          </Node>
+        </Canvas>
+        <ProcessDefinition Id="M7DhTjVrkxFPTU6ibB97qp">
+          <Fragment Id="Ka160IZ6ipXPEuPO79oXgb" Patch="UMHvqj8Id8pO2ddYAbC8xP" Enabled="true" />
+          <Fragment Id="PCarn4INeauNtWzLUpnz9G" Patch="SUuys83bkbYO7pfz05VSQu" Enabled="true" />
+        </ProcessDefinition>
+        <Patch Id="UMHvqj8Id8pO2ddYAbC8xP" Name="Create" />
+        <Patch Id="SUuys83bkbYO7pfz05VSQu" Name="Update" />
+        <Link Id="OP8sqmz5qSaPSOnRKJTq97" Ids="GA0HaCTWR82QWuRg8oQ3lF,UQ8prFAb1oDPShCUBEYNVE" />
+      </Patch>
+    </Node>
+  </Patch>
+  <NugetDependency Id="AWADncGnm9GO1XnlR6Z1ft" Location="VL.Skia" Version="2021.4.9" />
+  <DocumentDependency Id="Azm6tyc3jsJNopk9FBIJmR" Location="../../VL.Devices.Phidgets.vl" />
+</Document>
