@@ -36,25 +36,24 @@
       </p:NodeReference>
       <Patch Id="RcdmicmnND1Pyv3TJj3de9">
         <Canvas Id="Th1wAbWQAPlMOAdCYXCkfd" CanvasType="Group">
-          <Node Bounds="693,742,78,19" Id="JvNmbdls2N6QMkaPjxgedo">
+          <Node Bounds="76,181,125,19" Id="JvNmbdls2N6QMkaPjxgedo">
             <p:NodeReference LastCategoryFullName="VL.Devices.Phidgets" LastSymbolSource="VL.Devices.Phidgets.vl">
               <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
               <Choice Kind="ProcessAppFlag" Name="DigitalOutput" />
             </p:NodeReference>
             <Pin Id="JT39Q9KMIc7PUGBSQ5ouiM" Name="Value" Kind="InputPin" />
-            <Pin Id="HZDGg5FS8LUNjx8JXyp1Xc" Name="Channel" Kind="InputPin" DefaultValue="-1" />
-            <Pin Id="GbPH5zfmoSzQb7EWg5f24L" Name="IsHubPortDevice" Kind="InputPin" />
-            <Pin Id="GWlgoUl7owIPYKE5B27mAa" Name="HubPort" Kind="InputPin" DefaultValue="0" />
-            <Pin Id="LMWBowLX0AEMoUkYNQXTpD" Name="SerialNumber" Kind="InputPin" />
-            <Pin Id="LE4YBsMFlqsOWImGmxxom8" Name="IsLocal" Kind="InputPin" />
+            <Pin Id="A1y3rIALSEZLvPzeIhriUV" Name="Duty Cycle" Kind="InputPin" />
             <Pin Id="V22SWg6Z752MeCN1zy9Jnw" Name="Open" Kind="InputPin" DefaultValue="False" />
             <Pin Id="SbdC2C0PqfTPAqwdhVGzRU" Name="Close" Kind="InputPin" />
-            <Pin Id="FDMrthOLXPnMp0muMnTeM3" Name="Device Serial Number" Kind="OutputPin" />
+            <Pin Id="HZDGg5FS8LUNjx8JXyp1Xc" Name="Channel" Kind="InputPin" DefaultValue="-1" />
+            <Pin Id="LMWBowLX0AEMoUkYNQXTpD" Name="SerialNumber" Kind="InputPin" />
+            <Pin Id="BgXdiTprcc3PtGHqQwxxLw" Name="HubPort" Kind="InputPin" DefaultValue="0" />
             <Pin Id="GwW0ppBaP8qQKYnaUiKdpN" Name="Attached" Kind="OutputPin" />
+            <Pin Id="FknZfS3OXkuMTEixvRoVRB" Name="Device Serial Number" Kind="OutputPin" />
+            <Pin Id="DsK40IG0eY7MdiJm2Ahxib" Name="Hub Port Count" Kind="OutputPin" />
           </Node>
-          <Pad Id="Qh9xsLvXzlxLcw0ie3gRm6" Comment="Device Serial Number" Bounds="695,836,54,78" ShowValueBox="true" isIOBox="true" />
-          <Pad Id="Sp3wPY293qGPdewZRLlpEK" Comment="Attached" Bounds="897,845,35,35" ShowValueBox="true" isIOBox="true" />
-          <Pad Id="UxZ8BMwd2vvNmXkGQ6ROMV" Comment="Value" Bounds="692,621,62,53" ShowValueBox="true" isIOBox="true" Value="False">
+          <Pad Id="Sp3wPY293qGPdewZRLlpEK" Comment="Attached" Bounds="78,222,35,35" ShowValueBox="true" isIOBox="true" />
+          <Pad Id="UxZ8BMwd2vvNmXkGQ6ROMV" Comment="Value" Bounds="78,18,62,53" ShowValueBox="true" isIOBox="true" Value="True">
             <p:TypeAnnotation>
               <Choice Kind="ImmutableTypeFlag" Name="Boolean" />
               <FullNameCategoryReference ID="Primitive" />
@@ -63,7 +62,7 @@
               <p:buttonmode p:Assembly="VL.UI.Forms" p:Type="VL.HDE.PatchEditor.Editors.ButtonModeEnum">Toggle</p:buttonmode>
             </p:ValueBoxSettings>
           </Pad>
-          <Pad Id="Ds4IZQoqSOyPwekbWLvNsI" Comment="Open" Bounds="817,621,35,35" ShowValueBox="true" isIOBox="true" Value="False">
+          <Pad Id="Ds4IZQoqSOyPwekbWLvNsI" Comment="Open" Bounds="117,100,35,27" ShowValueBox="true" isIOBox="true" Value="False">
             <p:TypeAnnotation>
               <Choice Kind="ImmutableTypeFlag" Name="Boolean" />
               <FullNameCategoryReference ID="Primitive" />
@@ -72,13 +71,29 @@
               <p:buttonmode p:Assembly="VL.UI.Forms" p:Type="VL.HDE.PatchEditor.Editors.ButtonModeEnum">Bang</p:buttonmode>
             </p:ValueBoxSettings>
           </Pad>
-          <Pad Id="UdzbTNQIcF9QZcEZEdg025" Comment="Close" Bounds="836,689,35,35" ShowValueBox="true" isIOBox="true" Value="False">
+          <Pad Id="SSdNN1Xxc0yM81Q6QOOr7h" Comment="Hub Port Count" Bounds="198,224,35,15" ShowValueBox="true" isIOBox="true" />
+          <Pad Id="POjGVF3qTJUQGTMeiPcULm" Comment="Close" Bounds="139,128,35,35" ShowValueBox="true" isIOBox="true" Value="False">
             <p:TypeAnnotation>
               <Choice Kind="ImmutableTypeFlag" Name="Boolean" />
               <FullNameCategoryReference ID="Primitive" />
             </p:TypeAnnotation>
             <p:ValueBoxSettings>
               <p:buttonmode p:Assembly="VL.UI.Forms" p:Type="VL.HDE.PatchEditor.Editors.ButtonModeEnum">Bang</p:buttonmode>
+            </p:ValueBoxSettings>
+          </Pad>
+          <Pad Id="GEXJEeuJhBvPIlviftNTzb" Comment="HubPort" Bounds="199,159,38,16" ShowValueBox="true" isIOBox="true" Value="0">
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
+              <Choice Kind="TypeFlag" Name="Integer32" />
+            </p:TypeAnnotation>
+          </Pad>
+          <Pad Id="UkveUKx04uXP6ifxxXW0md" Comment="Device Serial Number" Bounds="139,258,65,23" ShowValueBox="true" isIOBox="true" />
+          <Pad Id="HoAasqOA5scNjD5YeTylHa" Comment="Duty Cycle" Bounds="99,79,35,15" ShowValueBox="true" isIOBox="true" Value="0.469999989494681">
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
+              <Choice Kind="TypeFlag" Name="Float64" />
+            </p:TypeAnnotation>
+            <p:ValueBoxSettings>
+              <p:maximum p:Type="Single">1</p:maximum>
+              <p:minimum p:Type="Single">0</p:minimum>
             </p:ValueBoxSettings>
           </Pad>
         </Canvas>
@@ -88,11 +103,14 @@
         </ProcessDefinition>
         <Patch Id="UMHvqj8Id8pO2ddYAbC8xP" Name="Create" />
         <Patch Id="SUuys83bkbYO7pfz05VSQu" Name="Update" />
-        <Link Id="KD9Tm5LCzxaNMqXrp9PvMK" Ids="FDMrthOLXPnMp0muMnTeM3,Qh9xsLvXzlxLcw0ie3gRm6" />
         <Link Id="PTSdqLikOeuPOdCIdqofPz" Ids="GwW0ppBaP8qQKYnaUiKdpN,Sp3wPY293qGPdewZRLlpEK" />
         <Link Id="KaJTS9GTI5rQEd7DRhBrW3" Ids="UxZ8BMwd2vvNmXkGQ6ROMV,JT39Q9KMIc7PUGBSQ5ouiM" />
         <Link Id="LSJqNHdxvMCP3qwByrdon9" Ids="Ds4IZQoqSOyPwekbWLvNsI,V22SWg6Z752MeCN1zy9Jnw" />
-        <Link Id="Np686WpVWZ8M0rdH3zwom6" Ids="UdzbTNQIcF9QZcEZEdg025,SbdC2C0PqfTPAqwdhVGzRU" />
+        <Link Id="Jm5SouZTnSRMKh5RPOXDvv" Ids="DsK40IG0eY7MdiJm2Ahxib,SSdNN1Xxc0yM81Q6QOOr7h" />
+        <Link Id="FxVyKiktoS4M4u3oGwarWM" Ids="POjGVF3qTJUQGTMeiPcULm,SbdC2C0PqfTPAqwdhVGzRU" />
+        <Link Id="QFcMHBz8TQkLccJbPMktKz" Ids="GEXJEeuJhBvPIlviftNTzb,BgXdiTprcc3PtGHqQwxxLw" />
+        <Link Id="S9JQaSnescQOcNajZ2QYQl" Ids="FknZfS3OXkuMTEixvRoVRB,UkveUKx04uXP6ifxxXW0md" />
+        <Link Id="AVeoz0OBrKQMofA3iXmtCs" Ids="HoAasqOA5scNjD5YeTylHa,A1y3rIALSEZLvPzeIhriUV" />
       </Patch>
     </Node>
   </Patch>

@@ -36,7 +36,7 @@
       </p:NodeReference>
       <Patch Id="RcdmicmnND1Pyv3TJj3de9">
         <Canvas Id="Th1wAbWQAPlMOAdCYXCkfd" CanvasType="Group">
-          <Pad Id="Ds4IZQoqSOyPwekbWLvNsI" Comment="Open" Bounds="226,38,35,35" ShowValueBox="true" isIOBox="true" Value="False">
+          <Pad Id="Ds4IZQoqSOyPwekbWLvNsI" Comment="Open" Bounds="124,68,32,33" ShowValueBox="true" isIOBox="true" Value="False">
             <p:TypeAnnotation>
               <Choice Kind="ImmutableTypeFlag" Name="Boolean" />
               <FullNameCategoryReference ID="Primitive" />
@@ -45,7 +45,7 @@
               <p:buttonmode p:Assembly="VL.UI.Forms" p:Type="VL.HDE.PatchEditor.Editors.ButtonModeEnum">Bang</p:buttonmode>
             </p:ValueBoxSettings>
           </Pad>
-          <Pad Id="UdzbTNQIcF9QZcEZEdg025" Comment="Close" Bounds="245,120,72,40" ShowValueBox="true" isIOBox="true" Value="False">
+          <Pad Id="UdzbTNQIcF9QZcEZEdg025" Comment="Close" Bounds="146,120,35,33" ShowValueBox="true" isIOBox="true" Value="False">
             <p:TypeAnnotation>
               <Choice Kind="ImmutableTypeFlag" Name="Boolean" />
               <FullNameCategoryReference ID="Primitive" />
@@ -59,18 +59,23 @@
               <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
               <Choice Kind="ProcessAppFlag" Name="DistanceSensor" />
             </p:NodeReference>
-            <Pin Id="P5hqUs6F5ODPrltVF2X4ge" Name="Timeout" Kind="InputPin" />
-            <Pin Id="DmyOIQKKFHsPzQvtoJX55l" Name="Channel" Kind="InputPin" />
-            <Pin Id="G3fpMnldfPhPkPlqGARjXy" Name="IsHubPortDevice" Kind="InputPin" />
-            <Pin Id="BDB5QYv5uYROXka0037Mes" Name="HubPort" Kind="InputPin" />
-            <Pin Id="MeaW5TKEvp2O0w1Bt5eLo7" Name="IsLocal" Kind="InputPin" />
-            <Pin Id="KxytCjcyJibLnx0oUqMzYK" Name="Open" Kind="InputPin" DefaultValue="False" />
+            <Pin Id="KxytCjcyJibLnx0oUqMzYK" Name="Open" Kind="InputPin" />
             <Pin Id="ArOPpGfhIygNEAI1XXQqA3" Name="Close" Kind="InputPin" />
+            <Pin Id="P5hqUs6F5ODPrltVF2X4ge" Name="Timeout" Kind="InputPin" />
+            <Pin Id="MeaW5TKEvp2O0w1Bt5eLo7" Name="IsLocal" Kind="InputPin" />
+            <Pin Id="DmyOIQKKFHsPzQvtoJX55l" Name="Channel" Kind="InputPin" />
+            <Pin Id="EQnm8Q0gpivLIqZv6mJeHU" Name="SerialNumber" Kind="InputPin" />
+            <Pin Id="Aypqti5VCNxP4p1leXcUMz" Name="HubPort" Kind="InputPin" />
+            <Pin Id="MbKCtOqlfX8MgMWBKlc7Av" Name="Data Rate" Kind="InputPin" />
             <Pin Id="KBnD0ImkhxhQREo5HeO4h7" Name="Result" Kind="OutputPin" />
-            <Pin Id="VN6giAlJXvGNI1ILgn1DpG" Name="Device Serial Number" Kind="OutputPin" />
+            <Pin Id="ET6oJPcoDu4OoRLgnCasSi" Name="Distances" Kind="OutputPin" />
+            <Pin Id="FpwM1cTc8aCPBK5yIeDOYi" Name="Amplitudes" Kind="OutputPin" />
+            <Pin Id="Sk5GeVfd3KWP15kUQSjtVR" Name="Count" Kind="OutputPin" />
             <Pin Id="Q44MBIhYpdKMXyjRCbt287" Name="Attached" Kind="OutputPin" />
+            <Pin Id="VN6giAlJXvGNI1ILgn1DpG" Name="Device Serial Number" Kind="OutputPin" />
+            <Pin Id="ILR93Fu9MvXL4yOMP4PpHA" Name="Hub Port" Kind="OutputPin" />
           </Node>
-          <Node Bounds="125,221,65,19" Id="FQDzlTIZoz2PDRX0pl25XD">
+          <Node Bounds="3,294,65,19" Id="FQDzlTIZoz2PDRX0pl25XD">
             <p:NodeReference LastCategoryFullName="Reactive" LastSymbolSource="VL.Reactive.vl">
               <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
               <Choice Kind="ProcessAppFlag" Name="HoldLatest" />
@@ -80,8 +85,20 @@
             <Pin Id="G9XLHkh42FxO68Hyt0S4xo" Name="Value" Kind="OutputPin" />
             <Pin Id="R3tjYLcmoMNNQUrYxvIw3P" Name="On Data" Kind="OutputPin" />
           </Node>
-          <Pad Id="L8yji6YS189MBq4QrVqimc" Comment="" Bounds="105,298,35,15" ShowValueBox="true" isIOBox="true" />
-          <Pad Id="KR9jbV1KxxANVlGwWQVMYn" Comment="On Data" Bounds="210,283,35,35" ShowValueBox="true" isIOBox="true" />
+          <Pad Id="L8yji6YS189MBq4QrVqimc" Comment="" Bounds="6,368,40,15" ShowValueBox="true" isIOBox="true" />
+          <Pad Id="KR9jbV1KxxANVlGwWQVMYn" Comment="On Data" Bounds="65,342,35,35" ShowValueBox="true" isIOBox="true" />
+          <Pad Id="PY5o5mLfcK5NrajvUeVpRH" Comment="Hub Port" Bounds="305,218,35,15" ShowValueBox="true" isIOBox="true" />
+          <Pad Id="D1JexFpMaUxPhn07ceNMXc" Comment="Distances" Bounds="150,308,66,195" ShowValueBox="true" isIOBox="true" Value="0">
+            <p:ValueBoxSettings>
+              <p:maxvisibleentries p:Type="Int32">9</p:maxvisibleentries>
+            </p:ValueBoxSettings>
+          </Pad>
+          <Pad Id="Ly0IdRD1ltiM6m0rFHwnvV" Comment="Amplitudes" Bounds="296,305,68,199" ShowValueBox="true" isIOBox="true" Value="0">
+            <p:ValueBoxSettings>
+              <p:maxvisibleentries p:Type="Int32">8</p:maxvisibleentries>
+            </p:ValueBoxSettings>
+          </Pad>
+          <Pad Id="OlOeo1Rjy2QPpqrnayh8tr" Comment="Count" Bounds="457,306,35,15" ShowValueBox="true" isIOBox="true" />
         </Canvas>
         <ProcessDefinition Id="M7DhTjVrkxFPTU6ibB97qp">
           <Fragment Id="Ka160IZ6ipXPEuPO79oXgb" Patch="UMHvqj8Id8pO2ddYAbC8xP" Enabled="true" />
@@ -94,6 +111,10 @@
         <Link Id="LSPRqnLC2sHMwuv1sQ6sMy" Ids="KBnD0ImkhxhQREo5HeO4h7,OEmBBPmUs1cOdf8Pmy7dQp" />
         <Link Id="OPqejThlOwqNT67koqtHCI" Ids="G9XLHkh42FxO68Hyt0S4xo,L8yji6YS189MBq4QrVqimc" />
         <Link Id="TetB4UUW9saQSvKf0VNeYh" Ids="R3tjYLcmoMNNQUrYxvIw3P,KR9jbV1KxxANVlGwWQVMYn" />
+        <Link Id="AQw52JV9813OxcWIuv1nR9" Ids="ILR93Fu9MvXL4yOMP4PpHA,PY5o5mLfcK5NrajvUeVpRH" />
+        <Link Id="TkLd1Fi1emEOkDkK4FE8O3" Ids="ET6oJPcoDu4OoRLgnCasSi,D1JexFpMaUxPhn07ceNMXc" />
+        <Link Id="PXltwD49H3kMQm2pSUgrQ4" Ids="FpwM1cTc8aCPBK5yIeDOYi,Ly0IdRD1ltiM6m0rFHwnvV" />
+        <Link Id="PD3QPeFuctMOw55vz2DeDo" Ids="Sk5GeVfd3KWP15kUQSjtVR,OlOeo1Rjy2QPpqrnayh8tr" />
       </Patch>
     </Node>
   </Patch>

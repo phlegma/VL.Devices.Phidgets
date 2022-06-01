@@ -43,6 +43,8 @@
             </p:NodeReference>
             <Pin Id="SuLAAa0ukApLL3N1VmVQP1" Name="Open" Kind="InputPin" />
             <Pin Id="IO5r22A5e3HQcoOakchGxU" Name="Close" Kind="InputPin" />
+            <Pin Id="AnuJhqGEhlPLekaTH5uCWm" Name="Library Version Number" Kind="OutputPin" />
+            <Pin Id="OL47YlQdN6QPK4lTkg1snB" Name="Library Version" Kind="OutputPin" />
             <Pin Id="FUMBK88MW59LcQAMb9y1yl" Name="Channel" Kind="OutputPin" />
             <Pin Id="PvcJceOWUUwNb9cqhhSNPU" Name="Device Version" Kind="OutputPin" />
             <Pin Id="EZVJBYGf0aJK9X0BMvIaDI" Name="Device Serial Number" Kind="OutputPin" />
@@ -50,17 +52,17 @@
             <Pin Id="NGbEp1mls0kMgoIxZ9xhJo" Name="Device ID" Kind="OutputPin" />
             <Pin Id="SVZAlRgRwDuMxot3QKpLjC" Name="Device VINTID" Kind="OutputPin" />
           </Node>
-          <Pad Id="BePkmTiQrssOfyEsmOGnJY" Comment="Channel" Bounds="24,219,35,202" ShowValueBox="true" isIOBox="true" Value="0">
+          <Pad Id="BePkmTiQrssOfyEsmOGnJY" Comment="Channel" Bounds="45,307,35,202" ShowValueBox="true" isIOBox="true" Value="0">
             <p:ValueBoxSettings>
               <p:maxvisibleentries p:Type="Int32">5</p:maxvisibleentries>
             </p:ValueBoxSettings>
           </Pad>
-          <Pad Id="TYueAoYIeGXPT9PsRsAxPE" Comment="Device Version" Bounds="144,219,55,202" ShowValueBox="true" isIOBox="true" Value="0">
+          <Pad Id="TYueAoYIeGXPT9PsRsAxPE" Comment="Device Version" Bounds="165,307,55,202" ShowValueBox="true" isIOBox="true" Value="0">
             <p:ValueBoxSettings>
               <p:maxvisibleentries p:Type="Int32">5</p:maxvisibleentries>
             </p:ValueBoxSettings>
           </Pad>
-          <Pad Id="QbzfqGBv5KaP5oqN9nfBTp" Comment="Device Serial Number" Bounds="309,219,55,202" ShowValueBox="true" isIOBox="true" Value="0">
+          <Pad Id="QbzfqGBv5KaP5oqN9nfBTp" Comment="Device Serial Number" Bounds="330,307,55,202" ShowValueBox="true" isIOBox="true" Value="0">
             <p:ValueBoxSettings>
               <p:maxvisibleentries p:Type="Int32">5</p:maxvisibleentries>
             </p:ValueBoxSettings>
@@ -74,7 +76,7 @@
               <p:buttonmode p:Assembly="VL.UI.Forms" p:Type="VL.HDE.PatchEditor.Editors.ButtonModeEnum">Bang</p:buttonmode>
             </p:ValueBoxSettings>
           </Pad>
-          <Pad Id="L8CoYlIaVL5LkRLSXXSoT0" Comment="Close" Bounds="554,67,58,47" ShowValueBox="true" isIOBox="true" Value="False">
+          <Pad Id="L8CoYlIaVL5LkRLSXXSoT0" Comment="Close" Bounds="558,80,58,47" ShowValueBox="true" isIOBox="true" Value="False">
             <p:TypeAnnotation>
               <Choice Kind="ImmutableTypeFlag" Name="Boolean" />
               <FullNameCategoryReference ID="Primitive" />
@@ -83,7 +85,7 @@
               <p:buttonmode p:Assembly="VL.UI.Forms" p:Type="VL.HDE.PatchEditor.Editors.ButtonModeEnum">Bang</p:buttonmode>
             </p:ValueBoxSettings>
           </Pad>
-          <Pad Id="UQAAK8dobRnMDlTTiwcHwE" Comment="Device Name" Bounds="484,219,179,202" ShowValueBox="true" isIOBox="true">
+          <Pad Id="UQAAK8dobRnMDlTTiwcHwE" Comment="Device Name" Bounds="505,307,179,202" ShowValueBox="true" isIOBox="true">
             <p:ValueBoxSettings>
               <p:maxvisibleentries p:Type="Int32">5</p:maxvisibleentries>
             </p:ValueBoxSettings>
@@ -91,7 +93,7 @@
               <Item></Item>
             </p:Value>
           </Pad>
-          <Pad Id="B7CmTzM3R4PLB9q1cT3C92" Comment="Device ID" Bounds="759,219,154,202" ShowValueBox="true" isIOBox="true">
+          <Pad Id="B7CmTzM3R4PLB9q1cT3C92" Comment="Device ID" Bounds="780,307,154,202" ShowValueBox="true" isIOBox="true">
             <p:ValueBoxSettings>
               <p:maxvisibleentries p:Type="Int32">5</p:maxvisibleentries>
             </p:ValueBoxSettings>
@@ -99,7 +101,7 @@
               <Item>None</Item>
             </p:Value>
           </Pad>
-          <Pad Id="VPA8invKp3SLPNZKYC6USj" Comment="Device VINTID" Bounds="1003,219,38,202" ShowValueBox="true" isIOBox="true" Value="0">
+          <Pad Id="VPA8invKp3SLPNZKYC6USj" Comment="Device VINTID" Bounds="1024,307,38,202" ShowValueBox="true" isIOBox="true" Value="0">
             <p:ValueBoxSettings>
               <p:maxvisibleentries p:Type="Int32">5</p:maxvisibleentries>
             </p:ValueBoxSettings>
@@ -121,6 +123,8 @@
             <Pin Id="PTvypfLH44EM6iOKrRb1ju" Name="Simulate" Kind="InputPin" />
             <Pin Id="TdjMDczX1DBLhKSJV52M6O" Name="Output" Kind="OutputPin" />
           </Node>
+          <Pad Id="MxdZrzMCVvHNXcXWdNO0UP" Comment="Library Version Number" Bounds="318,189,186,24" ShowValueBox="true" isIOBox="true" />
+          <Pad Id="Jvg8fpQYhxLLl3IyLD0t7X" Comment="Library Version" Bounds="346,223,297,12" ShowValueBox="true" isIOBox="true" />
         </Canvas>
         <ProcessDefinition Id="M7DhTjVrkxFPTU6ibB97qp">
           <Fragment Id="Ka160IZ6ipXPEuPO79oXgb" Patch="UMHvqj8Id8pO2ddYAbC8xP" Enabled="true" />
@@ -138,6 +142,8 @@
         <Link Id="PjSeBzM0fwlQLIDVFUHefD" Ids="SVZAlRgRwDuMxot3QKpLjC,VPA8invKp3SLPNZKYC6USj" />
         <Link Id="QF4AFi8h086MfUgDAECD7G" Ids="CqeVCPvBln6LGfuDMAEuQQ,SuLAAa0ukApLL3N1VmVQP1" />
         <Link Id="JddtmmwWSewPZ9zqdq6UIA" Ids="TdjMDczX1DBLhKSJV52M6O,ITG9McqQFVAOa1o3rwDZvL" />
+        <Link Id="FV4pYykZqgoPv4St11oCNq" Ids="AnuJhqGEhlPLekaTH5uCWm,MxdZrzMCVvHNXcXWdNO0UP" />
+        <Link Id="OSxByB879a4NKAQid5j67F" Ids="OL47YlQdN6QPK4lTkg1snB,Jvg8fpQYhxLLl3IyLD0t7X" />
       </Patch>
     </Node>
   </Patch>

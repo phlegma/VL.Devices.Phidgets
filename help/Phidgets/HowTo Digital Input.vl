@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Document xmlns:p="property" Id="BIFvPvyOynCLmf7vnpoVIR" LanguageVersion="2021.4.9.982" Version="0.128">
+<Document xmlns:p="property" Id="Ka9uSPv7yTqO8m3xSP1Ia4" LanguageVersion="2021.4.9.982" Version="0.128">
   <NugetDependency Id="VMo4HaTEkVTLtfYj9q9ZYR" Location="VL.CoreLib" Version="2021.4.9" />
   <Patch Id="EBJpcI9XfAwLRZdOzyKrhP">
     <Canvas Id="DZ4WByYr0iQNUdSbUzWirB" DefaultCategory="Main" BordersChecked="false" CanvasType="FullCategory">
@@ -36,25 +36,22 @@
       </p:NodeReference>
       <Patch Id="RcdmicmnND1Pyv3TJj3de9">
         <Canvas Id="Th1wAbWQAPlMOAdCYXCkfd" CanvasType="Group">
-          <Node Bounds="527,342,125,19" Id="QgRQ5cIAdS9OyoAGLclthh">
+          <Node Bounds="122,177,125,19" Id="QgRQ5cIAdS9OyoAGLclthh">
             <p:NodeReference LastCategoryFullName="VL.Devices.Phidgets" LastSymbolSource="VL.Devices.Phidgets.vl">
               <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
-              <Choice Kind="ProcessAppFlag" Name="CircularTouch" />
+              <Choice Kind="ProcessAppFlag" Name="DigitalInput" />
             </p:NodeReference>
-            <Pin Id="NrA6LuUahyzNf2wHzjt2CS" Name="Timeout" Kind="InputPin" />
-            <Pin Id="RDaZIMWj6pwMhk3MLKEAMC" Name="Channel" Kind="InputPin" />
-            <Pin Id="U3nvV9VCT8aMthVNKZpM4u" Name="HubPort" Kind="InputPin" />
-            <Pin Id="Cz0q1FBrLPdNzbOJvDhjsb" Name="SerialNumber" Kind="InputPin" />
-            <Pin Id="UIAnPWqASYRLo4Yc9Lwch7" Name="IsHubPortDevice" Kind="InputPin" />
-            <Pin Id="PcU6thBZKj6Mu0yjbjP6VN" Name="IsLocal" Kind="InputPin" />
             <Pin Id="Ig71YW29u3KOUwf0Ujb0gH" Name="Open" Kind="InputPin" DefaultValue="False" />
             <Pin Id="JkuYW6G2LhtO6wRUun4KaR" Name="Close" Kind="InputPin" />
+            <Pin Id="RDaZIMWj6pwMhk3MLKEAMC" Name="Channel" Kind="InputPin" />
+            <Pin Id="U3nvV9VCT8aMthVNKZpM4u" Name="HubPort" Kind="InputPin" DefaultValue="4" />
+            <Pin Id="Cz0q1FBrLPdNzbOJvDhjsb" Name="SerialNumber" Kind="InputPin" />
             <Pin Id="JLek0DsIWcGOFM5uo2EBVJ" Name="Result" Kind="OutputPin" />
-            <Pin Id="OkMoQ9ms9g2QSUTZJkhEnk" Name="Is Touched" Kind="OutputPin" />
-            <Pin Id="AC5fcFvozUUMZ2FSEA1FuF" Name="Device Serial Number" Kind="OutputPin" />
             <Pin Id="HSYXG1b3VfZOpGqBsIB3oT" Name="Attached" Kind="OutputPin" />
+            <Pin Id="D2V3AYHpdhzPEP6uf1tnqK" Name="Device Serial Number" Kind="OutputPin" />
+            <Pin Id="BgSdY5kM5hhLalUvDq1I1P" Name="Hub Port Count" Kind="OutputPin" />
           </Node>
-          <Pad Id="SWgLQSPQEvrQYZ4ysAo4Ep" Comment="Close" Bounds="696,284,35,35" ShowValueBox="true" isIOBox="true" Value="False">
+          <Pad Id="SWgLQSPQEvrQYZ4ysAo4Ep" Comment="Close" Bounds="154,128,35,35" ShowValueBox="true" isIOBox="true" Value="False">
             <p:TypeAnnotation>
               <Choice Kind="ImmutableTypeFlag" Name="Boolean" />
               <FullNameCategoryReference ID="Primitive" />
@@ -63,7 +60,7 @@
               <p:buttonmode p:Assembly="VL.UI.Forms" p:Type="VL.HDE.PatchEditor.Editors.ButtonModeEnum">Bang</p:buttonmode>
             </p:ValueBoxSettings>
           </Pad>
-          <Pad Id="VzhtgIwh8QBOblSpgYWwfD" Comment="Open" Bounds="632,228,35,35" ShowValueBox="true" isIOBox="true" Value="False">
+          <Pad Id="VzhtgIwh8QBOblSpgYWwfD" Comment="Open" Bounds="124,75,35,35" ShowValueBox="true" isIOBox="true" Value="False">
             <p:TypeAnnotation>
               <Choice Kind="ImmutableTypeFlag" Name="Boolean" />
               <FullNameCategoryReference ID="Primitive" />
@@ -72,7 +69,12 @@
               <p:buttonmode p:Assembly="VL.UI.Forms" p:Type="VL.HDE.PatchEditor.Editors.ButtonModeEnum">Bang</p:buttonmode>
             </p:ValueBoxSettings>
           </Pad>
-          <Node Bounds="398,437,65,19" Id="IuMvJWbAn5yQGSgJu0tSVw">
+          <Pad Id="FE6FHaHmPgEMiNl9I5l5mN" Comment="HubPort" Bounds="214,157,35,15" ShowValueBox="true" isIOBox="true" Value="4">
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
+              <Choice Kind="TypeFlag" Name="Integer32" />
+            </p:TypeAnnotation>
+          </Pad>
+          <Node Bounds="123,305,65,19" Id="IuMvJWbAn5yQGSgJu0tSVw">
             <p:NodeReference LastCategoryFullName="Reactive" LastSymbolSource="VL.Reactive.vl">
               <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
               <Choice Kind="ProcessAppFlag" Name="HoldLatest" />
@@ -82,11 +84,10 @@
             <Pin Id="LOHGQKP43WhMPA7ZLnCR3M" Name="Value" Kind="OutputPin" />
             <Pin Id="UrzI5xRMlcYMR8ubzbOeKg" Name="On Data" Kind="OutputPin" />
           </Node>
-          <Pad Id="J36170xBgMWOiiOzvvgbov" Comment="" Bounds="399,515,35,35" ShowValueBox="true" isIOBox="true" />
-          <Pad Id="BVyvmDopIuoMpnVj3JoRer" Comment="Attached" Bounds="648,429,35,35" ShowValueBox="true" isIOBox="true" />
-          <Pad Id="JsE5iwsEyUDOY0uD10BNmF" Comment="Device Serial Number" Bounds="600,391,77,23" ShowValueBox="true" isIOBox="true" />
-          <Pad Id="GYu2OIytWG8O1MEFKRoVdr" Comment="On Data" Bounds="465,520,35,35" ShowValueBox="true" isIOBox="true" />
-          <Pad Id="GwHiEIlR18hPa35tAiiomI" Comment="Is Touched" Bounds="544,469,35,35" ShowValueBox="true" isIOBox="true" />
+          <Pad Id="J36170xBgMWOiiOzvvgbov" Comment="" Bounds="126,373,35,35" ShowValueBox="true" isIOBox="true" />
+          <Pad Id="BVyvmDopIuoMpnVj3JoRer" Comment="Attached" Bounds="164,216,35,35" ShowValueBox="true" isIOBox="true" />
+          <Pad Id="NvnBlR9tTcpLiNPQu9Kx5V" Comment="Device Serial Number" Bounds="204,264,90,15" ShowValueBox="true" isIOBox="true" />
+          <Pad Id="IfrZ3Gs3E8oNhdt8ZtvFjA" Comment="Hub Port Count" Bounds="242,296,35,15" ShowValueBox="true" isIOBox="true" />
         </Canvas>
         <ProcessDefinition Id="M7DhTjVrkxFPTU6ibB97qp">
           <Fragment Id="Ka160IZ6ipXPEuPO79oXgb" Patch="UMHvqj8Id8pO2ddYAbC8xP" Enabled="true" />
@@ -95,16 +96,17 @@
         <Patch Id="UMHvqj8Id8pO2ddYAbC8xP" Name="Create" />
         <Patch Id="SUuys83bkbYO7pfz05VSQu" Name="Update" />
         <Link Id="Tdxi99EyBIJQDgsG1nXuQj" Ids="SWgLQSPQEvrQYZ4ysAo4Ep,JkuYW6G2LhtO6wRUun4KaR" />
-        <Link Id="CNU4g3g0XWfOEzckZyelwl" Ids="VzhtgIwh8QBOblSpgYWwfD,Ig71YW29u3KOUwf0Ujb0gH" />
+        <Link Id="VwssZ0dGmZ6NRzYu6cG96J" Ids="FE6FHaHmPgEMiNl9I5l5mN,U3nvV9VCT8aMthVNKZpM4u" />
         <Link Id="VTexTHUYcYhNWLH3B26rGd" Ids="JLek0DsIWcGOFM5uo2EBVJ,Dfzei27uungL1blrwZGo0u" />
         <Link Id="M3jF4BTPvOPO3baOs6cJX2" Ids="LOHGQKP43WhMPA7ZLnCR3M,J36170xBgMWOiiOzvvgbov" />
         <Link Id="Ls2e0iZCqeXMNG5EYk5yc6" Ids="HSYXG1b3VfZOpGqBsIB3oT,BVyvmDopIuoMpnVj3JoRer" />
-        <Link Id="CwaGPnIzxHHQEnT6Aop8Hj" Ids="AC5fcFvozUUMZ2FSEA1FuF,JsE5iwsEyUDOY0uD10BNmF" />
-        <Link Id="RkieAcLyedoLWeN6k9j9AW" Ids="UrzI5xRMlcYMR8ubzbOeKg,GYu2OIytWG8O1MEFKRoVdr" />
-        <Link Id="Ql0nmhvAINrMHqR2MzEfZB" Ids="OkMoQ9ms9g2QSUTZJkhEnk,GwHiEIlR18hPa35tAiiomI" />
+        <Link Id="EZzkOx6H2nvPThRsh4AUBq" Ids="D2V3AYHpdhzPEP6uf1tnqK,NvnBlR9tTcpLiNPQu9Kx5V" />
+        <Link Id="Ejin4oLuCvkPJPKCg50szp" Ids="VzhtgIwh8QBOblSpgYWwfD,Ig71YW29u3KOUwf0Ujb0gH" />
+        <Link Id="E0swyk936mNQbsRVbhMp9R" Ids="BgSdY5kM5hhLalUvDq1I1P,IfrZ3Gs3E8oNhdt8ZtvFjA" />
       </Patch>
     </Node>
   </Patch>
   <NugetDependency Id="AWADncGnm9GO1XnlR6Z1ft" Location="VL.Skia" Version="2021.4.9" />
-  <DocumentDependency Id="Azm6tyc3jsJNopk9FBIJmR" Location="../../VL.Devices.Phidgets.vl" />
+  <NugetDependency Id="V1oV6I1pNdDLiWbOYQx0RU" Location="VL.Devices.Phidgets" Version="0.0.0.0" />
+  <DocumentDependency Id="BOExA9aAIfnN19DsuHqP2O" Location="../../VL.Devices.Phidgets.vl" />
 </Document>
