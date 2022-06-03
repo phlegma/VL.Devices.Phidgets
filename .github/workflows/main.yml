@@ -11,8 +11,8 @@ on:
     inputs:
       version:
         description: 'nuget setup'
-        required: true
-        default: '0.0.4'
+        required: false
+        default: '0.0.5'
       is_pre:
         description: 'Is pre release'
         type: boolean
