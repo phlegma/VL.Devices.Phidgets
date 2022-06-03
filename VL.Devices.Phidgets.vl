@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Document xmlns:p="property" Id="F5KMmdySeu0LBCHoj5OYJx" LanguageVersion="2021.4.9.982" Version="0.128">
-  <NugetDependency Id="CtRD94DeiXrPBvpsvp5gxl" Location="VL.CoreLib" Version="2021.4.9" />
+<Document xmlns:p="property" Id="F5KMmdySeu0LBCHoj5OYJx" LanguageVersion="2021.4.8.947" Version="0.128">
+  <NugetDependency Id="CtRD94DeiXrPBvpsvp5gxl" Location="VL.CoreLib" Version="2021.4.8" />
   <Patch Id="LPiTHIMzdWcN2MMEs0SXSK">
     <Canvas Id="NVAWkZYR0K0QamNth39yYT" DefaultCategory="Devices.Phidgets" CanvasType="FullCategory">
       <!--
@@ -820,7 +820,7 @@
     ************************ DigitalInput ************************
 
 -->
-      <Node Name="DigitalInput" Bounds="344,435" Id="FCt5A1aMTovNyLIloCMOKO">
+      <Node Name="DigitalInput" Bounds="366,426" Id="FCt5A1aMTovNyLIloCMOKO">
         <p:NodeReference LastCategoryFullName="Primitive" LastSymbolSource="builtin">
           <Choice Kind="ContainerDefinition" Name="Process" />
         </p:NodeReference>
@@ -989,7 +989,7 @@
     ************************ DistanceSensor ************************
 
 -->
-      <Node Name="DistanceSensor" Bounds="550,431" Id="GjgL0fsIzqqOUK9ZOHNLhC">
+      <Node Name="DistanceSensor" Bounds="549,426" Id="GjgL0fsIzqqOUK9ZOHNLhC">
         <p:NodeReference LastCategoryFullName="Primitive" LastSymbolSource="builtin">
           <Choice Kind="ContainerDefinition" Name="Process" />
         </p:NodeReference>
@@ -1344,7 +1344,7 @@
     ************************ DigitalOutput ************************
 
 -->
-      <Node Name="DigitalOutput" Bounds="344,492" Id="OSXV3BFoUPiOKtGBOGxebD">
+      <Node Name="DigitalOutput" Bounds="366,482" Id="OSXV3BFoUPiOKtGBOGxebD">
         <p:NodeReference LastCategoryFullName="Primitive" LastSymbolSource="builtin">
           <Choice Kind="ContainerDefinition" Name="Process" />
         </p:NodeReference>
@@ -1527,7 +1527,7 @@
     ************************ LightSensor ************************
 
 -->
-      <Node Name="LightSensor" Bounds="550,482" Id="R1VuUcTQyy3NeEZdqwmo6F">
+      <Node Name="LightSensor" Bounds="549,478" Id="R1VuUcTQyy3NeEZdqwmo6F">
         <p:NodeReference LastCategoryFullName="Primitive" LastSymbolSource="builtin">
           <Choice Kind="ContainerDefinition" Name="Process" />
         </p:NodeReference>
@@ -1747,7 +1747,7 @@
     ************************ CircularTouch ************************
 
 -->
-      <Node Name="CircularTouch" Bounds="550,532" Id="EV2hd61IHfhOut15RUXnQ3">
+      <Node Name="CircularTouch" Bounds="728,426" Id="EV2hd61IHfhOut15RUXnQ3">
         <p:NodeReference LastCategoryFullName="Primitive" LastSymbolSource="builtin">
           <Choice Kind="ContainerDefinition" Name="Process" />
         </p:NodeReference>
@@ -1909,7 +1909,7 @@
           </Patch>
         </Patch>
       </Node>
-      <Canvas Id="KSzbtOnBuRMPbk11ImkSOE" Name="Internal" Position="194,363">
+      <Canvas Id="KSzbtOnBuRMPbk11ImkSOE" Name="Internal" Position="186,292">
         <!--
 
     ************************ Phidget ************************
@@ -2259,7 +2259,7 @@
     ************************ VoltageInput ************************
 
 -->
-      <Node Name="VoltageInput" Bounds="344,549" Id="HrobOF3b0ztMTLheyuUer1">
+      <Node Name="VoltageInput" Bounds="366,538" Id="HrobOF3b0ztMTLheyuUer1">
         <p:NodeReference LastCategoryFullName="Primitive" LastSymbolSource="builtin">
           <Choice Kind="ContainerDefinition" Name="Process" />
         </p:NodeReference>
@@ -2484,10 +2484,10 @@
       </Node>
       <!--
 
-    ************************ VoltageRatio ************************
+    ************************ VoltageRatioInput ************************
 
 -->
-      <Node Name="VoltageRatio" Bounds="344,606" Id="RWiywnua22tMZ4PxQQZGqJ">
+      <Node Name="VoltageRatioInput" Bounds="366,594" Id="RWiywnua22tMZ4PxQQZGqJ">
         <p:NodeReference LastCategoryFullName="Primitive" LastSymbolSource="builtin">
           <Choice Kind="ContainerDefinition" Name="Process" />
         </p:NodeReference>
@@ -2692,6 +2692,30 @@
           <Link Id="KvN45iJAyMFLlciM6sT76A" Ids="SIX9gTBx40qMCJ19XiruRJ,Vw3SqyC6I8TPccuuH0WAgW" IsHidden="true" />
         </Patch>
       </Node>
+      <!--
+
+    ************************ Logging ************************
+
+-->
+      <Node Name="Logging" Bounds="191,478" Id="Kh6xJYryAq9OCJ45PF568z">
+        <p:NodeReference LastCategoryFullName="Primitive" LastSymbolSource="builtin">
+          <Choice Kind="ContainerDefinition" Name="Process" />
+        </p:NodeReference>
+        <Patch Id="Gip2THZjCMFL0hfRMsTqdg">
+          <Canvas Id="EcMugzRmcJjMbakJDCsdsl" BordersChecked="false" CanvasType="Group" />
+          <Patch Id="P2860Pu9d4yN7r9d9M8NQe" Name="Create" />
+          <Patch Id="GUfJdCEHqleOXWFrKMyDz5" Name="Update" />
+          <!--
+
+    ************************  ************************
+
+-->
+          <ProcessDefinition Id="EMKxSIcGWWLLHygrZMDcII">
+            <Fragment Id="PtU3Qsj8O83O9IrYXcE0IA" Patch="P2860Pu9d4yN7r9d9M8NQe" Enabled="true" />
+            <Fragment Id="CgWIXAtHwh4NiAKwbNhGhv" Patch="GUfJdCEHqleOXWFrKMyDz5" Enabled="true" />
+          </ProcessDefinition>
+        </Patch>
+      </Node>
     </Canvas>
     <!--
 
@@ -2714,6 +2738,6 @@
       </Patch>
     </Node>
   </Patch>
-  <NugetDependency Id="N0wKF2rNGWWLlKpD1eaaMc" Location="VL.Skia" Version="2021.4.9" />
-  <NugetDependency Id="E7WivuLFDPOOps7iYavgTW" Location="Phidget22.NET" Version="1.10.20220519" />
+  <NugetDependency Id="N0wKF2rNGWWLlKpD1eaaMc" Location="VL.Skia" Version="2021.4.8" />
+  <NugetDependency Id="E7WivuLFDPOOps7iYavgTW" Location="Phidget22.NET" Version="1.10.20220413" />
 </Document>
