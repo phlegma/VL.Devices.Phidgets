@@ -12,9 +12,8 @@ on:
   workflow_dispatch:
     inputs:
       version:
-        description: '0.0.1'
+        description: 'v0.0.1'
         required: true
-        default: '0.0.1'
       is_pre:
         description: 'Is pre release'
         type: boolean
