@@ -10,8 +10,9 @@ on:
   workflow_dispatch:
     inputs:
       version:
-        description: '0.0.3'
+        description: 'nuget setup'
         required: true
+        default: '0.0.3'
       is_pre:
         description: 'Is pre release'
         type: boolean
