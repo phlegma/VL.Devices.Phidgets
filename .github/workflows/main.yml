@@ -12,7 +12,7 @@ on:
       version:
         description: 'nuget setup'
         required: false
-        default: '0.0.6'
+        default: '0.0.7'
       is_pre:
         description: 'Is pre release'
         type: boolean
@@ -38,10 +38,4 @@ jobs:
         version: ${{ github.event.inputs.version }}
         nuget-key: ${{ secrets.NUGET_KEY }}
   
-    - name: Create Tag
-      uses: negz/create-tag@v1
-      with:
-        version: ${{ github.event.inputs.version }}
-        message: ${{ github.event.inputs.notes }}
-        token: ${{ secrets.GITHUB_TOKEN }}
         
