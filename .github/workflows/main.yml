@@ -38,10 +38,4 @@ jobs:
         version: ${{ github.event.inputs.version }}
         nuget-key: ${{ secrets.NUGET_KEY }}
   
-    - name: Create Tag
-      uses: negz/create-tag@v1
-      with:
-        version: ${{ github.event.inputs.version }}
-        message: ${{ github.event.inputs.notes }}
-        token: ${{ secrets.GITHUB_TOKEN }}
         

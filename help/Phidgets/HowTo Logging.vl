@@ -1,0 +1,67 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Document xmlns:p="property" Id="RIa6g2HkV7dPb2NYPSXQkC" LanguageVersion="2021.4.9.982" Version="0.128">
+  <Patch Id="IaWOn9U60tDLNJE1rZiT0h">
+    <Canvas Id="GYEACvVTGLqNPxuRTTYr46" DefaultCategory="Main" CanvasType="FullCategory" />
+    <!--
+
+    ************************ Application ************************
+
+-->
+    <Node Name="Application" Bounds="100,100" Id="SewzVGVGcTkPHnOthfpARn">
+      <p:NodeReference>
+        <Choice Kind="ContainerDefinition" Name="Process" />
+        <FullNameCategoryReference ID="Primitive" />
+      </p:NodeReference>
+      <Patch Id="TdFdXn5QLwEOVuOzNkxmCo">
+        <Canvas Id="IfZqSXgzZ9QL4CpPOjbW86" CanvasType="Group">
+          <Node Bounds="145,219,85,19" Id="LsLIcv71dsDMkz0JndqEKs">
+            <p:NodeReference LastCategoryFullName="Devices.Phidgets" LastSymbolSource="VL.Devices.Phidgets.vl">
+              <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+              <Choice Kind="ProcessAppFlag" Name="Logging" />
+            </p:NodeReference>
+            <Pin Id="J6zYVbeRPPtNUttAu59Fc0" Name="Enable" Kind="InputPin" DefaultValue="True" />
+            <Pin Id="TuTIBRe9k4SOSDaRCa2XAE" Name="Destination" Kind="InputPin" DefaultValue="" />
+            <Pin Id="Nz4lTOll3kGP68WBtdm4g2" Name="Level" Kind="InputPin" />
+            <Pin Id="LKWEBduT57rON7z3s8tJaq" Name="Sources" Kind="OutputPin" />
+            <Pin Id="IohPL6koP14M7s9zBSHU0L" Name="Level" Kind="OutputPin" />
+          </Node>
+          <Pad Id="KVVCFVfXpwwN1r4SpBt9HQ" Comment="Destination" Bounds="186,100,220,29" ShowValueBox="true" isIOBox="true" Value="..\..\..\..\..\..\Desktop\log.log">
+            <p:TypeAnnotation LastCategoryFullName="IO" LastSymbolSource="CoreLibBasics.vl">
+              <Choice Kind="TypeFlag" Name="Path" />
+            </p:TypeAnnotation>
+          </Pad>
+          <Pad Id="CooJu2m7YlwLtlkjD8B4UA" Comment="Level" Bounds="227,181,140,24" ShowValueBox="true" isIOBox="true" Value="Verbose">
+            <p:TypeAnnotation LastCategoryFullName="Phidget22" LastSymbolSource="Phidget22.NET.dll">
+              <Choice Kind="TypeFlag" Name="LogLevel" />
+            </p:TypeAnnotation>
+          </Pad>
+          <Pad Id="F6jBsGtdVRwQUNGyHCcngc" Comment="" Bounds="147,288,173,113" ShowValueBox="true" isIOBox="true" />
+          <Pad Id="BOSPBIoZwALPdf6RiiomKS" Comment="Level" Bounds="382,299,66,15" ShowValueBox="true" isIOBox="true" />
+          <Pad Id="PBhzXqLwWf2NXQATsXVDmw" Comment="Enable" Bounds="147,158,35,31" ShowValueBox="true" isIOBox="true" Value="True">
+            <p:TypeAnnotation>
+              <Choice Kind="ImmutableTypeFlag" Name="Boolean" />
+              <FullNameCategoryReference ID="Primitive" />
+            </p:TypeAnnotation>
+            <p:ValueBoxSettings>
+              <p:buttonmode p:Assembly="VL.UI.Forms" p:Type="VL.HDE.PatchEditor.Editors.ButtonModeEnum">Toggle</p:buttonmode>
+            </p:ValueBoxSettings>
+          </Pad>
+        </Canvas>
+        <Patch Id="EgpHweAcrwbOIFN21z3oMm" Name="Create" />
+        <Patch Id="TowytNFHECEMJSxubV0ETM" Name="Update" />
+        <ProcessDefinition Id="UFrSCGbCVS4LZxOuEg0hT2">
+          <Fragment Id="R4RtclfXnfZOcaVuoXqIQD" Patch="EgpHweAcrwbOIFN21z3oMm" Enabled="true" />
+          <Fragment Id="Kcie31CKN6TP3iLwe5fR6M" Patch="TowytNFHECEMJSxubV0ETM" Enabled="true" />
+        </ProcessDefinition>
+        <Link Id="VZUuEGXxm8GNNsfyoVozYw" Ids="CooJu2m7YlwLtlkjD8B4UA,Nz4lTOll3kGP68WBtdm4g2" />
+        <Link Id="FEicOgMDSolPlixGkZgiDO" Ids="LKWEBduT57rON7z3s8tJaq,F6jBsGtdVRwQUNGyHCcngc" />
+        <Link Id="CVwpasLX3UjPk2WhCdareX" Ids="IohPL6koP14M7s9zBSHU0L,BOSPBIoZwALPdf6RiiomKS" />
+        <Link Id="L4FJOQ5ZXlmPHpLOd6TATL" Ids="PBhzXqLwWf2NXQATsXVDmw,J6zYVbeRPPtNUttAu59Fc0" />
+        <Link Id="AfciIkJrKN7QVUCtYMyEBQ" Ids="KVVCFVfXpwwN1r4SpBt9HQ,TuTIBRe9k4SOSDaRCa2XAE" />
+      </Patch>
+    </Node>
+  </Patch>
+  <NugetDependency Id="G0lvelk7KFpLoB6vsiwmCg" Location="VL.CoreLib" Version="2021.4.9" />
+  <NugetDependency Id="VkNUJL0Wfq1QJPPcHDrkwa" Location="Phidget22.NET" Version="1.10.20220519" />
+  <DocumentDependency Id="K1upsW6H42xPOGQUjxoOsR" Location="../../VL.Devices.Phidgets.vl" />
+</Document>

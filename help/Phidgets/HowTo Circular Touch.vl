@@ -43,15 +43,14 @@
             </p:NodeReference>
             <Pin Id="Ig71YW29u3KOUwf0Ujb0gH" Name="Open" Kind="InputPin" DefaultValue="False" />
             <Pin Id="JkuYW6G2LhtO6wRUun4KaR" Name="Close" Kind="InputPin" />
-            <Pin Id="PcU6thBZKj6Mu0yjbjP6VN" Name="IsLocal" Kind="InputPin" />
             <Pin Id="RDaZIMWj6pwMhk3MLKEAMC" Name="Channel" Kind="InputPin" />
             <Pin Id="Cz0q1FBrLPdNzbOJvDhjsb" Name="SerialNumber" Kind="InputPin" />
-            <Pin Id="JLek0DsIWcGOFM5uo2EBVJ" Name="Result" Kind="OutputPin" />
+            <Pin Id="EfidKmc6nnQNbUdOGYAt3j" Name="Value" Kind="OutputPin" />
             <Pin Id="OkMoQ9ms9g2QSUTZJkhEnk" Name="Is Touched" Kind="OutputPin" />
             <Pin Id="HSYXG1b3VfZOpGqBsIB3oT" Name="Attached" Kind="OutputPin" />
             <Pin Id="AC5fcFvozUUMZ2FSEA1FuF" Name="Device Serial Number" Kind="OutputPin" />
           </Node>
-          <Pad Id="SWgLQSPQEvrQYZ4ysAo4Ep" Comment="Close" Bounds="564,288,37,42" ShowValueBox="true" isIOBox="true" Value="False">
+          <Pad Id="SWgLQSPQEvrQYZ4ysAo4Ep" Comment="Close" Bounds="569,294,37,42" ShowValueBox="true" isIOBox="true" Value="False">
             <p:TypeAnnotation>
               <Choice Kind="ImmutableTypeFlag" Name="Boolean" />
               <FullNameCategoryReference ID="Primitive" />
@@ -69,21 +68,9 @@
               <p:buttonmode p:Assembly="VL.UI.Forms" p:Type="VL.HDE.PatchEditor.Editors.ButtonModeEnum">Bang</p:buttonmode>
             </p:ValueBoxSettings>
           </Pad>
-          <Node Bounds="529,551,65,19" Id="IuMvJWbAn5yQGSgJu0tSVw">
-            <p:NodeReference LastCategoryFullName="Reactive" LastSymbolSource="VL.Reactive.vl">
-              <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
-              <Choice Kind="ProcessAppFlag" Name="HoldLatest" />
-            </p:NodeReference>
-            <Pin Id="Dfzei27uungL1blrwZGo0u" Name="Async Notifications" Kind="InputPin" />
-            <Pin Id="Hd6MH1Dt1fQNGb4MCbfaiB" Name="Reset" Kind="InputPin" />
-            <Pin Id="LOHGQKP43WhMPA7ZLnCR3M" Name="Value" Kind="OutputPin" />
-            <Pin Id="UrzI5xRMlcYMR8ubzbOeKg" Name="On Data" Kind="OutputPin" />
-          </Node>
-          <Pad Id="J36170xBgMWOiiOzvvgbov" Comment="" Bounds="530,629,35,35" ShowValueBox="true" isIOBox="true" />
-          <Pad Id="BVyvmDopIuoMpnVj3JoRer" Comment="Attached" Bounds="623,425,35,35" ShowValueBox="true" isIOBox="true" />
-          <Pad Id="JsE5iwsEyUDOY0uD10BNmF" Comment="Device Serial Number" Bounds="671,386,77,23" ShowValueBox="true" isIOBox="true" />
-          <Pad Id="GYu2OIytWG8O1MEFKRoVdr" Comment="On Data" Bounds="593,634,35,35" ShowValueBox="true" isIOBox="true" />
-          <Pad Id="GwHiEIlR18hPa35tAiiomI" Comment="Is Touched" Bounds="576,488,35,35" ShowValueBox="true" isIOBox="true" />
+          <Pad Id="BVyvmDopIuoMpnVj3JoRer" Comment="Attached" Bounds="610,423,35,35" ShowValueBox="true" isIOBox="true" />
+          <Pad Id="JsE5iwsEyUDOY0uD10BNmF" Comment="Device Serial Number" Bounds="650,385,77,23" ShowValueBox="true" isIOBox="true" />
+          <Pad Id="GwHiEIlR18hPa35tAiiomI" Comment="Is Touched" Bounds="569,478,35,35" ShowValueBox="true" isIOBox="true" />
           <Node Bounds="526,279,30,19" Id="PmYZOlw1JanNlIDKGsojCv">
             <p:NodeReference LastCategoryFullName="Primitive.Boolean" LastSymbolSource="CoreLibBasics.vl">
               <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
@@ -101,6 +88,7 @@
             <Pin Id="VVhIknTg12RLvJEiB8liPF" Name="Simulate" Kind="InputPin" />
             <Pin Id="BQUhVwpkYPVMAmJ0qE8Z1O" Name="Output" Kind="OutputPin" />
           </Node>
+          <Pad Id="ScrwEfGP8JlNc3tr4OFfWy" Comment="" Bounds="529,408,35,15" ShowValueBox="true" isIOBox="true" />
         </Canvas>
         <ProcessDefinition Id="M7DhTjVrkxFPTU6ibB97qp">
           <Fragment Id="Ka160IZ6ipXPEuPO79oXgb" Patch="UMHvqj8Id8pO2ddYAbC8xP" Enabled="true" />
@@ -110,14 +98,12 @@
         <Patch Id="SUuys83bkbYO7pfz05VSQu" Name="Update" />
         <Link Id="Tdxi99EyBIJQDgsG1nXuQj" Ids="SWgLQSPQEvrQYZ4ysAo4Ep,JkuYW6G2LhtO6wRUun4KaR" />
         <Link Id="CNU4g3g0XWfOEzckZyelwl" Ids="VzhtgIwh8QBOblSpgYWwfD,QrXPkZeL9esNdwuhTrW67F" />
-        <Link Id="VTexTHUYcYhNWLH3B26rGd" Ids="JLek0DsIWcGOFM5uo2EBVJ,Dfzei27uungL1blrwZGo0u" />
-        <Link Id="M3jF4BTPvOPO3baOs6cJX2" Ids="LOHGQKP43WhMPA7ZLnCR3M,J36170xBgMWOiiOzvvgbov" />
         <Link Id="Ls2e0iZCqeXMNG5EYk5yc6" Ids="HSYXG1b3VfZOpGqBsIB3oT,BVyvmDopIuoMpnVj3JoRer" />
         <Link Id="CwaGPnIzxHHQEnT6Aop8Hj" Ids="AC5fcFvozUUMZ2FSEA1FuF,JsE5iwsEyUDOY0uD10BNmF" />
-        <Link Id="RkieAcLyedoLWeN6k9j9AW" Ids="UrzI5xRMlcYMR8ubzbOeKg,GYu2OIytWG8O1MEFKRoVdr" />
         <Link Id="Ql0nmhvAINrMHqR2MzEfZB" Ids="OkMoQ9ms9g2QSUTZJkhEnk,GwHiEIlR18hPa35tAiiomI" />
         <Link Id="RgfORb6svvNPNiiwG6K9I5" Ids="E8Xc0TCOExHMqmZSrzY97z,Ig71YW29u3KOUwf0Ujb0gH" />
         <Link Id="O0SlahZllSWLehaFdlOe0Z" Ids="BQUhVwpkYPVMAmJ0qE8Z1O,F0E9uyVRHfaNoDcGoWRMRv" />
+        <Link Id="GmBnZKtOeguLt1h5fkd0OW" Ids="EfidKmc6nnQNbUdOGYAt3j,ScrwEfGP8JlNc3tr4OFfWy" />
       </Patch>
     </Node>
   </Patch>
