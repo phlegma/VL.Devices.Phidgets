@@ -23,20 +23,13 @@
             <Pin Id="TuTIBRe9k4SOSDaRCa2XAE" Name="Destination" Kind="InputPin" DefaultValue="" />
             <Pin Id="Nz4lTOll3kGP68WBtdm4g2" Name="Level" Kind="InputPin" />
             <Pin Id="LKWEBduT57rON7z3s8tJaq" Name="Sources" Kind="OutputPin" />
-            <Pin Id="IohPL6koP14M7s9zBSHU0L" Name="Level" Kind="OutputPin" />
           </Node>
-          <Pad Id="KVVCFVfXpwwN1r4SpBt9HQ" Comment="Destination" Bounds="186,100,220,29" ShowValueBox="true" isIOBox="true" Value="..\..\..\..\..\..\Desktop\log.log">
-            <p:TypeAnnotation LastCategoryFullName="IO" LastSymbolSource="CoreLibBasics.vl">
-              <Choice Kind="TypeFlag" Name="Path" />
-            </p:TypeAnnotation>
-          </Pad>
           <Pad Id="CooJu2m7YlwLtlkjD8B4UA" Comment="Level" Bounds="227,181,140,24" ShowValueBox="true" isIOBox="true" Value="Verbose">
             <p:TypeAnnotation LastCategoryFullName="Phidget22" LastSymbolSource="Phidget22.NET.dll">
               <Choice Kind="TypeFlag" Name="LogLevel" />
             </p:TypeAnnotation>
           </Pad>
           <Pad Id="F6jBsGtdVRwQUNGyHCcngc" Comment="" Bounds="147,288,173,113" ShowValueBox="true" isIOBox="true" />
-          <Pad Id="BOSPBIoZwALPdf6RiiomKS" Comment="Level" Bounds="382,299,66,15" ShowValueBox="true" isIOBox="true" />
           <Pad Id="PBhzXqLwWf2NXQATsXVDmw" Comment="Enable" Bounds="147,158,35,31" ShowValueBox="true" isIOBox="true" Value="True">
             <p:TypeAnnotation>
               <Choice Kind="ImmutableTypeFlag" Name="Boolean" />
@@ -44,6 +37,35 @@
             </p:TypeAnnotation>
             <p:ValueBoxSettings>
               <p:buttonmode p:Assembly="VL.UI.Forms" p:Type="VL.HDE.PatchEditor.Editors.ButtonModeEnum">Toggle</p:buttonmode>
+            </p:ValueBoxSettings>
+          </Pad>
+          <Node Bounds="186,7,87,19" Id="Ivn9QE5sTX6O4HIPxntGFK">
+            <p:NodeReference LastCategoryFullName="System.Application" LastSymbolSource="CoreLibBasics.vl">
+              <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+              <Choice Kind="ProcessAppFlag" Name="ApplicationPath" />
+            </p:NodeReference>
+            <Pin Id="SqYGQnYWX90PSxwhLHgauX" Name="Output" Kind="OutputPin" />
+          </Node>
+          <Node Bounds="186,43,25,19" Id="AC6gAjd8OSeOt9aJvSx6sa">
+            <p:NodeReference LastCategoryFullName="Math" LastSymbolSource="CoreLibBasics.vl">
+              <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+              <Choice Kind="OperationCallFlag" Name="+" />
+            </p:NodeReference>
+            <Pin Id="AXxEkeU8r5tM07ePKw2ZHv" Name="Input" Kind="InputPin" />
+            <Pin Id="MWzmj18esK3MN7NFuOSkm3" Name="Input 2" Kind="InputPin" DefaultValue="phidgets.log" />
+            <Pin Id="IcXuJ2wp0Z3OAINb4ClwDj" Name="Output" Kind="OutputPin" />
+          </Node>
+          <Node Bounds="186,74,48,19" Id="Fj41QobD3JjObsX2zB4hfE">
+            <p:NodeReference LastCategoryFullName="IO" LastSymbolSource="CoreLibBasics.vl">
+              <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+              <Choice Kind="OperationCallFlag" Name="ToPath" />
+            </p:NodeReference>
+            <Pin Id="UtuP0wSUAymNWB3TYT0ARm" Name="Input" Kind="InputPin" />
+            <Pin Id="QsvwLodgx1gOFYvpbiJ152" Name="Result" Kind="OutputPin" />
+          </Node>
+          <Pad Id="HnYHNhdjPoILSWWxOdsCqc" Comment="" Bounds="188,113,507,19" ShowValueBox="true" isIOBox="true" Value="..\..\..\..\..\..\..\..\\">
+            <p:ValueBoxSettings>
+              <p:pathtype p:Assembly="VL.Core" p:Type="VL.Core.PathType">File</p:pathtype>
             </p:ValueBoxSettings>
           </Pad>
         </Canvas>
@@ -55,9 +77,11 @@
         </ProcessDefinition>
         <Link Id="VZUuEGXxm8GNNsfyoVozYw" Ids="CooJu2m7YlwLtlkjD8B4UA,Nz4lTOll3kGP68WBtdm4g2" />
         <Link Id="FEicOgMDSolPlixGkZgiDO" Ids="LKWEBduT57rON7z3s8tJaq,F6jBsGtdVRwQUNGyHCcngc" />
-        <Link Id="CVwpasLX3UjPk2WhCdareX" Ids="IohPL6koP14M7s9zBSHU0L,BOSPBIoZwALPdf6RiiomKS" />
         <Link Id="L4FJOQ5ZXlmPHpLOd6TATL" Ids="PBhzXqLwWf2NXQATsXVDmw,J6zYVbeRPPtNUttAu59Fc0" />
-        <Link Id="AfciIkJrKN7QVUCtYMyEBQ" Ids="KVVCFVfXpwwN1r4SpBt9HQ,TuTIBRe9k4SOSDaRCa2XAE" />
+        <Link Id="TRXW1CHWCKVLvTB3aI2Ewg" Ids="SqYGQnYWX90PSxwhLHgauX,AXxEkeU8r5tM07ePKw2ZHv" />
+        <Link Id="OaRmenzf14GL7Pn3RPdNqn" Ids="IcXuJ2wp0Z3OAINb4ClwDj,UtuP0wSUAymNWB3TYT0ARm" />
+        <Link Id="KWubNOVtQM4PCh97ulgoQF" Ids="QsvwLodgx1gOFYvpbiJ152,HnYHNhdjPoILSWWxOdsCqc" />
+        <Link Id="CU9V4CJawzwNd8Zk8Ou9Kx" Ids="HnYHNhdjPoILSWWxOdsCqc,TuTIBRe9k4SOSDaRCa2XAE" />
       </Patch>
     </Node>
   </Patch>
