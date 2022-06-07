@@ -49,13 +49,13 @@
             <Pin Id="BI32u0nSGFdOt7z0PGfwmi" Name="SerialNumber" Kind="InputPin" />
             <Pin Id="D4iPaAEBQ5GQNbhloi2yY8" Name="HubPort" Kind="InputPin" />
             <Pin Id="VIMF6hwiMBOOPeoI6lZg5Z" Name="Data Interval" Kind="InputPin" />
-            <Pin Id="KLHN4TzXfZnOcr1o3QS7N1" Name="Result" Kind="OutputPin" />
             <Pin Id="C1XQ6AIyJ8kNcz5DvMe34V" Name="Distances" Kind="OutputPin" />
             <Pin Id="Djm2RF0fHuYMdQnsgy5Fra" Name="Amplitudes" Kind="OutputPin" />
             <Pin Id="KsUdZC9sdP8OElWllMeenU" Name="Count" Kind="OutputPin" />
             <Pin Id="VjxmccwPr8MPWNMv3DNSFD" Name="Attached" Kind="OutputPin" />
             <Pin Id="U2tA9YkW538NhQAhxlMVdm" Name="Device Serial Number" Kind="OutputPin" />
             <Pin Id="TQYjkt9J3hHLSHarvQCagM" Name="Hub Port" Kind="OutputPin" />
+            <Pin Id="PtdWySTVa2HQCtkdqMy8sr" Name="Value" Kind="OutputPin" />
           </Node>
           <Node Bounds="386,55,-29,19" Id="QgRQ5cIAdS9OyoAGLclthh">
             <p:NodeReference LastCategoryFullName="VL.Devices.Phidgets" LastSymbolSource="VL.Devices.Phidgets.vl">
@@ -132,7 +132,7 @@
             <Pin Id="PgOM6QVLhNqLfZZ418ZtNI" Name="Close" Kind="InputPin" />
             <Pin Id="EdahvQ9yrRFLkJ7FWJApgY" Name="Channel" Kind="InputPin" />
             <Pin Id="Dbn2sFrNhZHLe6buWOHvUa" Name="SerialNumber" Kind="InputPin" />
-            <Pin Id="ANPeX4d7lUpLL1swlRbcO9" Name="Result" Kind="OutputPin" />
+            <Pin Id="FP9Ta6xAd56Owm2WTJHFDs" Name="Value" Kind="OutputPin" />
             <Pin Id="M1AxRONwqeSOCXTjtJIu7V" Name="Is Touched" Kind="OutputPin" />
             <Pin Id="NPBjY14cfqjNluXH2iJoq3" Name="Attached" Kind="OutputPin" />
             <Pin Id="RUl53omqlFqODwgc3TKAxa" Name="Device Serial Number" Kind="OutputPin" />
@@ -178,15 +178,15 @@
           <Overlay Id="Mt7ykHG0IymP3HHtHnzr3c" Name="Sensors" Bounds="599,10,181,216" />
           <Overlay Id="O11pab8vzW4K91jSuqioER" Name="Devices" Bounds="824,12,229,157" />
           <Overlay Id="F5FFt0820lwMxbCPe1dFyz" Name="Utils" Bounds="1074,13,290,161" />
-          <Node Bounds="1089,119,65,19" Id="TjQH316Pr9VNPte0D6Iwiw">
+          <Node Bounds="1089,109,65,19" Id="TjQH316Pr9VNPte0D6Iwiw">
             <p:NodeReference LastCategoryFullName="Devices.Phidgets" LastSymbolSource="VL.Devices.Phidgets.vl">
               <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
               <Choice Kind="ProcessAppFlag" Name="Logging" />
             </p:NodeReference>
-            <Pin Id="UD6pHzhFTydMsaaSLWg2Mw" Name="Enable" Kind="InputPin" DefaultValue="True" />
+            <Pin Id="UD6pHzhFTydMsaaSLWg2Mw" Name="Enable" Kind="InputPin" />
+            <Pin Id="DBuHMF8x2N5NQIwiCfihcQ" Name="Destination" Kind="InputPin" />
             <Pin Id="EJBCgcHAcQALLbfVqlyyI3" Name="Level" Kind="InputPin" />
-            <Pin Id="DBuHMF8x2N5NQIwiCfihcQ" Name="Destination" Kind="InputPin" DefaultValue="..\..\..\..\..\..\Desktop\logging.log" />
-            <Pin Id="EX3a8LxZWxuQGg5BrFLCoX" Name="Result" Kind="OutputPin" />
+            <Pin Id="EXrYyVOopZRM76o2hoYYnR" Name="Sources" Kind="OutputPin" />
           </Node>
         </Canvas>
         <ProcessDefinition Id="M7DhTjVrkxFPTU6ibB97qp">
