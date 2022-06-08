@@ -11,42 +11,42 @@ To use the latest stable version:
 3. Open the Help Menu (F1). Open the tap "Learn". Search for the pack "Devices.Phidgets"
 
 ## Contributing
-Feel free to clone the repro an add missing Phidget Devices. Also you can make a pull request or send me the patch over any digital communication cannel. 
+Feel free to clone the repro an add missing Phidget devices. Also you can make a pull request or send me the patch over any digital communication cannel. 
 
 ### How to add missing Phidgets Nodes
-There are a huge List of Phidget Devices and Class. So it was no time to add alle devices to the package or to do it via factory pattern ([Phidget API](https://www.phidgets.com/?view=api))  
-But the importend operation are bundles via processes so it is easy to add new nodes to the package. 
-1. Clone the Repository and open the VL.Devices.Phidgets.vl Document
-2. Open the Definition Patch (Shift+Alt+A)
-3. Add a Process Node with the Name of the Phidget Class you want to add like "Accelerometer"  
+There are a huge List of Phidget devices and classes. So there was no time to add all devices to the package or to do it via factory pattern etc. ([Phidget API](https://www.phidgets.com/?view=api))  
+The important operation are bundles via processes, so it is easy to add new nodes to the package. 
+1. Clone the repository and open the VL.Devices.Phidgets.vl document
+2. Open the definition patch (Shift+Alt+A)
+3. Add a process node with the name of the Phidget class you want to add like "Accelerometer"  
 
 ![vvvv gamma definition patch](./assets/DefintionPatch.png)  
 
-4. Open the Process "Accelerometer" and Create the Accelerometer instance of the class
+4. Open the process "Accelerometer" and add the "Create" operation of the Accelerometer class
 
 ![Create Accelerometer class](./assets/AssignCreate.png)  
 
-5. Assign the Node to the "Create" Operation via context menu
+5. Assign the node to the "Create" operation via context menu
 
 ![Assign to Create Operation](./assets/AssignCreate.png)
 
-6. Store the Instance of the class in a pad with the name of the Class.  
+6. Store the instance of the class in a pad with the name of the class.  
 
 ![Accelerometer Pad](./assets/AccelerometerPad.png)
 
-8. Every class extends the phidget class to handle basic operation like open and close. To add these basic phidget operation to the accelerometer, we add the predefined phidget process and extend the Inputs and Outputs. 
+8. Every class extends the Phidget class to handle basic operation like open and close. To add these basic phidget operation to the accelerometer, we add the predefined Phidget process and extend the Inputs and Outputs.  
 
 ![Phidget Base Process](./assets/phidgetProcesss.png)
 
-9. If necessary you can add the operation for "Hub" or "Sensor" process with the predefined operation.  
+9. If necessary you can add the operation for "Hub" or "Sensor" process with their predefined operation.  
 
 ![Hub and Sensor](./assets/HubSensor.png)
 
-10. Every Sensor comes with it own Event and EventArgs to send the Data from Device to Computer. This has to implemented by its own, but always follows the same structure. 
+10. Every Sensor comes with its own Event and EventArgs to send data from device to the computer. This has to implemented by its own, but always follows the same structure. 
 
 ![Accelerometer](./assets/AccelerometerEvent.png)  
 
-11. Also there are class related set operations for the devices. This can be add the operation to the patch and apply it if the phidget is attached and the pin is changed.
+11. There are class related set operations for the devices. Add the set operations to the patch. The operation should only be applied it if the phidget is attached and the pin is changed.
 
 ![Set operations](./assets/setOperations.png)
 
