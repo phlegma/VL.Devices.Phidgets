@@ -86,6 +86,6 @@
     </Node>
   </Patch>
   <NugetDependency Id="G0lvelk7KFpLoB6vsiwmCg" Location="VL.CoreLib" Version="2021.4.9" />
-  <NugetDependency Id="VkNUJL0Wfq1QJPPcHDrkwa" Location="Phidget22.NET" Version="1.10.20220519" />
+  <NugetDependency Id="VkNUJL0Wfq1QJPPcHDrkwa" Location="Phidget22.NET" Version="1.10.20220530" />
   <DocumentDependency Id="K1upsW6H42xPOGQUjxoOsR" Location="../../VL.Devices.Phidgets.vl" />
 </Document>

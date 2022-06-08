@@ -36,7 +36,7 @@
       </p:NodeReference>
       <Patch Id="RcdmicmnND1Pyv3TJj3de9">
         <Canvas Id="Th1wAbWQAPlMOAdCYXCkfd" CanvasType="Group">
-          <Node Bounds="76,181,125,19" Id="JvNmbdls2N6QMkaPjxgedo">
+          <Node Bounds="281,443,125,19" Id="JvNmbdls2N6QMkaPjxgedo">
             <p:NodeReference LastCategoryFullName="VL.Devices.Phidgets" LastSymbolSource="VL.Devices.Phidgets.vl">
               <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
               <Choice Kind="ProcessAppFlag" Name="DigitalOutput" />
@@ -52,8 +52,8 @@
             <Pin Id="FknZfS3OXkuMTEixvRoVRB" Name="Device Serial Number" Kind="OutputPin" />
             <Pin Id="DsK40IG0eY7MdiJm2Ahxib" Name="Hub Port Count" Kind="OutputPin" />
           </Node>
-          <Pad Id="Sp3wPY293qGPdewZRLlpEK" Comment="Attached" Bounds="78,222,35,35" ShowValueBox="true" isIOBox="true" />
-          <Pad Id="UxZ8BMwd2vvNmXkGQ6ROMV" Comment="Value" Bounds="78,-6,62,53" ShowValueBox="true" isIOBox="true" Value="True">
+          <Pad Id="Sp3wPY293qGPdewZRLlpEK" Comment="Attached" Bounds="283,484,35,35" ShowValueBox="true" isIOBox="true" />
+          <Pad Id="UxZ8BMwd2vvNmXkGQ6ROMV" Comment="Value" Bounds="283,256,62,53" ShowValueBox="true" isIOBox="true" Value="True">
             <p:TypeAnnotation>
               <Choice Kind="ImmutableTypeFlag" Name="Boolean" />
               <FullNameCategoryReference ID="Primitive" />
@@ -62,7 +62,7 @@
               <p:buttonmode p:Assembly="VL.UI.Forms" p:Type="VL.HDE.PatchEditor.Editors.ButtonModeEnum">Toggle</p:buttonmode>
             </p:ValueBoxSettings>
           </Pad>
-          <Pad Id="Ds4IZQoqSOyPwekbWLvNsI" Comment="Open" Bounds="124,101,35,27" ShowValueBox="true" isIOBox="true" Value="False">
+          <Pad Id="Ds4IZQoqSOyPwekbWLvNsI" Comment="Open" Bounds="325,360,35,27" ShowValueBox="true" isIOBox="true" Value="False">
             <p:TypeAnnotation>
               <Choice Kind="ImmutableTypeFlag" Name="Boolean" />
               <FullNameCategoryReference ID="Primitive" />
@@ -71,8 +71,8 @@
               <p:buttonmode p:Assembly="VL.UI.Forms" p:Type="VL.HDE.PatchEditor.Editors.ButtonModeEnum">Bang</p:buttonmode>
             </p:ValueBoxSettings>
           </Pad>
-          <Pad Id="SSdNN1Xxc0yM81Q6QOOr7h" Comment="Hub Port Count" Bounds="220,223,35,15" ShowValueBox="true" isIOBox="true" />
-          <Pad Id="POjGVF3qTJUQGTMeiPcULm" Comment="Close" Bounds="148,137,35,28" ShowValueBox="true" isIOBox="true" Value="False">
+          <Pad Id="SSdNN1Xxc0yM81Q6QOOr7h" Comment="Hub Port Count" Bounds="403,482,35,15" ShowValueBox="true" isIOBox="true" />
+          <Pad Id="POjGVF3qTJUQGTMeiPcULm" Comment="Close" Bounds="343,397,35,28" ShowValueBox="true" isIOBox="true" Value="False">
             <p:TypeAnnotation>
               <Choice Kind="ImmutableTypeFlag" Name="Boolean" />
               <FullNameCategoryReference ID="Primitive" />
@@ -81,13 +81,13 @@
               <p:buttonmode p:Assembly="VL.UI.Forms" p:Type="VL.HDE.PatchEditor.Editors.ButtonModeEnum">Bang</p:buttonmode>
             </p:ValueBoxSettings>
           </Pad>
-          <Pad Id="GEXJEeuJhBvPIlviftNTzb" Comment="HubPort" Bounds="218,163,68,15" ShowValueBox="true" isIOBox="true" Value="1">
+          <Pad Id="GEXJEeuJhBvPIlviftNTzb" Comment="HubPort" Bounds="403,424,68,15" ShowValueBox="true" isIOBox="true" Value="1">
             <p:TypeAnnotation LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
               <Choice Kind="TypeFlag" Name="Integer32" />
             </p:TypeAnnotation>
           </Pad>
-          <Pad Id="UkveUKx04uXP6ifxxXW0md" Comment="Device Serial Number" Bounds="147,264,65,23" ShowValueBox="true" isIOBox="true" />
-          <Pad Id="HoAasqOA5scNjD5YeTylHa" Comment="Duty Cycle" Bounds="103,69,35,15" ShowValueBox="true" isIOBox="true" Value="0.65999998524785">
+          <Pad Id="UkveUKx04uXP6ifxxXW0md" Comment="Device Serial Number" Bounds="342,531,65,23" ShowValueBox="true" isIOBox="true" />
+          <Pad Id="HoAasqOA5scNjD5YeTylHa" Comment="Duty Cycle" Bounds="303,327,35,15" ShowValueBox="true" isIOBox="true" Value="0.65999998524785">
             <p:TypeAnnotation LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
               <Choice Kind="TypeFlag" Name="Float64" />
             </p:TypeAnnotation>

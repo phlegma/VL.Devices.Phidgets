@@ -14,7 +14,7 @@
       </p:NodeReference>
       <Patch Id="EhzCiuRcVYuMMlzNLi1xQu">
         <Canvas Id="CzEn1nLPRpFP0aQfi3JHD6" CanvasType="Group">
-          <Node Bounds="57,182,145,19" Id="HaffMfM98YPNZENSzHf3eK">
+          <Node Bounds="245,437,145,19" Id="HaffMfM98YPNZENSzHf3eK">
             <p:NodeReference LastCategoryFullName="VL.Devices.Phidgets" LastSymbolSource="VL.Devices.Phidgets.vl">
               <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
               <Choice Kind="ProcessAppFlag" Name="LightSensor" />
@@ -32,7 +32,7 @@
             <Pin Id="Ahd2aLxvP3BPn7yIZxTEaT" Name="Attached" Kind="OutputPin" />
             <Pin Id="LxT0IN8bGgtNBUdKQOollY" Name="Device Serial Number" Kind="OutputPin" />
           </Node>
-          <Pad Id="S5GPFIZw5fWOosBU6KBM8t" Comment="Open" Bounds="59,54,35,35" ShowValueBox="true" isIOBox="true" Value="False">
+          <Pad Id="S5GPFIZw5fWOosBU6KBM8t" Comment="Open" Bounds="247,309,35,35" ShowValueBox="true" isIOBox="true" Value="False">
             <p:TypeAnnotation>
               <Choice Kind="ImmutableTypeFlag" Name="Boolean" />
               <FullNameCategoryReference ID="Primitive" />
@@ -41,7 +41,7 @@
               <p:buttonmode p:Assembly="VL.UI.Forms" p:Type="VL.HDE.PatchEditor.Editors.ButtonModeEnum">Bang</p:buttonmode>
             </p:ValueBoxSettings>
           </Pad>
-          <Pad Id="LVUajCYa6h0POFtpUsOUr3" Comment="Close" Bounds="86,107,41,38" ShowValueBox="true" isIOBox="true" Value="False">
+          <Pad Id="LVUajCYa6h0POFtpUsOUr3" Comment="Close" Bounds="274,362,41,38" ShowValueBox="true" isIOBox="true" Value="False">
             <p:TypeAnnotation>
               <Choice Kind="ImmutableTypeFlag" Name="Boolean" />
               <FullNameCategoryReference ID="Primitive" />
@@ -50,21 +50,21 @@
               <p:buttonmode p:Assembly="VL.UI.Forms" p:Type="VL.HDE.PatchEditor.Editors.ButtonModeEnum">Bang</p:buttonmode>
             </p:ValueBoxSettings>
           </Pad>
-          <Pad Id="CoG1D9e8GjWQKAnbwvF4rZ" Comment="Attached" Bounds="171,226,35,35" ShowValueBox="true" isIOBox="true" />
-          <Pad Id="UAahGy7bXmcML97FJQjRsV" Comment="HubPort" Bounds="170,136,37,15" ShowValueBox="true" isIOBox="true" Value="5">
+          <Pad Id="CoG1D9e8GjWQKAnbwvF4rZ" Comment="Attached" Bounds="359,481,35,35" ShowValueBox="true" isIOBox="true" />
+          <Pad Id="UAahGy7bXmcML97FJQjRsV" Comment="HubPort" Bounds="360,389,37,15" ShowValueBox="true" isIOBox="true" Value="5">
             <p:TypeAnnotation LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
               <Choice Kind="TypeFlag" Name="Integer32" />
             </p:TypeAnnotation>
           </Pad>
-          <Pad Id="MjlEaNm4P38QbZeL8zisaC" Comment="Min Illuminance" Bounds="114,350,88,22" ShowValueBox="true" isIOBox="true" />
-          <Pad Id="HCWcpVq5lqONkzzl1xs4pv" Comment="Data Interval" Bounds="199,163,35,15" ShowValueBox="true" isIOBox="true" Value="300">
+          <Pad Id="MjlEaNm4P38QbZeL8zisaC" Comment="Min Illuminance" Bounds="302,605,88,22" ShowValueBox="true" isIOBox="true" />
+          <Pad Id="HCWcpVq5lqONkzzl1xs4pv" Comment="Data Interval" Bounds="387,418,35,15" ShowValueBox="true" isIOBox="true" Value="300">
             <p:TypeAnnotation LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
               <Choice Kind="TypeFlag" Name="Integer32" />
             </p:TypeAnnotation>
           </Pad>
-          <Pad Id="F7RcrvP5SlEPclRnvCLud7" Comment="" Bounds="59,235,35,15" ShowValueBox="true" isIOBox="true" />
-          <Pad Id="EslbEfxsfjHL3JRniKrJW2" Comment="Max Illuminance" Bounds="143,393,88,15" ShowValueBox="true" isIOBox="true" />
-          <Pad Id="U5XFCASw9XeLu4XM4iZxTG" Comment="On Data" Bounds="87,274,35,35" ShowValueBox="true" isIOBox="true" />
+          <Pad Id="F7RcrvP5SlEPclRnvCLud7" Comment="" Bounds="247,490,60,17" ShowValueBox="true" isIOBox="true" />
+          <Pad Id="EslbEfxsfjHL3JRniKrJW2" Comment="Max Illuminance" Bounds="331,648,88,15" ShowValueBox="true" isIOBox="true" />
+          <Pad Id="U5XFCASw9XeLu4XM4iZxTG" Comment="On Data" Bounds="275,529,35,35" ShowValueBox="true" isIOBox="true" />
         </Canvas>
         <Patch Id="MjHQ9g4c5awQHRHSbUlJHr" Name="Create" />
         <Patch Id="F6A4oUzn01kPTc0qHTd4Bm" Name="Update" />

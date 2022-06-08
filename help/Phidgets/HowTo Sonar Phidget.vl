@@ -36,7 +36,7 @@
       </p:NodeReference>
       <Patch Id="RcdmicmnND1Pyv3TJj3de9">
         <Canvas Id="Th1wAbWQAPlMOAdCYXCkfd" CanvasType="Group">
-          <Pad Id="Ds4IZQoqSOyPwekbWLvNsI" Comment="Open" Bounds="148,93,38,31" ShowValueBox="true" isIOBox="true" Value="False">
+          <Pad Id="Ds4IZQoqSOyPwekbWLvNsI" Comment="Open" Bounds="316,347,38,31" ShowValueBox="true" isIOBox="true" Value="False">
             <p:TypeAnnotation>
               <Choice Kind="ImmutableTypeFlag" Name="Boolean" />
               <FullNameCategoryReference ID="Primitive" />
@@ -45,7 +45,7 @@
               <p:buttonmode p:Assembly="VL.UI.Forms" p:Type="VL.HDE.PatchEditor.Editors.ButtonModeEnum">Bang</p:buttonmode>
             </p:ValueBoxSettings>
           </Pad>
-          <Pad Id="UdzbTNQIcF9QZcEZEdg025" Comment="Close" Bounds="165,130,35,33" ShowValueBox="true" isIOBox="true" Value="False">
+          <Pad Id="UdzbTNQIcF9QZcEZEdg025" Comment="Close" Bounds="335,383,35,33" ShowValueBox="true" isIOBox="true" Value="False">
             <p:TypeAnnotation>
               <Choice Kind="ImmutableTypeFlag" Name="Boolean" />
               <FullNameCategoryReference ID="Primitive" />
@@ -54,7 +54,7 @@
               <p:buttonmode p:Assembly="VL.UI.Forms" p:Type="VL.HDE.PatchEditor.Editors.ButtonModeEnum">Bang</p:buttonmode>
             </p:ValueBoxSettings>
           </Pad>
-          <Node Bounds="123,173,125,19" Id="GkjeZA1Dnh0Nm33y12n0U1">
+          <Node Bounds="293,426,145,19" Id="GkjeZA1Dnh0Nm33y12n0U1">
             <p:NodeReference LastCategoryFullName="VL.Devices.Phidgets" LastSymbolSource="VL.Devices.Phidgets.vl">
               <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
               <Choice Kind="ProcessAppFlag" Name="DistanceSensor" />
@@ -67,28 +67,27 @@
             <Pin Id="EQnm8Q0gpivLIqZv6mJeHU" Name="SerialNumber" Kind="InputPin" />
             <Pin Id="Aypqti5VCNxP4p1leXcUMz" Name="HubPort" Kind="InputPin" />
             <Pin Id="Vo4Jdx6m4mnQHLjQrDWPER" Name="Data Interval" Kind="InputPin" />
+            <Pin Id="SmQHJHNqLj9NKpA28S9GvT" Name="Value" Kind="OutputPin" />
             <Pin Id="ET6oJPcoDu4OoRLgnCasSi" Name="Distances" Kind="OutputPin" />
             <Pin Id="FpwM1cTc8aCPBK5yIeDOYi" Name="Amplitudes" Kind="OutputPin" />
             <Pin Id="Sk5GeVfd3KWP15kUQSjtVR" Name="Count" Kind="OutputPin" />
             <Pin Id="Q44MBIhYpdKMXyjRCbt287" Name="Attached" Kind="OutputPin" />
             <Pin Id="VN6giAlJXvGNI1ILgn1DpG" Name="Device Serial Number" Kind="OutputPin" />
             <Pin Id="ILR93Fu9MvXL4yOMP4PpHA" Name="Hub Port" Kind="OutputPin" />
-            <Pin Id="SmQHJHNqLj9NKpA28S9GvT" Name="Value" Kind="OutputPin" />
-            <Pin Id="QOrls0o5n5hNGCQnGHRQeC" Name="On Data" Kind="OutputPin" />
           </Node>
-          <Pad Id="PY5o5mLfcK5NrajvUeVpRH" Comment="Hub Port" Bounds="305,218,35,15" ShowValueBox="true" isIOBox="true" />
-          <Pad Id="D1JexFpMaUxPhn07ceNMXc" Comment="Distances" Bounds="150,308,66,195" ShowValueBox="true" isIOBox="true" Value="0">
+          <Pad Id="PY5o5mLfcK5NrajvUeVpRH" Comment="Hub Port" Bounds="475,471,35,15" ShowValueBox="true" isIOBox="true" />
+          <Pad Id="D1JexFpMaUxPhn07ceNMXc" Comment="Distances" Bounds="317,556,66,195" ShowValueBox="true" isIOBox="true" Value="0">
             <p:ValueBoxSettings>
               <p:maxvisibleentries p:Type="Int32">9</p:maxvisibleentries>
             </p:ValueBoxSettings>
           </Pad>
-          <Pad Id="Ly0IdRD1ltiM6m0rFHwnvV" Comment="Amplitudes" Bounds="296,305,68,199" ShowValueBox="true" isIOBox="true" Value="0">
+          <Pad Id="Ly0IdRD1ltiM6m0rFHwnvV" Comment="Amplitudes" Bounds="466,558,68,199" ShowValueBox="true" isIOBox="true" Value="0">
             <p:ValueBoxSettings>
               <p:maxvisibleentries p:Type="Int32">8</p:maxvisibleentries>
             </p:ValueBoxSettings>
           </Pad>
-          <Pad Id="OlOeo1Rjy2QPpqrnayh8tr" Comment="Count" Bounds="457,306,35,15" ShowValueBox="true" isIOBox="true" />
-          <Pad Id="Lw5Y0QACANvNReyhTv5zMl" Comment="Sonar Quite Mode" Bounds="123,39,35,35" ShowValueBox="true" isIOBox="true" Value="False">
+          <Pad Id="OlOeo1Rjy2QPpqrnayh8tr" Comment="Count" Bounds="627,559,35,15" ShowValueBox="true" isIOBox="true" />
+          <Pad Id="Lw5Y0QACANvNReyhTv5zMl" Comment="Sonar Quite Mode" Bounds="295,295,35,35" ShowValueBox="true" isIOBox="true" Value="False">
             <p:TypeAnnotation>
               <Choice Kind="ImmutableTypeFlag" Name="Boolean" />
               <FullNameCategoryReference ID="Primitive" />
@@ -97,6 +96,7 @@
               <p:buttonmode p:Assembly="VL.UI.Forms" p:Type="VL.HDE.PatchEditor.Editors.ButtonModeEnum">Toggle</p:buttonmode>
             </p:ValueBoxSettings>
           </Pad>
+          <Pad Id="NJFSgpf24VqP4VPob3qKty" Comment="" Bounds="291,494,35,15" ShowValueBox="true" isIOBox="true" />
         </Canvas>
         <ProcessDefinition Id="M7DhTjVrkxFPTU6ibB97qp">
           <Fragment Id="Ka160IZ6ipXPEuPO79oXgb" Patch="UMHvqj8Id8pO2ddYAbC8xP" Enabled="true" />
@@ -111,6 +111,7 @@
         <Link Id="PXltwD49H3kMQm2pSUgrQ4" Ids="FpwM1cTc8aCPBK5yIeDOYi,Ly0IdRD1ltiM6m0rFHwnvV" />
         <Link Id="PD3QPeFuctMOw55vz2DeDo" Ids="Sk5GeVfd3KWP15kUQSjtVR,OlOeo1Rjy2QPpqrnayh8tr" />
         <Link Id="I7yW8oEn4FrOhPREQCo9La" Ids="Lw5Y0QACANvNReyhTv5zMl,DR6Bn8KsvCTLvJ51sTQEgd" />
+        <Link Id="HNEmH6Ll4mwQYxV35flwsp" Ids="SmQHJHNqLj9NKpA28S9GvT,NJFSgpf24VqP4VPob3qKty" />
       </Patch>
     </Node>
   </Patch>

@@ -27,13 +27,14 @@
             <Pin Id="Cz0q1FBrLPdNzbOJvDhjsb" Name="SerialNumber" Kind="InputPin" />
             <Pin Id="U3nvV9VCT8aMthVNKZpM4u" Name="HubPort" Kind="InputPin" DefaultValue="4" />
             <Pin Id="Phr5qS2SD0QPR0ccUroj7H" Name="Data Interval" Kind="InputPin" />
-            <Pin Id="DppbBCiC4HnPbvf51Ogro8" Name="Value" Kind="OutputPin" />
-            <Pin Id="QCgpufoe8wKMDXm4b3TbHH" Name="On Data" Kind="OutputPin" />
+            <Pin Id="NNf5yNlXtKwNBaGXmKg1l9" Name="SetSensorValueChangeTrigger" Kind="InputPin" />
+            <Pin Id="A5vnO4IvsjVLvjwAJ1DKnb" Name="Value" Kind="OutputPin" />
+            <Pin Id="HkbbiPizmU3Pck6VYjuely" Name="On Data" Kind="OutputPin" />
             <Pin Id="HSYXG1b3VfZOpGqBsIB3oT" Name="Attached" Kind="OutputPin" />
             <Pin Id="D2V3AYHpdhzPEP6uf1tnqK" Name="Device Serial Number" Kind="OutputPin" />
             <Pin Id="BgSdY5kM5hhLalUvDq1I1P" Name="Hub Port Count" Kind="OutputPin" />
           </Node>
-          <Pad Id="SWgLQSPQEvrQYZ4ysAo4Ep" Comment="Close" Bounds="174,124,35,35" ShowValueBox="true" isIOBox="true" Value="False">
+          <Pad Id="SWgLQSPQEvrQYZ4ysAo4Ep" Comment="Close" Bounds="168,121,35,35" ShowValueBox="true" isIOBox="true" Value="False">
             <p:TypeAnnotation>
               <Choice Kind="ImmutableTypeFlag" Name="Boolean" />
               <FullNameCategoryReference ID="Primitive" />
@@ -51,21 +52,20 @@
               <p:buttonmode p:Assembly="VL.UI.Forms" p:Type="VL.HDE.PatchEditor.Editors.ButtonModeEnum">Bang</p:buttonmode>
             </p:ValueBoxSettings>
           </Pad>
-          <Pad Id="FE6FHaHmPgEMiNl9I5l5mN" Comment="HubPort" Bounds="244,142,47,26" ShowValueBox="true" isIOBox="true" Value="3">
+          <Pad Id="FE6FHaHmPgEMiNl9I5l5mN" Comment="HubPort" Bounds="227,152,41,17" ShowValueBox="true" isIOBox="true" Value="4">
             <p:TypeAnnotation LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
               <Choice Kind="TypeFlag" Name="Integer32" />
             </p:TypeAnnotation>
           </Pad>
-          <Pad Id="BVyvmDopIuoMpnVj3JoRer" Comment="Attached" Bounds="197,220,35,35" ShowValueBox="true" isIOBox="true" />
-          <Pad Id="NvnBlR9tTcpLiNPQu9Kx5V" Comment="Device Serial Number" Bounds="233,265,90,15" ShowValueBox="true" isIOBox="true" />
-          <Pad Id="IfrZ3Gs3E8oNhdt8ZtvFjA" Comment="Hub Port Count" Bounds="264,300,35,15" ShowValueBox="true" isIOBox="true" />
-          <Pad Id="S6gq8Plhw2GN9HXiTsh2iq" Comment="" Bounds="126,43,136,15" ShowValueBox="true" isIOBox="true" Value="VoltageRatio">
+          <Pad Id="BVyvmDopIuoMpnVj3JoRer" Comment="Attached" Bounds="195,221,35,35" ShowValueBox="true" isIOBox="true" />
+          <Pad Id="NvnBlR9tTcpLiNPQu9Kx5V" Comment="Device Serial Number" Bounds="232,270,90,15" ShowValueBox="true" isIOBox="true" />
+          <Pad Id="IfrZ3Gs3E8oNhdt8ZtvFjA" Comment="Hub Port Count" Bounds="264,300,38,19" ShowValueBox="true" isIOBox="true" />
+          <Pad Id="S6gq8Plhw2GN9HXiTsh2iq" Comment="" Bounds="126,43,136,15" ShowValueBox="true" isIOBox="true" Value="PN_1101_Sharp2Y0A02">
             <p:TypeAnnotation LastCategoryFullName="Phidget22" LastSymbolSource="Phidget22.NET.dll">
               <Choice Kind="TypeFlag" Name="VoltageRatioSensorType" />
             </p:TypeAnnotation>
           </Pad>
-          <Pad Id="SS1h4ljQ2L5Psskoiod1Nb" Comment="" Bounds="127,259,35,15" ShowValueBox="true" isIOBox="true" />
-          <Pad Id="KPIFuJpBBomOlnzAH9AwtL" Comment="On Data" Bounds="161,311,35,35" ShowValueBox="true" isIOBox="true" />
+          <Pad Id="IEh0ygxTSQnQTg5FanqROm" Comment="" Bounds="127,220,35,15" ShowValueBox="true" isIOBox="true" />
         </Canvas>
         <ProcessDefinition Id="M7DhTjVrkxFPTU6ibB97qp">
           <Fragment Id="Ka160IZ6ipXPEuPO79oXgb" Patch="UMHvqj8Id8pO2ddYAbC8xP" Enabled="true" />
@@ -80,8 +80,7 @@
         <Link Id="Ejin4oLuCvkPJPKCg50szp" Ids="VzhtgIwh8QBOblSpgYWwfD,Ig71YW29u3KOUwf0Ujb0gH" />
         <Link Id="E0swyk936mNQbsRVbhMp9R" Ids="BgSdY5kM5hhLalUvDq1I1P,IfrZ3Gs3E8oNhdt8ZtvFjA" />
         <Link Id="IH8vull4BJhP4xxaa9jF6V" Ids="S6gq8Plhw2GN9HXiTsh2iq,Vda6Dmp4PFFPqHyx8c3fBp" />
-        <Link Id="UNgZkFcy0zRNXf3fiLp4Z2" Ids="DppbBCiC4HnPbvf51Ogro8,SS1h4ljQ2L5Psskoiod1Nb" />
-        <Link Id="Jh78eTtiL2kNMgjdgdBY6O" Ids="QCgpufoe8wKMDXm4b3TbHH,KPIFuJpBBomOlnzAH9AwtL" />
+        <Link Id="JINLwbAibDZOYclwIDzQKV" Ids="A5vnO4IvsjVLvjwAJ1DKnb,IEh0ygxTSQnQTg5FanqROm" />
       </Patch>
     </Node>
   </Patch>

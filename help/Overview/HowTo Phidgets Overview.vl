@@ -36,7 +36,7 @@
       </p:NodeReference>
       <Patch Id="RcdmicmnND1Pyv3TJj3de9">
         <Canvas Id="Th1wAbWQAPlMOAdCYXCkfd" CanvasType="Group">
-          <Node Bounds="621,53,33,19" Id="B3SqcoE1XmeP2o4lxVeQGv">
+          <Node Bounds="605,52,145,19" Id="B3SqcoE1XmeP2o4lxVeQGv">
             <p:NodeReference LastCategoryFullName="VL.Devices.Phidgets" LastSymbolSource="VL.Devices.Phidgets.vl">
               <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
               <Choice Kind="ProcessAppFlag" Name="DistanceSensor" />
@@ -49,15 +49,15 @@
             <Pin Id="BI32u0nSGFdOt7z0PGfwmi" Name="SerialNumber" Kind="InputPin" />
             <Pin Id="D4iPaAEBQ5GQNbhloi2yY8" Name="HubPort" Kind="InputPin" />
             <Pin Id="VIMF6hwiMBOOPeoI6lZg5Z" Name="Data Interval" Kind="InputPin" />
+            <Pin Id="PtdWySTVa2HQCtkdqMy8sr" Name="Value" Kind="OutputPin" />
             <Pin Id="C1XQ6AIyJ8kNcz5DvMe34V" Name="Distances" Kind="OutputPin" />
             <Pin Id="Djm2RF0fHuYMdQnsgy5Fra" Name="Amplitudes" Kind="OutputPin" />
             <Pin Id="KsUdZC9sdP8OElWllMeenU" Name="Count" Kind="OutputPin" />
             <Pin Id="VjxmccwPr8MPWNMv3DNSFD" Name="Attached" Kind="OutputPin" />
             <Pin Id="U2tA9YkW538NhQAhxlMVdm" Name="Device Serial Number" Kind="OutputPin" />
             <Pin Id="TQYjkt9J3hHLSHarvQCagM" Name="Hub Port" Kind="OutputPin" />
-            <Pin Id="PtdWySTVa2HQCtkdqMy8sr" Name="Value" Kind="OutputPin" />
           </Node>
-          <Node Bounds="386,55,-29,19" Id="QgRQ5cIAdS9OyoAGLclthh">
+          <Node Bounds="359,55,105,19" Id="QgRQ5cIAdS9OyoAGLclthh">
             <p:NodeReference LastCategoryFullName="VL.Devices.Phidgets" LastSymbolSource="VL.Devices.Phidgets.vl">
               <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
               <Choice Kind="ProcessAppFlag" Name="DigitalInput" />
@@ -73,7 +73,7 @@
             <Pin Id="HSYXG1b3VfZOpGqBsIB3oT" Name="Attached" Kind="OutputPin" />
             <Pin Id="K9x5KbLHZoiL7MW0J38zc6" Name="Hub Port Count" Kind="OutputPin" />
           </Node>
-          <Node Bounds="386,96,46,19" Id="JvNmbdls2N6QMkaPjxgedo">
+          <Node Bounds="359,96,145,19" Id="JvNmbdls2N6QMkaPjxgedo">
             <p:NodeReference LastCategoryFullName="VL.Devices.Phidgets" LastSymbolSource="VL.Devices.Phidgets.vl">
               <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
               <Choice Kind="ProcessAppFlag" Name="DigitalOutput" />
@@ -90,7 +90,7 @@
             <Pin Id="FDMrthOLXPnMp0muMnTeM3" Name="Device Serial Number" Kind="OutputPin" />
             <Pin Id="SSpGGXAARWLLN75VEztqRM" Name="Hub Port Count" Kind="OutputPin" />
           </Node>
-          <Node Bounds="1089,57,81,19" Id="VYsJDSgBWctQNQiBSLAiwl">
+          <Node Bounds="1079,53,145,19" Id="VYsJDSgBWctQNQiBSLAiwl">
             <p:NodeReference LastCategoryFullName="VL.Devices.Phidgets" LastSymbolSource="VL.Devices.Phidgets.vl">
               <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
               <Choice Kind="ProcessAppFlag" Name="Manager" />
@@ -106,7 +106,7 @@
             <Pin Id="DdrD7pwUUOOOW5YCYhG3EH" Name="Device ID" Kind="OutputPin" />
             <Pin Id="DLE5t5yNIYENQJd66VPNpp" Name="Device VINTID" Kind="OutputPin" />
           </Node>
-          <Node Bounds="621,90,14,19" Id="UbMFb1BAfEdQIEgfmx7I7o">
+          <Node Bounds="605,89,105,19" Id="UbMFb1BAfEdQIEgfmx7I7o">
             <p:NodeReference LastCategoryFullName="VL.Devices.Phidgets" LastSymbolSource="VL.Devices.Phidgets.vl">
               <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
               <Choice Kind="ProcessAppFlag" Name="LightSensor" />
@@ -123,7 +123,7 @@
             <Pin Id="GC6AYdgYUmeMit8OFeiTk7" Name="Attached" Kind="OutputPin" />
             <Pin Id="L2l22CPde37O2DyjE2AOmt" Name="Device Serial Number" Kind="OutputPin" />
           </Node>
-          <Node Bounds="836,56,39,19" Id="RVOxs41Lb3LO3VkSf1jCg3">
+          <Node Bounds="830,54,80,19" Id="RVOxs41Lb3LO3VkSf1jCg3">
             <p:NodeReference LastCategoryFullName="VL.Devices.Phidgets" LastSymbolSource="VL.Devices.Phidgets.vl">
               <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
               <Choice Kind="ProcessAppFlag" Name="CircularTouch" />
@@ -137,7 +137,7 @@
             <Pin Id="NPBjY14cfqjNluXH2iJoq3" Name="Attached" Kind="OutputPin" />
             <Pin Id="RUl53omqlFqODwgc3TKAxa" Name="Device Serial Number" Kind="OutputPin" />
           </Node>
-          <Node Bounds="386,137,57,19" Id="NreDJwWGOVGMjg7HNPAfyF">
+          <Node Bounds="359,137,145,19" Id="NreDJwWGOVGMjg7HNPAfyF">
             <p:NodeReference LastCategoryFullName="Devices.Phidgets" LastSymbolSource="VL.Devices.Phidgets.vl">
               <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
               <Choice Kind="ProcessAppFlag" Name="VoltageInput" />
@@ -155,7 +155,7 @@
             <Pin Id="GU7OSmFNo54NKBF2LAMUdN" Name="Device Serial Number" Kind="OutputPin" />
             <Pin Id="E3myHkJDNmlO7q5D7JRYQw" Name="Hub Port Count" Kind="OutputPin" />
           </Node>
-          <Node Bounds="386,178,125,19" Id="KREPDfEd0PaMsu6krJLN4S">
+          <Node Bounds="359,178,165,19" Id="KREPDfEd0PaMsu6krJLN4S">
             <p:NodeReference>
               <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
               <Choice Kind="ProcessAppFlag" Name="VoltageRatioInput" />
@@ -168,8 +168,9 @@
             <Pin Id="DnRLoYJ3HcSMCIgLJ6KEqf" Name="HubPort" Kind="InputPin" />
             <Pin Id="UTBM9Ta4CrRMav89OCS5UY" Name="Data Interval" Kind="InputPin" />
             <Pin Id="PXMVLvgHwu2NtAtfoPWnpP" Name="Data Rate" Kind="InputPin" />
-            <Pin Id="JpeA6hiPWs9M8F2yd9Xrs2" Name="Value" Kind="OutputPin" />
-            <Pin Id="AdjxJQ67oVJPjZVFGg5PEJ" Name="On Data" Kind="OutputPin" />
+            <Pin Id="Keqqx5QXvheLGqEzCfp2lG" Name="SetSensorValueChangeTrigger" Kind="InputPin" />
+            <Pin Id="N0EfC8yzrnbPGJG7wGWyZd" Name="Value" Kind="OutputPin" />
+            <Pin Id="DuW5Yj4pL0lNCw4N6Y6XVz" Name="On Data" Kind="OutputPin" />
             <Pin Id="FNUOfIu99CmMTg4zrriX3z" Name="Attached" Kind="OutputPin" />
             <Pin Id="Ol7cYmxt4SfM8klihntwAF" Name="Device Serial Number" Kind="OutputPin" />
             <Pin Id="FtWeeDtmCatMdCDFtzddKN" Name="Hub Port Count" Kind="OutputPin" />
@@ -178,7 +179,7 @@
           <Overlay Id="Mt7ykHG0IymP3HHtHnzr3c" Name="Sensors" Bounds="599,10,181,216" />
           <Overlay Id="O11pab8vzW4K91jSuqioER" Name="Devices" Bounds="824,12,229,157" />
           <Overlay Id="F5FFt0820lwMxbCPe1dFyz" Name="Utils" Bounds="1074,13,290,161" />
-          <Node Bounds="1089,109,65,19" Id="TjQH316Pr9VNPte0D6Iwiw">
+          <Node Bounds="1078,87,65,19" Id="TjQH316Pr9VNPte0D6Iwiw">
             <p:NodeReference LastCategoryFullName="Devices.Phidgets" LastSymbolSource="VL.Devices.Phidgets.vl">
               <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
               <Choice Kind="ProcessAppFlag" Name="Logging" />

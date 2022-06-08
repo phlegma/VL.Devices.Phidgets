@@ -36,7 +36,7 @@
       </p:NodeReference>
       <Patch Id="RcdmicmnND1Pyv3TJj3de9">
         <Canvas Id="Th1wAbWQAPlMOAdCYXCkfd" CanvasType="Group">
-          <Node Bounds="527,342,125,19" Id="QgRQ5cIAdS9OyoAGLclthh">
+          <Node Bounds="310,465,125,19" Id="QgRQ5cIAdS9OyoAGLclthh">
             <p:NodeReference LastCategoryFullName="VL.Devices.Phidgets" LastSymbolSource="VL.Devices.Phidgets.vl">
               <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
               <Choice Kind="ProcessAppFlag" Name="CircularTouch" />
@@ -50,7 +50,7 @@
             <Pin Id="HSYXG1b3VfZOpGqBsIB3oT" Name="Attached" Kind="OutputPin" />
             <Pin Id="AC5fcFvozUUMZ2FSEA1FuF" Name="Device Serial Number" Kind="OutputPin" />
           </Node>
-          <Pad Id="SWgLQSPQEvrQYZ4ysAo4Ep" Comment="Close" Bounds="569,294,37,42" ShowValueBox="true" isIOBox="true" Value="False">
+          <Pad Id="SWgLQSPQEvrQYZ4ysAo4Ep" Comment="Close" Bounds="352,417,37,42" ShowValueBox="true" isIOBox="true" Value="False">
             <p:TypeAnnotation>
               <Choice Kind="ImmutableTypeFlag" Name="Boolean" />
               <FullNameCategoryReference ID="Primitive" />
@@ -59,7 +59,7 @@
               <p:buttonmode p:Assembly="VL.UI.Forms" p:Type="VL.HDE.PatchEditor.Editors.ButtonModeEnum">Bang</p:buttonmode>
             </p:ValueBoxSettings>
           </Pad>
-          <Pad Id="VzhtgIwh8QBOblSpgYWwfD" Comment="Open" Bounds="528,173,35,35" ShowValueBox="true" isIOBox="true" Value="False">
+          <Pad Id="VzhtgIwh8QBOblSpgYWwfD" Comment="Open" Bounds="313,353,35,35" ShowValueBox="true" isIOBox="true" Value="False">
             <p:TypeAnnotation>
               <Choice Kind="ImmutableTypeFlag" Name="Boolean" />
               <FullNameCategoryReference ID="Primitive" />
@@ -68,27 +68,10 @@
               <p:buttonmode p:Assembly="VL.UI.Forms" p:Type="VL.HDE.PatchEditor.Editors.ButtonModeEnum">Bang</p:buttonmode>
             </p:ValueBoxSettings>
           </Pad>
-          <Pad Id="BVyvmDopIuoMpnVj3JoRer" Comment="Attached" Bounds="610,423,35,35" ShowValueBox="true" isIOBox="true" />
-          <Pad Id="JsE5iwsEyUDOY0uD10BNmF" Comment="Device Serial Number" Bounds="650,385,77,23" ShowValueBox="true" isIOBox="true" />
-          <Pad Id="GwHiEIlR18hPa35tAiiomI" Comment="Is Touched" Bounds="569,478,35,35" ShowValueBox="true" isIOBox="true" />
-          <Node Bounds="526,279,30,19" Id="PmYZOlw1JanNlIDKGsojCv">
-            <p:NodeReference LastCategoryFullName="Primitive.Boolean" LastSymbolSource="CoreLibBasics.vl">
-              <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
-              <Choice Kind="OperationCallFlag" Name="OR" />
-            </p:NodeReference>
-            <Pin Id="QrXPkZeL9esNdwuhTrW67F" Name="Input" Kind="StateInputPin" />
-            <Pin Id="F0E9uyVRHfaNoDcGoWRMRv" Name="Input 2" Kind="InputPin" />
-            <Pin Id="E8Xc0TCOExHMqmZSrzY97z" Name="Output" Kind="StateOutputPin" />
-          </Node>
-          <Node Bounds="551,249,54,19" Id="Qw5uz5jB8vvM3rx9dikqoC">
-            <p:NodeReference LastCategoryFullName="Control" LastSymbolSource="CoreLibBasics.vl">
-              <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
-              <Choice Kind="ProcessAppFlag" Name="OnOpen" />
-            </p:NodeReference>
-            <Pin Id="VVhIknTg12RLvJEiB8liPF" Name="Simulate" Kind="InputPin" />
-            <Pin Id="BQUhVwpkYPVMAmJ0qE8Z1O" Name="Output" Kind="OutputPin" />
-          </Node>
-          <Pad Id="ScrwEfGP8JlNc3tr4OFfWy" Comment="" Bounds="529,408,35,15" ShowValueBox="true" isIOBox="true" />
+          <Pad Id="BVyvmDopIuoMpnVj3JoRer" Comment="Attached" Bounds="393,546,35,35" ShowValueBox="true" isIOBox="true" />
+          <Pad Id="JsE5iwsEyUDOY0uD10BNmF" Comment="Device Serial Number" Bounds="433,508,77,23" ShowValueBox="true" isIOBox="true" />
+          <Pad Id="GwHiEIlR18hPa35tAiiomI" Comment="Is Touched" Bounds="352,601,35,35" ShowValueBox="true" isIOBox="true" />
+          <Pad Id="ScrwEfGP8JlNc3tr4OFfWy" Comment="" Bounds="312,531,35,15" ShowValueBox="true" isIOBox="true" />
         </Canvas>
         <ProcessDefinition Id="M7DhTjVrkxFPTU6ibB97qp">
           <Fragment Id="Ka160IZ6ipXPEuPO79oXgb" Patch="UMHvqj8Id8pO2ddYAbC8xP" Enabled="true" />
@@ -97,13 +80,11 @@
         <Patch Id="UMHvqj8Id8pO2ddYAbC8xP" Name="Create" />
         <Patch Id="SUuys83bkbYO7pfz05VSQu" Name="Update" />
         <Link Id="Tdxi99EyBIJQDgsG1nXuQj" Ids="SWgLQSPQEvrQYZ4ysAo4Ep,JkuYW6G2LhtO6wRUun4KaR" />
-        <Link Id="CNU4g3g0XWfOEzckZyelwl" Ids="VzhtgIwh8QBOblSpgYWwfD,QrXPkZeL9esNdwuhTrW67F" />
         <Link Id="Ls2e0iZCqeXMNG5EYk5yc6" Ids="HSYXG1b3VfZOpGqBsIB3oT,BVyvmDopIuoMpnVj3JoRer" />
         <Link Id="CwaGPnIzxHHQEnT6Aop8Hj" Ids="AC5fcFvozUUMZ2FSEA1FuF,JsE5iwsEyUDOY0uD10BNmF" />
         <Link Id="Ql0nmhvAINrMHqR2MzEfZB" Ids="OkMoQ9ms9g2QSUTZJkhEnk,GwHiEIlR18hPa35tAiiomI" />
-        <Link Id="RgfORb6svvNPNiiwG6K9I5" Ids="E8Xc0TCOExHMqmZSrzY97z,Ig71YW29u3KOUwf0Ujb0gH" />
-        <Link Id="O0SlahZllSWLehaFdlOe0Z" Ids="BQUhVwpkYPVMAmJ0qE8Z1O,F0E9uyVRHfaNoDcGoWRMRv" />
         <Link Id="GmBnZKtOeguLt1h5fkd0OW" Ids="EfidKmc6nnQNbUdOGYAt3j,ScrwEfGP8JlNc3tr4OFfWy" />
+        <Link Id="GnoxyRJLyJyOf3mINZXXCH" Ids="VzhtgIwh8QBOblSpgYWwfD,Ig71YW29u3KOUwf0Ujb0gH" />
       </Patch>
     </Node>
   </Patch>

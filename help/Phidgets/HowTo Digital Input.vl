@@ -36,7 +36,7 @@
       </p:NodeReference>
       <Patch Id="RcdmicmnND1Pyv3TJj3de9">
         <Canvas Id="Th1wAbWQAPlMOAdCYXCkfd" CanvasType="Group">
-          <Node Bounds="122,177,125,19" Id="QgRQ5cIAdS9OyoAGLclthh">
+          <Node Bounds="300,381,125,19" Id="QgRQ5cIAdS9OyoAGLclthh">
             <p:NodeReference LastCategoryFullName="VL.Devices.Phidgets" LastSymbolSource="VL.Devices.Phidgets.vl">
               <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
               <Choice Kind="ProcessAppFlag" Name="DigitalInput" />
@@ -52,7 +52,7 @@
             <Pin Id="D2V3AYHpdhzPEP6uf1tnqK" Name="Device Serial Number" Kind="OutputPin" />
             <Pin Id="BgSdY5kM5hhLalUvDq1I1P" Name="Hub Port Count" Kind="OutputPin" />
           </Node>
-          <Pad Id="SWgLQSPQEvrQYZ4ysAo4Ep" Comment="Close" Bounds="149,130,35,35" ShowValueBox="true" isIOBox="true" Value="False">
+          <Pad Id="SWgLQSPQEvrQYZ4ysAo4Ep" Comment="Close" Bounds="326,333,35,35" ShowValueBox="true" isIOBox="true" Value="False">
             <p:TypeAnnotation>
               <Choice Kind="ImmutableTypeFlag" Name="Boolean" />
               <FullNameCategoryReference ID="Primitive" />
@@ -61,7 +61,7 @@
               <p:buttonmode p:Assembly="VL.UI.Forms" p:Type="VL.HDE.PatchEditor.Editors.ButtonModeEnum">Bang</p:buttonmode>
             </p:ValueBoxSettings>
           </Pad>
-          <Pad Id="VzhtgIwh8QBOblSpgYWwfD" Comment="Open" Bounds="124,75,35,35" ShowValueBox="true" isIOBox="true" Value="False">
+          <Pad Id="VzhtgIwh8QBOblSpgYWwfD" Comment="Open" Bounds="302,279,35,35" ShowValueBox="true" isIOBox="true" Value="False">
             <p:TypeAnnotation>
               <Choice Kind="ImmutableTypeFlag" Name="Boolean" />
               <FullNameCategoryReference ID="Primitive" />
@@ -70,15 +70,15 @@
               <p:buttonmode p:Assembly="VL.UI.Forms" p:Type="VL.HDE.PatchEditor.Editors.ButtonModeEnum">Bang</p:buttonmode>
             </p:ValueBoxSettings>
           </Pad>
-          <Pad Id="FE6FHaHmPgEMiNl9I5l5mN" Comment="HubPort" Bounds="220,161,35,15" ShowValueBox="true" isIOBox="true" Value="4">
+          <Pad Id="FE6FHaHmPgEMiNl9I5l5mN" Comment="HubPort" Bounds="398,365,35,15" ShowValueBox="true" isIOBox="true" Value="4">
             <p:TypeAnnotation LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
               <Choice Kind="TypeFlag" Name="Integer32" />
             </p:TypeAnnotation>
           </Pad>
-          <Pad Id="BVyvmDopIuoMpnVj3JoRer" Comment="Attached" Bounds="164,216,35,35" ShowValueBox="true" isIOBox="true" />
-          <Pad Id="NvnBlR9tTcpLiNPQu9Kx5V" Comment="Device Serial Number" Bounds="204,264,90,15" ShowValueBox="true" isIOBox="true" />
-          <Pad Id="IfrZ3Gs3E8oNhdt8ZtvFjA" Comment="Hub Port Count" Bounds="242,296,35,15" ShowValueBox="true" isIOBox="true" />
-          <Pad Id="VkBS7eyF8N9OnheB7ZVD30" Comment="" Bounds="123,308,35,35" ShowValueBox="true" isIOBox="true" />
+          <Pad Id="BVyvmDopIuoMpnVj3JoRer" Comment="Attached" Bounds="342,420,35,35" ShowValueBox="true" isIOBox="true" />
+          <Pad Id="NvnBlR9tTcpLiNPQu9Kx5V" Comment="Device Serial Number" Bounds="382,468,90,15" ShowValueBox="true" isIOBox="true" />
+          <Pad Id="IfrZ3Gs3E8oNhdt8ZtvFjA" Comment="Hub Port Count" Bounds="420,500,35,15" ShowValueBox="true" isIOBox="true" />
+          <Pad Id="VkBS7eyF8N9OnheB7ZVD30" Comment="" Bounds="301,512,35,35" ShowValueBox="true" isIOBox="true" />
         </Canvas>
         <ProcessDefinition Id="M7DhTjVrkxFPTU6ibB97qp">
           <Fragment Id="Ka160IZ6ipXPEuPO79oXgb" Patch="UMHvqj8Id8pO2ddYAbC8xP" Enabled="true" />
