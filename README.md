@@ -50,6 +50,7 @@ But the importend operation are bundles via processes so it is easy to add new n
 
 ![Set operations](./assets/setOperations.png)
 
+12. Create a help patch into the [help/Phidgets](./help/Phidgets) folder with the scheme "HowTo [ClassName]" and add your node and test and set the default pin settings so that everything works like expected.  
 
 ## Licencing
 Licensed under the Apache License, Version 2.0 (the "License"). You may obtain a copy of the License at http://www.apache.org/licenses/LICENSE-2.0  

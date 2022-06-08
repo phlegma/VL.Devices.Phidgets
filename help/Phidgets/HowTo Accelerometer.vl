@@ -1,0 +1,51 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Document xmlns:p="property" Id="E7HaYCQqEwlPHkiq5wnzww" LanguageVersion="2021.4.9.982" Version="0.128">
+  <Patch Id="RfAaoSfd2CtNpvFyYgdhKr">
+    <Canvas Id="JEIcHlLxExZNgBVOxaDo3E" DefaultCategory="Main" BordersChecked="false" CanvasType="FullCategory" />
+    <!--
+
+    ************************ Application ************************
+
+-->
+    <Node Name="Application" Bounds="100,100" Id="OajJzejp7YjN2AxQHyCxsp">
+      <p:NodeReference>
+        <Choice Kind="ContainerDefinition" Name="Process" />
+        <FullNameCategoryReference ID="Primitive" />
+      </p:NodeReference>
+      <Patch Id="DIkhjks8vDwNiS4zTjxqoO">
+        <Canvas Id="QSxmShObVKjMofdsopM6Tt" CanvasType="Group">
+          <Node Bounds="421,233" Id="EqEie5WuRsKMk4YFMug4Qx">
+            <p:NodeReference LastCategoryFullName="Devices.Phidgets" LastSymbolSource="VL.Devices.Phidgets.vl">
+              <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+              <CategoryReference Kind="Category" Name="Phidgets" />
+              <Choice Kind="ProcessAppFlag" Name="Accelormeter" />
+            </p:NodeReference>
+            <Pin Id="HUO51bwGEEXPQVjmCyWMtJ" Name="Precision" Kind="InputPin" />
+            <Pin Id="F4lfu2JIYR6PYVul3VsbAu" Name="Open" Kind="InputPin" />
+            <Pin Id="O0FrlDd2KKvOuKRToJ1oUW" Name="Close" Kind="InputPin" />
+            <Pin Id="HXhZ9yQ7YBAOSsvdt30Poe" Name="IsLocal" Kind="InputPin" />
+            <Pin Id="HUkDV7GM5QdOW5duqoTtuD" Name="Channel" Kind="InputPin" />
+            <Pin Id="KilvWq4ia8kOJBhagMxc7p" Name="SerialNumber" Kind="InputPin" />
+            <Pin Id="IqsdZivuJVMNp6qx5lKXri" Name="Data Interval" Kind="InputPin" />
+            <Pin Id="NwtoVbYbiVcOG0k1f3TDUL" Name="Data Rate" Kind="InputPin" />
+            <Pin Id="O3djdxUFdx4LoVT0T82r9e" Name="HubPort" Kind="InputPin" />
+            <Pin Id="HUo6N6S5PjyNPlZjmEqLzk" Name="IsHubPortDevice" Kind="InputPin" />
+            <Pin Id="Qz2UOTZfRqYMFsfe1wt068" Name="Attached" Kind="OutputPin" />
+            <Pin Id="NhY7X4iJM1xLWHAUK1kZoo" Name="Device Serial Number" Kind="OutputPin" />
+            <Pin Id="CIHR4Pc0zf0LXyqZ07P646" Name="On Data" Kind="OutputPin" />
+            <Pin Id="J9mpQGYAMDlOXcqgYEdw3m" Name="Acceleration" Kind="OutputPin" />
+            <Pin Id="HOIqHyjD1cUOYBuTJ7n73T" Name="Timestamp" Kind="OutputPin" />
+          </Node>
+        </Canvas>
+        <Patch Id="LktJImeAVyzMyxIMbZyfkl" Name="Create" />
+        <Patch Id="FY3iWGwZdsxMZxRYTZcqpS" Name="Update" />
+        <ProcessDefinition Id="PVbz1vgUenaQQjtz8lIn6d">
+          <Fragment Id="Ui6pOrnrncsLZS1Et8UBO5" Patch="LktJImeAVyzMyxIMbZyfkl" Enabled="true" />
+          <Fragment Id="OSsJZ0fhI5qLZbjNo7RLWb" Patch="FY3iWGwZdsxMZxRYTZcqpS" Enabled="true" />
+        </ProcessDefinition>
+      </Patch>
+    </Node>
+  </Patch>
+  <NugetDependency Id="JBWYZx23bMtO7chX2VqYsF" Location="VL.CoreLib" Version="2021.4.9" />
+  <DocumentDependency Id="JQXItX5o3b2MvacI7K5JGF" Location="../../VL.Devices.Phidgets.vl" />
+</Document>

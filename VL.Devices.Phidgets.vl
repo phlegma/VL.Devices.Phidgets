@@ -3132,7 +3132,7 @@
         </p:NodeReference>
         <Patch Id="LqKUE7D4o8SMLm969Y84I5">
           <Canvas Id="KVoz1EcK1kPOtRZHETP5yh" CanvasType="Group">
-            <Node Bounds="474,111,68,26" Id="LRAwvfXgZGiMzSnNPnPU6T">
+            <Node Bounds="416,104,68,26" Id="LRAwvfXgZGiMzSnNPnPU6T">
               <p:NodeReference LastCategoryFullName="Phidget22.Accelerometer" LastSymbolSource="Phidget22.NET.dll">
                 <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                 <CategoryReference Kind="AssemblyCategory" Name="Phidget22" />
@@ -3141,7 +3141,7 @@
               </p:NodeReference>
               <Pin Id="B8miFR1Sw8YNbFJH46yYUB" Name="Output" Kind="StateOutputPin" />
             </Node>
-            <Pad Id="GTYQ9EHzPvYNOadJyoeBc4" SlotId="EcPXH0FCyWsMd2JaUebMQH" Bounds="476,157" />
+            <Pad Id="GTYQ9EHzPvYNOadJyoeBc4" SlotId="EcPXH0FCyWsMd2JaUebMQH" Bounds="418,150" />
             <Node Bounds="483,367,125,19" Id="VWsjMwt4CXYLT1mdOFQT6d">
               <p:NodeReference LastCategoryFullName="Devices.Phidgets" LastSymbolSource="VL.Devices.Phidgets.vl">
                 <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
@@ -3165,7 +3165,7 @@
             <ControlPoint Id="QtItwxzQBVfPvvdzSKsn9I" Bounds="591,226" />
             <ControlPoint Id="OFDvOkm81etQRTMcMNTBcp" Bounds="608,203" />
             <ControlPoint Id="PfOz4bBSkdNN0RvedAwV49" Bounds="503,408" />
-            <ControlPoint Id="EjJ43VnbjUmMKKpXZYuSe2" Bounds="605,406" />
+            <ControlPoint Id="EjJ43VnbjUmMKKpXZYuSe2" Bounds="606,403" />
             <Node Bounds="761,366,45,19" Id="MwKNQCZqazHL2wyLWUrToE">
               <p:NodeReference LastCategoryFullName="Devices.Phidgets" LastSymbolSource="VL.Devices.Phidgets.vl">
                 <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
@@ -3191,7 +3191,7 @@
             <ControlPoint Id="KaAJlDdwiY6MzB8Og4OltZ" Bounds="921,324" />
             <ControlPoint Id="LgTkeNqsYHTLuZRo0yhSB1" Bounds="782,332" />
             <ControlPoint Id="Ec0Pu8TTRo2PLxGTa7FnzE" Bounds="801,296" />
-            <Node Bounds="0,292,107,26" Id="LegPlZjDAjOPjOJVB30P1q">
+            <Node Bounds="-71,286,107,26" Id="LegPlZjDAjOPjOJVB30P1q">
               <p:NodeReference LastCategoryFullName="Phidget22.Accelerometer" LastSymbolSource="Phidget22.NET.dll">
                 <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                 <CategoryReference Kind="AssemblyCategory" Name="Accelerometer" />
@@ -3200,7 +3200,7 @@
               <Pin Id="B0SwSeIt7OlNMejDZw8Mq3" Name="Input" Kind="StateInputPin" />
               <Pin Id="BigB8WzjadHQDmcau2d4FD" Name="Result" Kind="OutputPin" />
             </Node>
-            <Node Bounds="1,336,388,154" Id="IR8GexN27DaNHvLwgontw7">
+            <Node Bounds="-70,330,388,154" Id="IR8GexN27DaNHvLwgontw7">
               <p:NodeReference LastCategoryFullName="Reactive" LastSymbolSource="VL.Reactive.vl">
                 <Choice Kind="StatefulRegion" Name="Region (Stateful)" Fixed="true" />
                 <Choice Kind="ProcessAppFlag" Name="ForEach" />
@@ -3215,9 +3215,9 @@
                   <Pin Id="IU8myLZJN8dOCSMTr8l44P" Name="Input 1" Kind="InputPin" />
                   <Pin Id="FYtJtKKNDOfLPOtq04s6vc" Name="Output" Kind="OutputPin" />
                 </Patch>
-                <ControlPoint Id="BTCQtyeh9vTP7yqKLxmIN4" Bounds="15,345" />
-                <ControlPoint Id="Nnk31WzdTXiM7dpfYZyXct" Bounds="15,483" />
-                <Node Bounds="13,359,62,26" Id="P60LPNnCuOvMP9h5AmISuQ">
+                <ControlPoint Id="BTCQtyeh9vTP7yqKLxmIN4" Bounds="-56,339" />
+                <ControlPoint Id="Nnk31WzdTXiM7dpfYZyXct" Bounds="-56,477" />
+                <Node Bounds="-58,353,62,26" Id="P60LPNnCuOvMP9h5AmISuQ">
                   <p:NodeReference LastCategoryFullName="Reactive.EventPattern" LastSymbolSource="VL.Reactive.vl">
                     <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                     <CategoryReference Kind="RecordType" Name="EventPattern" />
@@ -3226,7 +3226,7 @@
                   <Pin Id="Un9V5NPXkqxNMVPAankFPb" Name="Input" Kind="StateInputPin" />
                   <Pin Id="P4W7t7EeZVYLddFRz558uw" Name="Event Args" Kind="OutputPin" />
                 </Node>
-                <Node Bounds="14,406,174,26" Id="LXTmq5DvTs9NIpFjty8Cu3">
+                <Node Bounds="-57,400,174,26" Id="LXTmq5DvTs9NIpFjty8Cu3">
                   <p:NodeReference LastCategoryFullName="Phidget22.Events.AccelerometerAccelerationChangeEventArgs" LastSymbolSource="Phidget22.NET.dll">
                     <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                     <CategoryReference Kind="AssemblyCategory" Name="AccelerometerAccelerationChangeEventArgs" />
@@ -3236,7 +3236,7 @@
                   <Pin Id="OA48ywHTee5NFUzXXxaYtW" Name="Output" Kind="StateOutputPin" />
                   <Pin Id="OG0pud0AjZTNcLV0vQOfGD" Name="Acceleration" Kind="OutputPin" />
                 </Node>
-                <Node Bounds="203,408,174,26" Id="SoDmcnI2BmbMtBk6mLw9M5">
+                <Node Bounds="132,402,174,26" Id="SoDmcnI2BmbMtBk6mLw9M5">
                   <p:NodeReference LastCategoryFullName="Phidget22.Events.AccelerometerAccelerationChangeEventArgs" LastSymbolSource="Phidget22.NET.dll">
                     <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                     <CategoryReference Kind="AssemblyCategory" Name="AccelerometerAccelerationChangeEventArgs" />
@@ -3246,7 +3246,7 @@
                   <Pin Id="RL7WqrMF2f5LzRc9kdX1j5" Name="Output" Kind="StateOutputPin" />
                   <Pin Id="SVnJPC5eSWJMny0eGEgfWX" Name="Timestamp" Kind="OutputPin" />
                 </Node>
-                <Node Bounds="183,445,67,19" Id="TWa4rzlcTJALuQjL3OR5DE">
+                <Node Bounds="112,439,67,19" Id="TWa4rzlcTJALuQjL3OR5DE">
                   <p:NodeReference LastCategoryFullName="Primitive.ValueTuple (2 Items)" LastSymbolSource="CoreLibBasics.vl">
                     <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                     <CategoryReference Kind="RecordType" Name="ValueTuple (2 Items)" />
@@ -3258,7 +3258,7 @@
                 </Node>
               </Patch>
             </Node>
-            <Node Bounds="2,505,65,19" Id="KKbLl96n1k3MjfjCqnKxrr">
+            <Node Bounds="-69,499,65,19" Id="KKbLl96n1k3MjfjCqnKxrr">
               <p:NodeReference LastCategoryFullName="Reactive" LastSymbolSource="VL.Reactive.vl">
                 <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                 <Choice Kind="ProcessAppFlag" Name="HoldLatest" />
@@ -3268,8 +3268,8 @@
               <Pin Id="LXMdFKuL5mgPFx4hgRMXCG" Name="Value" Kind="OutputPin" />
               <Pin Id="OfApIkAkp4uLAJiEyTe6S3" Name="On Data" Kind="OutputPin" />
             </Node>
-            <ControlPoint Id="Mx2bG4gPrxuNQLWOVQ6XS7" Bounds="148,615" />
-            <Node Bounds="2,548,67,19" Id="KL8Mp3kIoFNN4grb8JKRVu">
+            <ControlPoint Id="Mx2bG4gPrxuNQLWOVQ6XS7" Bounds="77,609" />
+            <Node Bounds="-69,542,67,19" Id="KL8Mp3kIoFNN4grb8JKRVu">
               <p:NodeReference LastCategoryFullName="Primitive.ValueTuple (2 Items)" LastSymbolSource="CoreLibBasics.vl">
                 <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                 <CategoryReference Kind="RecordType" Name="ValueTuple (2 Items)" />
@@ -3279,9 +3279,9 @@
               <Pin Id="HQ8sBzRuBb2NJo5VPuF6qQ" Name="Item 1" Kind="OutputPin" />
               <Pin Id="RgFS4s51uVQLzhVKaojyxI" Name="Item 2" Kind="OutputPin" />
             </Node>
-            <ControlPoint Id="FvomdBWABDKPEgXZgBRhxD" Bounds="4,591" />
-            <ControlPoint Id="ISkiu7RFJdVL0plY7Ydzhm" Bounds="67,617" />
-            <Node Bounds="381,579,71,26" Id="LWCKb3HvaQkLfaBqoR5Ujo">
+            <ControlPoint Id="FvomdBWABDKPEgXZgBRhxD" Bounds="-67,585" />
+            <ControlPoint Id="ISkiu7RFJdVL0plY7Ydzhm" Bounds="-4,611" />
+            <Node Bounds="411,524,71,26" Id="LWCKb3HvaQkLfaBqoR5Ujo">
               <p:NodeReference LastCategoryFullName="Phidget22.Accelerometer" LastSymbolSource="Phidget22.NET.dll">
                 <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                 <CategoryReference Kind="AssemblyCategory" Name="Accelerometer" />
@@ -3292,8 +3292,8 @@
               <Pin Id="VyGjEs9vbShLaR06OPVPgD" Name="Output" Kind="StateOutputPin" />
               <Pin Id="PrWmLvxYtFoPx0lMhmpG4h" Name="Apply" Kind="InputPin" />
             </Node>
-            <ControlPoint Id="BWELdHKILHoLOQWKdgjmFn" Bounds="417,500" />
-            <Node Bounds="447,522,57,19" Id="MnO4cQ0yJBzNOEtuSbEGQ2">
+            <ControlPoint Id="BWELdHKILHoLOQWKdgjmFn" Bounds="447,445" />
+            <Node Bounds="474,464,57,19" Id="MnO4cQ0yJBzNOEtuSbEGQ2">
               <p:NodeReference LastCategoryFullName="Control" LastSymbolSource="CoreLibBasics.vl">
                 <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                 <Choice Kind="ProcessAppFlag" Name="Changed" />
@@ -3302,7 +3302,7 @@
               <Pin Id="CgfkQUNzYVYM472Uu4ibIo" Name="Result" Kind="OutputPin" />
               <Pin Id="QVNh4925FsMPLAyy7ndTyv" Name="Unchanged" Kind="OutputPin" />
             </Node>
-            <Node Bounds="446,550,37,19" Id="HAJYaqjRhL5P06joBsFTxZ">
+            <Node Bounds="476,495,37,19" Id="HAJYaqjRhL5P06joBsFTxZ">
               <p:NodeReference LastCategoryFullName="Primitive.Boolean" LastSymbolSource="CoreLibBasics.vl">
                 <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                 <Choice Kind="OperationCallFlag" Name="AND" />
@@ -3338,28 +3338,27 @@
           <Link Id="ONWdWD7uxwFPuTb4ofYC6n" Ids="LWSo0qfTYHlLZUtBW5BFUj,OFDvOkm81etQRTMcMNTBcp" IsHidden="true" />
           <Patch Id="EQQtZjjoBxZMXLVPUt8f5k" Name="Create" />
           <Patch Id="JC1SSvB5g5ZLvdfFBdQM84" Name="Update" ManuallySortedPins="true">
+            <Pin Id="FrrWJ0x0WwZOPbOpn1MO2s" Name="Precision" Kind="InputPin" Bounds="470,514" />
             <Pin Id="Q5AY2SBvyG3OSSRKZTK8l2" Name="Open" Kind="InputPin" Bounds="572,270" />
             <Pin Id="JX0DGYi3O0TLFSv246Ei3F" Name="Timeout" Kind="InputPin" Bounds="623,270" Visibility="Optional" />
             <Pin Id="LPegdKbCug1OsHQAE73Cbn" Name="Close" Kind="InputPin" Bounds="459,272" />
             <Pin Id="Rh2kTj1Ki7TO9l8IlhKvyU" Name="IsLocal" Kind="InputPin" Bounds="508,271" />
             <Pin Id="Buk7oDIFHsGMlPF8daPZ3v" Name="Channel" Kind="InputPin" Bounds="692,272" />
             <Pin Id="LWSo0qfTYHlLZUtBW5BFUj" Name="SerialNumber" Kind="InputPin" Bounds="542,314" />
-            <Pin Id="G7eq5bj5THEPl9pTAQ7ANw" Name="Attached" Kind="OutputPin" Bounds="454,374" />
-            <Pin Id="F5p6AhABwwLPMTy3zoBq6e" Name="Device Serial Number" Kind="OutputPin" Bounds="571,373" />
             <Pin Id="Slt3k6HkNzwPH80GFCFSKp" Name="Data Interval" Kind="InputPin" Bounds="868,312" />
             <Pin Id="N0ZM4NNPM3HQM3Xg4z1rdU" Name="Data Rate" Kind="InputPin" Bounds="892,293" />
             <Pin Id="I36vHNQHTOpOPUvpVt1qye" Name="HubPort" Kind="InputPin" Bounds="773,293" />
-            <Pin Id="GqRSuovpO1TLSQedo1HIET" Name="IsHubPortDevice" Kind="InputPin" Bounds="795,263" />
+            <Pin Id="GqRSuovpO1TLSQedo1HIET" Name="IsHubPortDevice" Kind="InputPin" Bounds="795,263" DefaultValue="False" />
+            <Pin Id="G7eq5bj5THEPl9pTAQ7ANw" Name="Attached" Kind="OutputPin" Bounds="454,374" />
+            <Pin Id="F5p6AhABwwLPMTy3zoBq6e" Name="Device Serial Number" Kind="OutputPin" Bounds="571,373" />
             <Pin Id="PAkOLcy18fgOEDmklgKmwT" Name="On Data" Kind="OutputPin" Bounds="199,560" />
             <Pin Id="MDVUczcfHToMYvWjqvWcB4" Name="Acceleration" Kind="OutputPin" Bounds="6,592" />
             <Pin Id="AVuiDyveBLcOyw9HArS018" Name="Timestamp" Kind="OutputPin" Bounds="70,611" />
-            <Pin Id="FrrWJ0x0WwZOPbOpn1MO2s" Name="Precision" Kind="InputPin" Bounds="470,514" />
           </Patch>
           <Link Id="KfkdEYs7aObLpyRbNWP7o4" Ids="CK05LGDkGCqM1emMll4A1P,PfOz4bBSkdNN0RvedAwV49" />
           <Link Id="BRANlLxZ64oPjV1nvBhAWg" Ids="PfOz4bBSkdNN0RvedAwV49,G7eq5bj5THEPl9pTAQ7ANw" IsHidden="true" />
           <Link Id="QNZAlwLDfYiMzG2AhVKy8q" Ids="B4TJqKyKE0TNiHQryxmc6Y,EjJ43VnbjUmMKKpXZYuSe2" />
           <Link Id="Htc0EuOb6IsMNiVeAW7TuX" Ids="EjJ43VnbjUmMKKpXZYuSe2,F5p6AhABwwLPMTy3zoBq6e" IsHidden="true" />
-          <Link Id="N8uDNktXQj2PNk1fq3vLeT" Ids="GTYQ9EHzPvYNOadJyoeBc4,TFcL2aTtaBWPfZq4uhl0Ly" />
           <Link Id="OhDphALla4DN86AgklfTWT" Ids="GTYQ9EHzPvYNOadJyoeBc4,JfRbbfngLyxNgWF7MXIOHY" />
           <Link Id="SnHAsK4CgntLRok3Zafx3q" Ids="ATRSSJXsPjdLAQTcWPPBLz,LLznY1Glqe8PJGsO75zXXF" />
           <Link Id="GDWhjrr9aVfP2BOzuhZp0I" Ids="Slt3k6HkNzwPH80GFCFSKp,ATRSSJXsPjdLAQTcWPPBLz" IsHidden="true" />
@@ -3394,6 +3393,7 @@
           <Link Id="Vpvjg8eAsbzMesieCUSchT" Ids="CgfkQUNzYVYM472Uu4ibIo,JGmlY443rFgNQzCdEoyD4y" />
           <Link Id="DCSoS51sJUDNX1SZw6hpkU" Ids="SBB3wpswUusLxLo8nZ2Ng7,PrWmLvxYtFoPx0lMhmpG4h" />
           <Link Id="JRXV3kttKtVPR44SeafCUj" Ids="CK05LGDkGCqM1emMll4A1P,J954ANjLFABL5poEN9wZma" />
+          <Link Id="DNLLQFduxVoNfx0Ji88KUE" Ids="GTYQ9EHzPvYNOadJyoeBc4,TFcL2aTtaBWPfZq4uhl0Ly" />
         </Patch>
       </Node>
     </Canvas>
