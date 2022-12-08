@@ -1,0 +1,89 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Document xmlns:p="property" Id="E7HaYCQqEwlPHkiq5wnzww" LanguageVersion="2022.5.0-0374-f17abf75a1" Version="0.128">
+  <Patch Id="RfAaoSfd2CtNpvFyYgdhKr">
+    <Canvas Id="JEIcHlLxExZNgBVOxaDo3E" DefaultCategory="Main" CanvasType="FullCategory" />
+    <!--
+
+    ************************ Application ************************
+
+-->
+    <Node Name="Application" Bounds="100,100" Id="OajJzejp7YjN2AxQHyCxsp">
+      <p:NodeReference>
+        <Choice Kind="ContainerDefinition" Name="Process" />
+        <FullNameCategoryReference ID="Primitive" />
+      </p:NodeReference>
+      <Patch Id="DIkhjks8vDwNiS4zTjxqoO">
+        <Canvas Id="QSxmShObVKjMofdsopM6Tt" CanvasType="Group">
+          <Node Bounds="426,218,185,19" Id="A26yIAGaMvjNUuNC72d6tP">
+            <p:NodeReference LastCategoryFullName="Devices.Phidgets" LastSymbolSource="VL.Devices.Phidgets.vl">
+              <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+              <Choice Kind="ProcessAppFlag" Name="Bridge" />
+            </p:NodeReference>
+            <Pin Id="GFCHn7PgX6TPQ2VC2rcwTX" Name="SensorType" Kind="InputPin" DefaultValue="VoltageRatio" />
+            <Pin Id="FxM4emKwINaOuP5OJzvVus" Name="Open" Kind="InputPin" DefaultValue="False" />
+            <Pin Id="GBWox7OPKYMMhj6FBin4bW" Name="Close" Kind="InputPin" />
+            <Pin Id="PZvQrNFF5t9N8nLgFyHT2K" Name="IsLocal" Kind="InputPin" />
+            <Pin Id="GsHPaV8ElG7LjumdWKHf74" Name="Channel" Kind="InputPin" />
+            <Pin Id="EuquooYwaswNrqvEjDcAj4" Name="SerialNumber" Kind="InputPin" />
+            <Pin Id="DyYERJLrCwtLUaNwcHU1rh" Name="HubPort" Kind="InputPin" />
+            <Pin Id="Ru55CVRyN2lQT8vddLiDm8" Name="Data Interval" Kind="InputPin" />
+            <Pin Id="HAYojkjTRl1MiwDds0I8t6" Name="Data Rate" Kind="InputPin" />
+            <Pin Id="VT0u9PBLPgzOMRAt6iQOgH" Name="IsHubPortDevice" Kind="InputPin" DefaultValue="False" />
+            <Pin Id="SQaQUXDTE77LFg1NR7PE20" Name="Value" Kind="InputPin" />
+            <Pin Id="NNoMPOiMxsjNRqbmYPVY4e" Name="Value" Kind="OutputPin" />
+            <Pin Id="HVT97LYa0k1O6yJhkVk2um" Name="On Data" Kind="OutputPin" />
+            <Pin Id="PMAiqSuTZ3IPxm5KyrmXpe" Name="Attached" Kind="OutputPin" />
+            <Pin Id="OlW4hM7Z7wTMv7PSo74LtJ" Name="Device Serial Number" Kind="OutputPin" />
+            <Pin Id="B25GnpmiPZRL7dSFFmJrnX" Name="Hub Port Count" Kind="OutputPin" />
+            <Pin Id="HYX8LwmD9BQOERSw8Ivs4x" Name="Is Remote" Kind="OutputPin" />
+            <Pin Id="DsDGaaeeHcvMioM5HZtS8O" Name="Channel" Kind="OutputPin" />
+          </Node>
+          <Pad Id="Qwod8JDKM5HPFjhgpntFIh" Comment="" Bounds="430,300,35,15" ShowValueBox="true" isIOBox="true" />
+          <Pad Id="PQLqr8MTRTFN3wUAc28OwS" Comment="On Data" Bounds="468,370,35,35" ShowValueBox="true" isIOBox="true" />
+          <Pad Id="KsGa7uFvfMEO0Ca3OL0rLF" Comment="Attached" Bounds="501,274,35,35" ShowValueBox="true" isIOBox="true" />
+          <Pad Id="NYNXDss1f1lLXs1zRUGI8s" Comment="Device Serial Number" Bounds="539,334,135,23" ShowValueBox="true" isIOBox="true" />
+          <Pad Id="HyGnVnM4IZ0Pp5a9As3k2d" Comment="Open" Bounds="450,146,35,35" ShowValueBox="true" isIOBox="true" Value="False">
+            <p:TypeAnnotation>
+              <Choice Kind="ImmutableTypeFlag" Name="Boolean" />
+              <CategoryReference Kind="Category" Name="Primitive" />
+            </p:TypeAnnotation>
+            <p:ValueBoxSettings>
+              <p:buttonmode p:Assembly="VL.UI.Forms" p:Type="VL.HDE.PatchEditor.Editors.ButtonModeEnum">Bang</p:buttonmode>
+            </p:ValueBoxSettings>
+          </Pad>
+          <Pad Id="OrmkgKxy22gPCnUUPCySfi" Comment="" Bounds="645,182,77,15" ShowValueBox="true" isIOBox="true" Value="Gain_128x">
+            <p:TypeAnnotation LastCategoryFullName="Phidget22" LastSymbolSource="Phidget22.NET.dll" LastDependency="VL.Devices.Phidgets.vl">
+              <Choice Kind="TypeFlag" Name="BridgeGain" />
+            </p:TypeAnnotation>
+          </Pad>
+          <Pad Id="Ho7s21difRSNzB4biI52zT" Comment="Close" Bounds="473,97,35,35" ShowValueBox="true" isIOBox="true" Value="False">
+            <p:TypeAnnotation>
+              <Choice Kind="ImmutableTypeFlag" Name="Boolean" />
+              <CategoryReference Kind="Category" Name="Primitive" />
+            </p:TypeAnnotation>
+            <p:ValueBoxSettings>
+              <p:buttonmode p:Assembly="VL.UI.Forms" p:Type="VL.HDE.PatchEditor.Editors.ButtonModeEnum">Bang</p:buttonmode>
+            </p:ValueBoxSettings>
+          </Pad>
+          <Pad Id="Vt5prmFxXjoNaPli0rzFVR" Comment="Channel" Bounds="649,262,35,15" ShowValueBox="true" isIOBox="true" />
+        </Canvas>
+        <Patch Id="LktJImeAVyzMyxIMbZyfkl" Name="Create" />
+        <Patch Id="FY3iWGwZdsxMZxRYTZcqpS" Name="Update" />
+        <ProcessDefinition Id="PVbz1vgUenaQQjtz8lIn6d">
+          <Fragment Id="Ui6pOrnrncsLZS1Et8UBO5" Patch="LktJImeAVyzMyxIMbZyfkl" Enabled="true" />
+          <Fragment Id="OSsJZ0fhI5qLZbjNo7RLWb" Patch="FY3iWGwZdsxMZxRYTZcqpS" Enabled="true" />
+        </ProcessDefinition>
+        <Link Id="V5lZWRGwNmgMayiAa5eQPh" Ids="NNoMPOiMxsjNRqbmYPVY4e,Qwod8JDKM5HPFjhgpntFIh" />
+        <Link Id="JE4G1XhsL6DN4vxopxlNVn" Ids="HVT97LYa0k1O6yJhkVk2um,PQLqr8MTRTFN3wUAc28OwS" />
+        <Link Id="CnKkg5up0g4MxGqpX3GhsX" Ids="PMAiqSuTZ3IPxm5KyrmXpe,KsGa7uFvfMEO0Ca3OL0rLF" />
+        <Link Id="MaRSJI2l85SQKNSNLA70Pp" Ids="OlW4hM7Z7wTMv7PSo74LtJ,NYNXDss1f1lLXs1zRUGI8s" />
+        <Link Id="CToegTetzaUQUjTGGxpUB9" Ids="HyGnVnM4IZ0Pp5a9As3k2d,FxM4emKwINaOuP5OJzvVus" />
+        <Link Id="DwOGFNdNK6HPN3iKGQmX31" Ids="OrmkgKxy22gPCnUUPCySfi,SQaQUXDTE77LFg1NR7PE20" />
+        <Link Id="U87vMapbM6YMSVWaRKtohh" Ids="Ho7s21difRSNzB4biI52zT,GBWox7OPKYMMhj6FBin4bW" />
+        <Link Id="BQQrW46qoNtPbOecvpmPZL" Ids="DsDGaaeeHcvMioM5HZtS8O,Vt5prmFxXjoNaPli0rzFVR" />
+      </Patch>
+    </Node>
+  </Patch>
+  <NugetDependency Id="JBWYZx23bMtO7chX2VqYsF" Location="VL.CoreLib" Version="2022.5.0-0374-gf17abf75a1" />
+  <DocumentDependency Id="JQXItX5o3b2MvacI7K5JGF" Location="../../VL.Devices.Phidgets.vl" />
+</Document>
