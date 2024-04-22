@@ -1,0 +1,297 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Document xmlns:p="property" xmlns:r="reflection" Id="OsZ18p0gAnvLTBLq8vgEMD" LanguageVersion="2024.6.0" Version="0.128">
+  <NugetDependency Id="LRbA3fmPrDTQNUlIB6kgFW" Location="VL.CoreLib" Version="2024.6.0" />
+  <Patch Id="RXtVcuWdJccLUKNAmgNwEY">
+    <Canvas Id="LYRolP2e5GjOb3bmsI19W3" DefaultCategory="Main" CanvasType="FullCategory" />
+    <!--
+
+    ************************ Application ************************
+
+-->
+    <Node Name="Application" Bounds="100,100" Id="BLWLTvPnw7tL7fPzi7Vw9c">
+      <p:NodeReference>
+        <Choice Kind="ContainerDefinition" Name="Process" />
+        <CategoryReference Kind="Category" Name="Primitive" />
+      </p:NodeReference>
+      <Patch Id="RMricUvXtgXNe7sPgsWsxi">
+        <Canvas Id="HYOT2J7DQKoMON2MakJdcP" CanvasType="Group">
+          <Node Bounds="812,582,245,19" Id="EIDEV6s2pjaPrAaAb9zk2M">
+            <p:NodeReference LastCategoryFullName="Devices.Phidgets" LastDependency="VL.Devices.Phidgets.vl">
+              <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+              <Choice Kind="ProcessAppFlag" Name="Encoder" />
+            </p:NodeReference>
+            <Pin Id="OsVBzfpa7ydPVrLgBNxFBb" Name="Node Context" Kind="InputPin" IsHidden="true" />
+            <Pin Id="VyzyhZ661OnM218j59JhbM" Name="Open" Kind="InputPin" />
+            <Pin Id="SJUHup4wftDP0bGbEAeXGF" Name="Timeout" Kind="InputPin" IsHidden="true" />
+            <Pin Id="GRPBsagSCKiQRqyKCNkNS0" Name="Close" Kind="InputPin" />
+            <Pin Id="JuktlfhcOUpNHvMeeibveB" Name="IsLocal" Kind="InputPin" IsHidden="true" />
+            <Pin Id="IaMhOgWIzeWNNXgEyaHAh6" Name="Channel" Kind="InputPin" />
+            <Pin Id="IP5T68oJwPoNMGH36xqaGQ" Name="SerialNumber" Kind="InputPin" />
+            <Pin Id="RZ3hDeZGVASQWo1cO5aNvD" Name="HubPort" Kind="InputPin" />
+            <Pin Id="KR6cwo3J6ZiNAUYGoIAC9H" Name="IsHubPortDevice" Kind="InputPin" />
+            <Pin Id="FX0W7lMgM6rO62fFREpOym" Name="Data Rate" Kind="InputPin" IsHidden="true" />
+            <Pin Id="TmBzyZHdpygP5u2XLta3RT" Name="Data Interval" Kind="InputPin" />
+            <Pin Id="SeP5KuHDuhAN1HuhWyycaC" Name="Encoder Type" Kind="InputPin" />
+            <Pin Id="JXkfngRHN9uPLfyFCDcfh7" Name="Encoder Interface Resolution" Kind="InputPin" DefaultValue="4" />
+            <Pin Id="FzTOnNZWPUvPTeoDRjzQ0S" Name="Position Change Trigger" Kind="InputPin" />
+            <Pin Id="LodT0sBLvT8Lg44y8gSXAZ" Name="IO Mode" Kind="InputPin" />
+            <Pin Id="GeaIqqXS2BNM8XKwMF2vcb" Name="Resolution" Kind="InputPin" />
+            <Pin Id="FoQyvisvSdxOzZLesgvLII" Name="Reset" Kind="InputPin" />
+            <Pin Id="Lh6jQgGxgOPMUUXZ8e8jeg" Name="Attached" Kind="OutputPin" />
+            <Pin Id="IDzMhQf1fyjPIhZdPETeDU" Name="Device Serial Number" Kind="OutputPin" IsHidden="true" />
+            <Pin Id="O7PUZcLXO3GNdimxph8tIV" Name="Channel Class" Kind="OutputPin" IsHidden="true" />
+            <Pin Id="LW5TjU1FcxMNq3zJkZ2hBW" Name="Is Remote" Kind="OutputPin" />
+            <Pin Id="LZ2yFnWKl2sLYCgG3UPGbS" Name="Hub Port" Kind="OutputPin" IsHidden="true" />
+            <Pin Id="LAGp7gC3dZXPOjuR8OqfL6" Name="Hub Port Count" Kind="OutputPin" IsHidden="true" />
+            <Pin Id="FzG4fSB554KQN8ktr4Pn5S" Name="Position" Kind="OutputPin" />
+            <Pin Id="GqKy7V89QtrNQs037MKYSQ" Name="Position Change" Kind="OutputPin" />
+            <Pin Id="Ek9u0p9iSN1Pu0o7y7gU8Q" Name="Index Triggered" Kind="OutputPin" IsHidden="true" />
+            <Pin Id="NxbPszum3nwM9TChnZZHNq" Name="Time Change" Kind="OutputPin" />
+            <Pin Id="QdovnwNT2c1M6tQHuJex4M" Name="On Data" Kind="OutputPin" IsHidden="true" />
+            <Pin Id="QSnxHVcUK7VMnufAmkbOkg" Name="Angle" Kind="OutputPin" />
+            <Pin Id="SIMY7gSXu3SOwIbucBXRmv" Name="Length" Kind="OutputPin" />
+            <Pin Id="NmpZJBRwZkDNsicBhWnECb" Name="Velocity" Kind="OutputPin" />
+          </Node>
+          <Pad Id="UhcBc9IgjmqLbCLKDqx5ye" Comment="Open" Bounds="814,180,35,35" ShowValueBox="true" isIOBox="true" Value="false">
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
+              <Choice Kind="ImmutableTypeFlag" Name="Boolean" />
+            </p:TypeAnnotation>
+            <p:ValueBoxSettings>
+              <p:buttonmode p:Assembly="VL.UI.Forms" p:Type="VL.HDE.PatchEditor.Editors.ButtonModeEnum">Bang</p:buttonmode>
+            </p:ValueBoxSettings>
+          </Pad>
+          <Pad Id="IbpZlW2x3W8P6Z6XBLxhj6" Comment="Close" Bounds="834,222,35,35" ShowValueBox="true" isIOBox="true" Value="false">
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
+              <Choice Kind="ImmutableTypeFlag" Name="Boolean" />
+            </p:TypeAnnotation>
+            <p:ValueBoxSettings>
+              <p:buttonmode p:Assembly="VL.UI.Forms" p:Type="VL.HDE.PatchEditor.Editors.ButtonModeEnum">Bang</p:buttonmode>
+            </p:ValueBoxSettings>
+          </Pad>
+          <Pad Id="SaTvyK7H8dePCSRtz9l0c7" Comment="IsHubPortDevice" Bounds="914,281,35,35" ShowValueBox="true" isIOBox="true" Value="False">
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
+              <Choice Kind="ImmutableTypeFlag" Name="Boolean" />
+            </p:TypeAnnotation>
+            <p:ValueBoxSettings>
+              <p:buttonmode p:Assembly="VL.UI.Forms" p:Type="VL.HDE.PatchEditor.Editors.ButtonModeEnum">Toggle</p:buttonmode>
+            </p:ValueBoxSettings>
+          </Pad>
+          <Pad Id="CUuOjayfpUqK9a4UFno5Pa" Comment="Data Interval" Bounds="934,324,35,15" ShowValueBox="true" isIOBox="true" Value="20">
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
+              <Choice Kind="TypeFlag" Name="Integer32" />
+            </p:TypeAnnotation>
+          </Pad>
+          <Pad Id="QpeuTkt7UoPL8imTo9ZCri" Comment="Encoder Type" Bounds="954,408,89,15" ShowValueBox="true" isIOBox="true" Value="RotaryEncoder">
+            <p:TypeAnnotation LastCategoryFullName="Devices.Phidgets" LastDependency="VL.Devices.Phidgets.vl">
+              <Choice Kind="TypeFlag" Name="EncoderType" />
+            </p:TypeAnnotation>
+          </Pad>
+          <Pad Id="Nzi77IrkSE8LOWhFhv8yzU" Comment="Encoder Interface Resolution" Bounds="974,434,35,15" ShowValueBox="true" isIOBox="true" Value="4">
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
+              <Choice Kind="TypeFlag" Name="Float32" />
+            </p:TypeAnnotation>
+          </Pad>
+          <Pad Id="KBivCcCS9Z1QCy7F4FJfrH" Comment="IO Mode" Bounds="1014,485,111,15" ShowValueBox="true" isIOBox="true" Value="PushPull">
+            <p:TypeAnnotation LastCategoryFullName="Phidget22" LastDependency="VL.Devices.Phidgets.vl">
+              <Choice Kind="TypeFlag" Name="EncoderIOMode" />
+            </p:TypeAnnotation>
+          </Pad>
+          <Pad Id="TcJuZQzhmugL2RnXWotHNt" Comment="Resolution" Bounds="1034,511,35,15" ShowValueBox="true" isIOBox="true" Value="360">
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
+              <Choice Kind="TypeFlag" Name="Integer32" />
+            </p:TypeAnnotation>
+          </Pad>
+          <Pad Id="AZJwxVmObFVMmskke94sbv" Comment="Reset" Bounds="1054,535,35,35" ShowValueBox="true" isIOBox="true" Value="false">
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
+              <Choice Kind="ImmutableTypeFlag" Name="Boolean" />
+            </p:TypeAnnotation>
+            <p:ValueBoxSettings>
+              <p:buttonmode p:Assembly="VL.UI.Forms" p:Type="VL.HDE.PatchEditor.Editors.ButtonModeEnum">Bang</p:buttonmode>
+            </p:ValueBoxSettings>
+          </Pad>
+          <Pad Id="DeZpfdYZjSNNJ5z78AYzsS" Comment="Attached" Bounds="814,824,35,35" ShowValueBox="true" isIOBox="true" />
+          <Pad Id="Qb5oFeIqSiUOnlYl6nAJyJ" Comment="Position" Bounds="883,787,60,15" ShowValueBox="true" isIOBox="true">
+            <p:ValueBoxSettings>
+              <p:unit p:Type="String"> pulses</p:unit>
+            </p:ValueBoxSettings>
+          </Pad>
+          <Pad Id="Fz1EQAbeUyiOTb6QbOdNfA" Comment="Position Change" Bounds="917,755,60,15" ShowValueBox="true" isIOBox="true">
+            <p:ValueBoxSettings>
+              <p:unit p:Type="String"> pulses</p:unit>
+            </p:ValueBoxSettings>
+          </Pad>
+          <Pad Id="CJDhstPs0dFLkL7IMVajmM" Comment="Time Change" Bounds="951,725,58,15" ShowValueBox="true" isIOBox="true">
+            <p:ValueBoxSettings>
+              <p:unit p:Type="String"> ms</p:unit>
+            </p:ValueBoxSettings>
+          </Pad>
+          <Pad Id="BHSrj4hJZLvNOVEjMSUlSn" Comment="Angle" Bounds="985,698,50,15" ShowValueBox="true" isIOBox="true">
+            <p:ValueBoxSettings>
+              <p:unit p:Type="String"> °</p:unit>
+            </p:ValueBoxSettings>
+          </Pad>
+          <Pad Id="ULszhNlycECLkN0wsigWue" Comment="Length" Bounds="1020,668,58,15" ShowValueBox="true" isIOBox="true">
+            <p:ValueBoxSettings>
+              <p:unit p:Type="String"> mm</p:unit>
+            </p:ValueBoxSettings>
+          </Pad>
+          <Pad Id="OziEFp9BERqNWPG9PEmlJj" Comment="Velocity (RPM or mm/s)" Bounds="1054,637,42,15" ShowValueBox="true" isIOBox="true" />
+          <Pad Id="Gp3cC9iMWFfMxPNzD80T59" Bounds="1191,408,35,19" ShowValueBox="true" isIOBox="true" Value="1.">
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
+              <Choice Kind="TypeFlag" Name="String" />
+            </p:TypeAnnotation>
+            <p:ValueBoxSettings>
+              <p:fontsize p:Type="Int32">9</p:fontsize>
+              <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
+            </p:ValueBoxSettings>
+          </Pad>
+          <Pad Id="S5YmygtgtBGOd2ErFcaLWS" Bounds="1191,432,35,19" ShowValueBox="true" isIOBox="true" Value="2.">
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
+              <Choice Kind="TypeFlag" Name="String" />
+            </p:TypeAnnotation>
+            <p:ValueBoxSettings>
+              <p:fontsize p:Type="Int32">9</p:fontsize>
+              <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
+            </p:ValueBoxSettings>
+          </Pad>
+          <Pad Id="SSIUOeiUHglON3C1WwoMxe" Bounds="1191,456,35,19" ShowValueBox="true" isIOBox="true" Value="3.">
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
+              <Choice Kind="TypeFlag" Name="String" />
+            </p:TypeAnnotation>
+            <p:ValueBoxSettings>
+              <p:fontsize p:Type="Int32">9</p:fontsize>
+              <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
+            </p:ValueBoxSettings>
+          </Pad>
+          <Pad Id="Td9lobugZ1LPV3ioZvsfSJ" Bounds="1191,504,35,19" ShowValueBox="true" isIOBox="true" Value="5.">
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
+              <Choice Kind="TypeFlag" Name="String" />
+            </p:TypeAnnotation>
+            <p:ValueBoxSettings>
+              <p:fontsize p:Type="Int32">9</p:fontsize>
+              <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
+            </p:ValueBoxSettings>
+          </Pad>
+          <Pad Id="D2lyT5y1pjPP8ylzg9yynG" Bounds="142,294,420,59" ShowValueBox="true" isIOBox="true" Value="1. Select encoder type to output Angle, Length and Velocity values.&#xD;&#xA;- RotaryEncoder only outputs Angle and Velocity&#xD;&#xA;- LinearEncoder only outputs Length and Velocity">
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
+              <Choice Kind="TypeFlag" Name="String" />
+            </p:TypeAnnotation>
+            <p:ValueBoxSettings>
+              <p:fontsize p:Type="Int32">9</p:fontsize>
+              <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
+            </p:ValueBoxSettings>
+          </Pad>
+          <Pad Id="Gsp971j7HqALZXFE1Y2agD" Bounds="142,390,357,81" ShowValueBox="true" isIOBox="true" Value="2. Set the Encoder Interface Resolution&#xD;&#xA;A x1 encoder interface counts entire quadrature cycles, while a x4 encoder interface counts the individual edges (or &quot;pulses&quot;) within a quadrature cycle.">
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
+              <Choice Kind="TypeFlag" Name="String" />
+            </p:TypeAnnotation>
+            <p:ValueBoxSettings>
+              <p:fontsize p:Type="Int32">9</p:fontsize>
+              <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
+            </p:ValueBoxSettings>
+          </Pad>
+          <Pad Id="K5OpIaK0qFpMl4MhiMBiy7" Bounds="142,646,539,64" ShowValueBox="true" isIOBox="true" Value="5. Set Resolution to output Angle, Length and Velocity values.&#xD;&#xA;- RotatyEncoder: Counts Per Resolution (CPR)&#xD;&#xA;- LinearEncoder: µm / pulse">
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
+              <Choice Kind="TypeFlag" Name="String" />
+            </p:TypeAnnotation>
+            <p:ValueBoxSettings>
+              <p:fontsize p:Type="Int32">9</p:fontsize>
+              <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
+            </p:ValueBoxSettings>
+          </Pad>
+          <Pad Id="PPqAXoly3DzNQjtk9QXbdm" Bounds="142,747,357,48" ShowValueBox="true" isIOBox="true" Value="6. Reset to zero the current encoder position, angle, length and velocity.">
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
+              <Choice Kind="TypeFlag" Name="String" />
+            </p:TypeAnnotation>
+            <p:ValueBoxSettings>
+              <p:fontsize p:Type="Int32">9</p:fontsize>
+              <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
+            </p:ValueBoxSettings>
+          </Pad>
+          <Pad Id="GYnCKMTEaX8M41OoqJ22Jw" Comment="Position Change Trigger" Bounds="994,459,35,15" ShowValueBox="true" isIOBox="true" Value="0">
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
+              <Choice Kind="TypeFlag" Name="Integer32" />
+            </p:TypeAnnotation>
+          </Pad>
+          <Pad Id="L6mEvgnw0wlOCPIn31bgqf" Bounds="1191,528,35,19" ShowValueBox="true" isIOBox="true" Value="6.">
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
+              <Choice Kind="TypeFlag" Name="String" />
+            </p:TypeAnnotation>
+            <p:ValueBoxSettings>
+              <p:fontsize p:Type="Int32">9</p:fontsize>
+              <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
+            </p:ValueBoxSettings>
+          </Pad>
+          <Pad Id="N8Cz0MM9wPKO2vGof7HQOf" Bounds="142,508,442,41" ShowValueBox="true" isIOBox="true" Value="3. Set the number of pulses to reach before sending a trigger event.&#xD;&#xA;Set to 0 to deactivate it.">
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
+              <Choice Kind="TypeFlag" Name="String" />
+            </p:TypeAnnotation>
+            <p:ValueBoxSettings>
+              <p:fontsize p:Type="Int32">9</p:fontsize>
+              <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
+            </p:ValueBoxSettings>
+          </Pad>
+          <Pad Id="OkZahY90f7VMwREz2ukVai" Comment="https://www.phidgets.com/docs/Encoder_Guide" Bounds="142,203,240,20" ShowValueBox="true" isIOBox="true" Value="https://www.phidgets.com/docs/Encoder_Guide">
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
+              <Choice Kind="ImmutableTypeFlag" Name="String" />
+            </p:TypeAnnotation>
+            <p:ValueBoxSettings>
+              <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Link</p:stringtype>
+            </p:ValueBoxSettings>
+          </Pad>
+          <Pad Id="AaeygHK5lPdLll1itmSZL6" Bounds="142,163,289,37" ShowValueBox="true" isIOBox="true" Value="Browse the following link for more information on how to encoders work and how to use them:">
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
+              <Choice Kind="TypeFlag" Name="String" />
+            </p:TypeAnnotation>
+            <p:ValueBoxSettings>
+              <p:fontsize p:Type="Int32">9</p:fontsize>
+              <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
+            </p:ValueBoxSettings>
+          </Pad>
+          <Pad Id="K0bNp3GiS02PP91o7HZ64X" Bounds="1191,480,35,19" ShowValueBox="true" isIOBox="true" Value="4.">
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
+              <Choice Kind="TypeFlag" Name="String" />
+            </p:TypeAnnotation>
+            <p:ValueBoxSettings>
+              <p:fontsize p:Type="Int32">9</p:fontsize>
+              <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
+            </p:ValueBoxSettings>
+          </Pad>
+          <Pad Id="G3HhLQnykfXPApGlMdvN7q" Bounds="140,586,357,23" ShowValueBox="true" isIOBox="true" Value="4. Select the resistor to apply to the encoder.">
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
+              <Choice Kind="TypeFlag" Name="String" />
+            </p:TypeAnnotation>
+            <p:ValueBoxSettings>
+              <p:fontsize p:Type="Int32">9</p:fontsize>
+              <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
+            </p:ValueBoxSettings>
+          </Pad>
+        </Canvas>
+        <Patch Id="QZ7WJUhI29SLlPPemKbVgr" Name="Create" />
+        <Patch Id="OPmOj9xHUQgP5IrTqs2LT0" Name="Update" />
+        <ProcessDefinition Id="Av2TjJ1AzpeOBWFajXHQhb">
+          <Fragment Id="Nn7xjWyIMHDLH2DG83szgC" Patch="QZ7WJUhI29SLlPPemKbVgr" Enabled="true" />
+          <Fragment Id="KqZCWIZsbuAOZLX5jACldQ" Patch="OPmOj9xHUQgP5IrTqs2LT0" Enabled="true" />
+        </ProcessDefinition>
+        <Link Id="U38TYxHKzpGOnooZJvcWUb" Ids="UhcBc9IgjmqLbCLKDqx5ye,VyzyhZ661OnM218j59JhbM" />
+        <Link Id="JcbWiYQsSDnNdYz4Xm3Szu" Ids="IbpZlW2x3W8P6Z6XBLxhj6,GRPBsagSCKiQRqyKCNkNS0" />
+        <Link Id="JmShVcLiOyYPvuh1CAcKc5" Ids="SaTvyK7H8dePCSRtz9l0c7,KR6cwo3J6ZiNAUYGoIAC9H" />
+        <Link Id="QflHSiCLQnOQVYvJLOdM16" Ids="CUuOjayfpUqK9a4UFno5Pa,TmBzyZHdpygP5u2XLta3RT" />
+        <Link Id="KHxJh7GZxz4PBtxRj09ac1" Ids="QpeuTkt7UoPL8imTo9ZCri,SeP5KuHDuhAN1HuhWyycaC" />
+        <Link Id="VMRUmUbkEwLP63qlnGpKaW" Ids="Nzi77IrkSE8LOWhFhv8yzU,JXkfngRHN9uPLfyFCDcfh7" />
+        <Link Id="TJWk0y2ZIolMN6pGLDQtK5" Ids="KBivCcCS9Z1QCy7F4FJfrH,LodT0sBLvT8Lg44y8gSXAZ" />
+        <Link Id="IXpIywtpFVdLXKvZI57emz" Ids="TcJuZQzhmugL2RnXWotHNt,GeaIqqXS2BNM8XKwMF2vcb" />
+        <Link Id="IyHfxMGxmXHMkyIZ1r1Jza" Ids="AZJwxVmObFVMmskke94sbv,FoQyvisvSdxOzZLesgvLII" />
+        <Link Id="KUB2n4gMUW9QGqkqemMDv9" Ids="Lh6jQgGxgOPMUUXZ8e8jeg,DeZpfdYZjSNNJ5z78AYzsS" />
+        <Link Id="AUQrY9ljMIRNaXp37Dh47Q" Ids="FzG4fSB554KQN8ktr4Pn5S,Qb5oFeIqSiUOnlYl6nAJyJ" />
+        <Link Id="PBIZxMhwgUYNQaWbx12aKs" Ids="GqKy7V89QtrNQs037MKYSQ,Fz1EQAbeUyiOTb6QbOdNfA" />
+        <Link Id="HjoeJ7RlqgfL5aQLa9HONK" Ids="NxbPszum3nwM9TChnZZHNq,CJDhstPs0dFLkL7IMVajmM" />
+        <Link Id="KcYGmFjD3SRQcbAYU5bSsW" Ids="QSnxHVcUK7VMnufAmkbOkg,BHSrj4hJZLvNOVEjMSUlSn" />
+        <Link Id="G0csv6R8EGbOON3iDbSrYN" Ids="GYnCKMTEaX8M41OoqJ22Jw,FzTOnNZWPUvPTeoDRjzQ0S" />
+        <Link Id="E3KaALsrxGGQRJJyty8tIF" Ids="SIMY7gSXu3SOwIbucBXRmv,ULszhNlycECLkN0wsigWue" />
+        <Link Id="A5OExIptZ3nOKrZQeozllf" Ids="NmpZJBRwZkDNsicBhWnECb,OziEFp9BERqNWPG9PEmlJj" />
+      </Patch>
+    </Node>
+  </Patch>
+  <NugetDependency Id="IKbvkTSGePaNIMSgCHuQPE" Location="VL.Devices.Phidgets" Version="0.0.10-alpha" />
+</Document>
