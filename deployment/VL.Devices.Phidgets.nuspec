@@ -2,20 +2,20 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2011/10/nuspec.xsd">
   <metadata>
     <id>VL.Devices.Phidgets</id>
-	<version>0.0.10-alpha</version>
+    <version>0.0.11-alpha</version>
     <title>VL.Devices.Phidgets</title>
     <authors>phlegma</authors>
     <owners>phlegma</owners>
     <projectUrl>https://github.com/phlegma/VL.Devices.Phidgets/</projectUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
-    <repository type="git" url="https://github.com/phlegma/VL.Devices.Phidgets/"/>
+    <repository type="git" url="https://github.com/phlegma/VL.Devices.Phidgets/" />
     <summary>Set of VL Nodes for Phidgets</summary>
     <description>Set of VL Nodes for Phidgets</description>
     <license type="expression">MIT</license>
     <tags>VL, Phidgets</tags>
-	<dependencies>
-		<dependency id="Phidget22.NET" version="1.10.20220530" />
-	</dependencies>
+    <dependencies>
+      <dependency id="Phidget22.NET" version="1.19.20240411" />
+    </dependencies>
   </metadata>
   <files>
     <file src="..\*.vl" target="" exclude="" />

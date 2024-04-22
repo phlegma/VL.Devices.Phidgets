@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Document xmlns:p="property" Id="TdtUy5e6VvkLk7SehOpxcd" LanguageVersion="2021.4.9.982" Version="0.128">
-  <NugetDependency Id="VMo4HaTEkVTLtfYj9q9ZYR" Location="VL.CoreLib" Version="2021.4.9" />
+<Document xmlns:p="property" xmlns:r="reflection" Id="TdtUy5e6VvkLk7SehOpxcd" LanguageVersion="2024.6.2" Version="0.128">
+  <NugetDependency Id="VMo4HaTEkVTLtfYj9q9ZYR" Location="VL.CoreLib" Version="2024.6.2" />
   <Patch Id="EBJpcI9XfAwLRZdOzyKrhP">
     <Canvas Id="DZ4WByYr0iQNUdSbUzWirB" DefaultCategory="Main" BordersChecked="false" CanvasType="FullCategory">
       <!--
@@ -37,19 +37,23 @@
       <Patch Id="RcdmicmnND1Pyv3TJj3de9">
         <Canvas Id="Th1wAbWQAPlMOAdCYXCkfd" CanvasType="Group">
           <Node Bounds="605,52,145,19" Id="B3SqcoE1XmeP2o4lxVeQGv">
-            <p:NodeReference LastCategoryFullName="VL.Devices.Phidgets" LastSymbolSource="VL.Devices.Phidgets.vl">
+            <p:NodeReference LastCategoryFullName="VL.Devices.Phidgets" LastDependency="VL.Devices.Phidgets.vl">
               <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
               <Choice Kind="ProcessAppFlag" Name="DistanceSensor" />
             </p:NodeReference>
+            <Pin Id="BaHUlN52D8sLaXW7ncS2lo" Name="Node Context" Kind="InputPin" IsHidden="true" />
             <Pin Id="Sm3CBp5fNN6OAmqULRSp8l" Name="Sonar Quite Mode" Kind="InputPin" />
             <Pin Id="Cil7I7P8BpnL0GwVtBJy6E" Name="Open" Kind="InputPin" DefaultValue="False" />
             <Pin Id="PfnVXrAxfORLAmzH3gOagi" Name="Close" Kind="InputPin" />
+            <Pin Id="V6NBSPum9voNukBDt97QNr" Name="Timeout" Kind="InputPin" IsHidden="true" />
             <Pin Id="UHMh7yK8QNfPDeSVH4Jo2T" Name="IsLocal" Kind="InputPin" />
             <Pin Id="JfmsUHIGOXROg7cfyVPpr9" Name="Channel" Kind="InputPin" />
             <Pin Id="BI32u0nSGFdOt7z0PGfwmi" Name="SerialNumber" Kind="InputPin" />
             <Pin Id="D4iPaAEBQ5GQNbhloi2yY8" Name="HubPort" Kind="InputPin" />
             <Pin Id="VIMF6hwiMBOOPeoI6lZg5Z" Name="Data Interval" Kind="InputPin" />
+            <Pin Id="ECIOeALzAC2NYJSKhPQgHF" Name="Data Rate" Kind="InputPin" IsHidden="true" />
             <Pin Id="PtdWySTVa2HQCtkdqMy8sr" Name="Value" Kind="OutputPin" />
+            <Pin Id="K9Qvrut5OvtLEDL6qwUFYP" Name="On Data" Kind="OutputPin" IsHidden="true" />
             <Pin Id="C1XQ6AIyJ8kNcz5DvMe34V" Name="Distances" Kind="OutputPin" />
             <Pin Id="Djm2RF0fHuYMdQnsgy5Fra" Name="Amplitudes" Kind="OutputPin" />
             <Pin Id="KsUdZC9sdP8OElWllMeenU" Name="Count" Kind="OutputPin" />
@@ -57,13 +61,16 @@
             <Pin Id="U2tA9YkW538NhQAhxlMVdm" Name="Device Serial Number" Kind="OutputPin" />
             <Pin Id="TQYjkt9J3hHLSHarvQCagM" Name="Hub Port" Kind="OutputPin" />
           </Node>
-          <Node Bounds="359,55,105,19" Id="QgRQ5cIAdS9OyoAGLclthh">
-            <p:NodeReference LastCategoryFullName="VL.Devices.Phidgets" LastSymbolSource="VL.Devices.Phidgets.vl">
+          <Node Bounds="305,53,105,19" Id="QgRQ5cIAdS9OyoAGLclthh">
+            <p:NodeReference LastCategoryFullName="VL.Devices.Phidgets" LastDependency="VL.Devices.Phidgets.vl">
               <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
               <Choice Kind="ProcessAppFlag" Name="DigitalInput" />
             </p:NodeReference>
+            <Pin Id="I9v23V1Kvm5LsM4yu8EQnE" Name="Node Context" Kind="InputPin" IsHidden="true" />
             <Pin Id="Ig71YW29u3KOUwf0Ujb0gH" Name="Open" Kind="InputPin" DefaultValue="False" />
+            <Pin Id="SURIjmrzxKEPttNqbDWtZU" Name="Timeout" Kind="InputPin" IsHidden="true" />
             <Pin Id="VMMdXw86jvwO9qTS8ggjyH" Name="Close" Kind="InputPin" />
+            <Pin Id="P7KkT2uPCw6NNlnQLnzsHy" Name="IsLocal" Kind="InputPin" IsHidden="true" />
             <Pin Id="FWGLt9LbE61OKyymFGtp7v" Name="Channel" Kind="InputPin" />
             <Pin Id="Ui686CJvgONPFukmjljV98" Name="SerialNumber" Kind="InputPin" />
             <Pin Id="U3nvV9VCT8aMthVNKZpM4u" Name="HubPort" Kind="InputPin" />
@@ -71,30 +78,40 @@
             <Pin Id="JLek0DsIWcGOFM5uo2EBVJ" Name="Result" Kind="OutputPin" />
             <Pin Id="CUVbk8qYX18LRGbkhmKeob" Name="On Data" Kind="OutputPin" />
             <Pin Id="HSYXG1b3VfZOpGqBsIB3oT" Name="Attached" Kind="OutputPin" />
+            <Pin Id="Gv2hKCkiEFNL6W1iD1ksI8" Name="Device Serial Number" Kind="OutputPin" IsHidden="true" />
             <Pin Id="K9x5KbLHZoiL7MW0J38zc6" Name="Hub Port Count" Kind="OutputPin" />
+            <Pin Id="TqaPi21gyH8PsJfSozhwHq" Name="Channel Class" Kind="OutputPin" />
+            <Pin Id="R4LMXtSiRDdLWGgK58eP0i" Name="Is Remote" Kind="OutputPin" IsHidden="true" />
           </Node>
-          <Node Bounds="359,96,145,19" Id="JvNmbdls2N6QMkaPjxgedo">
-            <p:NodeReference LastCategoryFullName="VL.Devices.Phidgets" LastSymbolSource="VL.Devices.Phidgets.vl">
+          <Node Bounds="305,94,145,19" Id="JvNmbdls2N6QMkaPjxgedo">
+            <p:NodeReference LastCategoryFullName="VL.Devices.Phidgets" LastDependency="VL.Devices.Phidgets.vl">
               <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
               <Choice Kind="ProcessAppFlag" Name="DigitalOutput" />
             </p:NodeReference>
+            <Pin Id="BUbFzt7XvczQU4g60CPuNd" Name="Node Context" Kind="InputPin" IsHidden="true" />
             <Pin Id="M9H8Up50EiyODS6PRK3hw0" Name="Value" Kind="InputPin" />
             <Pin Id="UgH3hLU0f0xNCtEFIiW3c2" Name="Duty Cycle" Kind="InputPin" />
-            <Pin Id="V22SWg6Z752MeCN1zy9Jnw" Name="Open" Kind="InputPin" DefaultValue="False" />
             <Pin Id="SbdC2C0PqfTPAqwdhVGzRU" Name="Close" Kind="InputPin" />
+            <Pin Id="V22SWg6Z752MeCN1zy9Jnw" Name="Open" Kind="InputPin" DefaultValue="False" />
+            <Pin Id="UDTIJpXwuvlLVqFBDpt3C1" Name="IsLocal" Kind="InputPin" IsHidden="true" />
+            <Pin Id="MH7k52IHrwvNYo6Dtjmve1" Name="Timeout" Kind="InputPin" IsHidden="true" />
             <Pin Id="HZDGg5FS8LUNjx8JXyp1Xc" Name="Channel" Kind="InputPin" />
             <Pin Id="LMWBowLX0AEMoUkYNQXTpD" Name="SerialNumber" Kind="InputPin" />
             <Pin Id="GWlgoUl7owIPYKE5B27mAa" Name="HubPort" Kind="InputPin" />
             <Pin Id="SHTFjEoB7EtMyWKhOVCzcb" Name="IsHubPortDevice" Kind="InputPin" />
+            <Pin Id="O7jdSayCa2DPAaHFQhj7KU" Name="Result" Kind="OutputPin" />
             <Pin Id="GwW0ppBaP8qQKYnaUiKdpN" Name="Attached" Kind="OutputPin" />
             <Pin Id="FDMrthOLXPnMp0muMnTeM3" Name="Device Serial Number" Kind="OutputPin" />
+            <Pin Id="N08NQJinaXDQB5sevQWegA" Name="Channel Class" Kind="OutputPin" IsHidden="true" />
+            <Pin Id="LYH9f5pW33ZQbH4r7y0FSh" Name="Is Remote" Kind="OutputPin" />
             <Pin Id="SSpGGXAARWLLN75VEztqRM" Name="Hub Port Count" Kind="OutputPin" />
           </Node>
           <Node Bounds="1079,53,145,19" Id="VYsJDSgBWctQNQiBSLAiwl">
-            <p:NodeReference LastCategoryFullName="VL.Devices.Phidgets" LastSymbolSource="VL.Devices.Phidgets.vl">
+            <p:NodeReference LastCategoryFullName="VL.Devices.Phidgets" LastDependency="VL.Devices.Phidgets.vl">
               <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
               <Choice Kind="ProcessAppFlag" Name="Manager" />
             </p:NodeReference>
+            <Pin Id="UoW8ypXIQe3LSA70riDJYw" Name="Node Context" Kind="InputPin" IsHidden="true" />
             <Pin Id="UQ8prFAb1oDPShCUBEYNVE" Name="Open" Kind="InputPin" />
             <Pin Id="EEqMHwgmDPHPe9ruxPuTRX" Name="Close" Kind="InputPin" />
             <Pin Id="ECDFPIoqVrSQDghbnNY4Op" Name="Library Version Number" Kind="OutputPin" />
@@ -105,89 +122,154 @@
             <Pin Id="COwJT0rerdbNmAZIAxbAOV" Name="Device Name" Kind="OutputPin" />
             <Pin Id="DdrD7pwUUOOOW5YCYhG3EH" Name="Device ID" Kind="OutputPin" />
             <Pin Id="DLE5t5yNIYENQJd66VPNpp" Name="Device VINTID" Kind="OutputPin" />
+            <Pin Id="JmNz3H1jEr5MmFWWnECXOS" Name="Device Label" Kind="OutputPin" IsHidden="true" />
+            <Pin Id="FQTnndv3KmXPcnLyqMCPZB" Name="Device SKU" Kind="OutputPin" IsHidden="true" />
+            <Pin Id="JijIdGjNxmNQTL1kIDXQot" Name="Channel Name" Kind="OutputPin" IsHidden="true" />
+            <Pin Id="KTppvOPNxKNPGNagmzQRfC" Name="Channel Class Name" Kind="OutputPin" IsHidden="true" />
+            <Pin Id="AVPiUzhTfHDQHoiNVC4JIf" Name="Channel Subclass" Kind="OutputPin" IsHidden="true" />
+            <Pin Id="P8MAuGAZJuFN9By2nQjMIE" Name="Channel Class" Kind="OutputPin" IsHidden="true" />
           </Node>
           <Node Bounds="605,89,105,19" Id="UbMFb1BAfEdQIEgfmx7I7o">
-            <p:NodeReference LastCategoryFullName="VL.Devices.Phidgets" LastSymbolSource="VL.Devices.Phidgets.vl">
+            <p:NodeReference LastCategoryFullName="VL.Devices.Phidgets" LastDependency="VL.Devices.Phidgets.vl">
               <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
               <Choice Kind="ProcessAppFlag" Name="LightSensor" />
             </p:NodeReference>
+            <Pin Id="CULci7hLWMpMsbN8f7Pk1g" Name="Node Context" Kind="InputPin" IsHidden="true" />
             <Pin Id="CFcIs7bJJRBMCvhTpIlXcd" Name="Open" Kind="InputPin" />
             <Pin Id="BkrhgV9PUDLOWURHenC6gR" Name="Close" Kind="InputPin" />
+            <Pin Id="EZCPdRvMZ4eQdqnJ4P8sB6" Name="Timeout" Kind="InputPin" IsHidden="true" />
+            <Pin Id="Blmfrg7kSmCMqgDfn4JhXP" Name="IsLocal" Kind="InputPin" IsHidden="true" />
             <Pin Id="Q0IdrB1lejJNr0SijExgGN" Name="Channel" Kind="InputPin" />
             <Pin Id="MzaGqDQXkqeMPVmcTOWty3" Name="SerialNumber" Kind="InputPin" />
             <Pin Id="E234tu47M1hMilvy5jQ11Q" Name="HubPort" Kind="InputPin" />
             <Pin Id="DRA24xJmneiPJHjImAHwS6" Name="Data Interval" Kind="InputPin" />
             <Pin Id="VlC9k7KZEmKNGGrcsNCK1f" Name="Value" Kind="OutputPin" />
+            <Pin Id="IiBI8Q4tRtFPGcqDAX9Va5" Name="On Data" Kind="OutputPin" IsHidden="true" />
             <Pin Id="U32jTI6GoYnQI8kSI0LiIk" Name="Min Illuminance" Kind="OutputPin" />
             <Pin Id="MlIL4rRLbAKMrBEugowy1k" Name="Max Illuminance" Kind="OutputPin" />
             <Pin Id="GC6AYdgYUmeMit8OFeiTk7" Name="Attached" Kind="OutputPin" />
             <Pin Id="L2l22CPde37O2DyjE2AOmt" Name="Device Serial Number" Kind="OutputPin" />
           </Node>
           <Node Bounds="830,54,80,19" Id="RVOxs41Lb3LO3VkSf1jCg3">
-            <p:NodeReference LastCategoryFullName="VL.Devices.Phidgets" LastSymbolSource="VL.Devices.Phidgets.vl">
+            <p:NodeReference LastCategoryFullName="VL.Devices.Phidgets" LastDependency="VL.Devices.Phidgets.vl">
               <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
               <Choice Kind="ProcessAppFlag" Name="CircularTouch" />
             </p:NodeReference>
+            <Pin Id="VeI49sXf6yKO71kR9Jy7cl" Name="Node Context" Kind="InputPin" IsHidden="true" />
             <Pin Id="RfNoiUh09UJNJ5YQr2Cnf2" Name="Open" Kind="InputPin" />
+            <Pin Id="CxqjLOuZ4HaQbLIGeqQKMl" Name="Timeout" Kind="InputPin" IsHidden="true" />
             <Pin Id="PgOM6QVLhNqLfZZ418ZtNI" Name="Close" Kind="InputPin" />
+            <Pin Id="PypYdqYYl1kOFCd52wseXK" Name="IsLocal" Kind="InputPin" IsHidden="true" />
             <Pin Id="EdahvQ9yrRFLkJ7FWJApgY" Name="Channel" Kind="InputPin" />
             <Pin Id="Dbn2sFrNhZHLe6buWOHvUa" Name="SerialNumber" Kind="InputPin" />
             <Pin Id="FP9Ta6xAd56Owm2WTJHFDs" Name="Value" Kind="OutputPin" />
+            <Pin Id="Ktt0hFeg9X8QaHrOHPqoOk" Name="On Data" Kind="OutputPin" IsHidden="true" />
             <Pin Id="M1AxRONwqeSOCXTjtJIu7V" Name="Is Touched" Kind="OutputPin" />
             <Pin Id="NPBjY14cfqjNluXH2iJoq3" Name="Attached" Kind="OutputPin" />
             <Pin Id="RUl53omqlFqODwgc3TKAxa" Name="Device Serial Number" Kind="OutputPin" />
           </Node>
-          <Node Bounds="359,137,145,19" Id="NreDJwWGOVGMjg7HNPAfyF">
-            <p:NodeReference LastCategoryFullName="Devices.Phidgets" LastSymbolSource="VL.Devices.Phidgets.vl">
+          <Node Bounds="305,135,165,19" Id="NreDJwWGOVGMjg7HNPAfyF">
+            <p:NodeReference LastCategoryFullName="Devices.Phidgets" LastDependency="VL.Devices.Phidgets.vl">
               <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
               <Choice Kind="ProcessAppFlag" Name="VoltageInput" />
             </p:NodeReference>
+            <Pin Id="G8yKzmNq0ctN814uCL7MhH" Name="Node Context" Kind="InputPin" IsHidden="true" />
             <Pin Id="AwY9LRIRL1mOMMtgX1WSpC" Name="SensorType" Kind="InputPin" />
             <Pin Id="IqclWcJIms9LbJMMBa5a8m" Name="Open" Kind="InputPin" />
             <Pin Id="RfTiD15u1ZfNrVgXRTIjLO" Name="Close" Kind="InputPin" />
+            <Pin Id="Md0MrlWi0UpP7W2ovcvM7j" Name="Timeout" Kind="InputPin" IsHidden="true" />
+            <Pin Id="AFyvdPC4jShPOUAQRq9TaE" Name="IsLocal" Kind="InputPin" IsHidden="true" />
             <Pin Id="ArN8z70KLgEMxSo5nroizO" Name="Channel" Kind="InputPin" />
             <Pin Id="GXqj5PjZhCDPGbuqvrfF0l" Name="SerialNumber" Kind="InputPin" />
             <Pin Id="HENf1rnXbPeOV9W6VrEIe8" Name="HubPort" Kind="InputPin" />
+            <Pin Id="QHuy3zN4xxxPSKyZHfXMml" Name="IsHubPortDevice" Kind="InputPin" />
             <Pin Id="QpCxa4Z3rsWN0iEBhJ9Hdk" Name="Data Interval" Kind="InputPin" />
             <Pin Id="RO1gYKzS91aM0CK54KmaTE" Name="Data Rate" Kind="InputPin" />
             <Pin Id="LFPcOxvOngJPWsLUlZ6Eoz" Name="Value" Kind="OutputPin" />
+            <Pin Id="Ityper8gl3DOTHcXwQKEzZ" Name="On Data" Kind="OutputPin" IsHidden="true" />
             <Pin Id="M0PjleVpaDhLOuLZmGc7bM" Name="Attached" Kind="OutputPin" />
             <Pin Id="GU7OSmFNo54NKBF2LAMUdN" Name="Device Serial Number" Kind="OutputPin" />
+            <Pin Id="QdOzwgx3qcCNLvrlvJlFY0" Name="Channel Class" Kind="OutputPin" IsHidden="true" />
+            <Pin Id="RHfanhjQnzDMeAeGrc83g0" Name="Is Remote" Kind="OutputPin" />
             <Pin Id="E3myHkJDNmlO7q5D7JRYQw" Name="Hub Port Count" Kind="OutputPin" />
           </Node>
-          <Node Bounds="359,178,165,19" Id="KREPDfEd0PaMsu6krJLN4S">
-            <p:NodeReference>
+          <Node Bounds="305,176,185,19" Id="KREPDfEd0PaMsu6krJLN4S">
+            <p:NodeReference LastCategoryFullName="Devices.Phidgets" LastDependency="VL.Devices.Phidgets.vl">
               <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
               <Choice Kind="ProcessAppFlag" Name="VoltageRatioInput" />
             </p:NodeReference>
+            <Pin Id="MuGxufKMGDcO0ZcdFgYJDk" Name="Node Context" Kind="InputPin" IsHidden="true" />
             <Pin Id="Mi2MH9YpHUDOCzikpFpK3x" Name="SensorType" Kind="InputPin" />
             <Pin Id="ASJm8KcjRr4Lp2x7JVLpc6" Name="Open" Kind="InputPin" />
             <Pin Id="GiiKNOIgsCjQMIjDpELYaV" Name="Close" Kind="InputPin" />
+            <Pin Id="UXO8UeySXx4PisfqQ5Bc6y" Name="Timeout" Kind="InputPin" IsHidden="true" />
+            <Pin Id="RNog5rFcH9VNS6Gl1k1gfL" Name="IsLocal" Kind="InputPin" IsHidden="true" />
             <Pin Id="GDZoYfwZ2MwOJP2AG693E4" Name="Channel" Kind="InputPin" />
             <Pin Id="JNgAPAaNhgONOFxuIEeT2L" Name="SerialNumber" Kind="InputPin" />
             <Pin Id="DnRLoYJ3HcSMCIgLJ6KEqf" Name="HubPort" Kind="InputPin" />
             <Pin Id="UTBM9Ta4CrRMav89OCS5UY" Name="Data Interval" Kind="InputPin" />
             <Pin Id="PXMVLvgHwu2NtAtfoPWnpP" Name="Data Rate" Kind="InputPin" />
+            <Pin Id="VdPVMCf1iFCOkrbkCFm7j2" Name="IsHubPortDevice" Kind="InputPin" />
             <Pin Id="Keqqx5QXvheLGqEzCfp2lG" Name="SetSensorValueChangeTrigger" Kind="InputPin" />
             <Pin Id="N0EfC8yzrnbPGJG7wGWyZd" Name="Value" Kind="OutputPin" />
             <Pin Id="DuW5Yj4pL0lNCw4N6Y6XVz" Name="On Data" Kind="OutputPin" />
             <Pin Id="FNUOfIu99CmMTg4zrriX3z" Name="Attached" Kind="OutputPin" />
             <Pin Id="Ol7cYmxt4SfM8klihntwAF" Name="Device Serial Number" Kind="OutputPin" />
             <Pin Id="FtWeeDtmCatMdCDFtzddKN" Name="Hub Port Count" Kind="OutputPin" />
+            <Pin Id="SKCNwzWNYT8PDppfmBmZkg" Name="Channel Class" Kind="OutputPin" IsHidden="true" />
+            <Pin Id="C7yAWxuAh71MOJ74eIIIgz" Name="Is Remote" Kind="OutputPin" />
           </Node>
-          <Overlay Id="GTvLpBQAS7TOo5deqVYph2" Name="Interfaces" Bounds="353,7,192,237" />
+          <Overlay Id="GTvLpBQAS7TOo5deqVYph2" Name="Interfaces" Bounds="299,5,272,254" />
           <Overlay Id="Mt7ykHG0IymP3HHtHnzr3c" Name="Sensors" Bounds="599,10,181,216" />
           <Overlay Id="O11pab8vzW4K91jSuqioER" Name="Devices" Bounds="824,12,229,157" />
           <Overlay Id="F5FFt0820lwMxbCPe1dFyz" Name="Utils" Bounds="1074,13,290,161" />
           <Node Bounds="1078,87,65,19" Id="TjQH316Pr9VNPte0D6Iwiw">
-            <p:NodeReference LastCategoryFullName="Devices.Phidgets" LastSymbolSource="VL.Devices.Phidgets.vl">
+            <p:NodeReference LastCategoryFullName="Devices.Phidgets" LastDependency="VL.Devices.Phidgets.vl">
               <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
               <Choice Kind="ProcessAppFlag" Name="Logging" />
             </p:NodeReference>
+            <Pin Id="N48vLsyEv9NQDxmBbYlz1X" Name="Node Context" Kind="InputPin" IsHidden="true" />
             <Pin Id="UD6pHzhFTydMsaaSLWg2Mw" Name="Enable" Kind="InputPin" />
             <Pin Id="DBuHMF8x2N5NQIwiCfihcQ" Name="Destination" Kind="InputPin" />
             <Pin Id="EJBCgcHAcQALLbfVqlyyI3" Name="Level" Kind="InputPin" />
             <Pin Id="EXrYyVOopZRM76o2hoYYnR" Name="Sources" Kind="OutputPin" />
+          </Node>
+          <Node Bounds="307,212,245,19" Id="AH8rfHNzZ7FLpBcqNvZk61">
+            <p:NodeReference LastCategoryFullName="Devices.Phidgets" LastDependency="VL.Devices.Phidgets.vl">
+              <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+              <Choice Kind="ProcessAppFlag" Name="Encoder" />
+            </p:NodeReference>
+            <Pin Id="GCLLutk7CjDOwWVrOoW0go" Name="Node Context" Kind="InputPin" IsHidden="true" />
+            <Pin Id="HOxaAaONbnuOo1RLhsZTnh" Name="Open" Kind="InputPin" />
+            <Pin Id="FWszb1RO7dQOem2cndFjD8" Name="Timeout" Kind="InputPin" IsHidden="true" />
+            <Pin Id="VsNHNT7qz0fM1JhPFXBsW6" Name="Close" Kind="InputPin" />
+            <Pin Id="ItpHorll4AkNQcr1OxLfyP" Name="IsLocal" Kind="InputPin" IsHidden="true" />
+            <Pin Id="N3bmbpgpcGINgkeNva860A" Name="Channel" Kind="InputPin" />
+            <Pin Id="PoZApbPzBAIO4CXWmp9DB3" Name="SerialNumber" Kind="InputPin" />
+            <Pin Id="Cu2V7r2PMeFPmgh0CvcfED" Name="HubPort" Kind="InputPin" />
+            <Pin Id="D8rgRB4MHgwOyIEhf1dQmU" Name="IsHubPortDevice" Kind="InputPin" />
+            <Pin Id="ShxtQQka9vANB4Qi2PvIqV" Name="Data Interval" Kind="InputPin" />
+            <Pin Id="HR3vyubYoi3M8HMqSSsPGS" Name="Data Rate" Kind="InputPin" IsHidden="true" />
+            <Pin Id="Edp0velx5S6OwiNBTaJEyB" Name="Encoder Type" Kind="InputPin" />
+            <Pin Id="QV2OAKB6RIXLCLczD6rl6c" Name="Encoder Interface Resolution" Kind="InputPin" />
+            <Pin Id="OyT2ZmYjG2sLXxacFpkPqJ" Name="Position Change Trigger" Kind="InputPin" />
+            <Pin Id="GTPAvgfPFMQPXQHjqUMnZP" Name="IO Mode" Kind="InputPin" />
+            <Pin Id="T2YKdCQmp00LXsBgAr7rgm" Name="Resolution" Kind="InputPin" />
+            <Pin Id="KZKKYdeyY2kPi7TrdajcuV" Name="Reset" Kind="InputPin" />
+            <Pin Id="Rw3o3OQjccnLvZ3bgSu2Ra" Name="Attached" Kind="OutputPin" />
+            <Pin Id="F4H5AwyEKXMNmawh6oB2ak" Name="Device Serial Number" Kind="OutputPin" IsHidden="true" />
+            <Pin Id="GsbnP1Fnr1TMSNB0inJv9G" Name="Channel Class" Kind="OutputPin" IsHidden="true" />
+            <Pin Id="TxLtttPr9XCNn717458Soj" Name="Is Remote" Kind="OutputPin" />
+            <Pin Id="TQ0vkfVFbAONR45KWpkWx1" Name="Hub Port" Kind="OutputPin" IsHidden="true" />
+            <Pin Id="JK6u80lgDKHMum6bvuspXt" Name="Hub Port Count" Kind="OutputPin" IsHidden="true" />
+            <Pin Id="Q92RwwaS4s0Mal0uUEnjij" Name="Position" Kind="OutputPin" />
+            <Pin Id="VtzT8ghX4CYPdn0SsuP3GY" Name="Position Change" Kind="OutputPin" />
+            <Pin Id="ITeMnrBOHNDLRSQzBt6cTL" Name="Index Triggered" Kind="OutputPin" IsHidden="true" />
+            <Pin Id="K8NXHNwTvGRP1JABRydZ4M" Name="Time Change" Kind="OutputPin" />
+            <Pin Id="TTTjWsY87JLLWU9GcvqLGz" Name="On Data" Kind="OutputPin" IsHidden="true" />
+            <Pin Id="RRmZLoG0AylPbIs6vyJO9u" Name="Angle" Kind="OutputPin" />
+            <Pin Id="HZu5iMbETH1PW6EKn6GM5x" Name="Length" Kind="OutputPin" />
+            <Pin Id="DU61VUAEaoJPOGJRjKEfrZ" Name="Velocity" Kind="OutputPin" />
           </Node>
         </Canvas>
         <ProcessDefinition Id="M7DhTjVrkxFPTU6ibB97qp">
@@ -199,6 +281,6 @@
       </Patch>
     </Node>
   </Patch>
-  <NugetDependency Id="AWADncGnm9GO1XnlR6Z1ft" Location="VL.Skia" Version="2021.4.9" />
+  <NugetDependency Id="AWADncGnm9GO1XnlR6Z1ft" Location="VL.Skia" Version="2024.6.2" />
   <DocumentDependency Id="Azm6tyc3jsJNopk9FBIJmR" Location="../../VL.Devices.Phidgets.vl" />
 </Document>

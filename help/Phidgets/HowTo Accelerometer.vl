@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Document xmlns:p="property" Id="E7HaYCQqEwlPHkiq5wnzww" LanguageVersion="2021.4.9.982" Version="0.128">
+<Document xmlns:p="property" xmlns:r="reflection" Id="E7HaYCQqEwlPHkiq5wnzww" LanguageVersion="2024.6.2" Version="0.128">
   <Patch Id="RfAaoSfd2CtNpvFyYgdhKr">
     <Canvas Id="JEIcHlLxExZNgBVOxaDo3E" DefaultCategory="Main" BordersChecked="false" CanvasType="FullCategory" />
     <!--
@@ -14,14 +14,15 @@
       </p:NodeReference>
       <Patch Id="DIkhjks8vDwNiS4zTjxqoO">
         <Canvas Id="QSxmShObVKjMofdsopM6Tt" CanvasType="Group">
-          <Node Bounds="421,233" Id="EqEie5WuRsKMk4YFMug4Qx">
-            <p:NodeReference LastCategoryFullName="Devices.Phidgets" LastSymbolSource="VL.Devices.Phidgets.vl">
+          <Node Bounds="416,255,185,19" Id="EqEie5WuRsKMk4YFMug4Qx">
+            <p:NodeReference LastCategoryFullName="Devices.Phidgets" LastDependency="VL.Devices.Phidgets.vl">
               <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
-              <CategoryReference Kind="Category" Name="Phidgets" />
-              <Choice Kind="ProcessAppFlag" Name="Accelormeter" />
+              <Choice Kind="ProcessAppFlag" Name="Accelerometer" />
             </p:NodeReference>
+            <Pin Id="BS2tr23KVaKOV0wgTKI32P" Name="Node Context" Kind="InputPin" IsHidden="true" />
             <Pin Id="HUO51bwGEEXPQVjmCyWMtJ" Name="Precision" Kind="InputPin" />
             <Pin Id="F4lfu2JIYR6PYVul3VsbAu" Name="Open" Kind="InputPin" />
+            <Pin Id="D4G5NCguNpTP2KtHTCmHOT" Name="Timeout" Kind="InputPin" IsHidden="true" />
             <Pin Id="O0FrlDd2KKvOuKRToJ1oUW" Name="Close" Kind="InputPin" />
             <Pin Id="HXhZ9yQ7YBAOSsvdt30Poe" Name="IsLocal" Kind="InputPin" />
             <Pin Id="HUkDV7GM5QdOW5duqoTtuD" Name="Channel" Kind="InputPin" />
@@ -46,6 +47,6 @@
       </Patch>
     </Node>
   </Patch>
-  <NugetDependency Id="JBWYZx23bMtO7chX2VqYsF" Location="VL.CoreLib" Version="2021.4.9" />
+  <NugetDependency Id="JBWYZx23bMtO7chX2VqYsF" Location="VL.CoreLib" Version="2024.6.2" />
   <DocumentDependency Id="JQXItX5o3b2MvacI7K5JGF" Location="../../VL.Devices.Phidgets.vl" />
 </Document>
