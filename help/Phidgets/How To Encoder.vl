@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Document xmlns:p="property" xmlns:r="reflection" Id="OsZ18p0gAnvLTBLq8vgEMD" LanguageVersion="2024.6.0" Version="0.128">
-  <NugetDependency Id="LRbA3fmPrDTQNUlIB6kgFW" Location="VL.CoreLib" Version="2024.6.0" />
+<Document xmlns:p="property" xmlns:r="reflection" Id="OsZ18p0gAnvLTBLq8vgEMD" LanguageVersion="2024.6.2" Version="0.128">
+  <NugetDependency Id="LRbA3fmPrDTQNUlIB6kgFW" Location="VL.CoreLib" Version="2024.6.2" />
   <Patch Id="RXtVcuWdJccLUKNAmgNwEY">
     <Canvas Id="LYRolP2e5GjOb3bmsI19W3" DefaultCategory="Main" CanvasType="FullCategory" />
     <!--
@@ -29,8 +29,8 @@
             <Pin Id="IP5T68oJwPoNMGH36xqaGQ" Name="SerialNumber" Kind="InputPin" />
             <Pin Id="RZ3hDeZGVASQWo1cO5aNvD" Name="HubPort" Kind="InputPin" />
             <Pin Id="KR6cwo3J6ZiNAUYGoIAC9H" Name="IsHubPortDevice" Kind="InputPin" />
-            <Pin Id="FX0W7lMgM6rO62fFREpOym" Name="Data Rate" Kind="InputPin" IsHidden="true" />
             <Pin Id="TmBzyZHdpygP5u2XLta3RT" Name="Data Interval" Kind="InputPin" />
+            <Pin Id="FX0W7lMgM6rO62fFREpOym" Name="Data Rate" Kind="InputPin" IsHidden="true" />
             <Pin Id="SeP5KuHDuhAN1HuhWyycaC" Name="Encoder Type" Kind="InputPin" />
             <Pin Id="JXkfngRHN9uPLfyFCDcfh7" Name="Encoder Interface Resolution" Kind="InputPin" DefaultValue="4" />
             <Pin Id="FzTOnNZWPUvPTeoDRjzQ0S" Name="Position Change Trigger" Kind="InputPin" />
