@@ -12,7 +12,7 @@ on:
       version:
         description: 'nuget setup'
         required: false
-        default: '0.0.12-alpha'
+        default: '0.0.13-alpha'
       is_pre:
         description: 'Is pre release'
         type: boolean
@@ -27,14 +27,12 @@ jobs:
     - name: Git Checkout
       uses: actions/checkout@master
 
-
     - name: Setup Nuget.exe
       uses: nuget/setup-nuget@v1
 
     - name: Publish VL Nuget
       uses: vvvv/PublishVLNuget@1.0.41
       with:
-        csproj: csharp\VL.Devices.Phidgets.Utils\VL.Devices.Phidgets.Utils.csproj
         nuspec: deployment/VL.Devices.Phidgets.nuspec
         version: ${{ github.event.inputs.version }}
         nuget-key: ${{ secrets.NUGET_KEY }}

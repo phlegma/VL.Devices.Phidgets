@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2011/10/nuspec.xsd">
   <metadata>
     <id>VL.Devices.Phidgets</id>
-    <version>0.0.12-alpha</version>
+    <version>0.0.13-alpha</version>
     <title>VL.Devices.Phidgets</title>
     <authors>phlegma</authors>
     <owners>phlegma</owners>
@@ -20,5 +20,6 @@
   <files>
     <file src="..\*.vl" target="" exclude="" />
     <file src="..\help\**" target="..\help\" />
+    <file src="..\csharp\**" target="..\csharp\" />
   </files>
 </package>
