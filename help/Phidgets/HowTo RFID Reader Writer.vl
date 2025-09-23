@@ -32,6 +32,7 @@
             <Pin Id="VVyIh8T4gGnPm2uaaCDJNE" Name="String" Kind="OutputPin" />
             <Pin Id="J8MrUzNEdQnOdjkpilALhU" Name="StringLostTag" Kind="OutputPin" />
             <Pin Id="PeX3o6s3pmmMMMc0L2efid" Name="HubPort" Kind="InputPin" />
+            <Pin Id="QWeUi5mfTA0QdjCGXolX5a" Name="IsHubPortDevice" Kind="InputPin" />
           </Node>
           <Pad Id="VAVwaR8OFnUO6xAD5NWOq6" Comment="String" Bounds="621,520,172,45" ShowValueBox="true" isIOBox="true" />
           <Pad Id="JwpBD4Aevd6Ma6ayYWCBeM" Comment="Device Serial Number" Bounds="418,421,59,16" ShowValueBox="true" isIOBox="true" Value="767410" />
@@ -81,10 +82,18 @@
               <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
             </p:ValueBoxSettings>
           </Pad>
-          <Pad Id="EM3BmIiqRdmLVg4iGwuEaP" Comment="HubPort" Bounds="704,270,35,15" ShowValueBox="true" isIOBox="true" Value="-1">
+          <Pad Id="EM3BmIiqRdmLVg4iGwuEaP" Comment="HubPort" Bounds="670,241,35,15" ShowValueBox="true" isIOBox="true" Value="-1">
             <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
               <Choice Kind="TypeFlag" Name="Integer32" />
             </p:TypeAnnotation>
+          </Pad>
+          <Pad Id="U4TGY27VcfHNdKUXbdgJAj" Comment="IsHubPortDevice" Bounds="719,271,35,35" ShowValueBox="true" isIOBox="true" Value="False">
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
+              <Choice Kind="ImmutableTypeFlag" Name="Boolean" />
+            </p:TypeAnnotation>
+            <p:ValueBoxSettings>
+              <p:buttonmode p:Assembly="VL.UI.Forms" p:Type="VL.HDE.PatchEditor.Editors.ButtonModeEnum">Toggle</p:buttonmode>
+            </p:ValueBoxSettings>
           </Pad>
         </Canvas>
         <Patch Id="LktJImeAVyzMyxIMbZyfkl" Name="Create" />
@@ -104,6 +113,7 @@
         <Link Id="S6cf82nl8iQOJNYT54K100" Ids="BhKS2eXzXiePfKswVahPMV,KN5ve1mznWsLd5Eubu3oNf" />
         <Link Id="VKTUZ5RPs1PPesksoiKy7Q" Ids="OFYxv5CXnhmMlLAapPyHRy,BJGjw4AiztnQC5gB00Gs0A" />
         <Link Id="VyYKnuFQusSLpBOqpnfH1T" Ids="EM3BmIiqRdmLVg4iGwuEaP,PeX3o6s3pmmMMMc0L2efid" />
+        <Link Id="Aa0Ie2lr7CoQbR3MpCeKfd" Ids="U4TGY27VcfHNdKUXbdgJAj,QWeUi5mfTA0QdjCGXolX5a" />
       </Patch>
     </Node>
   </Patch>

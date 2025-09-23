@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Document xmlns:p="property" xmlns:r="reflection" Id="KxdyQFzIGxAP3J2lpIOBQl" LanguageVersion="2025.7.0-0264-g15930191f6" Version="0.128">
-  <NugetDependency Id="CtRD94DeiXrPBvpsvp5gxl" Location="VL.CoreLib" Version="2025.7.0-0264-g15930191f6" />
+<Document xmlns:p="property" xmlns:r="reflection" Id="KxdyQFzIGxAP3J2lpIOBQl" LanguageVersion="2025.7.0" Version="0.128">
+  <NugetDependency Id="CtRD94DeiXrPBvpsvp5gxl" Location="VL.CoreLib" Version="2025.7.0" />
   <Patch Id="LPiTHIMzdWcN2MMEs0SXSK">
     <Canvas Id="NVAWkZYR0K0QamNth39yYT" DefaultCategory="Devices.Phidgets" CanvasType="FullCategory">
       <!--
@@ -4419,6 +4419,7 @@
                   <Pin Id="IkLwlC2MnoCML7tXpRI15Z" Name="Error Message" Kind="OutputPin" />
                   <Pin Id="QWJfvWhqK5XLOtVTkgPUrW" Name="Exceptions" Kind="OutputPin" />
                   <ControlPoint Id="EFjw2NLP5RrLaj6CXIISEO" Bounds="1608,1041" Alignment="Bottom" />
+                  <Pin Id="LqmTQEvFH7UObE6RnkG92m" Name="Warn" Kind="InputPin" />
                 </Node>
               </Patch>
             </Node>
@@ -5213,7 +5214,7 @@
               <Pin Id="Bm2NWgTzaywMPLi7yaJpos" Name="Hub Port" Kind="OutputPin" />
               <Pin Id="BeuEjTd4hBXOSoNY8Nbzb0" Name="Hub Port Count" Kind="OutputPin" />
             </Node>
-            <ControlPoint Id="D2ZgkyZNeccN30TvesSBpC" Bounds="614,719" />
+            <ControlPoint Id="D2ZgkyZNeccN30TvesSBpC" Bounds="603,720" />
             <Node Bounds="1755,510,52,26" Id="KsvSo19SIKXQRYUEF9t1LX">
               <p:NodeReference LastCategoryFullName="Phidget22.RFID" LastDependency="Phidget22.NET.dll">
                 <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
@@ -5260,16 +5261,6 @@
                   <Pin Id="CtoSivXDvO2McHRor0Ws0z" Name="Tag" Kind="OutputPin" />
                 </Node>
                 <ControlPoint Id="FswJdaWzF5dOUOgh6qfS3Q" Bounds="1837,741" />
-                <Node Bounds="1835,690,67,19" Id="Ht48EKpi1dxP2lZte3BJB0">
-                  <p:NodeReference LastCategoryFullName="Primitive.ValueTuple (2 Items)" LastDependency="VL.CoreLib.vl">
-                    <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
-                    <CategoryReference Kind="4026531840" Name="ValueTuple (2 Items)" />
-                    <Choice Kind="OperationCallFlag" Name="ValueTuple (Create)" />
-                  </p:NodeReference>
-                  <Pin Id="QxHdk0XyGyvMgirfX6CgTX" Name="Item 1" Kind="InputPin" />
-                  <Pin Id="I9HvfBAo4KUPMwOrD5NsKk" Name="Item 2" Kind="InputPin" />
-                  <Pin Id="LDqqjj3pdRuOFd6SGiix4g" Name="Output" Kind="StateOutputPin" />
-                </Node>
               </Patch>
             </Node>
             <Node Bounds="1755,800,65,19" Id="C6t7IsWPaEDMmBdEubgZ9k">
@@ -5337,8 +5328,9 @@
                 </Node>
               </Patch>
               <ControlPoint Id="GRXvUqTAgBYPRNDhZprlQB" Bounds="948,768" Alignment="Bottom" />
+              <Pin Id="F79OjGP4KtJQTDlqsH23Zk" Name="Warn" Kind="InputPin" />
             </Node>
-            <Pad Id="ESGJZKuuSdMLHzkrwbt3DB" Comment="IsHubPortDevice" Bounds="623,770,35,35" ShowValueBox="true" isIOBox="true" Value="False">
+            <Pad Id="ESGJZKuuSdMLHzkrwbt3DB" Comment="IsHubPortDevice" Bounds="661,770,35,35" ShowValueBox="true" isIOBox="true" Value="False">
               <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
                 <Choice Kind="ImmutableTypeFlag" Name="Boolean" />
               </p:TypeAnnotation>
@@ -5348,6 +5340,7 @@
             </Pad>
             <ControlPoint Id="MDHQREC4FMwPYST4K04BHd" Bounds="392,670" />
             <ControlPoint Id="BqyAHkfPZyJNhuc4RCLS9o" Bounds="392,710" />
+            <ControlPoint Id="UQqG1Pxf5QQPJa1lLmXnJc" Bounds="666,721" />
           </Canvas>
           <Patch Id="C99fPQTSRuHPbPzGHIIrCM" Name="Create" ParticipatingElements="QH6nG8NcfFkNBkF2QjOitR" />
           <Patch Id="O90Q9xv6RseLt2rj1XYyRH" Name="Update">
@@ -5363,6 +5356,7 @@
             <Pin Id="QgLwUcHzearMw4cxSm7JzQ" Name="String" Kind="OutputPin" />
             <Pin Id="SW7x61tuYVLLZ3Ju8zQmuF" Name="HubPort" Kind="InputPin" />
             <Pin Id="AfPldCZFd1RNEYuTyHfz3Y" Name="StringLostTag" Kind="OutputPin" />
+            <Pin Id="Jmx2BJckvPiQDOt4Mvu7Rs" Name="IsHubPortDevice" Kind="InputPin" />
           </Patch>
           <ProcessDefinition Id="FHiLeZpJDAWOPdAy8GvaLI">
             <Fragment Id="MUUglFyLi7LL4xX9OkcTPV" Patch="C99fPQTSRuHPbPzGHIIrCM" Enabled="true" />
@@ -5413,7 +5407,6 @@
           <Link Id="DGN7l0WInRrQDgYpr3Mlsa" Ids="BzJQjmvgTtkMnPqsBxFy7S,IoXaedlu3PHNarMyoQWRBK" />
           <Link Id="DBrtvCW5AG7NO2LjgEtBau" Ids="MOWV2eueom8PNokzRxRm8z,H0lxSZ1GRMgPhlL0eFzGAr" />
           <Link Id="TZTgdRFnA6EQd0YkeJxQ64" Ids="FswJdaWzF5dOUOgh6qfS3Q,CRGWjUMFtHNNw6HPPseFng" IsHidden="true" />
-          <Link Id="CrYldNVqTkfLqGN5crcClR" Ids="CtoSivXDvO2McHRor0Ws0z,QxHdk0XyGyvMgirfX6CgTX" />
           <Link Id="EHBEdWA7bhyMMGQWCr5iXz" Ids="PTQdj6lvow3P82ZrBqG8Gj,M7a5z62jYXTMHcxlgeJyFm" />
           <Link Id="ClAOVXoPoeAPYPKQlCXVo2" Ids="L1HHcgW4S1LLXv5qXQJVXE,AfPldCZFd1RNEYuTyHfz3Y" IsHidden="true" />
           <Link Id="PIWWBX5ZiOwQWz1Lt7yfkY" Ids="NHxungun1AJPgMKK94N6yl,VoUie4ZSM8LNVk5Ll9Bmmj" />
@@ -5429,6 +5422,8 @@
           <Link Id="DWIqzjDparnPyFTXXJA8qd" Ids="ESGJZKuuSdMLHzkrwbt3DB,QsRHkkbuBtdORAkb7ePO69" />
           <Link Id="GCWZ0Q6J1TANFL5LHiIqWL" Ids="BqyAHkfPZyJNhuc4RCLS9o,MDHQREC4FMwPYST4K04BHd,Cvs1dyPLnKtNGHgPOUpWgS" />
           <Link Id="COWZUKTg3UrLS1lcxUGdcN" Ids="Cz3tM3j5rbLP3VBCMGUe9F,BqyAHkfPZyJNhuc4RCLS9o" IsHidden="true" />
+          <Link Id="ImUanWB7R89NFv5KD8KdNA" Ids="UQqG1Pxf5QQPJa1lLmXnJc,ESGJZKuuSdMLHzkrwbt3DB" />
+          <Link Id="EnXLGitQffzMhRxyvBkTiH" Ids="Jmx2BJckvPiQDOt4Mvu7Rs,UQqG1Pxf5QQPJa1lLmXnJc" IsHidden="true" />
         </Patch>
       </Node>
     </Canvas>
@@ -5453,7 +5448,7 @@
       </Patch>
     </Node>
   </Patch>
-  <NugetDependency Id="N0wKF2rNGWWLlKpD1eaaMc" Location="VL.Skia" Version="2025.7.0-0264-g15930191f6" />
-  <NugetDependency Id="E7WivuLFDPOOps7iYavgTW" Location="Phidget22.NET" Version="1.22.20250324" />
+  <NugetDependency Id="N0wKF2rNGWWLlKpD1eaaMc" Location="VL.Skia" Version="2025.7.0" />
+  <NugetDependency Id="E7WivuLFDPOOps7iYavgTW" Location="Phidget22.NET" Version="1.23.20250911" />
   <ProjectDependency Id="PUIqy7fEJuNNEAsB3rN6mD" Location="./csharp/VL.Devices.Phidgets.Utils/VL.Devices.Phidgets.Utils.csproj" />
 </Document>
