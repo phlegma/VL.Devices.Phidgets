@@ -1584,17 +1584,6 @@
             </Node>
             <Pad Id="UjSh76wCmkAN1U3Nc4EhPX" SlotId="JOg5ZCFkc6YLYfk6Tcd6Iw" Bounds="353,731" />
             <ControlPoint Id="D2RGW6AViVUOQUHlJCyJ1N" Bounds="602,746" />
-            <Node Bounds="1020,591,67,26" Id="TdTagLpJJqOMCePqogonK0">
-              <p:NodeReference LastCategoryFullName="Phidget22.Phidget" LastDependency="Phidget22.NET.dll">
-                <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
-                <Choice Kind="OperationCallFlag" Name="SetChannel" />
-              </p:NodeReference>
-              <Pin Id="VTSbWvVyXY2NWMINAjPuOA" Name="Input" Kind="StateInputPin" />
-              <Pin Id="OLG5HPTFLwQNaFyNCAFV34" Name="Value" Kind="InputPin" />
-              <Pin Id="LtqHYUnMpOoMgYTbjqc02k" Name="Output" Kind="StateOutputPin" />
-            </Node>
-            <ControlPoint Id="K8bIoUH0cKcPcyXYMSPedQ" Bounds="1080,571" />
-            <ControlPoint Id="OsAu7lJS9RbMIqOBow1XLg" Bounds="1080,551" />
           </Canvas>
           <Link Id="JF8RP5OJ74bLI4MgsSlZop" Ids="E5bsuQ4waeXLWSh0PAb67T,K5VOcAgaHtSPfYFjg0tg1F" />
           <Link Id="QsNdw7dzTO8QIDjh1bhrjs" Ids="Tjj35rSMyzFPhYBuZfKMAz,CIZw797tnRjLQn56exDrmm" />
@@ -1677,12 +1666,8 @@
           </Patch>
           <Patch Id="M8fhzEDDYlgPqpZzPdJhRS" Name="SetDuttyCycle">
             <Pin Id="Q0lj2Wwx8v9M2FrIchjsKR" Name="Duty Cycle" Kind="InputPin" DefaultValue="1" />
-            <Pin Id="Ia1rCM5C1GHPaOT7sDmjbg" Name="DeviceChannel" Kind="InputPin" />
           </Patch>
           <Link Id="QqqDRNmNyFxN4RJ4dfH2Le" Ids="K5VOcAgaHtSPfYFjg0tg1F,HaIMvZC0kCbPR2d51iqG9w" />
-          <Link Id="AXtdSEHb0aQOarQFct6LNu" Ids="OsAu7lJS9RbMIqOBow1XLg,K8bIoUH0cKcPcyXYMSPedQ,OLG5HPTFLwQNaFyNCAFV34" />
-          <Link Id="S5UWwUgG6MgNk81UvQQZZP" Ids="Ia1rCM5C1GHPaOT7sDmjbg,OsAu7lJS9RbMIqOBow1XLg" IsHidden="true" />
-          <Link Id="FAjgCGUt7wcLVSZksD7pJC" Ids="K5VOcAgaHtSPfYFjg0tg1F,VTSbWvVyXY2NWMINAjPuOA" />
         </Patch>
       </Node>
       <!--
@@ -2147,7 +2132,7 @@
               <ControlPoint Id="L4rhFFcOryVL9Cs4VcBKSA" Bounds="196,240" />
               <ControlPoint Id="KBL48S8nElBLczwVQZvyz9" Bounds="350,224" />
               <ControlPoint Id="CoECPlfDsKwO6BjtBm08yx" Bounds="986,323" />
-              <Node Bounds="-62,306,53,26" Id="Jmmzcsms4vHPyIluhKkgJT">
+              <Node Bounds="-62,340,53,26" Id="Jmmzcsms4vHPyIluhKkgJT">
                 <p:NodeReference LastCategoryFullName="Phidget22.Phidget" LastDependency="Phidget22.NET.dll">
                   <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                   <Choice Kind="OperationCallFlag" Name="Dispose" />
@@ -2156,7 +2141,7 @@
                 <Pin Id="RVoDJvBwPjjNmMXYxf1K7i" Name="Input" Kind="StateInputPin" />
                 <Pin Id="RYy0dF6Bom9NtnZfxiMrBo" Name="Output" Kind="StateOutputPin" />
               </Node>
-              <Node Bounds="-63,250,43,26" Id="KvSiU8OSqokNtkNNW7X9Ir">
+              <Node Bounds="-62,260,43,26" Id="KvSiU8OSqokNtkNNW7X9Ir">
                 <p:NodeReference LastCategoryFullName="Phidget22.Phidget" LastDependency="Phidget22.NET.dll">
                   <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                   <Choice Kind="OperationCallFlag" Name="Close" />
@@ -5099,9 +5084,8 @@
               <Pin Id="A6yUMjdNKQ4QFVlBWcTSoR" Name="Channel" Kind="OutputPin" />
               <Pin Id="M9myOSP2ypNNzO2cpUiQYa" Name="Is Remote" Kind="OutputPin" />
             </Node>
-            <ControlPoint Id="BrzMMxzLAOwOH2Tz8u8QYg" Bounds="352,775" />
-            <ControlPoint Id="TUBsrWepx1VPS70cBHMnoO" Bounds="393,751" />
-            <ControlPoint Id="BwMAFy90XDALrPVtysVhYQ" Bounds="412,730" />
+            <ControlPoint Id="BrzMMxzLAOwOH2Tz8u8QYg" Bounds="352,681" />
+            <ControlPoint Id="BwMAFy90XDALrPVtysVhYQ" Bounds="315,701" />
             <ControlPoint Id="DJMlfq65cYwMiiGcqhQFoU" Bounds="458,673" />
             <ControlPoint Id="GQn4WBUq2AhLPWy2E0CzU3" Bounds="475,650" />
             <ControlPoint Id="VjhcueQGGbdLaOYq7uofZn" Bounds="348,870" />
@@ -5208,7 +5192,7 @@
               <Pin Id="OPLIwpY1ErRM09WofzvrJF" Name="Item 1" Kind="OutputPin" />
               <Pin Id="IDEo76Bi7cYQYxTbXKuQBj" Name="Item 2" Kind="OutputPin" />
             </Node>
-            <ControlPoint Id="ALqfb09kJTeMpL1m2zTKIX" Bounds="1002,1050" />
+            <ControlPoint Id="ALqfb09kJTeMpL1m2zTKIX" Bounds="997,1011" />
             <ControlPoint Id="GmfjHTCKkANMk8L88gNVJI" Bounds="462,940" />
             <ControlPoint Id="EC0GItYG4XmQLhpS5QWbds" Bounds="548,930" />
             <Pad Id="Sro2PrJ6WP0OrbsCbjCQZT" Comment="Timeout" Bounds="432,780,35,15" ShowValueBox="true" isIOBox="true" Value="1000">
@@ -5216,133 +5200,7 @@
                 <Choice Kind="TypeFlag" Name="Integer32" />
               </p:TypeAnnotation>
             </Pad>
-            <Node Bounds="2071,393,278,464" Id="LoiR30OT7iSLbpxcucu3k9">
-              <p:NodeReference LastCategoryFullName="Primitive" LastDependency="Builtin">
-                <Choice Kind="StatefulRegion" Name="Region (Stateful)" Fixed="true" />
-                <CategoryReference Kind="Category" Name="Primitive" />
-                <Choice Kind="ProcessStatefulRegion" Name="Cache" />
-              </p:NodeReference>
-              <Pin Id="QE3CZirE2P7N4p8wjmVWS3" Name="Force" Kind="InputPin" />
-              <Pin Id="HohSYt2OuJTOrc80Yx3Tiy" Name="Dispose Cached Outputs" Kind="InputPin" />
-              <Pin Id="FZdgdwn3hodOV3IB7Mv6XT" Name="Has Changed" Kind="OutputPin" />
-              <Patch Id="GrCOD5HmatePePdXygbAtY" ManuallySortedPins="true">
-                <Patch Id="GTUpIwnSde1Ph8h9A37EDI" Name="Create" ParticipatingElements="AK7hFVY6w81PxeKldMHRIp" ManuallySortedPins="true" />
-                <Patch Id="RfPuwUN1PekQTP4j9ttyza" Name="Then" ManuallySortedPins="true" />
-                <Pad Id="JDuQdPhDUbSOCOjb4l1FC4" Comment="" Bounds="2251,592,63,15" ShowValueBox="true" isIOBox="true" Value="2">
-                  <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
-                    <Choice Kind="TypeFlag" Name="Integer32" />
-                  </p:TypeAnnotation>
-                </Pad>
-                <Node Bounds="2094,618,244,219" Id="IbzMG4yKd73P8hOA58MLGX">
-                  <p:NodeReference LastCategoryFullName="Primitive" LastDependency="Builtin">
-                    <Choice Kind="StatefulRegion" Name="Region (Stateful)" Fixed="true" />
-                    <CategoryReference Kind="Category" Name="Primitive" />
-                    <Choice Kind="ApplicationStatefulRegion" Name="If" />
-                  </p:NodeReference>
-                  <Pin Id="SDvrTmJDOhUP9e1p1BpXBP" Name="Condition" Kind="InputPin" />
-                  <Patch Id="Av2Hi8XKJa9QMSmAxPfbH4" ManuallySortedPins="true">
-                    <Patch Id="HLq07d5cU2ZPiLCJ6Skp7k" Name="Create" ManuallySortedPins="true" />
-                    <Patch Id="PntzvprjUZ2LOGSJ6XDP2Z" Name="Then" ManuallySortedPins="true" />
-                    <Node Bounds="2157,681,43,26" Id="VuZ5yIdC88JQJzUuHkHTTM">
-                      <p:NodeReference LastCategoryFullName="Phidget22.Phidget" LastDependency="Phidget22.NET.dll" OverloadStrategy="AllPinsThatAreNotCommon">
-                        <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
-                        <FullNameCategoryReference ID="Phidget22.Phidget" />
-                        <Choice Kind="OperationCallFlag" Name="Open" />
-                        <PinReference Kind="InputPin" Name="Timeout" />
-                      </p:NodeReference>
-                      <Pin Id="HJ8TnIKPcWfLVWnlCtDl0n" Name="Input" Kind="StateInputPin" />
-                      <Pin Id="MLReCoIAlHCOcwuzRDiOrX" Name="Output" Kind="StateOutputPin" />
-                      <Pin Id="KD7owz88hRiOR3WH5NPor6" Name="Timeout" Kind="InputPin" />
-                    </Node>
-                    <Node Bounds="2157,641,67,26" Id="KcCD0IkJMK3QYqCIkr1Wqp">
-                      <p:NodeReference LastCategoryFullName="Phidget22.Phidget" LastDependency="Phidget22.NET.dll">
-                        <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
-                        <FullNameCategoryReference ID="Phidget22.Phidget" />
-                        <Choice Kind="OperationCallFlag" Name="SetChannel" />
-                      </p:NodeReference>
-                      <Pin Id="HTXStXxGZ4ZORBdZr2A5Yd" Name="Input" Kind="StateInputPin" />
-                      <Pin Id="NI7sSFHeS0GQFt6TzDeuoD" Name="Value" Kind="InputPin" />
-                      <Pin Id="KqaYHXfaBiINW6GH22jWvb" Name="Output" Kind="StateOutputPin" />
-                    </Node>
-                    <Node Bounds="2183,791,43,26" Id="OKysjsIijMhOiuVz0gNfrW">
-                      <p:NodeReference LastCategoryFullName="Phidget22.Phidget" LastDependency="Phidget22.NET.dll">
-                        <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
-                        <FullNameCategoryReference ID="Phidget22.Phidget" />
-                        <Choice Kind="OperationCallFlag" Name="Close" />
-                      </p:NodeReference>
-                      <Pin Id="T2ML4cAyNCiN5Y9zxAzW51" Name="Input" Kind="StateInputPin" />
-                      <Pin Id="DbE61Uz1CxhNh1fxkp5alV" Name="Output" Kind="StateOutputPin" />
-                    </Node>
-                    <Node Bounds="2138,702,80,80" Id="EoMWa1gIkhhOZgAiPiJh8f">
-                      <p:NodeReference LastCategoryFullName="Primitive" LastDependency="Builtin">
-                        <Choice Kind="StatefulRegion" Name="Region (Stateful)" Fixed="true" />
-                        <CategoryReference Kind="Category" Name="Primitive" />
-                        <Choice Kind="ProcessStatefulRegion" Name="Cache" />
-                      </p:NodeReference>
-                      <Pin Id="RIDRmWN7nvRQKcM5cLAypV" Name="Force" Kind="InputPin" />
-                      <Pin Id="PGY9rqPbVHlLw0grEgqdSc" Name="Dispose Cached Outputs" Kind="InputPin" />
-                      <Pin Id="QcSqZ9DSN03MtwNEdRuisU" Name="Has Changed" Kind="OutputPin" />
-                      <Patch Id="KxCL8T0rZHwP4sV7UNwFK6" ManuallySortedPins="true">
-                        <Patch Id="V36VnLMZDBoOjR976oBb2v" Name="Create" ManuallySortedPins="true" />
-                        <Patch Id="TQ3CVtvQkCmNX0xtg0pMJ1" Name="Then" ManuallySortedPins="true" />
-                        <Node Bounds="2157,731,43,26" Id="OiIsKF3JEyTPFQs1gm9pFD">
-                          <p:NodeReference LastCategoryFullName="Phidget22.Phidget" LastDependency="Phidget22.NET.dll">
-                            <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
-                            <FullNameCategoryReference ID="Phidget22.Phidget" />
-                            <Choice Kind="OperationCallFlag" Name="Open" />
-                          </p:NodeReference>
-                          <Pin Id="OI2XOb2scA1P8aJsHiyVii" Name="Input" Kind="StateInputPin" />
-                          <Pin Id="TmNQJ12ijDVPOeNUI65OQa" Name="Output" Kind="StateOutputPin" />
-                        </Node>
-                      </Patch>
-                    </Node>
-                    <Node Bounds="2224,671,69,26" Id="MWGeDpgebRQMiKU06fR9ok">
-                      <p:NodeReference LastCategoryFullName="Audio.AudioFrame" LastDependency="VL.CoreLib.vl">
-                        <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
-                        <Choice Kind="OperationCallFlag" Name="GetChannel" />
-                      </p:NodeReference>
-                      <Pin Id="I2IjcMCmJ2lNmT7IK72BIz" Name="Input" Kind="StateInputPin" />
-                      <Pin Id="LBUwO18cMR1PVF5ijYxvoE" Name="Index" Kind="InputPin" />
-                      <Pin Id="N8lZFfbjKwCOa2yUUR8FdM" Name="Output" Kind="OutputPin" IsHidden="true" />
-                      <Pin Id="CUHgTVfqP2xOIKZLBwK8qT" Name="Result" Kind="OutputPin" />
-                    </Node>
-                    <Node Bounds="2257,731,69,26" Id="GfH8ImHpHDOOptHMqqXHzZ">
-                      <p:NodeReference LastCategoryFullName="Audio.AudioFrame" LastDependency="VL.CoreLib.vl">
-                        <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
-                        <Choice Kind="OperationCallFlag" Name="GetChannel" />
-                      </p:NodeReference>
-                      <Pin Id="HIBvQWi1jvlLwZvoZHKZuK" Name="Input" Kind="StateInputPin" />
-                      <Pin Id="QNzEKTS0LvbPwzNctLVStZ" Name="Index" Kind="InputPin" />
-                      <Pin Id="E7P7Cij7IZJOOHKzNkHqhL" Name="Output" Kind="OutputPin" IsHidden="true" />
-                      <Pin Id="GbELrmOeg7PLoRD000seKo" Name="Result" Kind="OutputPin" />
-                    </Node>
-                  </Patch>
-                  <ControlPoint Id="L0zcS3o3Rz7Lzuct6kUh1Z" Bounds="2154,624" Alignment="Top" />
-                  <ControlPoint Id="G5N3avyW8DPPLSWXc6ZAVI" Bounds="2154,831" Alignment="Bottom" />
-                </Node>
-                <Pad Id="GBFcY7KieGrM8rlbPtJHKq" Comment="Timeout" Bounds="2212,552,35,15" ShowValueBox="true" isIOBox="true" Value="1000">
-                  <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
-                    <Choice Kind="TypeFlag" Name="Integer32" />
-                  </p:TypeAnnotation>
-                </Pad>
-                <Pad Id="HoprFvsSByaOcUmHk8qhTC" Comment="" Bounds="2199,421,35,15" ShowValueBox="true" isIOBox="true" Value="1">
-                  <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
-                    <Choice Kind="TypeFlag" Name="Float64" />
-                  </p:TypeAnnotation>
-                </Pad>
-                <Slot Id="ItFDRJgtK5aNm8ByE1pg8l" Name="LED" />
-                <Node Bounds="2138,460,65,26" Id="GDozdkon01VPBRdkR2kg5Y">
-                  <p:NodeReference LastCategoryFullName="Phidget22.DigitalOutput" LastDependency="Phidget22.NET.dll">
-                    <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
-                    <CategoryReference Kind="AssemblyCategory" Name="DigitalOutput" />
-                    <Choice Kind="OperationCallFlag" Name="Create" />
-                  </p:NodeReference>
-                  <Pin Id="CP8i5uOKGEnLelhGR09ZXb" Name="Output" Kind="StateOutputPin" />
-                </Node>
-                <Pad Id="Jxr7Th09fuzNBSewfWyg2y" SlotId="ItFDRJgtK5aNm8ByE1pg8l" Bounds="2140,521" />
-              </Patch>
-            </Node>
-            <Node Bounds="794,635,45,19" Id="AW3zfZxPvgPL6Oxskx1V20">
+            <Node Bounds="572,820,45,19" Id="AW3zfZxPvgPL6Oxskx1V20">
               <p:NodeReference LastCategoryFullName="Devices.Phidgets" LastDependency="VL.Devices.Phidgets.vl">
                 <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                 <CategoryReference Kind="Category" Name="Phidgets" NeedsToBeDirectParent="true" />
@@ -5351,12 +5209,11 @@
               <Pin Id="TTUaExYyyPIMF0ZF3cVP9z" Name="Node Context" Kind="InputPin" IsHidden="true" />
               <Pin Id="HjjEKn7B6U6LVTEMZCJr3u" Name="Phidget" Kind="InputPin" />
               <Pin Id="BNkDJSbKqPeM5MAaplVyQw" Name="HubPort" Kind="InputPin" />
-              <Pin Id="QsRHkkbuBtdORAkb7ePO69" Name="IsHubPortDevice" Kind="InputPin" />
+              <Pin Id="QsRHkkbuBtdORAkb7ePO69" Name="IsHubPortDevice" Kind="InputPin" DefaultValue="False" />
               <Pin Id="Bm2NWgTzaywMPLi7yaJpos" Name="Hub Port" Kind="OutputPin" />
               <Pin Id="BeuEjTd4hBXOSoNY8Nbzb0" Name="Hub Port Count" Kind="OutputPin" />
             </Node>
-            <ControlPoint Id="D2ZgkyZNeccN30TvesSBpC" Bounds="836,550" />
-            <ControlPoint Id="VlwQTVHkoNOOFhTEY1rFa2" Bounds="930,541" />
+            <ControlPoint Id="D2ZgkyZNeccN30TvesSBpC" Bounds="614,719" />
             <Node Bounds="1755,510,52,26" Id="KsvSo19SIKXQRYUEF9t1LX">
               <p:NodeReference LastCategoryFullName="Phidget22.RFID" LastDependency="Phidget22.NET.dll">
                 <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
@@ -5481,12 +5338,22 @@
               </Patch>
               <ControlPoint Id="GRXvUqTAgBYPRNDhZprlQB" Bounds="948,768" Alignment="Bottom" />
             </Node>
+            <Pad Id="ESGJZKuuSdMLHzkrwbt3DB" Comment="IsHubPortDevice" Bounds="623,770,35,35" ShowValueBox="true" isIOBox="true" Value="False">
+              <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
+                <Choice Kind="ImmutableTypeFlag" Name="Boolean" />
+              </p:TypeAnnotation>
+              <p:ValueBoxSettings>
+                <p:buttonmode p:Assembly="VL.UI.Forms" p:Type="VL.HDE.PatchEditor.Editors.ButtonModeEnum">Toggle</p:buttonmode>
+              </p:ValueBoxSettings>
+            </Pad>
+            <ControlPoint Id="MDHQREC4FMwPYST4K04BHd" Bounds="392,670" />
+            <ControlPoint Id="BqyAHkfPZyJNhuc4RCLS9o" Bounds="392,710" />
           </Canvas>
           <Patch Id="C99fPQTSRuHPbPzGHIIrCM" Name="Create" ParticipatingElements="QH6nG8NcfFkNBkF2QjOitR" />
           <Patch Id="O90Q9xv6RseLt2rj1XYyRH" Name="Update">
-            <Pin Id="Sah16CVep8ANJmie3p0c0l" Name="Close" Kind="InputPin" Bounds="459,272" />
-            <Pin Id="EQEt0ZQCRsIPYK4z5F52EL" Name="IsLocal" Kind="InputPin" Bounds="508,271" />
             <Pin Id="VXPv0Vg3r7sO1m2bonzWTl" Name="Open" Kind="InputPin" Bounds="572,270" />
+            <Pin Id="Sah16CVep8ANJmie3p0c0l" Name="Close" Kind="InputPin" Bounds="459,272" />
+            <Pin Id="Cz3tM3j5rbLP3VBCMGUe9F" Name="IsLocal" Kind="InputPin" />
             <Pin Id="BO1LaPS3w96MAsr6ymwpD5" Name="Channel" Kind="InputPin" Bounds="692,272" />
             <Pin Id="B7XcQZenwIXNr8LCOp4l6W" Name="SerialNumber" Kind="InputPin" Bounds="542,314" />
             <Pin Id="EZCDeZCeWHrQAgqIdalbFZ" Name="Attached" Kind="OutputPin" Bounds="454,374" />
@@ -5495,7 +5362,6 @@
             <Pin Id="KR1lFSiirIiQDuNiXNaHma" Name="Is Remote" Kind="OutputPin" />
             <Pin Id="QgLwUcHzearMw4cxSm7JzQ" Name="String" Kind="OutputPin" />
             <Pin Id="SW7x61tuYVLLZ3Ju8zQmuF" Name="HubPort" Kind="InputPin" />
-            <Pin Id="IvvVa3DM7F8OwyIj1pwRe4" Name="IsHubPortDevice" Kind="InputPin" />
             <Pin Id="AfPldCZFd1RNEYuTyHfz3Y" Name="StringLostTag" Kind="OutputPin" />
           </Patch>
           <ProcessDefinition Id="FHiLeZpJDAWOPdAy8GvaLI">
@@ -5506,8 +5372,6 @@
           <Link Id="QH6nG8NcfFkNBkF2QjOitR" Ids="Vu5UzqnKaZ5PFFgoLuqqKZ,NHxungun1AJPgMKK94N6yl" />
           <Link Id="HJrQhf9EIlnMTMuLfoZsdl" Ids="BrzMMxzLAOwOH2Tz8u8QYg,E5E9c734XEfPE4bApqb1Bq" />
           <Link Id="Cqa0Xln2mgQO9PaoN8YysY" Ids="Sah16CVep8ANJmie3p0c0l,BrzMMxzLAOwOH2Tz8u8QYg" IsHidden="true" />
-          <Link Id="VmePXwswNrqQXhb81XKXwQ" Ids="TUBsrWepx1VPS70cBHMnoO,Cvs1dyPLnKtNGHgPOUpWgS" />
-          <Link Id="MaBmYFquYWCLm0dNYwDzhZ" Ids="EQEt0ZQCRsIPYK4z5F52EL,TUBsrWepx1VPS70cBHMnoO" IsHidden="true" />
           <Link Id="Q7ufa6xa0KRODwp4ZJBGUV" Ids="BwMAFy90XDALrPVtysVhYQ,NOottlOFuXgOOvKGGfHjZh" />
           <Link Id="ILI2A5uvsR3L3fB7k9dfqa" Ids="VXPv0Vg3r7sO1m2bonzWTl,BwMAFy90XDALrPVtysVhYQ" IsHidden="true" />
           <Link Id="Exar0qK4sGHOjS8HQGeGFL" Ids="DJMlfq65cYwMiiGcqhQFoU,IXebwctoJW7PUABlYwdXQ0" />
@@ -5540,18 +5404,9 @@
           <Link Id="DcIAb4Ot12kOuVeNLPGTpN" Ids="EC0GItYG4XmQLhpS5QWbds,KR1lFSiirIiQDuNiXNaHma" IsHidden="true" />
           <Link Id="EBVQ7oZR9GcMiPUq1gXXpC" Ids="Sro2PrJ6WP0OrbsCbjCQZT,SxtWOvKKr4aLfOlvE1JxB5" />
           <Slot Id="IAe4OExkx0DLAJ4ZclziHE" Name="LED" />
-          <Link Id="Qs1NOBsZiDxQMbnHOuhsWX" Ids="JDuQdPhDUbSOCOjb4l1FC4,NI7sSFHeS0GQFt6TzDeuoD" />
-          <Link Id="L1ClFkKBvoLOtw3x8b2vtx" Ids="L0zcS3o3Rz7Lzuct6kUh1Z,G5N3avyW8DPPLSWXc6ZAVI" IsFeedback="true" />
-          <Link Id="N6sGHOr3urnMUITB9QDGYO" Ids="GBFcY7KieGrM8rlbPtJHKq,KD7owz88hRiOR3WH5NPor6" />
-          <Link Id="O9k19Z8M1KFQRWwSUayguh" Ids="L0zcS3o3Rz7Lzuct6kUh1Z,HTXStXxGZ4ZORBdZr2A5Yd" />
-          <Link Id="FwilUVSy4g5LSFM0Fu9AQK" Ids="KqaYHXfaBiINW6GH22jWvb,HJ8TnIKPcWfLVWnlCtDl0n" />
-          <Link Id="F8tbZZMl6RKM4rLgXT5NBB" Ids="Jxr7Th09fuzNBSewfWyg2y,L0zcS3o3Rz7Lzuct6kUh1Z" />
-          <Link Id="UP8PbE7Ng4vOH43sGo2mZo" Ids="MLReCoIAlHCOcwuzRDiOrX,OI2XOb2scA1P8aJsHiyVii" />
           <Link Id="JwhA4x3PeQROn8vQVrmRdN" Ids="NHxungun1AJPgMKK94N6yl,HjjEKn7B6U6LVTEMZCJr3u" />
           <Link Id="NgBUCsBkCV5NTBbkHVEH3I" Ids="D2ZgkyZNeccN30TvesSBpC,BNkDJSbKqPeM5MAaplVyQw" />
           <Link Id="Sl3SAPJFIjtOZmlu11PIoy" Ids="SW7x61tuYVLLZ3Ju8zQmuF,D2ZgkyZNeccN30TvesSBpC" IsHidden="true" />
-          <Link Id="B4GbTwh3FwDLbkdyUecbxa" Ids="VlwQTVHkoNOOFhTEY1rFa2,QsRHkkbuBtdORAkb7ePO69" />
-          <Link Id="BFpnBdeP8T5OhRi7Gj46PL" Ids="IvvVa3DM7F8OwyIj1pwRe4,VlwQTVHkoNOOFhTEY1rFa2" IsHidden="true" />
           <Link Id="N4fjLkfA8XcPumWchwUIsm" Ids="NHxungun1AJPgMKK94N6yl,CLddg4tGyqyMM7y6ZfFqrZ" />
           <Link Id="KCEwTGF4UvMOrGjos0FBXC" Ids="JR9TYKx3mEhPH5u1weWzNZ,TClEmkjsec2Nx4KbsKB5ev" IsHidden="true" />
           <Link Id="QYe4EtDF0x0MFfsmFszNzt" Ids="TClEmkjsec2Nx4KbsKB5ev,VU8NUTzI33DMHFys7uAsuI" />
@@ -5569,9 +5424,11 @@
           <Link Id="JH0TgTbprZMMyepARCQ8m4" Ids="IDEo76Bi7cYQYxTbXKuQBj,KDpixqTbrBMLkCe4CkQr0f" />
           <Link Id="IgpsApP2tWZNu9CqxLpKUI" Ids="CtoSivXDvO2McHRor0Ws0z,FswJdaWzF5dOUOgh6qfS3Q" />
           <Link Id="RY7naab3FOUOJlus4nDyYp" Ids="NqFlqqZLRUuP9M260eDnJB,L1HHcgW4S1LLXv5qXQJVXE" />
-          <Link Id="AK7hFVY6w81PxeKldMHRIp" Ids="CP8i5uOKGEnLelhGR09ZXb,Jxr7Th09fuzNBSewfWyg2y" />
           <Link Id="HRDmrl59y0ZO79b3C86hPm" Ids="JG0sdMPrjOEPSgdDiRRlPg,GRXvUqTAgBYPRNDhZprlQB" />
           <Link Id="RYlV4zGW18aPTMfpVvtIaM" Ids="GRXvUqTAgBYPRNDhZprlQB,PVz9WptIbF2PC6gAeviPsN" />
+          <Link Id="DWIqzjDparnPyFTXXJA8qd" Ids="ESGJZKuuSdMLHzkrwbt3DB,QsRHkkbuBtdORAkb7ePO69" />
+          <Link Id="GCWZ0Q6J1TANFL5LHiIqWL" Ids="BqyAHkfPZyJNhuc4RCLS9o,MDHQREC4FMwPYST4K04BHd,Cvs1dyPLnKtNGHgPOUpWgS" />
+          <Link Id="COWZUKTg3UrLS1lcxUGdcN" Ids="Cz3tM3j5rbLP3VBCMGUe9F,BqyAHkfPZyJNhuc4RCLS9o" IsHidden="true" />
         </Patch>
       </Node>
     </Canvas>
