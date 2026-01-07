@@ -1,0 +1,360 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Document xmlns:p="property" xmlns:r="reflection" Id="CjthlcrJKrUNxf5PHPQOiX" LanguageVersion="2025.7.0" Version="0.128">
+  <NugetDependency Id="VRwnnEsuujNLjHBy8VTZRw" Location="VL.CoreLib" Version="2025.7.0" />
+  <Patch Id="Dg8swe95zVWOXtAU3pEhHC">
+    <Canvas Id="R32oZDjB8eIN75mlmZY14l" DefaultCategory="Main" CanvasType="FullCategory" />
+    <!--
+
+    ************************ Application ************************
+
+-->
+    <Node Name="Application" Bounds="100,100" Id="Aany4wR5hnCNspOmmk0nxM">
+      <p:NodeReference>
+        <Choice Kind="ContainerDefinition" Name="Process" />
+        <CategoryReference Kind="Category" Name="Primitive" />
+      </p:NodeReference>
+      <Patch Id="LRVCeem3q2pNL7jdudZtbl">
+        <Canvas Id="HorVfhH2PI2NUmDT2574Su" CanvasType="Group">
+          <Node Bounds="1716,1380,105,19" Id="LH3X4wFYxWlN11fy53lu8T">
+            <p:NodeReference LastCategoryFullName="Devices.Phidgets" LastDependency="VL.Devices.Phidgets.vl">
+              <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+              <Choice Kind="ProcessAppFlag" Name="Networking" />
+            </p:NodeReference>
+            <Pin Id="OTkW5nCs8dtPUtFHV6yoiL" Name="Node Context" Kind="InputPin" IsHidden="true" />
+            <Pin Id="NnfZoq6rADCPisVVIKXR4p" Name="Server Unique Name" Kind="InputPin" />
+            <Pin Id="U65J7BSme88M1i5CQDeXu6" Name="IP Address" Kind="InputPin" />
+            <Pin Id="SYpYmmrUBzfLid0QSC6Kue" Name="Port" Kind="InputPin" />
+            <Pin Id="FNDAVbjxYFoNe6X6mFuAcC" Name="Password" Kind="InputPin" />
+            <Pin Id="IiuPGJ3cNbdPn3zYpwUelM" Name="Add" Kind="InputPin" />
+            <Pin Id="CE6UWWe3CiVMTuwmfwglG2" Name="Remove" Kind="InputPin" />
+          </Node>
+          <Node Bounds="218,850,305,19" Id="SEV3spXFbZkLtHWVwVaOZA">
+            <p:NodeReference LastCategoryFullName="Devices.Phidgets" LastDependency="VL.Devices.Phidgets.vl">
+              <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+              <Choice Kind="ProcessAppFlag" Name="Manager" />
+            </p:NodeReference>
+            <Pin Id="AMfuXQ6bshONfcjUqqtGoW" Name="Node Context" Kind="InputPin" IsHidden="true" />
+            <Pin Id="KReeHHbf60sOkcNcx2AcIO" Name="Open" Kind="InputPin" />
+            <Pin Id="SGAont8EjECOi6VY89IQUP" Name="Close" Kind="InputPin" />
+            <Pin Id="LGWTjHjjpAuQUqnpi3EnES" Name="Library Version Number" Kind="OutputPin" />
+            <Pin Id="JTErzk55tAGNv9HEBPxfTm" Name="Library Version" Kind="OutputPin" />
+            <Pin Id="EsgtT3dIwjWM2wsQL8mypp" Name="Channel" Kind="OutputPin" />
+            <Pin Id="RysvZ5FN79PLk4LaEVdEWd" Name="Device Version" Kind="OutputPin" />
+            <Pin Id="FO534XsLWgpMuW7ISsKXI7" Name="Device Serial Number" Kind="OutputPin" />
+            <Pin Id="QqyKIoA65qCLwN7JESmvoQ" Name="Device Name" Kind="OutputPin" />
+            <Pin Id="V6SfSzj9FusOgfO9bEgSAG" Name="Device ID" Kind="OutputPin" />
+            <Pin Id="O0xOHOIPYDfM131g16m7jU" Name="Device VINTID" Kind="OutputPin" />
+            <Pin Id="AwNodvDuCAeMc0AIDuilqh" Name="Device Label" Kind="OutputPin" IsHidden="true" />
+            <Pin Id="OIK50CNuHnSN3QICw35qJj" Name="Device SKU" Kind="OutputPin" IsHidden="true" />
+            <Pin Id="UWSEryaA2iUM4NhZ2oKoS2" Name="Channel Name" Kind="OutputPin" />
+            <Pin Id="UAVQw10o019O5zD67raYxA" Name="Channel Class Name" Kind="OutputPin" />
+            <Pin Id="SqEPuveY1yWM8scJu8wwaR" Name="Channel Subclass" Kind="OutputPin" />
+            <Pin Id="R4myusZ3JeJL2xuFEZLVue" Name="Channel Class" Kind="OutputPin" />
+            <Pin Id="NuQ9KD6xLJ3PD9XVEFMEtV" Name="Server Hostname" Kind="OutputPin" />
+            <Pin Id="EDAwmWJPkDqNhWpK45uTJD" Name="Server Name" Kind="OutputPin" />
+            <Pin Id="C6RHgB6Z8VLMEUkE8vanqS" Name="Server Peer Name" Kind="OutputPin" />
+            <Pin Id="RqoFCj5CrvYOQs3kYmEJhH" Name="Server Unique Name" Kind="OutputPin" />
+          </Node>
+          <Pad Id="AxityRJzZEXQHRI6dxqR7F" Comment="Open" Bounds="220,759,35,35" ShowValueBox="true" isIOBox="true" Value="false">
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
+              <Choice Kind="ImmutableTypeFlag" Name="Boolean" />
+            </p:TypeAnnotation>
+            <p:ValueBoxSettings>
+              <p:buttonmode p:Assembly="VL.UI.Forms" p:Type="VL.HDE.PatchEditor.Editors.ButtonModeEnum">Bang</p:buttonmode>
+            </p:ValueBoxSettings>
+          </Pad>
+          <Pad Id="O9fHJE2GPjjL39TqUTj6u2" Comment="Server Peer Name" Bounds="911,962,141,95" ShowValueBox="true" isIOBox="true" />
+          <Pad Id="UjJutAvcZ4EPJQNLJuPQXp" Comment="Server Name" Bounds="712,962,83,95" ShowValueBox="true" isIOBox="true" />
+          <Pad Id="AsF01v2VwKBPPzh0i0jCrL" Comment="Server Hostname" Bounds="460,962,136,95" ShowValueBox="true" isIOBox="true" />
+          <Pad Id="BRIYLh82D30NTW2bBBbOXB" Comment="Close" Bounds="520,759,35,35" ShowValueBox="true" isIOBox="true" Value="false">
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
+              <Choice Kind="ImmutableTypeFlag" Name="Boolean" />
+            </p:TypeAnnotation>
+            <p:ValueBoxSettings>
+              <p:buttonmode p:Assembly="VL.UI.Forms" p:Type="VL.HDE.PatchEditor.Editors.ButtonModeEnum">Bang</p:buttonmode>
+            </p:ValueBoxSettings>
+          </Pad>
+          <Pad Id="CGi1GBa8cuSPC6UoZbeZNf" Comment="Server Unique Name" Bounds="1176,962,108,95" ShowValueBox="true" isIOBox="true" />
+          <Node Bounds="218,810,54,19" Id="IbBSQhOxmGJLkZvNEEl5fh">
+            <p:NodeReference LastCategoryFullName="Control" LastDependency="VL.CoreLib.vl">
+              <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+              <Choice Kind="ProcessAppFlag" Name="OnOpen" />
+            </p:NodeReference>
+            <Pin Id="IVbRheZuKIKMCUpHhzb3rg" Name="Node Context" Kind="InputPin" IsHidden="true" />
+            <Pin Id="BrGImWYnq8OOHEvj133ww0" Name="Simulate" Kind="InputPin" />
+            <Pin Id="U33mIbweECMMMyVckthSjK" Name="Output" Kind="OutputPin" />
+          </Node>
+          <Pad Id="HWpR9OhKW6lOyMKBjHwltO" Comment="Server Unique Name" Bounds="1718,1151,82,15" ShowValueBox="true" isIOBox="true" Value="myServer">
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
+              <Choice Kind="TypeFlag" Name="String" />
+            </p:TypeAnnotation>
+          </Pad>
+          <Pad Id="FsBtoc80Z0qMd5LaJWdc6D" Comment="IP Address" Bounds="1738,1182,83,16" ShowValueBox="true" isIOBox="true" Value="192.168.1.89">
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
+              <Choice Kind="TypeFlag" Name="String" />
+            </p:TypeAnnotation>
+          </Pad>
+          <Pad Id="O7NydJT0otONYV22qdNjIr" Comment="Port" Bounds="1758,1212,83,15" ShowValueBox="true" isIOBox="true" Value="5661">
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
+              <Choice Kind="TypeFlag" Name="Integer32" />
+            </p:TypeAnnotation>
+          </Pad>
+          <Pad Id="DeLVbRnnF9RPuGKHmc1WOw" Comment="Password" Bounds="1778,1242,82,15" ShowValueBox="true" isIOBox="true" Value="">
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
+              <Choice Kind="TypeFlag" Name="String" />
+            </p:TypeAnnotation>
+          </Pad>
+          <Pad Id="NddwKzSz8wULAj1lfPRuco" Comment="Add" Bounds="1798,1301,35,35" ShowValueBox="true" isIOBox="true" Value="false">
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
+              <Choice Kind="ImmutableTypeFlag" Name="Boolean" />
+            </p:TypeAnnotation>
+            <p:ValueBoxSettings>
+              <p:buttonmode p:Assembly="VL.UI.Forms" p:Type="VL.HDE.PatchEditor.Editors.ButtonModeEnum">Bang</p:buttonmode>
+            </p:ValueBoxSettings>
+          </Pad>
+          <Pad Id="MPV6OASBZ2zL2GtZhPu7WN" Comment="Remove" Bounds="1896,1301,35,35" ShowValueBox="true" isIOBox="true" Value="false">
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
+              <Choice Kind="ImmutableTypeFlag" Name="Boolean" />
+            </p:TypeAnnotation>
+            <p:ValueBoxSettings>
+              <p:buttonmode p:Assembly="VL.UI.Forms" p:Type="VL.HDE.PatchEditor.Editors.ButtonModeEnum">Bang</p:buttonmode>
+            </p:ValueBoxSettings>
+          </Pad>
+          <Pad Id="CJARAc1DSb4PArQwuFL59m" Bounds="110,86,561,82" ShowValueBox="true" isIOBox="true" Value="Networking&#xD;&#xA;or How to use Phidgets over network">
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
+              <Choice Kind="TypeFlag" Name="String" />
+            </p:TypeAnnotation>
+            <p:ValueBoxSettings>
+              <p:fontsize p:Type="Int32">15</p:fontsize>
+              <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
+            </p:ValueBoxSettings>
+          </Pad>
+          <Pad Id="VOaWVSjLEmuOs1tn9U9S85" Bounds="110,188,683,96" ShowValueBox="true" isIOBox="true" Value="There are 2 ways to use Phidgets over the network:&#xD;&#xA;- Automatic Server Discovery&#xD;&#xA;- Manual setup&#xD;&#xA;&#xD;&#xA;Both methods have pros and cons. Use the one which corresponds best to your setup.">
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
+              <Choice Kind="TypeFlag" Name="String" />
+            </p:TypeAnnotation>
+            <p:ValueBoxSettings>
+              <p:fontsize p:Type="Int32">9</p:fontsize>
+              <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
+            </p:ValueBoxSettings>
+          </Pad>
+          <Pad Id="BjwnDUrsW5RMwn5AJmeKuE" Bounds="149,390,561,25" ShowValueBox="true" isIOBox="true" Value="Automatic Server Discovery">
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
+              <Choice Kind="TypeFlag" Name="String" />
+            </p:TypeAnnotation>
+            <p:ValueBoxSettings>
+              <p:fontsize p:Type="Int32">12</p:fontsize>
+              <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
+            </p:ValueBoxSettings>
+          </Pad>
+          <Pad Id="OCH8eqNfEt9PqjV1sT6yCX" Bounds="149,436,818,24" ShowValueBox="true" isIOBox="true" Value="It is the default behaviour but it requires you to install Bonjour on your machine. If you don't want to use Bonjour, use the Manual Setup.">
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
+              <Choice Kind="TypeFlag" Name="String" />
+            </p:TypeAnnotation>
+            <p:ValueBoxSettings>
+              <p:fontsize p:Type="Int32">9</p:fontsize>
+              <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
+            </p:ValueBoxSettings>
+          </Pad>
+          <Pad Id="UrJHGbpfVbsLxBQ7UAu55l" Bounds="149,458,244,19" ShowValueBox="true" isIOBox="true" Value="https://developer.apple.com/bonjour/">
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
+              <Choice Kind="TypeFlag" Name="String" />
+            </p:TypeAnnotation>
+            <p:ValueBoxSettings>
+              <p:fontsize p:Type="Int32">9</p:fontsize>
+              <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Link</p:stringtype>
+            </p:ValueBoxSettings>
+          </Pad>
+          <Pad Id="AnHoYUD3hHcLQ8hXBTyna4" Bounds="149,509,821,157" ShowValueBox="true" isIOBox="true" Value="Manager has 4 output pins to get the server information for each devices. (1)&#xD;&#xA;&#xD;&#xA;You also get those information from optional output pins for each Phidget device node.&#xD;&#xA;Don't forget to set the optional input pin IsLocal to False to configure it as a Remote Phidget device. (2)&#xD;&#xA;&#xD;&#xA;Automatic Server Discovery is handy during development when you might change your configuration frequently. In that case, you won't have to reconfigure everything everytime you change your setup. But, in Production, it would be recommended to switch to a Manual Setup to use specifically defined IP addresses.">
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
+              <Choice Kind="TypeFlag" Name="String" />
+            </p:TypeAnnotation>
+            <p:ValueBoxSettings>
+              <p:fontsize p:Type="Int32">9</p:fontsize>
+              <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
+            </p:ValueBoxSettings>
+          </Pad>
+          <Node Bounds="285,1263,165,19" Id="Ooi5fct4QuTLjCsoSnHLvG">
+            <p:NodeReference LastCategoryFullName="Devices.Phidgets" LastDependency="VL.Devices.Phidgets.vl">
+              <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+              <Choice Kind="ProcessAppFlag" Name="VoltageInput" />
+            </p:NodeReference>
+            <Pin Id="KtIY73RBvbZOT3BQnlOSSC" Name="Node Context" Kind="InputPin" IsHidden="true" />
+            <Pin Id="VV87nH2mPGJLR9ux4PGCd3" Name="SensorType" Kind="InputPin" />
+            <Pin Id="UT6zwoz593SNt5HVvBxU8C" Name="Open" Kind="InputPin" />
+            <Pin Id="LgUB7GW19loQVmjh8erE07" Name="Timeout" Kind="InputPin" IsHidden="true" />
+            <Pin Id="Pkaa2WwXjbjM4WUr4ohgDR" Name="Close" Kind="InputPin" DefaultValue="False" />
+            <Pin Id="Q1TzxMJ7zfCLjHmw8FTfsr" Name="IsLocal" Kind="InputPin" />
+            <Pin Id="DSS1jCPhPyFOXaaXGPy0H3" Name="SerialNumber" Kind="InputPin" />
+            <Pin Id="C9Jm4QEXCkAOo6c7wPpqm1" Name="Channel" Kind="InputPin" />
+            <Pin Id="Bhoeg6thNfQQGF9Bw7tmMp" Name="HubPort" Kind="InputPin" />
+            <Pin Id="DyIWUbojzOKMEUt0HKLVDN" Name="IsHubPortDevice" Kind="InputPin" />
+            <Pin Id="Kh0hWn0kqqyM6l37q6FkpZ" Name="Data Interval" Kind="InputPin" />
+            <Pin Id="TkHqoo7i5wcLGop7yeT4nW" Name="Value" Kind="OutputPin" />
+            <Pin Id="Msf94aTht6nQNuDtwO38JC" Name="On Data" Kind="OutputPin" IsHidden="true" />
+            <Pin Id="AItiUbBV3SCQdXFYRQtlb2" Name="Attached" Kind="OutputPin" />
+            <Pin Id="VRGxEWDVQ84QKYMyB3aulR" Name="Device Serial Number" Kind="OutputPin" />
+            <Pin Id="KmBbHXGfGzONZf5atVceNQ" Name="Data Rate" Kind="InputPin" IsHidden="true" />
+            <Pin Id="M5ar7ytSwykNUa4eaTZqVs" Name="Channel Class" Kind="OutputPin" IsHidden="true" />
+            <Pin Id="HqSpmOleIfGMqrSLzOdx1l" Name="Is Remote" Kind="OutputPin" />
+            <Pin Id="L1B5qIfStdxNdyhNawRvo1" Name="Server Hostname" Kind="OutputPin" />
+            <Pin Id="Eydj1ZiPMcHLTxuunoy7LP" Name="Server Name" Kind="OutputPin" />
+            <Pin Id="Abiokd67EMsPQDVxd7T1Tn" Name="Server Peer Name" Kind="OutputPin" />
+            <Pin Id="K1pmGeQV6yvP7eRLTiKpkd" Name="Server Unique Name" Kind="OutputPin" />
+            <Pin Id="RrxOH3UvEW6NvwXCni1GOI" Name="Hub Port Count" Kind="OutputPin" IsHidden="true" />
+          </Node>
+          <Pad Id="NeuNaBHNsTQQWBCpgWX66B" Comment="Is Remote" Bounds="356,1393,35,35" ShowValueBox="true" isIOBox="true" />
+          <Pad Id="B6lkuI2yFQAOLiajBmn8pO" Comment="Server Hostname" Bounds="378,1373,103,15" ShowValueBox="true" isIOBox="true" />
+          <Pad Id="MQ9lTxWwnCuN4e3bCzOzxT" Comment="Server Name" Bounds="401,1353,103,15" ShowValueBox="true" isIOBox="true" />
+          <Pad Id="Lkz3oC5wqiWPZxH4JAHiea" Comment="Server Peer Name" Bounds="424,1333,103,15" ShowValueBox="true" isIOBox="true" />
+          <Pad Id="I01ExXCmoJwNN1wjqP9QYF" Comment="Server Unique Name" Bounds="447,1313,103,15" ShowValueBox="true" isIOBox="true" />
+          <Pad Id="VuySaAJmhcbMulmyyIOikx" Comment="Open" Bounds="247,1214,35,35" ShowValueBox="true" isIOBox="true" Value="false">
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
+              <Choice Kind="ImmutableTypeFlag" Name="Boolean" />
+            </p:TypeAnnotation>
+            <p:ValueBoxSettings>
+              <p:buttonmode p:Assembly="VL.UI.Forms" p:Type="VL.HDE.PatchEditor.Editors.ButtonModeEnum">Bang</p:buttonmode>
+            </p:ValueBoxSettings>
+          </Pad>
+          <Node Bounds="694,1263,145,19" Id="HZcm9esyRNoPDVaB1109CV">
+            <p:NodeReference LastCategoryFullName="Devices.Phidgets" LastDependency="VL.Devices.Phidgets.vl">
+              <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+              <Choice Kind="ProcessAppFlag" Name="DigitalInput" />
+            </p:NodeReference>
+            <Pin Id="CdvXye8IzgBPgkdCEksay9" Name="Node Context" Kind="InputPin" IsHidden="true" />
+            <Pin Id="QbCQUDiHnEwOzp18d1os9I" Name="Open" Kind="InputPin" />
+            <Pin Id="DepqKalRqCgM5k4pwfeO30" Name="Timeout" Kind="InputPin" IsHidden="true" />
+            <Pin Id="Im4Qogp8gljPNl7w98R4fA" Name="Close" Kind="InputPin" DefaultValue="False" />
+            <Pin Id="PsqTJFmpg36MJn3RwU5mF8" Name="IsLocal" Kind="InputPin" />
+            <Pin Id="IF4daamKNmSPgD0ndogOoz" Name="SerialNumber" Kind="InputPin" />
+            <Pin Id="FP51sw6pyG5MGp02aXrtnC" Name="Channel" Kind="InputPin" />
+            <Pin Id="Nuv4FfszWaXNK7xOe1LskT" Name="HubPort" Kind="InputPin" />
+            <Pin Id="ITB7Kr4bOTpOT62aTCtDqx" Name="IsHubPortDevice" Kind="InputPin" />
+            <Pin Id="VlZd1zyah16MgG7ogegGnp" Name="Result" Kind="OutputPin" />
+            <Pin Id="LJ6LltMpidkNrSjRVGc8Jf" Name="On Data" Kind="OutputPin" IsHidden="true" />
+            <Pin Id="DMQrFXsjgFDNDxqZxj1u2r" Name="Attached" Kind="OutputPin" />
+            <Pin Id="SBZH5Mh45gZPOnDGd8Hbpi" Name="Device Serial Number" Kind="OutputPin" />
+            <Pin Id="V0uQPciLlXXMUkED7yT10w" Name="Channel Class" Kind="OutputPin" IsHidden="true" />
+            <Pin Id="OKSWDmatPYGMgTTYBnuYSH" Name="Is Remote" Kind="OutputPin" />
+            <Pin Id="JyD8608EHvkMeXVs8Z04Ey" Name="Server Hostname" Kind="OutputPin" />
+            <Pin Id="NkI1RLWbfghOze6cI2TzWM" Name="Server Name" Kind="OutputPin" />
+            <Pin Id="EZRucn3Z1XbQRu2G9QYkOV" Name="Server Peer Name" Kind="OutputPin" />
+            <Pin Id="R1vv4JjAoMsQaDCtHfFyH4" Name="Server Unique Name" Kind="OutputPin" />
+            <Pin Id="U6M1pxt1IJ5PtyUkGUVP1H" Name="Hub Port Count" Kind="OutputPin" IsHidden="true" />
+          </Node>
+          <Pad Id="KGkDD2bvDe4P7ubVkWySMz" Comment="Open" Bounds="643,1214,35,35" ShowValueBox="true" isIOBox="true" Value="false">
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
+              <Choice Kind="ImmutableTypeFlag" Name="Boolean" />
+            </p:TypeAnnotation>
+            <p:ValueBoxSettings>
+              <p:buttonmode p:Assembly="VL.UI.Forms" p:Type="VL.HDE.PatchEditor.Editors.ButtonModeEnum">Bang</p:buttonmode>
+            </p:ValueBoxSettings>
+          </Pad>
+          <Pad Id="AwqYLjPt334Nd2QTyZR5PL" Comment="Is Remote" Bounds="756,1393,35,35" ShowValueBox="true" isIOBox="true" />
+          <Pad Id="ED2aHeM2zemO1KmfG4VJUI" Comment="Server Hostname" Bounds="776,1373,103,15" ShowValueBox="true" isIOBox="true" />
+          <Pad Id="TncVxR0nf6VOLumcx6TUYc" Comment="Server Unique Name" Bounds="836,1313,103,15" ShowValueBox="true" isIOBox="true" />
+          <Pad Id="UZEnVvykYxkNXMrFwRrtkY" Comment="Server Peer Name" Bounds="816,1333,103,15" ShowValueBox="true" isIOBox="true" />
+          <Pad Id="Ndy89iO256iOA20u4ZctqF" Comment="Server Name" Bounds="796,1353,103,15" ShowValueBox="true" isIOBox="true" />
+          <Pad Id="JgvR1OzIq4jO7omTtLQVzK" Comment="IsLocal" Bounds="347,1214,35,35" ShowValueBox="true" isIOBox="true" Value="False">
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
+              <Choice Kind="ImmutableTypeFlag" Name="Boolean" />
+            </p:TypeAnnotation>
+            <p:ValueBoxSettings>
+              <p:buttonmode p:Assembly="VL.UI.Forms" p:Type="VL.HDE.PatchEditor.Editors.ButtonModeEnum">Toggle</p:buttonmode>
+            </p:ValueBoxSettings>
+          </Pad>
+          <Pad Id="C9qyHPgat31Qaa7ZOgCGuC" Comment="IsLocal" Bounds="743,1213,35,35" ShowValueBox="true" isIOBox="true" Value="False">
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
+              <Choice Kind="ImmutableTypeFlag" Name="Boolean" />
+            </p:TypeAnnotation>
+            <p:ValueBoxSettings>
+              <p:buttonmode p:Assembly="VL.UI.Forms" p:Type="VL.HDE.PatchEditor.Editors.ButtonModeEnum">Toggle</p:buttonmode>
+            </p:ValueBoxSettings>
+          </Pad>
+          <Pad Id="C0e76RLwqW0OMBh3SOGUz1" Bounds="153,850,35,31" ShowValueBox="true" isIOBox="true" Value="(1)">
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
+              <Choice Kind="TypeFlag" Name="String" />
+            </p:TypeAnnotation>
+            <p:ValueBoxSettings>
+              <p:fontsize p:Type="Int32">15</p:fontsize>
+              <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
+            </p:ValueBoxSettings>
+          </Pad>
+          <Pad Id="Lr0irccMnMkMy8pgJ0QmKf" Bounds="161,1263,35,31" ShowValueBox="true" isIOBox="true" Value="(2)">
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
+              <Choice Kind="TypeFlag" Name="String" />
+            </p:TypeAnnotation>
+            <p:ValueBoxSettings>
+              <p:fontsize p:Type="Int32">15</p:fontsize>
+              <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
+            </p:ValueBoxSettings>
+          </Pad>
+          <Pad Id="U66EguTZpYnMN82KnymYWC" Bounds="1514,390,561,25" ShowValueBox="true" isIOBox="true" Value="Manual Setup">
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
+              <Choice Kind="TypeFlag" Name="String" />
+            </p:TypeAnnotation>
+            <p:ValueBoxSettings>
+              <p:fontsize p:Type="Int32">12</p:fontsize>
+              <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
+            </p:ValueBoxSettings>
+          </Pad>
+          <Pad Id="Khl1uZL00W5M6mL2gHtNIy" Bounds="1514,432,607,590" ShowValueBox="true" isIOBox="true" Value="With the Manual Setup, Bonjour is not longer required !&#xD;&#xA;This approach is also handy if you encounter the Program Compatibilty Assistant error related to Bonjour on Windows.&#xD;&#xA;&#xD;&#xA;If you do not need any Phidget devices to be discovered with Bonjour, it is recommended to uninstall it from your computer.&#xD;&#xA;&#xD;&#xA;&#xD;&#xA;Networking node allows you to specify the Phidget Network Server information to use in your application.&#xD;&#xA;&#xD;&#xA;- Server Unique Name is a user friendly name to identify the server. &#xD;&#xA;Note that it is the only information needed by the library to remove a server !&#xD;&#xA;&#xD;&#xA;- IP Address, Port and Password should match the information configured on the Phidget Wireless Hub web interface.&#xD;&#xA;&#xD;&#xA;- Password is optional. Leave it empty if none has been defined on the Phidget Wireless Hub web interface.&#xD;&#xA;&#xD;&#xA;&#xD;&#xA;Use Networking in combinaison with Manager to identify which servers are open and removed.&#xD;&#xA;&#xD;&#xA;When a server is removed, each Phidget devices is &quot;detached&quot; automatically. You can see this with the output pin Attached. When the server is added again, the Phidget devices will automatically reconnect to the server with the same IP Address, Port and Password.&#xD;&#xA;&#xD;&#xA;If multiple servers are defined with the same IP Address, Port and Password, but a different Server Unique Name, the Phidget device will connect to the first server created. If the server is removed, it will automatically switch to the other one available. You can check which server is used by each Phidget device with the Manager.">
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
+              <Choice Kind="TypeFlag" Name="String" />
+            </p:TypeAnnotation>
+            <p:ValueBoxSettings>
+              <p:fontsize p:Type="Int32">9</p:fontsize>
+              <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
+            </p:ValueBoxSettings>
+          </Pad>
+          <Overlay Id="Pl4mMeJRZjoPa5ep99JHQI" Name="Automatic Server Discovery" Bounds="118,318,1320,1250">
+            <p:ColorIndex p:Type="Int32">11</p:ColorIndex>
+          </Overlay>
+          <Overlay Id="T4XpGarKItbMYGC5t1iS66" Name="Manual Setup" Bounds="1486,318,674,1250">
+            <p:ColorIndex p:Type="Int32">11</p:ColorIndex>
+          </Overlay>
+          <Pad Id="Gi6x2eXaZlHOn3I36FxL6X" Comment="Attached" Bounds="310,1444,35,35" ShowValueBox="true" isIOBox="true" />
+          <Pad Id="UZDmVN5OpDrNo0cJkh1Fb6" Comment="Attached" Bounds="716,1444,35,35" ShowValueBox="true" isIOBox="true" />
+          <Pad Id="JaeLkgtPSpzQNI0a9N5pdu" Comment="Device Name" Bounds="176,960,173,95" ShowValueBox="true" isIOBox="true" />
+        </Canvas>
+        <Patch Id="RwIETL9FY9dOHlnqTee38j" Name="Create" />
+        <Patch Id="VdYTi2QkeTZOc2LvfKrm9l" Name="Update" />
+        <ProcessDefinition Id="BKncOgLhe8nP3pCbaJvuaw">
+          <Fragment Id="K08stSTjL51PFpCsDWwzUo" Patch="RwIETL9FY9dOHlnqTee38j" Enabled="true" />
+          <Fragment Id="RPGiKRdvESoNgGMkXlEFu1" Patch="VdYTi2QkeTZOc2LvfKrm9l" Enabled="true" />
+        </ProcessDefinition>
+        <Link Id="TBvZyRg0Wf0Lji2JFXFxYf" Ids="C6RHgB6Z8VLMEUkE8vanqS,O9fHJE2GPjjL39TqUTj6u2" />
+        <Link Id="OiwagaO4blDL4v9oIZ2yLw" Ids="EDAwmWJPkDqNhWpK45uTJD,UjJutAvcZ4EPJQNLJuPQXp" />
+        <Link Id="PA4XIQcPFJ7NMS2Qg4tP6W" Ids="NuQ9KD6xLJ3PD9XVEFMEtV,AsF01v2VwKBPPzh0i0jCrL" />
+        <Link Id="I48MDF1DxhvNfG2ttt7c4A" Ids="BRIYLh82D30NTW2bBBbOXB,SGAont8EjECOi6VY89IQUP" />
+        <Link Id="G4l3rFUhh9qLQooLPoNNkM" Ids="RqoFCj5CrvYOQs3kYmEJhH,CGi1GBa8cuSPC6UoZbeZNf" />
+        <Link Id="N6xcgpsFjyiNnE767ChYvg" Ids="U33mIbweECMMMyVckthSjK,KReeHHbf60sOkcNcx2AcIO" />
+        <Link Id="Ir1AicUNatfNvYrAO9sBfW" Ids="AxityRJzZEXQHRI6dxqR7F,BrGImWYnq8OOHEvj133ww0" />
+        <Link Id="LrwiQqZ8n6pLPTzXD0iV3A" Ids="HWpR9OhKW6lOyMKBjHwltO,NnfZoq6rADCPisVVIKXR4p" />
+        <Link Id="Vy2YeVeONHTLU617SdcCK5" Ids="FsBtoc80Z0qMd5LaJWdc6D,U65J7BSme88M1i5CQDeXu6" />
+        <Link Id="QWed5hr5zD1N8zm2NS6JqV" Ids="O7NydJT0otONYV22qdNjIr,SYpYmmrUBzfLid0QSC6Kue" />
+        <Link Id="Ca90qZi2skVNi1AvYex6Zl" Ids="DeLVbRnnF9RPuGKHmc1WOw,FNDAVbjxYFoNe6X6mFuAcC" />
+        <Link Id="A3U3EFPdh1LO0MqLMOpRPE" Ids="NddwKzSz8wULAj1lfPRuco,IiuPGJ3cNbdPn3zYpwUelM" />
+        <Link Id="Rh9g2AZE7emNR65PrhKz0V" Ids="MPV6OASBZ2zL2GtZhPu7WN,CE6UWWe3CiVMTuwmfwglG2" />
+        <Link Id="Qz7YolPG9uNOTWXjZDrOks" Ids="HqSpmOleIfGMqrSLzOdx1l,NeuNaBHNsTQQWBCpgWX66B" />
+        <Link Id="DljL9aufGHZNggbZp9qPp7" Ids="L1B5qIfStdxNdyhNawRvo1,B6lkuI2yFQAOLiajBmn8pO" />
+        <Link Id="LkIAMDxw2RbMXVm286xwMw" Ids="Eydj1ZiPMcHLTxuunoy7LP,MQ9lTxWwnCuN4e3bCzOzxT" />
+        <Link Id="DITeVEyd8mzNirBoQrmJ0Q" Ids="Abiokd67EMsPQDVxd7T1Tn,Lkz3oC5wqiWPZxH4JAHiea" />
+        <Link Id="JotGNBQaMwnQZSQQVyZY8x" Ids="K1pmGeQV6yvP7eRLTiKpkd,I01ExXCmoJwNN1wjqP9QYF" />
+        <Link Id="UFHBaBmwtDcNqvc1aMa5nv" Ids="VuySaAJmhcbMulmyyIOikx,UT6zwoz593SNt5HVvBxU8C" />
+        <Link Id="HNMgONxi575PWFntasMB1F" Ids="KGkDD2bvDe4P7ubVkWySMz,QbCQUDiHnEwOzp18d1os9I" />
+        <Link Id="NPs5lvFB1qkPSPdHl8ofAh" Ids="OKSWDmatPYGMgTTYBnuYSH,AwqYLjPt334Nd2QTyZR5PL" />
+        <Link Id="HBK3nnMbG9mPCEVQJdm8qo" Ids="JyD8608EHvkMeXVs8Z04Ey,ED2aHeM2zemO1KmfG4VJUI" />
+        <Link Id="AZzVhddGBzpPWX8M2fDrAX" Ids="R1vv4JjAoMsQaDCtHfFyH4,TncVxR0nf6VOLumcx6TUYc" />
+        <Link Id="KXWdXCNPZXAORXIUVjcvhP" Ids="EZRucn3Z1XbQRu2G9QYkOV,UZEnVvykYxkNXMrFwRrtkY" />
+        <Link Id="Nk49GaqnNMHNrsdfciAXVX" Ids="NkI1RLWbfghOze6cI2TzWM,Ndy89iO256iOA20u4ZctqF" />
+        <Link Id="KlEHo5BtUH7L9tzGVnvB73" Ids="JgvR1OzIq4jO7omTtLQVzK,Q1TzxMJ7zfCLjHmw8FTfsr" />
+        <Link Id="T9XJdjmkhI6PHgbVlog46p" Ids="C9qyHPgat31Qaa7ZOgCGuC,PsqTJFmpg36MJn3RwU5mF8" />
+        <Link Id="GfGpsFET2giLhuIG2Wrzb1" Ids="AItiUbBV3SCQdXFYRQtlb2,Gi6x2eXaZlHOn3I36FxL6X" />
+        <Link Id="AeiLF7Fp3c6NUkVYk1zLJm" Ids="DMQrFXsjgFDNDxqZxj1u2r,UZDmVN5OpDrNo0cJkh1Fb6" />
+        <Link Id="VFPKNZoddZQN2fPTKTwkFL" Ids="QqyKIoA65qCLwN7JESmvoQ,JaeLkgtPSpzQNI0a9N5pdu" />
+      </Patch>
+    </Node>
+  </Patch>
+  <DocumentDependency Id="LL608RAGCOrMu2aoQCVHzR" Location="../../VL.Devices.Phidgets.vl" />
+</Document>
