@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Document xmlns:p="property" Id="E7HaYCQqEwlPHkiq5wnzww" LanguageVersion="2022.5.0-0374-f17abf75a1" Version="0.128">
+<Document xmlns:p="property" xmlns:r="reflection" Id="BzG3qBm3rZFLbCt5wZ1XbR" LanguageVersion="2025.7.1-0144-g5b48859314" Version="0.128">
   <Patch Id="RfAaoSfd2CtNpvFyYgdhKr">
     <Canvas Id="JEIcHlLxExZNgBVOxaDo3E" DefaultCategory="Main" CanvasType="FullCategory" />
     <!--
@@ -15,35 +15,41 @@
       <Patch Id="DIkhjks8vDwNiS4zTjxqoO">
         <Canvas Id="QSxmShObVKjMofdsopM6Tt" CanvasType="Group">
           <Node Bounds="426,218,185,19" Id="A26yIAGaMvjNUuNC72d6tP">
-            <p:NodeReference LastCategoryFullName="Devices.Phidgets" LastSymbolSource="VL.Devices.Phidgets.vl">
+            <p:NodeReference LastCategoryFullName="Devices.Phidgets" LastDependency="VL.Devices.Phidgets.vl">
               <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
               <Choice Kind="ProcessAppFlag" Name="Bridge" />
             </p:NodeReference>
+            <Pin Id="UXQvXjYc9P3MAlETg6uE0r" Name="Node Context" Kind="InputPin" IsHidden="true" />
             <Pin Id="GFCHn7PgX6TPQ2VC2rcwTX" Name="SensorType" Kind="InputPin" DefaultValue="VoltageRatio" />
             <Pin Id="FxM4emKwINaOuP5OJzvVus" Name="Open" Kind="InputPin" DefaultValue="False" />
+            <Pin Id="Ti4GpNKrE3BQDSwapZWOop" Name="Timeout" Kind="InputPin" IsHidden="true" />
             <Pin Id="GBWox7OPKYMMhj6FBin4bW" Name="Close" Kind="InputPin" />
             <Pin Id="PZvQrNFF5t9N8nLgFyHT2K" Name="IsLocal" Kind="InputPin" />
-            <Pin Id="GsHPaV8ElG7LjumdWKHf74" Name="Channel" Kind="InputPin" />
             <Pin Id="EuquooYwaswNrqvEjDcAj4" Name="SerialNumber" Kind="InputPin" />
+            <Pin Id="GsHPaV8ElG7LjumdWKHf74" Name="Channel" Kind="InputPin" />
             <Pin Id="DyYERJLrCwtLUaNwcHU1rh" Name="HubPort" Kind="InputPin" />
+            <Pin Id="VT0u9PBLPgzOMRAt6iQOgH" Name="IsHubPortDevice" Kind="InputPin" DefaultValue="False" />
             <Pin Id="Ru55CVRyN2lQT8vddLiDm8" Name="Data Interval" Kind="InputPin" />
             <Pin Id="HAYojkjTRl1MiwDds0I8t6" Name="Data Rate" Kind="InputPin" />
-            <Pin Id="VT0u9PBLPgzOMRAt6iQOgH" Name="IsHubPortDevice" Kind="InputPin" DefaultValue="False" />
             <Pin Id="SQaQUXDTE77LFg1NR7PE20" Name="Value" Kind="InputPin" />
             <Pin Id="NNoMPOiMxsjNRqbmYPVY4e" Name="Value" Kind="OutputPin" />
             <Pin Id="HVT97LYa0k1O6yJhkVk2um" Name="On Data" Kind="OutputPin" />
             <Pin Id="PMAiqSuTZ3IPxm5KyrmXpe" Name="Attached" Kind="OutputPin" />
             <Pin Id="OlW4hM7Z7wTMv7PSo74LtJ" Name="Device Serial Number" Kind="OutputPin" />
-            <Pin Id="B25GnpmiPZRL7dSFFmJrnX" Name="Hub Port Count" Kind="OutputPin" />
+            <Pin Id="AFW4JyZIfe7NeDtFu88RVz" Name="Channel Class" Kind="OutputPin" IsHidden="true" />
             <Pin Id="HYX8LwmD9BQOERSw8Ivs4x" Name="Is Remote" Kind="OutputPin" />
-            <Pin Id="DsDGaaeeHcvMioM5HZtS8O" Name="Channel" Kind="OutputPin" />
+            <Pin Id="EePxTKTbUTBMh3dxA1QYCp" Name="Server Hostname" Kind="OutputPin" IsHidden="true" />
+            <Pin Id="QmH8dFP9bJGLq4T8vPUDIl" Name="Server Name" Kind="OutputPin" IsHidden="true" />
+            <Pin Id="MYWQmgg6COtNoqsWyiYNw5" Name="Server Peer Name" Kind="OutputPin" IsHidden="true" />
+            <Pin Id="QDYELiVDt5PPDgfYTiL34b" Name="Server Unique Name" Kind="OutputPin" IsHidden="true" />
+            <Pin Id="B25GnpmiPZRL7dSFFmJrnX" Name="Hub Port Count" Kind="OutputPin" />
           </Node>
           <Pad Id="Qwod8JDKM5HPFjhgpntFIh" Comment="" Bounds="430,300,35,15" ShowValueBox="true" isIOBox="true" />
           <Pad Id="PQLqr8MTRTFN3wUAc28OwS" Comment="On Data" Bounds="468,370,35,35" ShowValueBox="true" isIOBox="true" />
-          <Pad Id="KsGa7uFvfMEO0Ca3OL0rLF" Comment="Attached" Bounds="501,274,35,35" ShowValueBox="true" isIOBox="true" />
-          <Pad Id="NYNXDss1f1lLXs1zRUGI8s" Comment="Device Serial Number" Bounds="539,334,135,23" ShowValueBox="true" isIOBox="true" />
+          <Pad Id="KsGa7uFvfMEO0Ca3OL0rLF" Comment="Attached" Bounds="508,280,35,35" ShowValueBox="true" isIOBox="true" />
+          <Pad Id="NYNXDss1f1lLXs1zRUGI8s" Comment="Device Serial Number" Bounds="548,350,135,23" ShowValueBox="true" isIOBox="true" />
           <Pad Id="HyGnVnM4IZ0Pp5a9As3k2d" Comment="Open" Bounds="450,146,35,35" ShowValueBox="true" isIOBox="true" Value="False">
-            <p:TypeAnnotation>
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
               <Choice Kind="ImmutableTypeFlag" Name="Boolean" />
               <CategoryReference Kind="Category" Name="Primitive" />
             </p:TypeAnnotation>
@@ -51,13 +57,13 @@
               <p:buttonmode p:Assembly="VL.UI.Forms" p:Type="VL.HDE.PatchEditor.Editors.ButtonModeEnum">Bang</p:buttonmode>
             </p:ValueBoxSettings>
           </Pad>
-          <Pad Id="OrmkgKxy22gPCnUUPCySfi" Comment="" Bounds="645,182,77,15" ShowValueBox="true" isIOBox="true" Value="Gain_128x">
-            <p:TypeAnnotation LastCategoryFullName="Phidget22" LastSymbolSource="Phidget22.NET.dll" LastDependency="VL.Devices.Phidgets.vl">
+          <Pad Id="OrmkgKxy22gPCnUUPCySfi" Comment="" Bounds="628,190,79,15" ShowValueBox="true" isIOBox="true" Value="Gain_128x">
+            <p:TypeAnnotation LastCategoryFullName="Phidget22" LastDependency="VL.Devices.Phidgets.vl">
               <Choice Kind="TypeFlag" Name="BridgeGain" />
             </p:TypeAnnotation>
           </Pad>
           <Pad Id="Ho7s21difRSNzB4biI52zT" Comment="Close" Bounds="473,97,35,35" ShowValueBox="true" isIOBox="true" Value="False">
-            <p:TypeAnnotation>
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
               <Choice Kind="ImmutableTypeFlag" Name="Boolean" />
               <CategoryReference Kind="Category" Name="Primitive" />
             </p:TypeAnnotation>
@@ -65,7 +71,6 @@
               <p:buttonmode p:Assembly="VL.UI.Forms" p:Type="VL.HDE.PatchEditor.Editors.ButtonModeEnum">Bang</p:buttonmode>
             </p:ValueBoxSettings>
           </Pad>
-          <Pad Id="Vt5prmFxXjoNaPli0rzFVR" Comment="Channel" Bounds="649,262,35,15" ShowValueBox="true" isIOBox="true" />
         </Canvas>
         <Patch Id="LktJImeAVyzMyxIMbZyfkl" Name="Create" />
         <Patch Id="FY3iWGwZdsxMZxRYTZcqpS" Name="Update" />
@@ -80,10 +85,9 @@
         <Link Id="CToegTetzaUQUjTGGxpUB9" Ids="HyGnVnM4IZ0Pp5a9As3k2d,FxM4emKwINaOuP5OJzvVus" />
         <Link Id="DwOGFNdNK6HPN3iKGQmX31" Ids="OrmkgKxy22gPCnUUPCySfi,SQaQUXDTE77LFg1NR7PE20" />
         <Link Id="U87vMapbM6YMSVWaRKtohh" Ids="Ho7s21difRSNzB4biI52zT,GBWox7OPKYMMhj6FBin4bW" />
-        <Link Id="BQQrW46qoNtPbOecvpmPZL" Ids="DsDGaaeeHcvMioM5HZtS8O,Vt5prmFxXjoNaPli0rzFVR" />
       </Patch>
     </Node>
   </Patch>
-  <NugetDependency Id="JBWYZx23bMtO7chX2VqYsF" Location="VL.CoreLib" Version="2022.5.0-0374-gf17abf75a1" />
+  <NugetDependency Id="JBWYZx23bMtO7chX2VqYsF" Location="VL.CoreLib" Version="2025.7.1-0144-g5b48859314" />
   <DocumentDependency Id="JQXItX5o3b2MvacI7K5JGF" Location="../../VL.Devices.Phidgets.vl" />
 </Document>
