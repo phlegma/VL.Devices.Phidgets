@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Document xmlns:p="property" xmlns:r="reflection" Id="TdtUy5e6VvkLk7SehOpxcd" LanguageVersion="2024.6.2" Version="0.128">
-  <NugetDependency Id="VMo4HaTEkVTLtfYj9q9ZYR" Location="VL.CoreLib" Version="2024.6.2" />
+<Document xmlns:p="property" xmlns:r="reflection" Id="TdtUy5e6VvkLk7SehOpxcd" LanguageVersion="2025.7.0" Version="0.128">
+  <NugetDependency Id="VMo4HaTEkVTLtfYj9q9ZYR" Location="VL.CoreLib" Version="2025.7.0" />
   <Patch Id="EBJpcI9XfAwLRZdOzyKrhP">
     <Canvas Id="DZ4WByYr0iQNUdSbUzWirB" DefaultCategory="Main" BordersChecked="false" CanvasType="FullCategory">
       <!--
@@ -36,7 +36,7 @@
       </p:NodeReference>
       <Patch Id="RcdmicmnND1Pyv3TJj3de9">
         <Canvas Id="Th1wAbWQAPlMOAdCYXCkfd" CanvasType="Group">
-          <Node Bounds="605,52,145,19" Id="B3SqcoE1XmeP2o4lxVeQGv">
+          <Node Bounds="616,52,145,19" Id="B3SqcoE1XmeP2o4lxVeQGv">
             <p:NodeReference LastCategoryFullName="VL.Devices.Phidgets" LastDependency="VL.Devices.Phidgets.vl">
               <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
               <Choice Kind="ProcessAppFlag" Name="DistanceSensor" />
@@ -44,21 +44,27 @@
             <Pin Id="BaHUlN52D8sLaXW7ncS2lo" Name="Node Context" Kind="InputPin" IsHidden="true" />
             <Pin Id="Sm3CBp5fNN6OAmqULRSp8l" Name="Sonar Quite Mode" Kind="InputPin" />
             <Pin Id="Cil7I7P8BpnL0GwVtBJy6E" Name="Open" Kind="InputPin" DefaultValue="False" />
-            <Pin Id="PfnVXrAxfORLAmzH3gOagi" Name="Close" Kind="InputPin" />
             <Pin Id="V6NBSPum9voNukBDt97QNr" Name="Timeout" Kind="InputPin" IsHidden="true" />
+            <Pin Id="PfnVXrAxfORLAmzH3gOagi" Name="Close" Kind="InputPin" />
             <Pin Id="UHMh7yK8QNfPDeSVH4Jo2T" Name="IsLocal" Kind="InputPin" />
-            <Pin Id="JfmsUHIGOXROg7cfyVPpr9" Name="Channel" Kind="InputPin" />
             <Pin Id="BI32u0nSGFdOt7z0PGfwmi" Name="SerialNumber" Kind="InputPin" />
+            <Pin Id="JfmsUHIGOXROg7cfyVPpr9" Name="Channel" Kind="InputPin" />
             <Pin Id="D4iPaAEBQ5GQNbhloi2yY8" Name="HubPort" Kind="InputPin" />
             <Pin Id="VIMF6hwiMBOOPeoI6lZg5Z" Name="Data Interval" Kind="InputPin" />
             <Pin Id="ECIOeALzAC2NYJSKhPQgHF" Name="Data Rate" Kind="InputPin" IsHidden="true" />
             <Pin Id="PtdWySTVa2HQCtkdqMy8sr" Name="Value" Kind="OutputPin" />
             <Pin Id="K9Qvrut5OvtLEDL6qwUFYP" Name="On Data" Kind="OutputPin" IsHidden="true" />
-            <Pin Id="C1XQ6AIyJ8kNcz5DvMe34V" Name="Distances" Kind="OutputPin" />
             <Pin Id="Djm2RF0fHuYMdQnsgy5Fra" Name="Amplitudes" Kind="OutputPin" />
+            <Pin Id="C1XQ6AIyJ8kNcz5DvMe34V" Name="Distances" Kind="OutputPin" />
             <Pin Id="KsUdZC9sdP8OElWllMeenU" Name="Count" Kind="OutputPin" />
             <Pin Id="VjxmccwPr8MPWNMv3DNSFD" Name="Attached" Kind="OutputPin" />
             <Pin Id="U2tA9YkW538NhQAhxlMVdm" Name="Device Serial Number" Kind="OutputPin" />
+            <Pin Id="Tffi2BHwZCcNc4Y6uy5eJJ" Name="Channel Class" Kind="OutputPin" IsHidden="true" />
+            <Pin Id="HZk2bonSkAQNYHJdfMLjBb" Name="Is Remote" Kind="OutputPin" IsHidden="true" />
+            <Pin Id="LRCi9e9wTdlO1YMdTw6vX8" Name="Server Hostname" Kind="OutputPin" IsHidden="true" />
+            <Pin Id="FTuySvtM4zCOX6axTQpG8p" Name="Server Name" Kind="OutputPin" IsHidden="true" />
+            <Pin Id="KiYBXgjn7hkNY0OnUxOYnX" Name="Server Peer Name" Kind="OutputPin" IsHidden="true" />
+            <Pin Id="ClwLDsGdIIBPc6Gxcr9tyG" Name="Server Unique Name" Kind="OutputPin" IsHidden="true" />
             <Pin Id="TQYjkt9J3hHLSHarvQCagM" Name="Hub Port" Kind="OutputPin" />
           </Node>
           <Node Bounds="305,53,105,19" Id="QgRQ5cIAdS9OyoAGLclthh">
@@ -71,17 +77,21 @@
             <Pin Id="SURIjmrzxKEPttNqbDWtZU" Name="Timeout" Kind="InputPin" IsHidden="true" />
             <Pin Id="VMMdXw86jvwO9qTS8ggjyH" Name="Close" Kind="InputPin" />
             <Pin Id="P7KkT2uPCw6NNlnQLnzsHy" Name="IsLocal" Kind="InputPin" IsHidden="true" />
-            <Pin Id="FWGLt9LbE61OKyymFGtp7v" Name="Channel" Kind="InputPin" />
             <Pin Id="Ui686CJvgONPFukmjljV98" Name="SerialNumber" Kind="InputPin" />
+            <Pin Id="FWGLt9LbE61OKyymFGtp7v" Name="Channel" Kind="InputPin" />
             <Pin Id="U3nvV9VCT8aMthVNKZpM4u" Name="HubPort" Kind="InputPin" />
             <Pin Id="Bs4XvyjtN3ALKW3XEbozwS" Name="IsHubPortDevice" Kind="InputPin" />
             <Pin Id="JLek0DsIWcGOFM5uo2EBVJ" Name="Result" Kind="OutputPin" />
             <Pin Id="CUVbk8qYX18LRGbkhmKeob" Name="On Data" Kind="OutputPin" />
             <Pin Id="HSYXG1b3VfZOpGqBsIB3oT" Name="Attached" Kind="OutputPin" />
-            <Pin Id="Gv2hKCkiEFNL6W1iD1ksI8" Name="Device Serial Number" Kind="OutputPin" IsHidden="true" />
-            <Pin Id="K9x5KbLHZoiL7MW0J38zc6" Name="Hub Port Count" Kind="OutputPin" />
+            <Pin Id="Gv2hKCkiEFNL6W1iD1ksI8" Name="Device Serial Number" Kind="OutputPin" />
             <Pin Id="TqaPi21gyH8PsJfSozhwHq" Name="Channel Class" Kind="OutputPin" />
             <Pin Id="R4LMXtSiRDdLWGgK58eP0i" Name="Is Remote" Kind="OutputPin" IsHidden="true" />
+            <Pin Id="VdBoQJYhdGMLWFXRGmDAY5" Name="Server Hostname" Kind="OutputPin" IsHidden="true" />
+            <Pin Id="SiMN3bvszQyNuM8ldv2o7b" Name="Server Name" Kind="OutputPin" IsHidden="true" />
+            <Pin Id="HaB6aQTQSkdQJYjtrs1W5M" Name="Server Peer Name" Kind="OutputPin" IsHidden="true" />
+            <Pin Id="OiPJ2NhJD6FLp2fX7voSwy" Name="Server Unique Name" Kind="OutputPin" IsHidden="true" />
+            <Pin Id="K9x5KbLHZoiL7MW0J38zc6" Name="Hub Port Count" Kind="OutputPin" />
           </Node>
           <Node Bounds="305,94,145,19" Id="JvNmbdls2N6QMkaPjxgedo">
             <p:NodeReference LastCategoryFullName="VL.Devices.Phidgets" LastDependency="VL.Devices.Phidgets.vl">
@@ -91,12 +101,12 @@
             <Pin Id="BUbFzt7XvczQU4g60CPuNd" Name="Node Context" Kind="InputPin" IsHidden="true" />
             <Pin Id="M9H8Up50EiyODS6PRK3hw0" Name="Value" Kind="InputPin" />
             <Pin Id="UgH3hLU0f0xNCtEFIiW3c2" Name="Duty Cycle" Kind="InputPin" />
-            <Pin Id="SbdC2C0PqfTPAqwdhVGzRU" Name="Close" Kind="InputPin" />
             <Pin Id="V22SWg6Z752MeCN1zy9Jnw" Name="Open" Kind="InputPin" DefaultValue="False" />
-            <Pin Id="UDTIJpXwuvlLVqFBDpt3C1" Name="IsLocal" Kind="InputPin" IsHidden="true" />
             <Pin Id="MH7k52IHrwvNYo6Dtjmve1" Name="Timeout" Kind="InputPin" IsHidden="true" />
-            <Pin Id="HZDGg5FS8LUNjx8JXyp1Xc" Name="Channel" Kind="InputPin" />
+            <Pin Id="SbdC2C0PqfTPAqwdhVGzRU" Name="Close" Kind="InputPin" />
+            <Pin Id="UDTIJpXwuvlLVqFBDpt3C1" Name="IsLocal" Kind="InputPin" IsHidden="true" />
             <Pin Id="LMWBowLX0AEMoUkYNQXTpD" Name="SerialNumber" Kind="InputPin" />
+            <Pin Id="HZDGg5FS8LUNjx8JXyp1Xc" Name="Channel" Kind="InputPin" />
             <Pin Id="GWlgoUl7owIPYKE5B27mAa" Name="HubPort" Kind="InputPin" />
             <Pin Id="SHTFjEoB7EtMyWKhOVCzcb" Name="IsHubPortDevice" Kind="InputPin" />
             <Pin Id="O7jdSayCa2DPAaHFQhj7KU" Name="Result" Kind="OutputPin" />
@@ -104,9 +114,13 @@
             <Pin Id="FDMrthOLXPnMp0muMnTeM3" Name="Device Serial Number" Kind="OutputPin" />
             <Pin Id="N08NQJinaXDQB5sevQWegA" Name="Channel Class" Kind="OutputPin" IsHidden="true" />
             <Pin Id="LYH9f5pW33ZQbH4r7y0FSh" Name="Is Remote" Kind="OutputPin" />
+            <Pin Id="HwJgSOPLuubNQo75pnZ0gp" Name="Server Hostname" Kind="OutputPin" IsHidden="true" />
+            <Pin Id="OVtP8B8kNIfPUVPAaWQSCu" Name="Server Name" Kind="OutputPin" IsHidden="true" />
+            <Pin Id="BV11zynSoLXQD1oUXheIsZ" Name="Server Peer Name" Kind="OutputPin" IsHidden="true" />
+            <Pin Id="K25FoXfxJU9MGNRKp1HalG" Name="Server Unique Name" Kind="OutputPin" IsHidden="true" />
             <Pin Id="SSpGGXAARWLLN75VEztqRM" Name="Hub Port Count" Kind="OutputPin" />
           </Node>
-          <Node Bounds="1079,53,145,19" Id="VYsJDSgBWctQNQiBSLAiwl">
+          <Node Bounds="1102,53,225,19" Id="VYsJDSgBWctQNQiBSLAiwl">
             <p:NodeReference LastCategoryFullName="VL.Devices.Phidgets" LastDependency="VL.Devices.Phidgets.vl">
               <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
               <Choice Kind="ProcessAppFlag" Name="Manager" />
@@ -128,29 +142,40 @@
             <Pin Id="KTppvOPNxKNPGNagmzQRfC" Name="Channel Class Name" Kind="OutputPin" IsHidden="true" />
             <Pin Id="AVPiUzhTfHDQHoiNVC4JIf" Name="Channel Subclass" Kind="OutputPin" IsHidden="true" />
             <Pin Id="P8MAuGAZJuFN9By2nQjMIE" Name="Channel Class" Kind="OutputPin" IsHidden="true" />
+            <Pin Id="DYnXRrdBaf4MAoFfNWyzlu" Name="Server Hostname" Kind="OutputPin" />
+            <Pin Id="JSZE5vU3M6hPm9FcimHLxI" Name="Server Name" Kind="OutputPin" />
+            <Pin Id="FdLZpKcT6sTQGmFmULtOKE" Name="Server Peer Name" Kind="OutputPin" />
+            <Pin Id="Dqo2Gm7tjoEOHTxYfJoFIx" Name="Server Unique Name" Kind="OutputPin" />
           </Node>
-          <Node Bounds="605,89,105,19" Id="UbMFb1BAfEdQIEgfmx7I7o">
+          <Node Bounds="616,89,105,19" Id="UbMFb1BAfEdQIEgfmx7I7o">
             <p:NodeReference LastCategoryFullName="VL.Devices.Phidgets" LastDependency="VL.Devices.Phidgets.vl">
               <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
               <Choice Kind="ProcessAppFlag" Name="LightSensor" />
             </p:NodeReference>
             <Pin Id="CULci7hLWMpMsbN8f7Pk1g" Name="Node Context" Kind="InputPin" IsHidden="true" />
             <Pin Id="CFcIs7bJJRBMCvhTpIlXcd" Name="Open" Kind="InputPin" />
-            <Pin Id="BkrhgV9PUDLOWURHenC6gR" Name="Close" Kind="InputPin" />
             <Pin Id="EZCPdRvMZ4eQdqnJ4P8sB6" Name="Timeout" Kind="InputPin" IsHidden="true" />
+            <Pin Id="BkrhgV9PUDLOWURHenC6gR" Name="Close" Kind="InputPin" />
             <Pin Id="Blmfrg7kSmCMqgDfn4JhXP" Name="IsLocal" Kind="InputPin" IsHidden="true" />
-            <Pin Id="Q0IdrB1lejJNr0SijExgGN" Name="Channel" Kind="InputPin" />
             <Pin Id="MzaGqDQXkqeMPVmcTOWty3" Name="SerialNumber" Kind="InputPin" />
+            <Pin Id="Q0IdrB1lejJNr0SijExgGN" Name="Channel" Kind="InputPin" />
             <Pin Id="E234tu47M1hMilvy5jQ11Q" Name="HubPort" Kind="InputPin" />
             <Pin Id="DRA24xJmneiPJHjImAHwS6" Name="Data Interval" Kind="InputPin" />
             <Pin Id="VlC9k7KZEmKNGGrcsNCK1f" Name="Value" Kind="OutputPin" />
             <Pin Id="IiBI8Q4tRtFPGcqDAX9Va5" Name="On Data" Kind="OutputPin" IsHidden="true" />
-            <Pin Id="U32jTI6GoYnQI8kSI0LiIk" Name="Min Illuminance" Kind="OutputPin" />
             <Pin Id="MlIL4rRLbAKMrBEugowy1k" Name="Max Illuminance" Kind="OutputPin" />
+            <Pin Id="U32jTI6GoYnQI8kSI0LiIk" Name="Min Illuminance" Kind="OutputPin" />
             <Pin Id="GC6AYdgYUmeMit8OFeiTk7" Name="Attached" Kind="OutputPin" />
             <Pin Id="L2l22CPde37O2DyjE2AOmt" Name="Device Serial Number" Kind="OutputPin" />
+            <Pin Id="KgcMhJ81TPlN6l3LL8wBDg" Name="Channel Class" Kind="OutputPin" IsHidden="true" />
+            <Pin Id="Q5PTC8eZ69IMQjiHEHuzBF" Name="Is Remote" Kind="OutputPin" IsHidden="true" />
+            <Pin Id="HYEPr9dTEN3PYwgQ9O73ue" Name="Server Hostname" Kind="OutputPin" IsHidden="true" />
+            <Pin Id="IdepEyWtBUtMYcPMMpAOU3" Name="Server Name" Kind="OutputPin" IsHidden="true" />
+            <Pin Id="FMZ2aUKy9mRL2uRYirEKc4" Name="Server Peer Name" Kind="OutputPin" IsHidden="true" />
+            <Pin Id="De0kJbJ5WNgMv6MlAzku6U" Name="Server Unique Name" Kind="OutputPin" IsHidden="true" />
+            <Pin Id="F3jXkyE0bIHNgbVnfkHctK" Name="Hub Port Count" Kind="OutputPin" IsHidden="true" />
           </Node>
-          <Node Bounds="830,54,80,19" Id="RVOxs41Lb3LO3VkSf1jCg3">
+          <Node Bounds="845,50,80,19" Id="RVOxs41Lb3LO3VkSf1jCg3">
             <p:NodeReference LastCategoryFullName="VL.Devices.Phidgets" LastDependency="VL.Devices.Phidgets.vl">
               <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
               <Choice Kind="ProcessAppFlag" Name="CircularTouch" />
@@ -167,6 +192,12 @@
             <Pin Id="M1AxRONwqeSOCXTjtJIu7V" Name="Is Touched" Kind="OutputPin" />
             <Pin Id="NPBjY14cfqjNluXH2iJoq3" Name="Attached" Kind="OutputPin" />
             <Pin Id="RUl53omqlFqODwgc3TKAxa" Name="Device Serial Number" Kind="OutputPin" />
+            <Pin Id="PJ2wUvM30JgNQFSAxANcaF" Name="Channel Class" Kind="OutputPin" IsHidden="true" />
+            <Pin Id="NFdN6KWwXJaNNIh4hOKCQp" Name="Is Remote" Kind="OutputPin" IsHidden="true" />
+            <Pin Id="BfF7GtS7v9aMti9RLzqqME" Name="Server Hostname" Kind="OutputPin" IsHidden="true" />
+            <Pin Id="L00AzxHGwCqMiPVteFnI4a" Name="Server Name" Kind="OutputPin" IsHidden="true" />
+            <Pin Id="NRHe3DgFT9CNWLpkuOLkeE" Name="Server Peer Name" Kind="OutputPin" IsHidden="true" />
+            <Pin Id="NpVqkla8KlOLA3aUadoA2K" Name="Server Unique Name" Kind="OutputPin" IsHidden="true" />
           </Node>
           <Node Bounds="305,135,165,19" Id="NreDJwWGOVGMjg7HNPAfyF">
             <p:NodeReference LastCategoryFullName="Devices.Phidgets" LastDependency="VL.Devices.Phidgets.vl">
@@ -176,11 +207,11 @@
             <Pin Id="G8yKzmNq0ctN814uCL7MhH" Name="Node Context" Kind="InputPin" IsHidden="true" />
             <Pin Id="AwY9LRIRL1mOMMtgX1WSpC" Name="SensorType" Kind="InputPin" />
             <Pin Id="IqclWcJIms9LbJMMBa5a8m" Name="Open" Kind="InputPin" />
-            <Pin Id="RfTiD15u1ZfNrVgXRTIjLO" Name="Close" Kind="InputPin" />
             <Pin Id="Md0MrlWi0UpP7W2ovcvM7j" Name="Timeout" Kind="InputPin" IsHidden="true" />
+            <Pin Id="RfTiD15u1ZfNrVgXRTIjLO" Name="Close" Kind="InputPin" />
             <Pin Id="AFyvdPC4jShPOUAQRq9TaE" Name="IsLocal" Kind="InputPin" IsHidden="true" />
-            <Pin Id="ArN8z70KLgEMxSo5nroizO" Name="Channel" Kind="InputPin" />
             <Pin Id="GXqj5PjZhCDPGbuqvrfF0l" Name="SerialNumber" Kind="InputPin" />
+            <Pin Id="ArN8z70KLgEMxSo5nroizO" Name="Channel" Kind="InputPin" />
             <Pin Id="HENf1rnXbPeOV9W6VrEIe8" Name="HubPort" Kind="InputPin" />
             <Pin Id="QHuy3zN4xxxPSKyZHfXMml" Name="IsHubPortDevice" Kind="InputPin" />
             <Pin Id="QpCxa4Z3rsWN0iEBhJ9Hdk" Name="Data Interval" Kind="InputPin" />
@@ -191,6 +222,10 @@
             <Pin Id="GU7OSmFNo54NKBF2LAMUdN" Name="Device Serial Number" Kind="OutputPin" />
             <Pin Id="QdOzwgx3qcCNLvrlvJlFY0" Name="Channel Class" Kind="OutputPin" IsHidden="true" />
             <Pin Id="RHfanhjQnzDMeAeGrc83g0" Name="Is Remote" Kind="OutputPin" />
+            <Pin Id="GFBhRAGMFrEPEq3v9Rxu48" Name="Server Hostname" Kind="OutputPin" IsHidden="true" />
+            <Pin Id="FuuKavilaysPdlw5nz5Kik" Name="Server Name" Kind="OutputPin" IsHidden="true" />
+            <Pin Id="Q7V7ajpM2npPY89musk119" Name="Server Peer Name" Kind="OutputPin" IsHidden="true" />
+            <Pin Id="CONEgj3yAoXPYadNbPv8ME" Name="Server Unique Name" Kind="OutputPin" IsHidden="true" />
             <Pin Id="E3myHkJDNmlO7q5D7JRYQw" Name="Hub Port Count" Kind="OutputPin" />
           </Node>
           <Node Bounds="305,176,185,19" Id="KREPDfEd0PaMsu6krJLN4S">
@@ -201,29 +236,33 @@
             <Pin Id="MuGxufKMGDcO0ZcdFgYJDk" Name="Node Context" Kind="InputPin" IsHidden="true" />
             <Pin Id="Mi2MH9YpHUDOCzikpFpK3x" Name="SensorType" Kind="InputPin" />
             <Pin Id="ASJm8KcjRr4Lp2x7JVLpc6" Name="Open" Kind="InputPin" />
-            <Pin Id="GiiKNOIgsCjQMIjDpELYaV" Name="Close" Kind="InputPin" />
             <Pin Id="UXO8UeySXx4PisfqQ5Bc6y" Name="Timeout" Kind="InputPin" IsHidden="true" />
+            <Pin Id="GiiKNOIgsCjQMIjDpELYaV" Name="Close" Kind="InputPin" />
             <Pin Id="RNog5rFcH9VNS6Gl1k1gfL" Name="IsLocal" Kind="InputPin" IsHidden="true" />
-            <Pin Id="GDZoYfwZ2MwOJP2AG693E4" Name="Channel" Kind="InputPin" />
             <Pin Id="JNgAPAaNhgONOFxuIEeT2L" Name="SerialNumber" Kind="InputPin" />
+            <Pin Id="GDZoYfwZ2MwOJP2AG693E4" Name="Channel" Kind="InputPin" />
             <Pin Id="DnRLoYJ3HcSMCIgLJ6KEqf" Name="HubPort" Kind="InputPin" />
+            <Pin Id="VdPVMCf1iFCOkrbkCFm7j2" Name="IsHubPortDevice" Kind="InputPin" />
             <Pin Id="UTBM9Ta4CrRMav89OCS5UY" Name="Data Interval" Kind="InputPin" />
             <Pin Id="PXMVLvgHwu2NtAtfoPWnpP" Name="Data Rate" Kind="InputPin" />
-            <Pin Id="VdPVMCf1iFCOkrbkCFm7j2" Name="IsHubPortDevice" Kind="InputPin" />
             <Pin Id="Keqqx5QXvheLGqEzCfp2lG" Name="SetSensorValueChangeTrigger" Kind="InputPin" />
             <Pin Id="N0EfC8yzrnbPGJG7wGWyZd" Name="Value" Kind="OutputPin" />
             <Pin Id="DuW5Yj4pL0lNCw4N6Y6XVz" Name="On Data" Kind="OutputPin" />
             <Pin Id="FNUOfIu99CmMTg4zrriX3z" Name="Attached" Kind="OutputPin" />
             <Pin Id="Ol7cYmxt4SfM8klihntwAF" Name="Device Serial Number" Kind="OutputPin" />
-            <Pin Id="FtWeeDtmCatMdCDFtzddKN" Name="Hub Port Count" Kind="OutputPin" />
             <Pin Id="SKCNwzWNYT8PDppfmBmZkg" Name="Channel Class" Kind="OutputPin" IsHidden="true" />
             <Pin Id="C7yAWxuAh71MOJ74eIIIgz" Name="Is Remote" Kind="OutputPin" />
+            <Pin Id="M6Bj276fBhAO9qtQToossI" Name="Server Hostname" Kind="OutputPin" IsHidden="true" />
+            <Pin Id="URr3K9FuwBRM4g2qO23cPC" Name="Server Name" Kind="OutputPin" IsHidden="true" />
+            <Pin Id="MbAITLNp9OJPsRSWgMqMJN" Name="Server Peer Name" Kind="OutputPin" IsHidden="true" />
+            <Pin Id="OVduQoDOz4mLt3Ei7Aum5R" Name="Server Unique Name" Kind="OutputPin" IsHidden="true" />
+            <Pin Id="FtWeeDtmCatMdCDFtzddKN" Name="Hub Port Count" Kind="OutputPin" />
           </Node>
           <Overlay Id="GTvLpBQAS7TOo5deqVYph2" Name="Interfaces" Bounds="299,5,272,254" />
-          <Overlay Id="Mt7ykHG0IymP3HHtHnzr3c" Name="Sensors" Bounds="599,10,181,216" />
+          <Overlay Id="Mt7ykHG0IymP3HHtHnzr3c" Name="Sensors" Bounds="599,10,204,216" />
           <Overlay Id="O11pab8vzW4K91jSuqioER" Name="Devices" Bounds="824,12,229,157" />
           <Overlay Id="F5FFt0820lwMxbCPe1dFyz" Name="Utils" Bounds="1074,13,290,161" />
-          <Node Bounds="1078,87,65,19" Id="TjQH316Pr9VNPte0D6Iwiw">
+          <Node Bounds="1101,90,65,19" Id="TjQH316Pr9VNPte0D6Iwiw">
             <p:NodeReference LastCategoryFullName="Devices.Phidgets" LastDependency="VL.Devices.Phidgets.vl">
               <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
               <Choice Kind="ProcessAppFlag" Name="Logging" />
@@ -240,28 +279,22 @@
               <Choice Kind="ProcessAppFlag" Name="Encoder" />
             </p:NodeReference>
             <Pin Id="GCLLutk7CjDOwWVrOoW0go" Name="Node Context" Kind="InputPin" IsHidden="true" />
+            <Pin Id="Edp0velx5S6OwiNBTaJEyB" Name="Encoder Type" Kind="InputPin" />
+            <Pin Id="QV2OAKB6RIXLCLczD6rl6c" Name="Encoder Interface Resolution" Kind="InputPin" />
             <Pin Id="HOxaAaONbnuOo1RLhsZTnh" Name="Open" Kind="InputPin" />
             <Pin Id="FWszb1RO7dQOem2cndFjD8" Name="Timeout" Kind="InputPin" IsHidden="true" />
             <Pin Id="VsNHNT7qz0fM1JhPFXBsW6" Name="Close" Kind="InputPin" />
             <Pin Id="ItpHorll4AkNQcr1OxLfyP" Name="IsLocal" Kind="InputPin" IsHidden="true" />
-            <Pin Id="N3bmbpgpcGINgkeNva860A" Name="Channel" Kind="InputPin" />
             <Pin Id="PoZApbPzBAIO4CXWmp9DB3" Name="SerialNumber" Kind="InputPin" />
+            <Pin Id="N3bmbpgpcGINgkeNva860A" Name="Channel" Kind="InputPin" />
             <Pin Id="Cu2V7r2PMeFPmgh0CvcfED" Name="HubPort" Kind="InputPin" />
             <Pin Id="D8rgRB4MHgwOyIEhf1dQmU" Name="IsHubPortDevice" Kind="InputPin" />
             <Pin Id="ShxtQQka9vANB4Qi2PvIqV" Name="Data Interval" Kind="InputPin" />
             <Pin Id="HR3vyubYoi3M8HMqSSsPGS" Name="Data Rate" Kind="InputPin" IsHidden="true" />
-            <Pin Id="Edp0velx5S6OwiNBTaJEyB" Name="Encoder Type" Kind="InputPin" />
-            <Pin Id="QV2OAKB6RIXLCLczD6rl6c" Name="Encoder Interface Resolution" Kind="InputPin" />
             <Pin Id="OyT2ZmYjG2sLXxacFpkPqJ" Name="Position Change Trigger" Kind="InputPin" />
             <Pin Id="GTPAvgfPFMQPXQHjqUMnZP" Name="IO Mode" Kind="InputPin" />
             <Pin Id="T2YKdCQmp00LXsBgAr7rgm" Name="Resolution" Kind="InputPin" />
             <Pin Id="KZKKYdeyY2kPi7TrdajcuV" Name="Reset" Kind="InputPin" />
-            <Pin Id="Rw3o3OQjccnLvZ3bgSu2Ra" Name="Attached" Kind="OutputPin" />
-            <Pin Id="F4H5AwyEKXMNmawh6oB2ak" Name="Device Serial Number" Kind="OutputPin" IsHidden="true" />
-            <Pin Id="GsbnP1Fnr1TMSNB0inJv9G" Name="Channel Class" Kind="OutputPin" IsHidden="true" />
-            <Pin Id="TxLtttPr9XCNn717458Soj" Name="Is Remote" Kind="OutputPin" />
-            <Pin Id="TQ0vkfVFbAONR45KWpkWx1" Name="Hub Port" Kind="OutputPin" IsHidden="true" />
-            <Pin Id="JK6u80lgDKHMum6bvuspXt" Name="Hub Port Count" Kind="OutputPin" IsHidden="true" />
             <Pin Id="Q92RwwaS4s0Mal0uUEnjij" Name="Position" Kind="OutputPin" />
             <Pin Id="VtzT8ghX4CYPdn0SsuP3GY" Name="Position Change" Kind="OutputPin" />
             <Pin Id="ITeMnrBOHNDLRSQzBt6cTL" Name="Index Triggered" Kind="OutputPin" IsHidden="true" />
@@ -270,6 +303,62 @@
             <Pin Id="RRmZLoG0AylPbIs6vyJO9u" Name="Angle" Kind="OutputPin" />
             <Pin Id="HZu5iMbETH1PW6EKn6GM5x" Name="Length" Kind="OutputPin" />
             <Pin Id="DU61VUAEaoJPOGJRjKEfrZ" Name="Velocity" Kind="OutputPin" />
+            <Pin Id="Rw3o3OQjccnLvZ3bgSu2Ra" Name="Attached" Kind="OutputPin" />
+            <Pin Id="F4H5AwyEKXMNmawh6oB2ak" Name="Device Serial Number" Kind="OutputPin" />
+            <Pin Id="GsbnP1Fnr1TMSNB0inJv9G" Name="Channel Class" Kind="OutputPin" IsHidden="true" />
+            <Pin Id="TxLtttPr9XCNn717458Soj" Name="Is Remote" Kind="OutputPin" />
+            <Pin Id="V6kYWxncP2JObUcEsXtbQ0" Name="Server Hostname" Kind="OutputPin" IsHidden="true" />
+            <Pin Id="PAgtWdDCx1oMnpxB9qPhhT" Name="Server Name" Kind="OutputPin" IsHidden="true" />
+            <Pin Id="PpwBBZEpGXNLD0PNIDadG5" Name="Server Peer Name" Kind="OutputPin" IsHidden="true" />
+            <Pin Id="K0nL09DqKFxNfhR2SDavDa" Name="Server Unique Name" Kind="OutputPin" IsHidden="true" />
+            <Pin Id="JK6u80lgDKHMum6bvuspXt" Name="Hub Port Count" Kind="OutputPin" IsHidden="true" />
+          </Node>
+          <Node Bounds="1101,130,105,19" Id="Dj5n5cKABaaNbSx9XQe4Me">
+            <p:NodeReference LastCategoryFullName="Devices.Phidgets" LastDependency="VL.Devices.Phidgets.vl">
+              <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+              <Choice Kind="ProcessAppFlag" Name="Networking" />
+            </p:NodeReference>
+            <Pin Id="Ix25KuErq3hPY7DGzNC6Ah" Name="Node Context" Kind="InputPin" IsHidden="true" />
+            <Pin Id="IqkHRcwLCBaLwTT44k2ZY9" Name="Server Unique Name" Kind="InputPin" />
+            <Pin Id="FXOGQTdQmwjPhUddpaeCVx" Name="IP Address" Kind="InputPin" />
+            <Pin Id="O0lHTCCHhkgOpZJsyWPQt8" Name="Port" Kind="InputPin" />
+            <Pin Id="Mrad7FBbswfLCZ2vFZAnRR" Name="Password" Kind="InputPin" />
+            <Pin Id="Su1SicbczK8LHmZPHTBsU6" Name="Add" Kind="InputPin" />
+            <Pin Id="UbryeR94pyTPa0zhJkd5cl" Name="Remove" Kind="InputPin" />
+          </Node>
+          <Node Bounds="616,130,165,19" Id="RSz4xmIquxBLNp1GWgZqH8">
+            <p:NodeReference LastCategoryFullName="Devices.Phidgets" LastDependency="VL.Devices.Phidgets.vl">
+              <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+              <Choice Kind="ProcessAppFlag" Name="RFIDReadWrite" />
+            </p:NodeReference>
+            <Pin Id="MVCvWuLxiqlN49J38s8Deb" Name="Node Context" Kind="InputPin" IsHidden="true" />
+            <Pin Id="DYIvnvBJQorN6w82XIxubv" Name="Antenna Enabled" Kind="InputPin" />
+            <Pin Id="CAzqss6PI3xNu8jWHc3ZdH" Name="Open" Kind="InputPin" />
+            <Pin Id="GjHTHQ72YfoNghuZ0RcPHA" Name="Timeout" Kind="InputPin" IsHidden="true" />
+            <Pin Id="SPJNP51eAgPMytxY0j1gJA" Name="Close" Kind="InputPin" />
+            <Pin Id="C08EX52ENVfP9cRU4jWLuI" Name="IsLocal" Kind="InputPin" IsHidden="true" />
+            <Pin Id="PVDj9AnrVVMOOQ8XT6NnYb" Name="SerialNumber" Kind="InputPin" />
+            <Pin Id="JLMGxvTa9XENFXz1LgPRl4" Name="Channel" Kind="InputPin" />
+            <Pin Id="NrQPRLYMgBHMkamDLtzbYy" Name="HubPort" Kind="InputPin" />
+            <Pin Id="K3OTbGFLnA5O1ybzPw7H3I" Name="IsHubPortDevice" Kind="InputPin" IsHidden="true" />
+            <Pin Id="REyDDHrKdx0NqExZk5D7VD" Name="Tag String" Kind="InputPin" />
+            <Pin Id="RS3QgufirziOz1ancHZaoM" Name="Protocol" Kind="InputPin" />
+            <Pin Id="HbpqN7ljl4RLbzl8G3Gfqo" Name="Lock Tag" Kind="InputPin" IsHidden="true" />
+            <Pin Id="Kke5pVw0KXGOIYNAwtva9K" Name="Write" Kind="InputPin" />
+            <Pin Id="I0tl17Le9uJPNopUrAr0vl" Name="Tag String" Kind="OutputPin" />
+            <Pin Id="SaGA8oos9NLLc2n2ZlDJLT" Name="Protocol" Kind="OutputPin" />
+            <Pin Id="IVyQrq99pFMM6uMJeRF6SO" Name="Tag Present" Kind="OutputPin" />
+            <Pin Id="RWFsuVykkkfNubrIVlykg1" Name="Lost Tag String" Kind="OutputPin" />
+            <Pin Id="JZCUYSg0MMKOywRnIBzKHF" Name="On Data" Kind="OutputPin" />
+            <Pin Id="H0kyfZJMU2ZPzN0G8yzMFi" Name="Attached" Kind="OutputPin" />
+            <Pin Id="Q5HZg9Nm15fOQm3iGFlBmC" Name="Device Serial Number" Kind="OutputPin" />
+            <Pin Id="TIRKqzcqG4KOO8UFveviBa" Name="Channel Class" Kind="OutputPin" IsHidden="true" />
+            <Pin Id="SzGrQrgfx7TOrxT3RkxfVn" Name="Is Remote" Kind="OutputPin" IsHidden="true" />
+            <Pin Id="IlTD06NSjd6OOfVPMvsdIN" Name="Server Hostname" Kind="OutputPin" IsHidden="true" />
+            <Pin Id="LFIuSIraPbdOlrcL9g8gPF" Name="Server Name" Kind="OutputPin" IsHidden="true" />
+            <Pin Id="AlXUcX9J7j6MYyRxSlOi5V" Name="Server Peer Name" Kind="OutputPin" IsHidden="true" />
+            <Pin Id="IFHzxOVyXhsLBJz8n2Ttaq" Name="Server Unique Name" Kind="OutputPin" IsHidden="true" />
+            <Pin Id="KSOI73DOWZ9MZh8L7CSFQ1" Name="Hub Port Count" Kind="OutputPin" IsHidden="true" />
           </Node>
         </Canvas>
         <ProcessDefinition Id="M7DhTjVrkxFPTU6ibB97qp">
@@ -281,6 +370,6 @@
       </Patch>
     </Node>
   </Patch>
-  <NugetDependency Id="AWADncGnm9GO1XnlR6Z1ft" Location="VL.Skia" Version="2024.6.2" />
+  <NugetDependency Id="AWADncGnm9GO1XnlR6Z1ft" Location="VL.Skia" Version="2025.7.0" />
   <DocumentDependency Id="Azm6tyc3jsJNopk9FBIJmR" Location="../../VL.Devices.Phidgets.vl" />
 </Document>
