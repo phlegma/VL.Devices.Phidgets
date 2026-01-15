@@ -11,19 +11,6 @@ on:
     paths-ignore:
       - README.md
       
-  workflow_dispatch:
-    inputs:
-      version:
-        description: 'nuget setup'
-        required: false
-        default: '0.0.13-alpha'
-      is_pre:
-        description: 'Is pre release'
-        type: boolean
-      notes:
-        description: 'Inital Setup'
-        required: true
-
 jobs:
   build:
     runs-on: windows-latest
