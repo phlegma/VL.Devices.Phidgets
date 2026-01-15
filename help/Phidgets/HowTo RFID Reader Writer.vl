@@ -1,0 +1,298 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Document xmlns:p="property" xmlns:r="reflection" Id="E7HaYCQqEwlPHkiq5wnzww" LanguageVersion="2025.7.0" Version="0.128">
+  <Patch Id="RfAaoSfd2CtNpvFyYgdhKr">
+    <Canvas Id="JEIcHlLxExZNgBVOxaDo3E" DefaultCategory="Main" BordersChecked="false" CanvasType="FullCategory" />
+    <!--
+
+    ************************ Application ************************
+
+-->
+    <Node Name="Application" Bounds="100,100" Id="OajJzejp7YjN2AxQHyCxsp">
+      <p:NodeReference>
+        <Choice Kind="ContainerDefinition" Name="Process" />
+        <FullNameCategoryReference ID="Primitive" />
+      </p:NodeReference>
+      <Patch Id="DIkhjks8vDwNiS4zTjxqoO">
+        <Canvas Id="QSxmShObVKjMofdsopM6Tt" CanvasType="Group">
+          <Pad Id="DtgjCXYLV0PPOPd8uqPhMg" Bounds="447,789,315,57" ShowValueBox="true" isIOBox="true" Value="The device serial number. If the channel is part of a VINT device, this will be the serial number of the VINT Hub the device is attached to.">
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
+              <Choice Kind="TypeFlag" Name="String" />
+            </p:TypeAnnotation>
+            <p:ValueBoxSettings>
+              <p:fontsize p:Type="Int32">9</p:fontsize>
+              <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
+            </p:ValueBoxSettings>
+          </Pad>
+          <Node Bounds="268,960,185,19" Id="TJjGWw0RlOfPoJXUnvm5oK">
+            <p:NodeReference LastCategoryFullName="Devices.Phidgets" LastDependency="VL.Devices.Phidgets.vl">
+              <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+              <Choice Kind="ProcessAppFlag" Name="RFIDReadWrite" />
+            </p:NodeReference>
+            <Pin Id="DNtKAtqS5YdLrECeAS9RhJ" Name="Node Context" Kind="InputPin" IsHidden="true" />
+            <Pin Id="OKmVC0t9JHEOfKD9aHGdsS" Name="Open" Kind="InputPin" />
+            <Pin Id="PQGxcphU9viLy0HuoEQ1Cy" Name="Close" Kind="InputPin" />
+            <Pin Id="AVgsnxyrgmwPPpooA2crg2" Name="IsLocal" Kind="InputPin" />
+            <Pin Id="HozRvaXZaJCO1st7NOuq8G" Name="SerialNumber" Kind="InputPin" />
+            <Pin Id="Rg0XekJ5yZtORYbE2cUYVV" Name="Channel" Kind="InputPin" />
+            <Pin Id="HRy2d93bdvzL5YaLE9TKfc" Name="HubPort" Kind="InputPin" />
+            <Pin Id="CZpLctMG1pVLqhY3aNTNI2" Name="IsHubPortDevice" Kind="InputPin" IsHidden="true" />
+            <Pin Id="DBnpM8tG69BPuI5FoqNc0e" Name="Timeout" Kind="InputPin" IsHidden="true" />
+            <Pin Id="Q2WIqCe29YQMC0r8SeHYm0" Name="Antenna Enabled" Kind="InputPin" />
+            <Pin Id="E0fcXwIYl6nP1fuOlKYLzb" Name="Tag String" Kind="InputPin" />
+            <Pin Id="JipHlr5oL3eQJfalUHMaF2" Name="Protocol" Kind="InputPin" />
+            <Pin Id="AcCTVR0BBJ7Lz4kafhOp7P" Name="Lock Tag" Kind="InputPin" IsHidden="true" />
+            <Pin Id="NQZtgNJ8px7P2eq7o4yxer" Name="Write" Kind="InputPin" />
+            <Pin Id="LcW6nL6rghlM2lwvOKYRk3" Name="Attached" Kind="OutputPin" />
+            <Pin Id="Dv8ydztjr5vM2ZFo76OUhr" Name="Device Serial Number" Kind="OutputPin" />
+            <Pin Id="UMOFJqRBdRsQTFBn40uDIz" Name="Tag String" Kind="OutputPin" />
+            <Pin Id="BjSAsTNAbq5QMz5HNH3Vtd" Name="Protocol" Kind="OutputPin" />
+            <Pin Id="PSvJGoq11OSPfUOfgzeKPH" Name="Tag Present" Kind="OutputPin" />
+            <Pin Id="GXol6JYBoqqPatUeBFB0ZS" Name="Lost Tag String" Kind="OutputPin" />
+            <Pin Id="Acxd2maAaQbPMIo4Clp1h6" Name="On Data" Kind="OutputPin" />
+          </Node>
+          <Pad Id="ELXSVJsJ6X1MVl99XAw6JB" Bounds="210,280,572,346" ShowValueBox="true" isIOBox="true" Value="By default, PhidgetRFID only reads value of RFID tags&#xD;&#xA;&#xD;&#xA;1. Enable antenna to read tags, disable to save power.&#xD;&#xA;&#xD;&#xA;2. Contents and protocol of current RFID tag.&#xD;&#xA;&#xD;&#xA;3. True if tag is recognized and can be read. It stays False if tag is blank.&#xD;&#xA;&#xD;&#xA;4. Keep latest tag string when tag is removed from the reader.">
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
+              <Choice Kind="TypeFlag" Name="String" />
+            </p:TypeAnnotation>
+            <p:ValueBoxSettings>
+              <p:fontsize p:Type="Int32">15</p:fontsize>
+              <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
+            </p:ValueBoxSettings>
+          </Pad>
+          <Pad Id="GIANHopXmXKNgWcwOf6gev" Comment="Open" Bounds="270,670,35,35" ShowValueBox="true" isIOBox="true" Value="False">
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
+              <Choice Kind="ImmutableTypeFlag" Name="Boolean" />
+            </p:TypeAnnotation>
+            <p:ValueBoxSettings>
+              <p:buttonmode p:Assembly="VL.UI.Forms" p:Type="VL.HDE.PatchEditor.Editors.ButtonModeEnum">Bang</p:buttonmode>
+            </p:ValueBoxSettings>
+          </Pad>
+          <Pad Id="Ed4i4l93aiuO9GPfrqsr1V" Comment="Close" Bounds="290,720,35,35" ShowValueBox="true" isIOBox="true" Value="False">
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
+              <Choice Kind="ImmutableTypeFlag" Name="Boolean" />
+            </p:TypeAnnotation>
+            <p:ValueBoxSettings>
+              <p:buttonmode p:Assembly="VL.UI.Forms" p:Type="VL.HDE.PatchEditor.Editors.ButtonModeEnum">Bang</p:buttonmode>
+            </p:ValueBoxSettings>
+          </Pad>
+          <Pad Id="TITMDETenl9PaVff6bPaH0" Comment="Antenna Enabled" Bounds="390,885,35,35" ShowValueBox="true" isIOBox="true" Value="True">
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
+              <Choice Kind="ImmutableTypeFlag" Name="Boolean" />
+            </p:TypeAnnotation>
+            <p:ValueBoxSettings>
+              <p:buttonmode p:Assembly="VL.UI.Forms" p:Type="VL.HDE.PatchEditor.Editors.ButtonModeEnum">Toggle</p:buttonmode>
+            </p:ValueBoxSettings>
+          </Pad>
+          <Pad Id="LOVO5Px72cNLSkaLtTuLPd" Comment="Protocol" Bounds="360,1150,107,15" ShowValueBox="true" isIOBox="true" />
+          <Pad Id="MCmEtSzhYTiOJ1njlh7tlg" Comment="Tag Present" Bounds="390,1071,35,35" ShowValueBox="true" isIOBox="true" />
+          <Pad Id="RnVn1UBtNp5MQ9WoNdAhiq" Bounds="542,886,35,31" ShowValueBox="true" isIOBox="true" Value="1.">
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
+              <Choice Kind="TypeFlag" Name="String" />
+            </p:TypeAnnotation>
+            <p:ValueBoxSettings>
+              <p:fontsize p:Type="Int32">15</p:fontsize>
+              <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
+            </p:ValueBoxSettings>
+          </Pad>
+          <Pad Id="FqS7cBc5lmvOAbfwH2Q5bj" Bounds="521,1157,35,31" ShowValueBox="true" isIOBox="true" Value="2.">
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
+              <Choice Kind="TypeFlag" Name="String" />
+            </p:TypeAnnotation>
+            <p:ValueBoxSettings>
+              <p:fontsize p:Type="Int32">15</p:fontsize>
+              <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
+            </p:ValueBoxSettings>
+          </Pad>
+          <Pad Id="O8ZOm2D7IZBMYTPJdLJ1DP" Bounds="492,1070,35,31" ShowValueBox="true" isIOBox="true" Value="3.">
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
+              <Choice Kind="TypeFlag" Name="String" />
+            </p:TypeAnnotation>
+            <p:ValueBoxSettings>
+              <p:fontsize p:Type="Int32">15</p:fontsize>
+              <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
+            </p:ValueBoxSettings>
+          </Pad>
+          <Pad Id="OtNzBjiTQZKMQl7aBmFcVU" Bounds="450,959,336,19" ShowValueBox="true" isIOBox="true" Value="&lt;- unused pin are here to write to RFID tag if allowed.">
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
+              <Choice Kind="TypeFlag" Name="String" />
+            </p:TypeAnnotation>
+            <p:ValueBoxSettings>
+              <p:fontsize p:Type="Int32">9</p:fontsize>
+              <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
+            </p:ValueBoxSettings>
+          </Pad>
+          <Overlay Id="LC6tXpWUW6LOLCgNqqni2d" Name="Read" Bounds="142,219,743,1030">
+            <p:ColorIndex p:Type="Int32">3</p:ColorIndex>
+          </Overlay>
+          <Node Bounds="1135,1070,225,19" Id="QxWvSZJoLxTO0WnxHyFNCN">
+            <p:NodeReference LastCategoryFullName="Devices.Phidgets" LastDependency="VL.Devices.Phidgets.vl">
+              <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+              <Choice Kind="ProcessAppFlag" Name="RFIDReadWrite" />
+            </p:NodeReference>
+            <Pin Id="SUasVc5rVYqOKzHMbJkXTY" Name="Node Context" Kind="InputPin" IsHidden="true" />
+            <Pin Id="NYZThYrA4tLMsgjIbQcKbG" Name="Open" Kind="InputPin" />
+            <Pin Id="AmikP60cABuMKpRzOeOPXS" Name="Close" Kind="InputPin" />
+            <Pin Id="G4XU2ckgQDHOqz6qXNVYPn" Name="IsLocal" Kind="InputPin" />
+            <Pin Id="GFog7gTlxHLOnmdUg5nipZ" Name="SerialNumber" Kind="InputPin" />
+            <Pin Id="DWBX720fUmBLORYXlqjZm6" Name="Channel" Kind="InputPin" />
+            <Pin Id="S4nk5ZTOJRiNfdJ2YqN6uG" Name="HubPort" Kind="InputPin" />
+            <Pin Id="SXRjfIXn95NOvvJXA3SrQr" Name="IsHubPortDevice" Kind="InputPin" IsHidden="true" />
+            <Pin Id="LWO2FwjugkQL24gRljfboE" Name="Timeout" Kind="InputPin" IsHidden="true" />
+            <Pin Id="Ij15Gc2VTseNJ1ctFMj49J" Name="Antenna Enabled" Kind="InputPin" />
+            <Pin Id="Ai7N9In9F9qMJtLaok6CvX" Name="Tag String" Kind="InputPin" />
+            <Pin Id="KrPKeL48O3EMoXU5p2oqi1" Name="Protocol" Kind="InputPin" />
+            <Pin Id="Lc2nXsNVoTfMDV5afHhvXD" Name="Lock Tag" Kind="InputPin" />
+            <Pin Id="VFaCyQkk2PrL8vPMr0GWC3" Name="Write" Kind="InputPin" />
+            <Pin Id="I3lkvWjw5TUMtIJcQxMdnh" Name="Attached" Kind="OutputPin" />
+            <Pin Id="HcgFszOmAKEPyCN3r7wM62" Name="Device Serial Number" Kind="OutputPin" />
+            <Pin Id="Vx9J6VkOirhMbvimBVRQmH" Name="Tag String" Kind="OutputPin" />
+            <Pin Id="NyZYtzK8uYbOwMbczh0yRS" Name="Protocol" Kind="OutputPin" />
+            <Pin Id="ADoRHeTs3pmNpTFKnh6YMH" Name="Tag Present" Kind="OutputPin" />
+            <Pin Id="EAfsJdCBYRQOopx9ItP2J0" Name="Lost Tag String" Kind="OutputPin" />
+            <Pin Id="QiiySM1J47YPG3nOo2s6jU" Name="On Data" Kind="OutputPin" />
+          </Node>
+          <Pad Id="AqoOMLIW199OEql3bsYgcO" Bounds="1027,280,557,312" ShowValueBox="true" isIOBox="true" Value="You can also write to RFID tags if it is allowed. This function doesn't work if tags are read-only.&#xD;&#xA;&#xD;&#xA;1. Contents and protocol to set to current RFID tag.&#xD;&#xA;&#xD;&#xA;2. PERMANENTLY write to tag. You can not write to the tag anymore, and the tag can not be unlocked!&#xD;&#xA;This pin is deactivated and optional to prevent errors.&#xD;&#xA;&#xD;&#xA;Right-click + Configure to display it.">
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
+              <Choice Kind="TypeFlag" Name="String" />
+            </p:TypeAnnotation>
+            <p:ValueBoxSettings>
+              <p:fontsize p:Type="Int32">15</p:fontsize>
+              <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
+            </p:ValueBoxSettings>
+          </Pad>
+          <Pad Id="DlxUu4cKAFaMWSndrdeIHK" Comment="Open" Bounds="1137,970,35,35" ShowValueBox="true" isIOBox="true" Value="False">
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
+              <Choice Kind="ImmutableTypeFlag" Name="Boolean" />
+            </p:TypeAnnotation>
+            <p:ValueBoxSettings>
+              <p:buttonmode p:Assembly="VL.UI.Forms" p:Type="VL.HDE.PatchEditor.Editors.ButtonModeEnum">Bang</p:buttonmode>
+            </p:ValueBoxSettings>
+          </Pad>
+          <Pad Id="GQIQB0L2mH7LzFEjzILzrA" Comment="Close" Bounds="1159,1020,35,35" ShowValueBox="true" isIOBox="true" Value="False">
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
+              <Choice Kind="ImmutableTypeFlag" Name="Boolean" />
+            </p:TypeAnnotation>
+            <p:ValueBoxSettings>
+              <p:buttonmode p:Assembly="VL.UI.Forms" p:Type="VL.HDE.PatchEditor.Editors.ButtonModeEnum">Bang</p:buttonmode>
+            </p:ValueBoxSettings>
+          </Pad>
+          <Pad Id="C6uVMugZLI0PTSzrRI9zYj" Bounds="1485,677,35,31" ShowValueBox="true" isIOBox="true" Value="1.">
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
+              <Choice Kind="TypeFlag" Name="String" />
+            </p:TypeAnnotation>
+            <p:ValueBoxSettings>
+              <p:fontsize p:Type="Int32">15</p:fontsize>
+              <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
+            </p:ValueBoxSettings>
+          </Pad>
+          <Overlay Id="H0iYgDiOlJ3Lni7TQT0IDJ" Name="Write" Bounds="959,219,743,1030">
+            <p:ColorIndex p:Type="Int32">4</p:ColorIndex>
+          </Overlay>
+          <Pad Id="UH69L9Gvv92McufTdzdHSz" Comment="Tag String" Bounds="1291,671,98,15" ShowValueBox="true" isIOBox="true" Value="0000000000">
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
+              <Choice Kind="TypeFlag" Name="String" />
+            </p:TypeAnnotation>
+          </Pad>
+          <Pad Id="TBk5HHUuLUYMlCo6H5suUD" Comment="Protocol" Bounds="1313,701,107,15" ShowValueBox="true" isIOBox="true" Value="EM4100">
+            <p:TypeAnnotation LastCategoryFullName="Phidget22" LastDependency="VL.Devices.Phidgets.vl">
+              <Choice Kind="TypeFlag" Name="RFIDProtocol" />
+            </p:TypeAnnotation>
+          </Pad>
+          <Pad Id="MxUWVUuUlwPPGumAQUQgiS" Comment="Write" Bounds="1357,1001,35,35" ShowValueBox="true" isIOBox="true" Value="False">
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
+              <Choice Kind="ImmutableTypeFlag" Name="Boolean" />
+            </p:TypeAnnotation>
+            <p:ValueBoxSettings>
+              <p:buttonmode p:Assembly="VL.UI.Forms" p:Type="VL.HDE.PatchEditor.Editors.ButtonModeEnum">Bang</p:buttonmode>
+            </p:ValueBoxSettings>
+          </Pad>
+          <Pad Id="OpbCxz8VOlgOUvLPdDJW50" Comment="Lock Tag" Bounds="1335,871,35,35" ShowValueBox="true" isIOBox="true" Value="False">
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
+              <Choice Kind="ImmutableTypeFlag" Name="Boolean" />
+            </p:TypeAnnotation>
+            <p:ValueBoxSettings>
+              <p:buttonmode p:Assembly="VL.UI.Forms" p:Type="VL.HDE.PatchEditor.Editors.ButtonModeEnum">Toggle</p:buttonmode>
+            </p:ValueBoxSettings>
+          </Pad>
+          <Pad Id="OfDPTVUVPDaMpnPXi9b9jC" Bounds="1432,872,35,31" ShowValueBox="true" isIOBox="true" Value="2.">
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
+              <Choice Kind="TypeFlag" Name="String" />
+            </p:TypeAnnotation>
+            <p:ValueBoxSettings>
+              <p:fontsize p:Type="Int32">15</p:fontsize>
+              <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
+            </p:ValueBoxSettings>
+          </Pad>
+          <Pad Id="KauU6A2Fe6IMWFO9CDXs38" Bounds="1317,813,189,41" ShowValueBox="true" isIOBox="true" Value="❗Warning❗">
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
+              <Choice Kind="TypeFlag" Name="String" />
+            </p:TypeAnnotation>
+            <p:ValueBoxSettings>
+              <p:fontsize p:Type="Int32">20</p:fontsize>
+              <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
+            </p:ValueBoxSettings>
+          </Pad>
+          <Overlay Id="LkXggOjpQUAK9yQXTDkmNa" Name="" Bounds="1323,795,190,120">
+            <p:ColorIndex p:Type="Int32">6</p:ColorIndex>
+          </Overlay>
+          <Pad Id="Ou6lw6bFjxTOMWbYr8kyQR" Bounds="136,138,424,19" ShowValueBox="true" isIOBox="true" Value="For any information about RFID, you can refer to Phidgets RFID Guide">
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
+              <Choice Kind="TypeFlag" Name="String" />
+            </p:TypeAnnotation>
+            <p:ValueBoxSettings>
+              <p:fontsize p:Type="Int32">9</p:fontsize>
+              <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
+            </p:ValueBoxSettings>
+          </Pad>
+          <Pad Id="HpLuVQX04JxN8crgBx5XUt" Bounds="136,162,437,19" ShowValueBox="true" isIOBox="true" Value="https://www.phidgets.com/docs/RFID_Guide">
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
+              <Choice Kind="TypeFlag" Name="String" />
+            </p:TypeAnnotation>
+            <p:ValueBoxSettings>
+              <p:fontsize p:Type="Int32">9</p:fontsize>
+              <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Link</p:stringtype>
+            </p:ValueBoxSettings>
+          </Pad>
+          <Pad Id="CayTi2Fokq7QaPGAmwckw8" Comment="SerialNumber" Bounds="330,800,35,15" ShowValueBox="true" isIOBox="true" Value="-1">
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
+              <Choice Kind="TypeFlag" Name="Integer32" />
+            </p:TypeAnnotation>
+          </Pad>
+          <Pad Id="EPchmpuDLetMJ53d6M4NGR" Bounds="581,1011,35,31" ShowValueBox="true" isIOBox="true" Value="4.">
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
+              <Choice Kind="TypeFlag" Name="String" />
+            </p:TypeAnnotation>
+            <p:ValueBoxSettings>
+              <p:fontsize p:Type="Int32">15</p:fontsize>
+              <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
+            </p:ValueBoxSettings>
+          </Pad>
+          <Pad Id="JBZCf9Ww4ilLO11sJ7DW1w" Comment="Tag String" Bounds="330,1180,79,15" ShowValueBox="true" isIOBox="true" />
+          <Pad Id="ALBcCuhkvT6Ml8WtTdC3nj" Comment="Lost Tag String" Bounds="420,1020,78,15" ShowValueBox="true" isIOBox="true" />
+        </Canvas>
+        <Patch Id="LktJImeAVyzMyxIMbZyfkl" Name="Create" />
+        <Patch Id="FY3iWGwZdsxMZxRYTZcqpS" Name="Update" />
+        <ProcessDefinition Id="PVbz1vgUenaQQjtz8lIn6d">
+          <Fragment Id="Ui6pOrnrncsLZS1Et8UBO5" Patch="LktJImeAVyzMyxIMbZyfkl" Enabled="true" />
+          <Fragment Id="OSsJZ0fhI5qLZbjNo7RLWb" Patch="FY3iWGwZdsxMZxRYTZcqpS" Enabled="true" />
+        </ProcessDefinition>
+        <Link Id="OFuXjZs7VQFO3FMZLWkqsP" Ids="GIANHopXmXKNgWcwOf6gev,OKmVC0t9JHEOfKD9aHGdsS" />
+        <Link Id="VKYDsfeEcKTO9NJ2vL049G" Ids="Ed4i4l93aiuO9GPfrqsr1V,PQGxcphU9viLy0HuoEQ1Cy" />
+        <Link Id="DNpI9PGtNDAOylx4eTabHF" Ids="BjSAsTNAbq5QMz5HNH3Vtd,LOVO5Px72cNLSkaLtTuLPd" />
+        <Link Id="MSc9J3CoTuRPhu7yV7nzNO" Ids="PSvJGoq11OSPfUOfgzeKPH,MCmEtSzhYTiOJ1njlh7tlg" />
+        <Link Id="Dc7RlZMCzZgLDc5Xi59x0K" Ids="DlxUu4cKAFaMWSndrdeIHK,NYZThYrA4tLMsgjIbQcKbG" />
+        <Link Id="VlfXC8a0I0NPlHGly8V2B9" Ids="GQIQB0L2mH7LzFEjzILzrA,AmikP60cABuMKpRzOeOPXS" />
+        <Link Id="CWJsYNNi7NRNHegdobilMg" Ids="UH69L9Gvv92McufTdzdHSz,Ai7N9In9F9qMJtLaok6CvX" />
+        <Link Id="L5qwgwSmGZtO1ND63MfnyR" Ids="TBk5HHUuLUYMlCo6H5suUD,KrPKeL48O3EMoXU5p2oqi1" />
+        <Link Id="RBWBU91OOy6LXeWIZzhMHt" Ids="MxUWVUuUlwPPGumAQUQgiS,VFaCyQkk2PrL8vPMr0GWC3" />
+        <Link Id="A5rVDTdDmZCNaKDFk0WUip" Ids="OpbCxz8VOlgOUvLPdDJW50,Lc2nXsNVoTfMDV5afHhvXD" />
+        <Link Id="QLafjjA8Q97MTKsSTVoyKt" Ids="TITMDETenl9PaVff6bPaH0,Q2WIqCe29YQMC0r8SeHYm0" />
+        <Link Id="LdL2v6k45BiLDS6ufsspzj" Ids="CayTi2Fokq7QaPGAmwckw8,HozRvaXZaJCO1st7NOuq8G" />
+        <Link Id="Kwq6yNkd5RJNzn4DyEyK1P" Ids="UMOFJqRBdRsQTFBn40uDIz,JBZCf9Ww4ilLO11sJ7DW1w" />
+        <Link Id="DMw5K0iTI6MP1j9G2YSdRB" Ids="GXol6JYBoqqPatUeBFB0ZS,ALBcCuhkvT6Ml8WtTdC3nj" />
+      </Patch>
+    </Node>
+  </Patch>
+  <NugetDependency Id="JBWYZx23bMtO7chX2VqYsF" Location="VL.CoreLib" Version="2025.7.0" />
+  <DocumentDependency Id="JQXItX5o3b2MvacI7K5JGF" Location="../../VL.Devices.Phidgets.vl" />
+</Document>
