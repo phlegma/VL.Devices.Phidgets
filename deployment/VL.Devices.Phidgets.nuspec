@@ -16,7 +16,7 @@
     <icon>icon\nugeticon.png</icon>
     <readme>docs\README.md</readme>
     <dependencies>
-      <dependency id="Phidget22.NET" version="1.23.20251016" />
+      <dependency id="Phidget22.NET" version="1.23.20251006" />
     </dependencies>
   </metadata>
   <files>
