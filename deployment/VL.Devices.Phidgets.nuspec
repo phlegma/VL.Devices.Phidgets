@@ -6,7 +6,7 @@
     <title>VL.Devices.Phidgets</title>
     <authors>phlegma, Maxime Souvestre</authors>
     <owners>phlegma</owners>
-    <projectUrl></projectUrl>
+    <projectUrl>https://github.com/phlegma/VL.Devices.Phidgets/</projectUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <repository type="git" url="https://github.com/phlegma/VL.Devices.Phidgets/" />
     <summary>Set of VL Nodes for Phidgets</summary>
