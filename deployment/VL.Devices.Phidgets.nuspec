@@ -2,24 +2,28 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2011/10/nuspec.xsd">
   <metadata>
     <id>VL.Devices.Phidgets</id>
-    <version>0.0.13-alpha</version>
+    <version>0.1.0</version>
     <title>VL.Devices.Phidgets</title>
-    <authors>phlegma</authors>
+    <authors>phlegma, Maxime Souvestre</authors>
     <owners>phlegma</owners>
-    <projectUrl>https://github.com/phlegma/VL.Devices.Phidgets/</projectUrl>
+    <projectUrl></projectUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <repository type="git" url="https://github.com/phlegma/VL.Devices.Phidgets/" />
     <summary>Set of VL Nodes for Phidgets</summary>
     <description>Set of VL Nodes for Phidgets</description>
     <license type="expression">MIT</license>
     <tags>VL, Phidgets</tags>
+    <icon>icon\nugeticon.png</icon>
+    <readme>docs\README.md</readme>
     <dependencies>
-      <dependency id="Phidget22.NET" version="1.22.20250324" />
+      <dependency id="Phidget22.NET" version="1.23.20251016" />
     </dependencies>
   </metadata>
   <files>
     <file src="..\*.vl" target="" exclude="" />
     <file src="..\help\**" target="..\help\" />
     <file src="..\csharp\**" target="..\csharp\" />
+    <file src="nugeticon.png" target="icon\" />
+    <file src="..\README.md" target="docs\" />
   </files>
 </package>

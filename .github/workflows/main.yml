@@ -1,12 +1,16 @@
 # This is a basic workflow to help you get started with Actions
 
-name: push_nuget_and_release
+name: push_nuget
 
 # on push on master
+# on push on main
 on:
   push:
     branches:
       - main
+    paths-ignore:
+      - README.md
+      
   workflow_dispatch:
     inputs:
       version:
@@ -28,13 +32,11 @@ jobs:
       uses: actions/checkout@master
 
     - name: Setup Nuget.exe
-      uses: nuget/setup-nuget@v1
+      uses: nuget/setup-nuget@v2.0.0
 
     - name: Publish VL Nuget
       uses: vvvv/PublishVLNuget@1.0.41
       with:
         nuspec: deployment/VL.Devices.Phidgets.nuspec
-        version: ${{ github.event.inputs.version }}
         nuget-key: ${{ secrets.NUGET_KEY }}
   
-        
