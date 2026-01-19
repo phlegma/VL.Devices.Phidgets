@@ -5,7 +5,7 @@
     <ImplicitUsings>enable</ImplicitUsings>
     <Nullable>enable</Nullable>
     <GenerateDocumentationFile>True</GenerateDocumentationFile>
-    <BaseOutputPath>$(SolutionDir)..\..\lib</BaseOutputPath>
+    <BaseOutputPath>$(SolutionDir)..\lib</BaseOutputPath>
   </PropertyGroup>
 
   <ItemGroup>
