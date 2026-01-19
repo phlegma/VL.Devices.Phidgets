@@ -6289,6 +6289,6 @@
   </Patch>
   <NugetDependency Id="N0wKF2rNGWWLlKpD1eaaMc" Location="VL.Skia" Version="2025.7.0" />
   <NugetDependency Id="E7WivuLFDPOOps7iYavgTW" Location="Phidget22.NET" Version="1.23.20251006" />
-  <ProjectDependency Id="PUIqy7fEJuNNEAsB3rN6mD" Location="./csharp/VL.Devices.Phidgets.Utils/VL.Devices.Phidgets.Utils.csproj" />
   <NugetDependency Id="McNUGwfa0LxOil1rSKmjtH" Location="System.Reactive" Version="6.0.0" />
+  <PlatformDependency Id="TRTwwNaNzDoMg50lSakQ4W" Location="./lib/Debug/net8.0/VL.Devices.Phidgets.Utils.dll" />
 </Document>
