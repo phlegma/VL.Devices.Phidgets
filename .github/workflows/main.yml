@@ -25,7 +25,7 @@ jobs:
       uses: nuget/setup-nuget@v2.0.0
 
     - name: Publish VL Nuget
-      uses: vvvv/PublishVLNuget@1.0.41
+      uses: vvvv/PublishVLNuget@1.0.43
       with:
         csproj: src/VL.Devices.Phidgets.Utils/VL.Devices.Phidgets.Utils.csproj
         nuspec: deployment/VL.Devices.Phidgets.nuspec
