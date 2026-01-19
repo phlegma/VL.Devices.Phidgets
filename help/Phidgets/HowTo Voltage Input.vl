@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Document xmlns:p="property" Id="Ka9uSPv7yTqO8m3xSP1Ia4" LanguageVersion="2021.4.9.982" Version="0.128">
-  <NugetDependency Id="VMo4HaTEkVTLtfYj9q9ZYR" Location="VL.CoreLib" Version="2021.4.9" />
+<Document xmlns:p="property" xmlns:r="reflection" Id="HJb2NLLBhRbMBoap672BxN" LanguageVersion="2025.7.1-0145-gc52c6caab5" Version="0.128">
+  <NugetDependency Id="VMo4HaTEkVTLtfYj9q9ZYR" Location="VL.CoreLib" Version="2025.7.1-0145-gc52c6caab5" />
   <Patch Id="EBJpcI9XfAwLRZdOzyKrhP">
     <Canvas Id="DZ4WByYr0iQNUdSbUzWirB" DefaultCategory="Main" CanvasType="FullCategory" />
     <!--
@@ -16,25 +16,36 @@
       <Patch Id="RcdmicmnND1Pyv3TJj3de9">
         <Canvas Id="Th1wAbWQAPlMOAdCYXCkfd" CanvasType="Group">
           <Node Bounds="274,383,125,19" Id="QgRQ5cIAdS9OyoAGLclthh">
-            <p:NodeReference LastCategoryFullName="Devices.Phidgets" LastSymbolSource="VL.Devices.Phidgets.vl">
+            <p:NodeReference LastCategoryFullName="Devices.Phidgets" LastDependency="VL.Devices.Phidgets.vl">
               <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
               <Choice Kind="ProcessAppFlag" Name="VoltageInput" />
             </p:NodeReference>
+            <Pin Id="AOHIA1nZPhCPaq2VUpgiiH" Name="Node Context" Kind="InputPin" IsHidden="true" />
             <Pin Id="QgX6RL50fMbOjqsWBU0RNZ" Name="SensorType" Kind="InputPin" />
             <Pin Id="Ig71YW29u3KOUwf0Ujb0gH" Name="Open" Kind="InputPin" DefaultValue="False" />
+            <Pin Id="JpkVLgWZNuVNzlUez48IDG" Name="Timeout" Kind="InputPin" IsHidden="true" />
             <Pin Id="JkuYW6G2LhtO6wRUun4KaR" Name="Close" Kind="InputPin" />
-            <Pin Id="RDaZIMWj6pwMhk3MLKEAMC" Name="Channel" Kind="InputPin" />
+            <Pin Id="AiTJdjcT5xBLdvzEyESBpY" Name="IsLocal" Kind="InputPin" IsHidden="true" />
             <Pin Id="Cz0q1FBrLPdNzbOJvDhjsb" Name="SerialNumber" Kind="InputPin" />
+            <Pin Id="RDaZIMWj6pwMhk3MLKEAMC" Name="Channel" Kind="InputPin" />
             <Pin Id="U3nvV9VCT8aMthVNKZpM4u" Name="HubPort" Kind="InputPin" DefaultValue="4" />
+            <Pin Id="GGyHFCMXJjbO1OnvC0BrAd" Name="IsHubPortDevice" Kind="InputPin" />
             <Pin Id="JupjpU4EISvOf0gqtKxTX9" Name="Data Interval" Kind="InputPin" />
             <Pin Id="C1rIhiJxd0uLmPztrD71FT" Name="Value" Kind="OutputPin" />
             <Pin Id="JG8TGJAe8q3MExCX4EjJsO" Name="On Data" Kind="OutputPin" />
             <Pin Id="HSYXG1b3VfZOpGqBsIB3oT" Name="Attached" Kind="OutputPin" />
             <Pin Id="D2V3AYHpdhzPEP6uf1tnqK" Name="Device Serial Number" Kind="OutputPin" />
+            <Pin Id="HajgVSx3pNqN5sDWIv11pd" Name="Channel Class" Kind="OutputPin" IsHidden="true" />
+            <Pin Id="KwOryfAvUiOOc8o02jxmxA" Name="Is Remote" Kind="OutputPin" IsHidden="true" />
+            <Pin Id="BJmN5NUZ74tOYcXy7atAle" Name="Server Hostname" Kind="OutputPin" IsHidden="true" />
+            <Pin Id="FutqmIJnapcQGWqAo4SwJC" Name="Server Name" Kind="OutputPin" IsHidden="true" />
+            <Pin Id="E2jQfAcSu8RM3cc8lhBSyL" Name="Server Peer Name" Kind="OutputPin" IsHidden="true" />
+            <Pin Id="Gyc0BBS7oVwM4BrRg3zHl4" Name="Server Unique Name" Kind="OutputPin" IsHidden="true" />
             <Pin Id="BgSdY5kM5hhLalUvDq1I1P" Name="Hub Port Count" Kind="OutputPin" />
+            <Pin Id="FdXx0iPJYYxMLI706guN2Q" Name="Data Rate" Kind="InputPin" IsHidden="true" />
           </Node>
           <Pad Id="SWgLQSPQEvrQYZ4ysAo4Ep" Comment="Close" Bounds="317,328,35,35" ShowValueBox="true" isIOBox="true" Value="False">
-            <p:TypeAnnotation>
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
               <Choice Kind="ImmutableTypeFlag" Name="Boolean" />
               <FullNameCategoryReference ID="Primitive" />
             </p:TypeAnnotation>
@@ -43,7 +54,7 @@
             </p:ValueBoxSettings>
           </Pad>
           <Pad Id="VzhtgIwh8QBOblSpgYWwfD" Comment="Open" Bounds="298,286,35,35" ShowValueBox="true" isIOBox="true" Value="False">
-            <p:TypeAnnotation>
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
               <Choice Kind="ImmutableTypeFlag" Name="Boolean" />
               <FullNameCategoryReference ID="Primitive" />
             </p:TypeAnnotation>
@@ -52,7 +63,7 @@
             </p:ValueBoxSettings>
           </Pad>
           <Pad Id="FE6FHaHmPgEMiNl9I5l5mN" Comment="HubPort" Bounds="377,363,35,15" ShowValueBox="true" isIOBox="true" Value="3">
-            <p:TypeAnnotation LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="CoreLibBasics.vl">
               <Choice Kind="TypeFlag" Name="Integer32" />
             </p:TypeAnnotation>
           </Pad>
@@ -60,7 +71,7 @@
           <Pad Id="NvnBlR9tTcpLiNPQu9Kx5V" Comment="Device Serial Number" Bounds="363,482,90,15" ShowValueBox="true" isIOBox="true" />
           <Pad Id="IfrZ3Gs3E8oNhdt8ZtvFjA" Comment="Hub Port Count" Bounds="395,451,35,15" ShowValueBox="true" isIOBox="true" />
           <Pad Id="SbovhAxJU7jLSPQMt8mePO" Comment="" Bounds="274,254,124,15" ShowValueBox="true" isIOBox="true" Value="Voltage">
-            <p:TypeAnnotation LastCategoryFullName="Phidget22" LastSymbolSource="Phidget22.NET.dll">
+            <p:TypeAnnotation LastCategoryFullName="Phidget22" LastDependency="Phidget22.NET.dll">
               <Choice Kind="TypeFlag" Name="VoltageSensorType" />
             </p:TypeAnnotation>
           </Pad>
@@ -85,7 +96,5 @@
       </Patch>
     </Node>
   </Patch>
-  <NugetDependency Id="AWADncGnm9GO1XnlR6Z1ft" Location="VL.Skia" Version="2021.4.9" />
-  <NugetDependency Id="V1oV6I1pNdDLiWbOYQx0RU" Location="VL.Devices.Phidgets" Version="0.0.0.0" />
   <DocumentDependency Id="BOExA9aAIfnN19DsuHqP2O" Location="../../VL.Devices.Phidgets.vl" />
 </Document>

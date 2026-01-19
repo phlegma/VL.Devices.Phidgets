@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Document xmlns:p="property" xmlns:r="reflection" Id="OsZ18p0gAnvLTBLq8vgEMD" LanguageVersion="2024.6.2" Version="0.128">
-  <NugetDependency Id="LRbA3fmPrDTQNUlIB6kgFW" Location="VL.CoreLib" Version="2024.6.2" />
+<Document xmlns:p="property" xmlns:r="reflection" Id="OsZ18p0gAnvLTBLq8vgEMD" LanguageVersion="2025.7.1-0145-gc52c6caab5" Version="0.128">
+  <NugetDependency Id="LRbA3fmPrDTQNUlIB6kgFW" Location="VL.CoreLib" Version="2025.7.1-0145-gc52c6caab5" />
   <Patch Id="RXtVcuWdJccLUKNAmgNwEY">
     <Canvas Id="LYRolP2e5GjOb3bmsI19W3" DefaultCategory="Main" CanvasType="FullCategory" />
     <!--
@@ -21,28 +21,22 @@
               <Choice Kind="ProcessAppFlag" Name="Encoder" />
             </p:NodeReference>
             <Pin Id="OsVBzfpa7ydPVrLgBNxFBb" Name="Node Context" Kind="InputPin" IsHidden="true" />
+            <Pin Id="SeP5KuHDuhAN1HuhWyycaC" Name="Encoder Type" Kind="InputPin" />
+            <Pin Id="JXkfngRHN9uPLfyFCDcfh7" Name="Encoder Interface Resolution" Kind="InputPin" DefaultValue="4" />
             <Pin Id="VyzyhZ661OnM218j59JhbM" Name="Open" Kind="InputPin" />
             <Pin Id="SJUHup4wftDP0bGbEAeXGF" Name="Timeout" Kind="InputPin" IsHidden="true" />
             <Pin Id="GRPBsagSCKiQRqyKCNkNS0" Name="Close" Kind="InputPin" />
             <Pin Id="JuktlfhcOUpNHvMeeibveB" Name="IsLocal" Kind="InputPin" IsHidden="true" />
-            <Pin Id="IaMhOgWIzeWNNXgEyaHAh6" Name="Channel" Kind="InputPin" />
             <Pin Id="IP5T68oJwPoNMGH36xqaGQ" Name="SerialNumber" Kind="InputPin" />
+            <Pin Id="IaMhOgWIzeWNNXgEyaHAh6" Name="Channel" Kind="InputPin" />
             <Pin Id="RZ3hDeZGVASQWo1cO5aNvD" Name="HubPort" Kind="InputPin" />
             <Pin Id="KR6cwo3J6ZiNAUYGoIAC9H" Name="IsHubPortDevice" Kind="InputPin" />
             <Pin Id="TmBzyZHdpygP5u2XLta3RT" Name="Data Interval" Kind="InputPin" />
             <Pin Id="FX0W7lMgM6rO62fFREpOym" Name="Data Rate" Kind="InputPin" IsHidden="true" />
-            <Pin Id="SeP5KuHDuhAN1HuhWyycaC" Name="Encoder Type" Kind="InputPin" />
-            <Pin Id="JXkfngRHN9uPLfyFCDcfh7" Name="Encoder Interface Resolution" Kind="InputPin" DefaultValue="4" />
             <Pin Id="FzTOnNZWPUvPTeoDRjzQ0S" Name="Position Change Trigger" Kind="InputPin" />
             <Pin Id="LodT0sBLvT8Lg44y8gSXAZ" Name="IO Mode" Kind="InputPin" />
             <Pin Id="GeaIqqXS2BNM8XKwMF2vcb" Name="Resolution" Kind="InputPin" />
             <Pin Id="FoQyvisvSdxOzZLesgvLII" Name="Reset" Kind="InputPin" />
-            <Pin Id="Lh6jQgGxgOPMUUXZ8e8jeg" Name="Attached" Kind="OutputPin" />
-            <Pin Id="IDzMhQf1fyjPIhZdPETeDU" Name="Device Serial Number" Kind="OutputPin" IsHidden="true" />
-            <Pin Id="O7PUZcLXO3GNdimxph8tIV" Name="Channel Class" Kind="OutputPin" IsHidden="true" />
-            <Pin Id="LW5TjU1FcxMNq3zJkZ2hBW" Name="Is Remote" Kind="OutputPin" />
-            <Pin Id="LZ2yFnWKl2sLYCgG3UPGbS" Name="Hub Port" Kind="OutputPin" IsHidden="true" />
-            <Pin Id="LAGp7gC3dZXPOjuR8OqfL6" Name="Hub Port Count" Kind="OutputPin" IsHidden="true" />
             <Pin Id="FzG4fSB554KQN8ktr4Pn5S" Name="Position" Kind="OutputPin" />
             <Pin Id="GqKy7V89QtrNQs037MKYSQ" Name="Position Change" Kind="OutputPin" />
             <Pin Id="Ek9u0p9iSN1Pu0o7y7gU8Q" Name="Index Triggered" Kind="OutputPin" IsHidden="true" />
@@ -51,6 +45,15 @@
             <Pin Id="QSnxHVcUK7VMnufAmkbOkg" Name="Angle" Kind="OutputPin" />
             <Pin Id="SIMY7gSXu3SOwIbucBXRmv" Name="Length" Kind="OutputPin" />
             <Pin Id="NmpZJBRwZkDNsicBhWnECb" Name="Velocity" Kind="OutputPin" />
+            <Pin Id="Lh6jQgGxgOPMUUXZ8e8jeg" Name="Attached" Kind="OutputPin" />
+            <Pin Id="IDzMhQf1fyjPIhZdPETeDU" Name="Device Serial Number" Kind="OutputPin" />
+            <Pin Id="O7PUZcLXO3GNdimxph8tIV" Name="Channel Class" Kind="OutputPin" IsHidden="true" />
+            <Pin Id="LW5TjU1FcxMNq3zJkZ2hBW" Name="Is Remote" Kind="OutputPin" />
+            <Pin Id="UZZg9qj2eqoOLQfKX4QWW3" Name="Server Hostname" Kind="OutputPin" IsHidden="true" />
+            <Pin Id="HmlEvSvkzE4PfNZdxHuvc3" Name="Server Name" Kind="OutputPin" IsHidden="true" />
+            <Pin Id="QLT1bV5FlCuO33tQpQ0CLB" Name="Server Peer Name" Kind="OutputPin" IsHidden="true" />
+            <Pin Id="ONIraLI8dvwMq8EWQa84uC" Name="Server Unique Name" Kind="OutputPin" IsHidden="true" />
+            <Pin Id="LAGp7gC3dZXPOjuR8OqfL6" Name="Hub Port Count" Kind="OutputPin" IsHidden="true" />
           </Node>
           <Pad Id="UhcBc9IgjmqLbCLKDqx5ye" Comment="Open" Bounds="814,180,35,35" ShowValueBox="true" isIOBox="true" Value="false">
             <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
@@ -81,7 +84,7 @@
               <Choice Kind="TypeFlag" Name="Integer32" />
             </p:TypeAnnotation>
           </Pad>
-          <Pad Id="QpeuTkt7UoPL8imTo9ZCri" Comment="Encoder Type" Bounds="954,408,89,15" ShowValueBox="true" isIOBox="true" Value="RotaryEncoder">
+          <Pad Id="QpeuTkt7UoPL8imTo9ZCri" Comment="Encoder Type" Bounds="954,408,96,15" ShowValueBox="true" isIOBox="true" Value="RotaryEncoder">
             <p:TypeAnnotation LastCategoryFullName="Devices.Phidgets" LastDependency="VL.Devices.Phidgets.vl">
               <Choice Kind="TypeFlag" Name="EncoderType" />
             </p:TypeAnnotation>
@@ -91,7 +94,7 @@
               <Choice Kind="TypeFlag" Name="Float32" />
             </p:TypeAnnotation>
           </Pad>
-          <Pad Id="KBivCcCS9Z1QCy7F4FJfrH" Comment="IO Mode" Bounds="1014,485,111,15" ShowValueBox="true" isIOBox="true" Value="PushPull">
+          <Pad Id="KBivCcCS9Z1QCy7F4FJfrH" Comment="IO Mode" Bounds="1014,485,118,15" ShowValueBox="true" isIOBox="true" Value="PushPull">
             <p:TypeAnnotation LastCategoryFullName="Phidget22" LastDependency="VL.Devices.Phidgets.vl">
               <Choice Kind="TypeFlag" Name="EncoderIOMode" />
             </p:TypeAnnotation>
@@ -293,5 +296,5 @@
       </Patch>
     </Node>
   </Patch>
-  <NugetDependency Id="IKbvkTSGePaNIMSgCHuQPE" Location="VL.Devices.Phidgets" Version="0.0.10-alpha" />
+  <DocumentDependency Id="LVbgaiqB9apOD933rv8wZq" Location="../../VL.Devices.Phidgets.vl" />
 </Document>

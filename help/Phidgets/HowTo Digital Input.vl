@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Document xmlns:p="property" Id="Ka9uSPv7yTqO8m3xSP1Ia4" LanguageVersion="2021.4.9.982" Version="0.128">
-  <NugetDependency Id="VMo4HaTEkVTLtfYj9q9ZYR" Location="VL.CoreLib" Version="2021.4.9" />
+<Document xmlns:p="property" xmlns:r="reflection" Id="Ka9uSPv7yTqO8m3xSP1Ia4" LanguageVersion="2025.7.1-0145-gc52c6caab5" Version="0.128">
+  <NugetDependency Id="VMo4HaTEkVTLtfYj9q9ZYR" Location="VL.CoreLib" Version="2025.7.1-0145-gc52c6caab5" />
   <Patch Id="EBJpcI9XfAwLRZdOzyKrhP">
     <Canvas Id="DZ4WByYr0iQNUdSbUzWirB" DefaultCategory="Main" BordersChecked="false" CanvasType="FullCategory">
       <!--
@@ -37,23 +37,33 @@
       <Patch Id="RcdmicmnND1Pyv3TJj3de9">
         <Canvas Id="Th1wAbWQAPlMOAdCYXCkfd" CanvasType="Group">
           <Node Bounds="300,381,125,19" Id="QgRQ5cIAdS9OyoAGLclthh">
-            <p:NodeReference LastCategoryFullName="VL.Devices.Phidgets" LastSymbolSource="VL.Devices.Phidgets.vl">
+            <p:NodeReference LastCategoryFullName="VL.Devices.Phidgets" LastDependency="VL.Devices.Phidgets.vl">
               <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
               <Choice Kind="ProcessAppFlag" Name="DigitalInput" />
             </p:NodeReference>
+            <Pin Id="GUPH3D0ipCdOgUS9wJIO12" Name="Node Context" Kind="InputPin" IsHidden="true" />
             <Pin Id="Ig71YW29u3KOUwf0Ujb0gH" Name="Open" Kind="InputPin" DefaultValue="False" />
+            <Pin Id="Mu5edMmCXLrOO4787H6jno" Name="Timeout" Kind="InputPin" IsHidden="true" />
             <Pin Id="JkuYW6G2LhtO6wRUun4KaR" Name="Close" Kind="InputPin" />
-            <Pin Id="RDaZIMWj6pwMhk3MLKEAMC" Name="Channel" Kind="InputPin" />
+            <Pin Id="SiHo4wLVtS2P23eBoaA61x" Name="IsLocal" Kind="InputPin" IsHidden="true" />
             <Pin Id="Cz0q1FBrLPdNzbOJvDhjsb" Name="SerialNumber" Kind="InputPin" />
+            <Pin Id="RDaZIMWj6pwMhk3MLKEAMC" Name="Channel" Kind="InputPin" />
             <Pin Id="U3nvV9VCT8aMthVNKZpM4u" Name="HubPort" Kind="InputPin" DefaultValue="4" />
             <Pin Id="JxuIWBU7YAdOtH073Lrm8k" Name="IsHubPortDevice" Kind="InputPin" />
             <Pin Id="JLek0DsIWcGOFM5uo2EBVJ" Name="Result" Kind="OutputPin" />
+            <Pin Id="VF0cNn4YZoQPQvbh9KDkhl" Name="On Data" Kind="OutputPin" IsHidden="true" />
             <Pin Id="HSYXG1b3VfZOpGqBsIB3oT" Name="Attached" Kind="OutputPin" />
             <Pin Id="D2V3AYHpdhzPEP6uf1tnqK" Name="Device Serial Number" Kind="OutputPin" />
+            <Pin Id="B5KcmaoEcmCNCdLbQJBtLk" Name="Channel Class" Kind="OutputPin" IsHidden="true" />
+            <Pin Id="SGXEPCvG52RLMiY7Qqe9JM" Name="Is Remote" Kind="OutputPin" IsHidden="true" />
+            <Pin Id="DAqVIxCjxIpP2mbX4kFhTl" Name="Server Hostname" Kind="OutputPin" IsHidden="true" />
+            <Pin Id="TFwAYT8JAJHO473xiTrGmN" Name="Server Name" Kind="OutputPin" IsHidden="true" />
+            <Pin Id="I6zC5keEOOrQPFoD02EvTE" Name="Server Peer Name" Kind="OutputPin" IsHidden="true" />
+            <Pin Id="TWPjPSdtyIoNNMM9XfHr1b" Name="Server Unique Name" Kind="OutputPin" IsHidden="true" />
             <Pin Id="BgSdY5kM5hhLalUvDq1I1P" Name="Hub Port Count" Kind="OutputPin" />
           </Node>
           <Pad Id="SWgLQSPQEvrQYZ4ysAo4Ep" Comment="Close" Bounds="326,333,35,35" ShowValueBox="true" isIOBox="true" Value="False">
-            <p:TypeAnnotation>
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
               <Choice Kind="ImmutableTypeFlag" Name="Boolean" />
               <FullNameCategoryReference ID="Primitive" />
             </p:TypeAnnotation>
@@ -62,7 +72,7 @@
             </p:ValueBoxSettings>
           </Pad>
           <Pad Id="VzhtgIwh8QBOblSpgYWwfD" Comment="Open" Bounds="302,279,35,35" ShowValueBox="true" isIOBox="true" Value="False">
-            <p:TypeAnnotation>
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
               <Choice Kind="ImmutableTypeFlag" Name="Boolean" />
               <FullNameCategoryReference ID="Primitive" />
             </p:TypeAnnotation>
@@ -71,7 +81,7 @@
             </p:ValueBoxSettings>
           </Pad>
           <Pad Id="FE6FHaHmPgEMiNl9I5l5mN" Comment="HubPort" Bounds="398,365,35,15" ShowValueBox="true" isIOBox="true" Value="4">
-            <p:TypeAnnotation LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="CoreLibBasics.vl">
               <Choice Kind="TypeFlag" Name="Integer32" />
             </p:TypeAnnotation>
           </Pad>
@@ -96,7 +106,5 @@
       </Patch>
     </Node>
   </Patch>
-  <NugetDependency Id="AWADncGnm9GO1XnlR6Z1ft" Location="VL.Skia" Version="2021.4.9" />
-  <NugetDependency Id="V1oV6I1pNdDLiWbOYQx0RU" Location="VL.Devices.Phidgets" Version="0.0.0.0" />
   <DocumentDependency Id="BOExA9aAIfnN19DsuHqP2O" Location="../../VL.Devices.Phidgets.vl" />
 </Document>

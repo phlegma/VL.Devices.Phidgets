@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Document xmlns:p="property" xmlns:r="reflection" Id="NPDTBPvkukuMxdRbGOnwi4" LanguageVersion="2025.7.1-0144-g5b48859314" Version="0.128">
-  <NugetDependency Id="VMo4HaTEkVTLtfYj9q9ZYR" Location="VL.CoreLib" Version="2025.7.1-0144-g5b48859314" />
+<Document xmlns:p="property" xmlns:r="reflection" Id="NPDTBPvkukuMxdRbGOnwi4" LanguageVersion="2025.7.1-0145-gc52c6caab5" Version="0.128">
+  <NugetDependency Id="VMo4HaTEkVTLtfYj9q9ZYR" Location="VL.CoreLib" Version="2025.7.1-0145-gc52c6caab5" />
   <Patch Id="EBJpcI9XfAwLRZdOzyKrhP">
     <Canvas Id="DZ4WByYr0iQNUdSbUzWirB" DefaultCategory="Main" BordersChecked="false" CanvasType="FullCategory">
       <!--
@@ -125,6 +125,5 @@
       </Patch>
     </Node>
   </Patch>
-  <NugetDependency Id="AWADncGnm9GO1XnlR6Z1ft" Location="VL.Skia" Version="2025.7.1-0144-g5b48859314" />
   <DocumentDependency Id="Azm6tyc3jsJNopk9FBIJmR" Location="../../VL.Devices.Phidgets.vl" />
 </Document>

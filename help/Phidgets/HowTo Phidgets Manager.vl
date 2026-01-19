@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Document xmlns:p="property" Id="DXu1KJV7nqkOgipDjSR8zF" LanguageVersion="2022.5.0-0374-f17abf75a1" Version="0.128">
-  <NugetDependency Id="VMo4HaTEkVTLtfYj9q9ZYR" Location="VL.CoreLib" Version="2022.5.0-0374-gf17abf75a1" />
+<Document xmlns:p="property" xmlns:r="reflection" Id="DXu1KJV7nqkOgipDjSR8zF" LanguageVersion="2025.7.1-0145-gc52c6caab5" Version="0.128">
+  <NugetDependency Id="VMo4HaTEkVTLtfYj9q9ZYR" Location="VL.CoreLib" Version="2025.7.1-0145-gc52c6caab5" />
   <Patch Id="EBJpcI9XfAwLRZdOzyKrhP">
     <Canvas Id="DZ4WByYr0iQNUdSbUzWirB" DefaultCategory="Main" BordersChecked="false" CanvasType="FullCategory">
       <!--
@@ -37,10 +37,11 @@
       <Patch Id="RcdmicmnND1Pyv3TJj3de9">
         <Canvas Id="Th1wAbWQAPlMOAdCYXCkfd" CanvasType="Group">
           <Node Bounds="317,145,245,19" Id="JfmAyHGpCvhM5HUEPL7BRy">
-            <p:NodeReference LastCategoryFullName="VL.Devices.Phidgets" LastSymbolSource="VL.Devices.Phidgets.vl">
+            <p:NodeReference LastCategoryFullName="VL.Devices.Phidgets" LastDependency="VL.Devices.Phidgets.vl">
               <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
               <Choice Kind="ProcessAppFlag" Name="Manager" />
             </p:NodeReference>
+            <Pin Id="HHfhTUUduObMUH3TSHJutI" Name="Node Context" Kind="InputPin" IsHidden="true" />
             <Pin Id="SuLAAa0ukApLL3N1VmVQP1" Name="Open" Kind="InputPin" />
             <Pin Id="IO5r22A5e3HQcoOakchGxU" Name="Close" Kind="InputPin" />
             <Pin Id="AnuJhqGEhlPLekaTH5uCWm" Name="Library Version Number" Kind="OutputPin" />
@@ -51,6 +52,16 @@
             <Pin Id="HAritatO2ZCN4xdgW1ZL4T" Name="Device Name" Kind="OutputPin" />
             <Pin Id="NGbEp1mls0kMgoIxZ9xhJo" Name="Device ID" Kind="OutputPin" />
             <Pin Id="SVZAlRgRwDuMxot3QKpLjC" Name="Device VINTID" Kind="OutputPin" />
+            <Pin Id="HljHIJRcCwPOO3dkbORrMJ" Name="Device Label" Kind="OutputPin" IsHidden="true" />
+            <Pin Id="D4mNdbWflQKLHMsIkPILcT" Name="Device SKU" Kind="OutputPin" IsHidden="true" />
+            <Pin Id="Gajs8SP3U94PZEl0TGWnhC" Name="Channel Name" Kind="OutputPin" IsHidden="true" />
+            <Pin Id="M0LyyMlUcNDNQr4Uc13s9w" Name="Channel Class Name" Kind="OutputPin" IsHidden="true" />
+            <Pin Id="SvB674gzwikLlrY3EECRH7" Name="Channel Subclass" Kind="OutputPin" IsHidden="true" />
+            <Pin Id="Kp9UQvMv0U6MaSgq54qJ1P" Name="Channel Class" Kind="OutputPin" IsHidden="true" />
+            <Pin Id="QZA3rOcX2o6NZqnsPSe2TS" Name="Server Hostname" Kind="OutputPin" />
+            <Pin Id="KXPf7t8c6xFLo8DX3Ow0NH" Name="Server Name" Kind="OutputPin" />
+            <Pin Id="BFUh9h2QmApLMUV8DhvVfP" Name="Server Peer Name" Kind="OutputPin" />
+            <Pin Id="BQ4r655zaMfNdlmMLUt9VU" Name="Server Unique Name" Kind="OutputPin" />
           </Node>
           <Pad Id="BePkmTiQrssOfyEsmOGnJY" Comment="Channel" Bounds="45,307,35,202" ShowValueBox="true" isIOBox="true" Value="0">
             <p:ValueBoxSettings>
@@ -68,7 +79,7 @@
             </p:ValueBoxSettings>
           </Pad>
           <Pad Id="RU9ZrzYUhtkQI9D0W51G6M" Comment="Open" Bounds="317,26,35,35" ShowValueBox="true" isIOBox="true" Value="False">
-            <p:TypeAnnotation>
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
               <Choice Kind="ImmutableTypeFlag" Name="Boolean" />
               <FullNameCategoryReference ID="Primitive" />
             </p:TypeAnnotation>
@@ -77,7 +88,7 @@
             </p:ValueBoxSettings>
           </Pad>
           <Pad Id="L8CoYlIaVL5LkRLSXXSoT0" Comment="Close" Bounds="558,80,58,47" ShowValueBox="true" isIOBox="true" Value="False">
-            <p:TypeAnnotation>
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
               <Choice Kind="ImmutableTypeFlag" Name="Boolean" />
               <FullNameCategoryReference ID="Primitive" />
             </p:TypeAnnotation>
@@ -93,7 +104,7 @@
               <Item></Item>
             </p:Value>
           </Pad>
-          <Pad Id="B7CmTzM3R4PLB9q1cT3C92" Comment="Device ID" Bounds="780,307,154,202" ShowValueBox="true" isIOBox="true">
+          <Pad Id="B7CmTzM3R4PLB9q1cT3C92" Comment="Device ID" Bounds="780,307,156,202" ShowValueBox="true" isIOBox="true">
             <p:ValueBoxSettings>
               <p:maxvisibleentries p:Type="Int32">5</p:maxvisibleentries>
             </p:ValueBoxSettings>
@@ -107,7 +118,7 @@
             </p:ValueBoxSettings>
           </Pad>
           <Node Bounds="316,106,30,19" Id="KLg29laK5GGP5sZSGscjTY">
-            <p:NodeReference LastCategoryFullName="Primitive.Boolean" LastSymbolSource="CoreLibBasics.vl">
+            <p:NodeReference LastCategoryFullName="Primitive.Boolean" LastDependency="CoreLibBasics.vl">
               <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
               <Choice Kind="OperationCallFlag" Name="OR" />
             </p:NodeReference>
@@ -116,15 +127,16 @@
             <Pin Id="CqeVCPvBln6LGfuDMAEuQQ" Name="Output" Kind="StateOutputPin" />
           </Node>
           <Node Bounds="341,76,54,19" Id="VD5UddB7soWLpTa0dlSEG4">
-            <p:NodeReference LastCategoryFullName="Control" LastSymbolSource="CoreLibBasics.vl">
+            <p:NodeReference LastCategoryFullName="Control" LastDependency="CoreLibBasics.vl">
               <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
               <Choice Kind="ProcessAppFlag" Name="OnOpen" />
             </p:NodeReference>
+            <Pin Id="A0hdQ9G7SO4PzK2rxTridX" Name="Node Context" Kind="InputPin" IsHidden="true" />
             <Pin Id="PTvypfLH44EM6iOKrRb1ju" Name="Simulate" Kind="InputPin" />
             <Pin Id="TdjMDczX1DBLhKSJV52M6O" Name="Output" Kind="OutputPin" />
           </Node>
           <Pad Id="MxdZrzMCVvHNXcXWdNO0UP" Comment="Library Version Number" Bounds="318,189,186,24" ShowValueBox="true" isIOBox="true" />
-          <Pad Id="Jvg8fpQYhxLLl3IyLD0t7X" Comment="Library Version" Bounds="346,223,297,12" ShowValueBox="true" isIOBox="true" />
+          <Pad Id="Jvg8fpQYhxLLl3IyLD0t7X" Comment="Library Version" Bounds="346,223,297,15" ShowValueBox="true" isIOBox="true" />
         </Canvas>
         <ProcessDefinition Id="M7DhTjVrkxFPTU6ibB97qp">
           <Fragment Id="Ka160IZ6ipXPEuPO79oXgb" Patch="UMHvqj8Id8pO2ddYAbC8xP" Enabled="true" />
@@ -147,6 +159,5 @@
       </Patch>
     </Node>
   </Patch>
-  <NugetDependency Id="AWADncGnm9GO1XnlR6Z1ft" Location="VL.Skia" Version="2022.5.0-0374-gf17abf75a1" />
   <DocumentDependency Id="Azm6tyc3jsJNopk9FBIJmR" Location="../../VL.Devices.Phidgets.vl" />
 </Document>

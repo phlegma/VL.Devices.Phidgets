@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Document xmlns:p="property" Id="NPDTBPvkukuMxdRbGOnwi4" LanguageVersion="2021.4.9.982" Version="0.128">
-  <NugetDependency Id="VMo4HaTEkVTLtfYj9q9ZYR" Location="VL.CoreLib" Version="2021.4.9" />
+<Document xmlns:p="property" xmlns:r="reflection" Id="MTI3Mb8mxgTMyC1m05OQON" LanguageVersion="2025.7.1-0145-gc52c6caab5" Version="0.128">
+  <NugetDependency Id="VMo4HaTEkVTLtfYj9q9ZYR" Location="VL.CoreLib" Version="2025.7.1-0145-gc52c6caab5" />
   <Patch Id="EBJpcI9XfAwLRZdOzyKrhP">
     <Canvas Id="DZ4WByYr0iQNUdSbUzWirB" DefaultCategory="Main" BordersChecked="false" CanvasType="FullCategory">
       <!--
@@ -37,7 +37,7 @@
       <Patch Id="RcdmicmnND1Pyv3TJj3de9">
         <Canvas Id="Th1wAbWQAPlMOAdCYXCkfd" CanvasType="Group">
           <Pad Id="Ds4IZQoqSOyPwekbWLvNsI" Comment="Open" Bounds="316,347,38,31" ShowValueBox="true" isIOBox="true" Value="False">
-            <p:TypeAnnotation>
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
               <Choice Kind="ImmutableTypeFlag" Name="Boolean" />
               <FullNameCategoryReference ID="Primitive" />
             </p:TypeAnnotation>
@@ -46,7 +46,7 @@
             </p:ValueBoxSettings>
           </Pad>
           <Pad Id="UdzbTNQIcF9QZcEZEdg025" Comment="Close" Bounds="335,383,35,33" ShowValueBox="true" isIOBox="true" Value="False">
-            <p:TypeAnnotation>
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
               <Choice Kind="ImmutableTypeFlag" Name="Boolean" />
               <FullNameCategoryReference ID="Primitive" />
             </p:TypeAnnotation>
@@ -55,25 +55,35 @@
             </p:ValueBoxSettings>
           </Pad>
           <Node Bounds="293,426,145,19" Id="GkjeZA1Dnh0Nm33y12n0U1">
-            <p:NodeReference LastCategoryFullName="VL.Devices.Phidgets" LastSymbolSource="VL.Devices.Phidgets.vl">
+            <p:NodeReference LastCategoryFullName="VL.Devices.Phidgets" LastDependency="VL.Devices.Phidgets.vl">
               <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
               <Choice Kind="ProcessAppFlag" Name="DistanceSensor" />
             </p:NodeReference>
+            <Pin Id="JrLOvN1MmbWLSbEPtuFlqk" Name="Node Context" Kind="InputPin" IsHidden="true" />
             <Pin Id="DR6Bn8KsvCTLvJ51sTQEgd" Name="Sonar Quite Mode" Kind="InputPin" />
             <Pin Id="KxytCjcyJibLnx0oUqMzYK" Name="Open" Kind="InputPin" />
+            <Pin Id="L7qCDlhVjZmQOBRxhnbuZu" Name="Timeout" Kind="InputPin" IsHidden="true" />
             <Pin Id="ArOPpGfhIygNEAI1XXQqA3" Name="Close" Kind="InputPin" />
             <Pin Id="DE1oxp11OBELLvmynBifqU" Name="IsLocal" Kind="InputPin" />
-            <Pin Id="DmyOIQKKFHsPzQvtoJX55l" Name="Channel" Kind="InputPin" />
             <Pin Id="EQnm8Q0gpivLIqZv6mJeHU" Name="SerialNumber" Kind="InputPin" />
+            <Pin Id="DmyOIQKKFHsPzQvtoJX55l" Name="Channel" Kind="InputPin" />
             <Pin Id="Aypqti5VCNxP4p1leXcUMz" Name="HubPort" Kind="InputPin" />
             <Pin Id="Vo4Jdx6m4mnQHLjQrDWPER" Name="Data Interval" Kind="InputPin" />
             <Pin Id="SmQHJHNqLj9NKpA28S9GvT" Name="Value" Kind="OutputPin" />
-            <Pin Id="ET6oJPcoDu4OoRLgnCasSi" Name="Distances" Kind="OutputPin" />
+            <Pin Id="OA8Z7fKl9SZPF1R7YSNzAM" Name="On Data" Kind="OutputPin" IsHidden="true" />
             <Pin Id="FpwM1cTc8aCPBK5yIeDOYi" Name="Amplitudes" Kind="OutputPin" />
+            <Pin Id="ET6oJPcoDu4OoRLgnCasSi" Name="Distances" Kind="OutputPin" />
             <Pin Id="Sk5GeVfd3KWP15kUQSjtVR" Name="Count" Kind="OutputPin" />
             <Pin Id="Q44MBIhYpdKMXyjRCbt287" Name="Attached" Kind="OutputPin" />
             <Pin Id="VN6giAlJXvGNI1ILgn1DpG" Name="Device Serial Number" Kind="OutputPin" />
+            <Pin Id="D5s9JPx8LxuPNuBUokDH4v" Name="Channel Class" Kind="OutputPin" IsHidden="true" />
+            <Pin Id="LBoBMZeDScIOlxHuRFqavv" Name="Is Remote" Kind="OutputPin" IsHidden="true" />
+            <Pin Id="AErSvi4U1ASPrF2oTxgTXE" Name="Server Hostname" Kind="OutputPin" IsHidden="true" />
+            <Pin Id="C8TyD8j63LdQQ2FQo5z2FP" Name="Server Name" Kind="OutputPin" IsHidden="true" />
+            <Pin Id="FYUINIz0kL5PAqbgfKhivN" Name="Server Peer Name" Kind="OutputPin" IsHidden="true" />
+            <Pin Id="AQi0VGS7MBYL0tuYLhAc0X" Name="Server Unique Name" Kind="OutputPin" IsHidden="true" />
             <Pin Id="ILR93Fu9MvXL4yOMP4PpHA" Name="Hub Port" Kind="OutputPin" />
+            <Pin Id="OpX62bu0H9DMdfyYe0YAO2" Name="Data Rate" Kind="InputPin" IsHidden="true" />
           </Node>
           <Pad Id="PY5o5mLfcK5NrajvUeVpRH" Comment="Hub Port" Bounds="475,471,35,15" ShowValueBox="true" isIOBox="true" />
           <Pad Id="D1JexFpMaUxPhn07ceNMXc" Comment="Distances" Bounds="317,556,66,195" ShowValueBox="true" isIOBox="true" Value="0">
@@ -88,7 +98,7 @@
           </Pad>
           <Pad Id="OlOeo1Rjy2QPpqrnayh8tr" Comment="Count" Bounds="627,559,35,15" ShowValueBox="true" isIOBox="true" />
           <Pad Id="Lw5Y0QACANvNReyhTv5zMl" Comment="Sonar Quite Mode" Bounds="295,295,35,35" ShowValueBox="true" isIOBox="true" Value="False">
-            <p:TypeAnnotation>
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
               <Choice Kind="ImmutableTypeFlag" Name="Boolean" />
               <FullNameCategoryReference ID="Primitive" />
             </p:TypeAnnotation>
@@ -115,6 +125,5 @@
       </Patch>
     </Node>
   </Patch>
-  <NugetDependency Id="AWADncGnm9GO1XnlR6Z1ft" Location="VL.Skia" Version="2021.4.9" />
   <DocumentDependency Id="Azm6tyc3jsJNopk9FBIJmR" Location="../../VL.Devices.Phidgets.vl" />
 </Document>
