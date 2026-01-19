@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Document xmlns:p="property" xmlns:r="reflection" Id="KxdyQFzIGxAP3J2lpIOBQl" LanguageVersion="2025.7.0" Version="0.128">
-  <NugetDependency Id="CtRD94DeiXrPBvpsvp5gxl" Location="VL.CoreLib" Version="2025.7.0" />
+<Document xmlns:p="property" xmlns:r="reflection" Id="U4Elp2sLfBtQJrqVhRScaL" LanguageVersion="2025.7.1-0145-gc52c6caab5" Version="0.128">
+  <NugetDependency Id="CtRD94DeiXrPBvpsvp5gxl" Location="VL.CoreLib" Version="2025.7.1-0145-gc52c6caab5" />
   <Patch Id="LPiTHIMzdWcN2MMEs0SXSK">
     <Canvas Id="NVAWkZYR0K0QamNth39yYT" DefaultCategory="Devices.Phidgets" CanvasType="FullCategory">
       <!--
@@ -6287,8 +6287,6 @@
       </Patch>
     </Node>
   </Patch>
-  <NugetDependency Id="N0wKF2rNGWWLlKpD1eaaMc" Location="VL.Skia" Version="2025.7.0" />
   <NugetDependency Id="E7WivuLFDPOOps7iYavgTW" Location="Phidget22.NET" Version="1.23.20251006" />
-  <NugetDependency Id="McNUGwfa0LxOil1rSKmjtH" Location="System.Reactive" Version="6.0.0" />
   <PlatformDependency Id="TRTwwNaNzDoMg50lSakQ4W" Location="./lib/Debug/net8.0/VL.Devices.Phidgets.Utils.dll" />
 </Document>
